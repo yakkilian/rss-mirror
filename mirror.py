@@ -1,5 +1,8 @@
 from pathlib import Path
+from urllib.parse import urljoin
 import requests
+from bs4 import BeautifulSoup
+import xml.etree.ElementTree as ET
 
 FEEDS = {
     "paloalto": "https://investors.paloaltonetworks.com/rss/news-releases.xml",
@@ -13,11 +16,12 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 ICTjournal-RSS-Mirror/1.0",
-    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*;q=0.8",
+    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, text/html, */*;q=0.8",
 }
 
 successes = 0
 
+# Copie des vrais flux RSS
 for name, url in FEEDS.items():
     try:
         r = requests.get(url, headers=HEADERS, timeout=60)
@@ -35,6 +39,68 @@ for name, url in FEEDS.items():
 
     except Exception as e:
         print(f"[ERREUR] {name}: {e}")
+
+# Création d'un RSS à partir de la newsroom ABB
+try:
+    abb_url = "https://www.abb.com/global/en/company/media"
+    r = requests.get(abb_url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+    seen = set()
+
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        title = " ".join(link.stripped_strings)
+
+        if not title or len(title) < 10:
+            continue
+
+        if "/global/en/news/" not in href and "/news/detail/" not in href:
+            continue
+
+        url = urljoin(abb_url, href)
+
+        if url in seen:
+            continue
+
+        seen.add(url)
+        items.append((title, url))
+
+        if len(items) >= 30:
+            break
+
+    if not items:
+        raise ValueError("Aucun communiqué ABB trouvé dans la page")
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "ABB Group press releases"
+    ET.SubElement(channel, "link").text = abb_url
+    ET.SubElement(channel, "description").text = "ABB Group press releases mirrored for FreshRSS"
+
+    for title, url in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = title
+        ET.SubElement(item, "link").text = url
+        ET.SubElement(item, "guid", isPermaLink="true").text = url
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+    tree.write(
+        OUTPUT_DIR / "abb.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] abb: {len(items)} communiqués")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] abb: {e}")
 
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
