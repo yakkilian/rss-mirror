@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>ABB Group press releases</title>
+    <link>https://new.abb.com/ch</link>
+    <description>ABB Group press releases mirrored for FreshRSS</description>
+    <item>
+      <title>Group press release 2026-08-18 ABB selected by Statkraft to modernize three Norwegian hydropower plants</title>
+      <link>https://new.abb.com/news/detail/138060/abb-selected-by-statkraft-to-modernize-three-norwegian-hydropower-plants</link>
+      <guid isPermaLink="true">https://new.abb.com/news/detail/138060/abb-selected-by-statkraft-to-modernize-three-norwegian-hydropower-plants</guid>
+    </item>
+    <item>
+      <title>Group press release 2026-08-06 ABB invests in LevelTen Energy to advance clean energy procurement</title>
+      <link>https://new.abb.com/news/detail/137745/abb-invests-in-levelten-energy-to-advance-clean-energy-procurement</link>
+      <guid isPermaLink="true">https://new.abb.com/news/detail/137745/abb-invests-in-levelten-energy-to-advance-clean-energy-procurement</guid>
+    </item>
+    <item>
+      <title>Group press release 2026-07-16 Q2 2026 results</title>
+      <link>https://new.abb.com/news/detail/137496/q2-2026-results</link>
+      <guid isPermaLink="true">https://new.abb.com/news/detail/137496/q2-2026-results</guid>
+    </item>
+    <item>
+      <title>Group press release 2026-07-16 ABB expands automation offering with acquisition of Rotork</title>
+      <link>https://new.abb.com/news/detail/137499/abb-expands-automation-offering-with-acquisition-of-rotork</link>
+      <guid isPermaLink="true">https://new.abb.com/news/detail/137499/abb-expands-automation-offering-with-acquisition-of-rotork</guid>
+    </item>
+    <item>
+      <title>Group press release 2026-07-15 ABB to acquire Advantics, expanding Direct Current portfolio</title>
+      <link>https://new.abb.com/news/detail/137427/abb-to-acquire-advantics-expanding-direct-current-portfolio</link>
+      <guid isPermaLink="true">https://new.abb.com/news/detail/137427/abb-to-acquire-advantics-expanding-direct-current-portfolio</guid>
+    </item>
+  </channel>
+</rss>
