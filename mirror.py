@@ -42,7 +42,7 @@ for name, url in FEEDS.items():
 
 # Création d'un RSS à partir de la newsroom ABB
 try:
-    abb_url = "https://www.abb.com/global/en/company/media"
+    abb_url = "https://new.abb.com/ch"
     r = requests.get(abb_url, headers=HEADERS, timeout=60)
     r.raise_for_status()
 
