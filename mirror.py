@@ -245,7 +245,7 @@ try:
         url = urljoin(netapp_url, href)
         title = " ".join(link.stripped_strings)
 
-       if "/news/news-details/" not in url:
+        if "/news/news-details/" not in url:
             continue
 
         if not title or len(title) < 10:
