@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Fortinet Threat Research</title>
+    <link>https://www.fortinet.com/blog/threat-research</link>
+    <description>FortiGuard Labs Threat Research</description>
+    <item>
+      <title>Someone Else Is Using Your AI</title>
+      <link>https://www.fortinet.com/blog/threat-research/someone-else-is-using-your-ai</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/someone-else-is-using-your-ai</guid>
+    </item>
+    <item>
+      <title>Multi-Functional Linux Botnet “Evooo1Bot”</title>
+      <link>https://www.fortinet.com/blog/threat-research/multi-functional-linux-botnet-evooo1bot</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/multi-functional-linux-botnet-evooo1bot</guid>
+    </item>
+    <item>
+      <title>QuickFox Supply Chain Attack Used to Deploy FDMTP Implant</title>
+      <link>https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant</guid>
+    </item>
+    <item>
+      <title>Inside a TrickBot Variant Using DNS Tunneling for C2</title>
+      <link>https://www.fortinet.com/blog/threat-research/inside-a-trickbot-variant-using-dns-tunneling-for-c2</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/inside-a-trickbot-variant-using-dns-tunneling-for-c2</guid>
+    </item>
+    <item>
+      <title>The TTF Trap: A Global Campaign of a Low-Detection Lua Loader</title>
+      <link>https://www.fortinet.com/blog/threat-research/the-ttf-trap-a-global-campaign-of-a-low-detection-lua-loader</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/the-ttf-trap-a-global-campaign-of-a-low-detection-lua-loader</guid>
+    </item>
+    <item>
+      <title>Analysis of Ongoing Ousaban Attacks Targeting the Iberian Peninsula</title>
+      <link>https://www.fortinet.com/blog/threat-research/analysis-of-ongoing-ousaban-attacks-targeting-the-iberian-peninsula</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/analysis-of-ongoing-ousaban-attacks-targeting-the-iberian-peninsula</guid>
+    </item>
+    <item>
+      <title>From CI/CD to Cloud Data: How Shai Hulud Persistence Leads to Redshift Breach</title>
+      <link>https://www.fortinet.com/blog/threat-research/from-ci-cd-to-cloud-data-how-shai-hulud-persistence-leads-to-redshift-breach</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/from-ci-cd-to-cloud-data-how-shai-hulud-persistence-leads-to-redshift-breach</guid>
+    </item>
+    <item>
+      <title>Threat Actors Weaponize AI Hype to Deliver AsyncRAT</title>
+      <link>https://www.fortinet.com/blog/threat-research/threat-actors-weaponize-ai-hype-to-deliver-asyncrat</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/threat-actors-weaponize-ai-hype-to-deliver-asyncrat</guid>
+    </item>
+    <item>
+      <title>Cybercriminals Are Targeting the FIFA World Cup 2026</title>
+      <link>https://www.fortinet.com/blog/threat-research/cybercriminals-are-targeting-the-fifa-world-cup-2026</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/cybercriminals-are-targeting-the-fifa-world-cup-2026</guid>
+    </item>
+    <item>
+      <title>Inside the Cross-Platform Propagation of a New Gafgyt Variant C0XMO</title>
+      <link>https://www.fortinet.com/blog/threat-research/inside-cross-platform-propagation-of-new-gafgyt-variant-c0xmo</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/inside-cross-platform-propagation-of-new-gafgyt-variant-c0xmo</guid>
+    </item>
+    <item>
+      <title>RolandSkimmer: Silent Credit Card Thief Uncovered</title>
+      <link>https://www.fortinet.com/blog/threat-research/rolandskimmer-silent-credit-card-thief-uncovered</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/rolandskimmer-silent-credit-card-thief-uncovered</guid>
+    </item>
+    <item>
+      <title>New Stealit Campaign Abuses Node.js Single...</title>
+      <link>https://www.fortinet.com/blog/threat-research/stealit-campaign-abuses-nodejs-single-executable-application</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/stealit-campaign-abuses-nodejs-single-executable-application</guid>
+    </item>
+  </channel>
+</rss>
