@@ -231,7 +231,7 @@ except Exception as e:
 
 # Création d'un RSS à partir des communiqués NetApp
 try:
-    netapp_url = "https://investors.netapp.com/overview/"
+    netapp_url = "https://investors.netapp.com/news/default.aspx"
     r = requests.get(netapp_url, headers=HEADERS, timeout=60)
     r.raise_for_status()
 
