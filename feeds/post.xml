@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>La Poste Suisse - Communiqués de presse</title>
+    <link>https://www.post.ch/fr/notre-profil/medias/communiques-de-presse</link>
+    <description>Communiqués de presse de La Poste Suisse</description>
+    <item>
+      <title>Vers l’inscription médias</title>
+      <link>https://www.post.ch/fr/notre-profil/medias/communiques-de-presse/inscription-a-la-liste-de-distribution</link>
+      <guid isPermaLink="true">https://www.post.ch/fr/notre-profil/medias/communiques-de-presse/inscription-a-la-liste-de-distribution</guid>
+    </item>
+    <item>
+      <title>20.08.2026 Résultat semestriel au niveau des exercices précédents – l’avenir reste exigeant</title>
+      <link>https://site.post.ch/fr/notre-profil/medias/communiques-de-presse/resultat-semestriel-au-niveau-des-exercices-precedents-l-avenir-reste-exigeant</link>
+      <guid isPermaLink="true">https://site.post.ch/fr/notre-profil/medias/communiques-de-presse/resultat-semestriel-au-niveau-des-exercices-precedents-l-avenir-reste-exigeant</guid>
+    </item>
+    <item>
+      <title>06.08.2026 La Poste et le Surveillant des prix conviennent d’adaptations de prix à partir de 2027</title>
+      <link>https://site.post.ch/fr/notre-profil/medias/communiques-de-presse/la-poste-et-le-surveillant-des-prix-conviennent-d-adaptations-de-prix-a-partir-de-2027</link>
+      <guid isPermaLink="true">https://site.post.ch/fr/notre-profil/medias/communiques-de-presse/la-poste-et-le-surveillant-des-prix-conviennent-d-adaptations-de-prix-a-partir-de-2027</guid>
+    </item>
+    <item>
+      <title>09.07.2026 Lars Keller est nommé responsable RéseauPostal et intègre la Direction du groupe</title>
+      <link>https://site.post.ch/fr/notre-profil/medias/communiques-de-presse/20260709</link>
+      <guid isPermaLink="true">https://site.post.ch/fr/notre-profil/medias/communiques-de-presse/20260709</guid>
+    </item>
+    <item>
+      <title>25.06.2026 La Poste se concentre sur le dossier électronique de santé DES</title>
+      <link>https://site.post.ch/fr/notre-profil/medias/communiques-de-presse/la-poste-se-concentre-sur-le-dossier-electronique-de-sante-des</link>
+      <guid isPermaLink="true">https://site.post.ch/fr/notre-profil/medias/communiques-de-presse/la-poste-se-concentre-sur-le-dossier-electronique-de-sante-des</guid>
+    </item>
+  </channel>
+</rss>
