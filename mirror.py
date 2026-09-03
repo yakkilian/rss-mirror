@@ -9,7 +9,6 @@ FEEDS = {
     "nutanix": "https://ir.nutanix.com/rss/news-releases.xml",
     "fortinet": "https://investor.fortinet.com/rss/news-releases.xml",
     "dell": "https://investors.delltechnologies.com/rss/news-releases.xml",
-    "fortinet-threat": "https://feeds.fortinet.com/fortinet/blog/threat-research",
 }
 
 OUTPUT_DIR = Path("feeds")
@@ -165,6 +164,70 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] post: {e}")
+
+# Création d'un RSS à partir de Fortinet Threat Research
+try:
+    fortinet_threat_url = "https://www.fortinet.com/blog/threat-research"
+    r = requests.get(fortinet_threat_url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+    seen = set()
+
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        url = urljoin(fortinet_threat_url, href)
+        title = " ".join(link.stripped_strings)
+
+        if "/blog/threat-research/" not in url:
+            continue
+
+        if url.rstrip("/") == fortinet_threat_url.rstrip("/"):
+            continue
+
+        if not title or len(title) < 10:
+            continue
+
+        if url in seen:
+            continue
+
+        seen.add(url)
+        items.append((title, url))
+
+        if len(items) >= 30:
+            break
+
+    if not items:
+        raise ValueError("Aucun article Fortinet Threat Research trouvé")
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "Fortinet Threat Research"
+    ET.SubElement(channel, "link").text = fortinet_threat_url
+    ET.SubElement(channel, "description").text = "FortiGuard Labs Threat Research"
+
+    for title, url in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = title
+        ET.SubElement(item, "link").text = url
+        ET.SubElement(item, "guid", isPermaLink="true").text = url
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+    tree.write(
+        OUTPUT_DIR / "fortinet-threat.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] fortinet-threat: {len(items)} articles")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] fortinet-threat: {e}")
     
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
