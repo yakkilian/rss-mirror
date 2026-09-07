@@ -292,7 +292,14 @@ except Exception as e:
     # Création d'un RSS à partir des communiqués de presse CFF
 try:
     sbb_url = "https://news.sbb.ch/fr/communiques-de-presse"
-    r = requests.get(sbb_url, headers=HEADERS, timeout=60)
+    sbb_headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "fr-CH,fr;q=0.9,en;q=0.8",
+    "Referer": "https://news.sbb.ch/fr",
+}
+
+r = requests.get(sbb_url, headers=sbb_headers, timeout=60)
     r.raise_for_status()
 
     soup = BeautifulSoup(r.text, "html.parser")
