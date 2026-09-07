@@ -289,5 +289,77 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] netapp: {e}")
+    # Création d'un RSS à partir des communiqués de presse CFF
+try:
+    sbb_url = "https://news.sbb.ch/fr/communiques-de-presse"
+    r = requests.get(sbb_url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+    seen = set()
+
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        url = urljoin(sbb_url, href)
+        title = " ".join(link.stripped_strings).strip()
+
+        # Les articles CFF actuels utilisent un identifiant UUID dans l'URL
+        if not url.startswith("https://news.sbb.ch/fr/"):
+            continue
+
+        parts = url.split("/")
+        if len(parts) < 6:
+            continue
+
+        article_id = parts[4]
+        if len(article_id) != 36 or article_id.count("-") != 4:
+            continue
+
+        if title.endswith(" Ouvrir"):
+            title = title[:-7].strip()
+
+        if not title or len(title) < 10:
+            continue
+
+        if url in seen:
+            continue
+
+        seen.add(url)
+        items.append((title, url))
+
+        if len(items) >= 30:
+            break
+
+    if not items:
+        raise ValueError("Aucun communiqué CFF trouvé")
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "CFF – Communiqués de presse"
+    ET.SubElement(channel, "link").text = sbb_url
+    ET.SubElement(channel, "description").text = "Communiqués de presse des CFF"
+
+    for title, url in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = title
+        ET.SubElement(item, "link").text = url
+        ET.SubElement(item, "guid", isPermaLink="true").text = url
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+    tree.write(
+        OUTPUT_DIR / "sbb.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] sbb: {len(items)} communiqués")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] sbb: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
