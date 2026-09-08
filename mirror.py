@@ -374,5 +374,66 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] lqj-jura: {e}")
+    # Création d'un RSS à partir des actualités de l'Etat du Valais
+try:
+    valais_url = "https://www.vs.ch/web/communication"
+
+    r = requests.get(valais_url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+    seen = set()
+
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        url = urljoin(valais_url, href)
+        title = " ".join(link.stripped_strings).strip()
+
+        if "/web/communication/e/com-et-media/" not in url:
+            continue
+
+        if not title or len(title) < 10:
+            continue
+
+        if url in seen:
+            continue
+
+        seen.add(url)
+        items.append((title, url))
+
+        if len(items) >= 50:
+            break
+
+    if not items:
+        raise ValueError("Aucune actualité Valais trouvée")
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "Etat du Valais – Communication"
+    ET.SubElement(channel, "link").text = valais_url
+    ET.SubElement(channel, "description").text = "Actualités et communiqués de l'Etat du Valais"
+
+    for title, url in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = title
+        ET.SubElement(item, "link").text = url
+        ET.SubElement(item, "guid", isPermaLink="true").text = url
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+    tree.write(
+        OUTPUT_DIR / "valais.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] valais: {len(items)} actualités")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] valais: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
