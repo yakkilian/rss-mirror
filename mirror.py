@@ -308,5 +308,71 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] sbb: {e}")
+    # Création d'un RSS à partir du Quotidien Jurassien - Jura
+try:
+    lqj_url = "https://www.lqj.ch/region/jura/"
+
+    r = requests.get(lqj_url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+    seen = set()
+
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        url = urljoin(lqj_url, href)
+
+        if "/articles/" not in url:
+            continue
+
+        if url in seen:
+            continue
+
+        title = " ".join(link.stripped_strings).strip()
+
+        # Enlève la date et le résumé éventuellement inclus dans la carte
+        if " Publié " in title:
+            title = title.split(" Publié ")[0].strip()
+
+        if not title or len(title) < 10:
+            continue
+
+        seen.add(url)
+        items.append((title, url))
+
+        if len(items) >= 40:
+            break
+
+    if not items:
+        raise ValueError("Aucun article LQJ Jura trouvé")
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "Le Quotidien Jurassien – Jura"
+    ET.SubElement(channel, "link").text = lqj_url
+    ET.SubElement(channel, "description").text = "Actualités jurassiennes du Quotidien Jurassien"
+
+    for title, url in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = title
+        ET.SubElement(item, "link").text = url
+        ET.SubElement(item, "guid", isPermaLink="true").text = url
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+    tree.write(
+        OUTPUT_DIR / "lqj-jura.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] lqj-jura: {len(items)} articles")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] lqj-jura: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
