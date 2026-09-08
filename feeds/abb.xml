@@ -5,6 +5,11 @@
     <link>https://new.abb.com/ch</link>
     <description>ABB Group press releases mirrored for FreshRSS</description>
     <item>
+      <title>Group press release 2026-09-08 ABB and Rolls-Royce SMR sign agreement on nuclear small modular reactor collaboration</title>
+      <link>https://new.abb.com/news/detail/138550/abb-and-rolls-royce-smr-sign-agreement-on-nuclear-small-modular-reactor-collaboration</link>
+      <guid isPermaLink="true">https://new.abb.com/news/detail/138550/abb-and-rolls-royce-smr-sign-agreement-on-nuclear-small-modular-reactor-collaboration</guid>
+    </item>
+    <item>
       <title>Group press release 2026-08-18 ABB selected by Statkraft to modernize three Norwegian hydropower plants</title>
       <link>https://new.abb.com/news/detail/138060/abb-selected-by-statkraft-to-modernize-three-norwegian-hydropower-plants</link>
       <guid isPermaLink="true">https://new.abb.com/news/detail/138060/abb-selected-by-statkraft-to-modernize-three-norwegian-hydropower-plants</guid>
@@ -23,11 +28,6 @@
       <title>Group press release 2026-07-16 ABB expands automation offering with acquisition of Rotork</title>
       <link>https://new.abb.com/news/detail/137499/abb-expands-automation-offering-with-acquisition-of-rotork</link>
       <guid isPermaLink="true">https://new.abb.com/news/detail/137499/abb-expands-automation-offering-with-acquisition-of-rotork</guid>
-    </item>
-    <item>
-      <title>Group press release 2026-07-15 ABB to acquire Advantics, expanding Direct Current portfolio</title>
-      <link>https://new.abb.com/news/detail/137427/abb-to-acquire-advantics-expanding-direct-current-portfolio</link>
-      <guid isPermaLink="true">https://new.abb.com/news/detail/137427/abb-to-acquire-advantics-expanding-direct-current-portfolio</guid>
     </item>
   </channel>
 </rss>
