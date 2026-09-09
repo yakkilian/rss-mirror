@@ -9,7 +9,6 @@ FEEDS = {
     "nutanix": "https://ir.nutanix.com/rss/news-releases.xml",
     "fortinet": "https://investor.fortinet.com/rss/news-releases.xml",
     "dell": "https://investors.delltechnologies.com/rss/news-releases.xml",
-    "venturebeat": "https://venturebeat.com/feed/",
 }
 
 OUTPUT_DIR = Path("feeds")
@@ -436,5 +435,81 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] valais: {e}")
+    # Création d'un RSS à partir de la page d'accueil VentureBeat
+try:
+    venturebeat_url = "https://venturebeat.com/"
+
+    r = requests.get(venturebeat_url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+    seen = set()
+
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        url = urljoin(venturebeat_url, href)
+        title = " ".join(link.stripped_strings).strip()
+
+        if not url.startswith("https://venturebeat.com/"):
+            continue
+
+        # Exclut les pages de navigation
+        if any(x in url for x in [
+            "/category/",
+            "/author/",
+            "/event/",
+            "/events/",
+            "/newsletters",
+            "/about",
+            "/contact",
+        ]):
+            continue
+
+        if not title or len(title) < 20:
+            continue
+
+        if url.rstrip("/") == venturebeat_url.rstrip("/"):
+            continue
+
+        if url in seen:
+            continue
+
+        seen.add(url)
+        items.append((title, url))
+
+        if len(items) >= 40:
+            break
+
+    if not items:
+        raise ValueError("Aucun article VentureBeat trouvé")
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "VentureBeat"
+    ET.SubElement(channel, "link").text = venturebeat_url
+    ET.SubElement(channel, "description").text = "Derniers articles VentureBeat"
+
+    for title, url in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = title
+        ET.SubElement(item, "link").text = url
+        ET.SubElement(item, "guid", isPermaLink="true").text = url
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+    tree.write(
+        OUTPUT_DIR / "venturebeat.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] venturebeat: {len(items)} articles")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] venturebeat: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
