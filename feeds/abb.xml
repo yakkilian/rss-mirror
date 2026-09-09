@@ -5,6 +5,11 @@
     <link>https://new.abb.com/ch</link>
     <description>ABB Group press releases mirrored for FreshRSS</description>
     <item>
+      <title>Group press release 2026-09-09 New ABB and BCG report highlights growing role of direct current technologies in future power systems</title>
+      <link>https://new.abb.com/news/detail/138572/new-abb-and-bcg-report-highlights-growing-role-of-direct-current-technologies-in-future-power-systems</link>
+      <guid isPermaLink="true">https://new.abb.com/news/detail/138572/new-abb-and-bcg-report-highlights-growing-role-of-direct-current-technologies-in-future-power-systems</guid>
+    </item>
+    <item>
       <title>Group press release 2026-09-08 ABB and Rolls-Royce SMR sign agreement on nuclear small modular reactor collaboration</title>
       <link>https://new.abb.com/news/detail/138550/abb-and-rolls-royce-smr-sign-agreement-on-nuclear-small-modular-reactor-collaboration</link>
       <guid isPermaLink="true">https://new.abb.com/news/detail/138550/abb-and-rolls-royce-smr-sign-agreement-on-nuclear-small-modular-reactor-collaboration</guid>
@@ -23,11 +28,6 @@
       <title>Group press release 2026-07-16 Q2 2026 results</title>
       <link>https://new.abb.com/news/detail/137496/q2-2026-results</link>
       <guid isPermaLink="true">https://new.abb.com/news/detail/137496/q2-2026-results</guid>
-    </item>
-    <item>
-      <title>Group press release 2026-07-16 ABB expands automation offering with acquisition of Rotork</title>
-      <link>https://new.abb.com/news/detail/137499/abb-expands-automation-offering-with-acquisition-of-rotork</link>
-      <guid isPermaLink="true">https://new.abb.com/news/detail/137499/abb-expands-automation-offering-with-acquisition-of-rotork</guid>
     </item>
   </channel>
 </rss>
