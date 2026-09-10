@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>SANS Blog</title>
+    <link>https://www.sans.org/blog</link>
+    <description>Derniers articles du blog SANS</description>
+    <item>
+      <title>What Comes After Behavior Change? Blog Artificial Intelligence 9 Sep 2026 Lance Spitzner</title>
+      <link>https://www.sans.org/blog/what-comes-after-behavior-change</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/what-comes-after-behavior-change</guid>
+    </item>
+    <item>
+      <title>Frontier AI: Vulnerability Management's System Revolution Blog Artificial Intelligence 4 Sep 2026 Kevin Garvey</title>
+      <link>https://www.sans.org/blog/frontier-aivulnerability-managements-system-revolution</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/frontier-aivulnerability-managements-system-revolution</guid>
+    </item>
+    <item>
+      <title>Cloud-Native Forensic Imaging Part 2 Blog Digital Forensics and Incident Response 3 Sep 2026 Megan Roddie-Fonseca</title>
+      <link>https://www.sans.org/blog/cloud-native-forensic-imaging-part-2</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/cloud-native-forensic-imaging-part-2</guid>
+    </item>
+    <item>
+      <title>A Visual Summary of SANS Security Awareness &amp; Culture Summit 2026 Blog Security Awareness 27 Aug 2026 SANS Institute</title>
+      <link>https://www.sans.org/blog/a-visual-summary-of-sans-security-awareness-culture-summit-2026</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/a-visual-summary-of-sans-security-awareness-culture-summit-2026</guid>
+    </item>
+    <item>
+      <title>SANS Stay Ahead of Ransomware August 2026: Hot Off the Press Blog Digital Forensics and Incident Response 25 Aug 2026 Mari DeGrazia</title>
+      <link>https://www.sans.org/blog/sans-stay-ahead-of-ransomware-august-2026-hot-off-the-press</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/sans-stay-ahead-of-ransomware-august-2026-hot-off-the-press</guid>
+    </item>
+    <item>
+      <title>SEC501 Major Update: Applied Cyber Defense for AI-Accelerated Attacks Blog Cyber Defense 25 Aug 2026 Ross Bergman</title>
+      <link>https://www.sans.org/blog/sec501-major-update-applied-cyber-defense-ai-accelerated-attacks</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/sec501-major-update-applied-cyber-defense-ai-accelerated-attacks</guid>
+    </item>
+    <item>
+      <title>The Security Autonomy Matrix: Deciding What Your AI Agents May Do on Their Own Blog Artificial Intelligence 24 Aug 2026 Lenny Zeltser</title>
+      <link>https://www.sans.org/blog/security-autonomy-matrix-deciding-what-your-ai-agents-may-do-their-own</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/security-autonomy-matrix-deciding-what-your-ai-agents-may-do-their-own</guid>
+    </item>
+    <item>
+      <title>From Alerts to Adversaries: A Pragmatic Guide to Launching (and Maturing) Your Threat Hunting Program Blog Cybersecurity Leadership 20 Aug 2026 Jan D'Herdt</title>
+      <link>https://www.sans.org/blog/from-alerts-to-adversaries-a-pragmatic-guide-to-launching-and-maturing-your-threat-hunting-program</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/from-alerts-to-adversaries-a-pragmatic-guide-to-launching-and-maturing-your-threat-hunting-program</guid>
+    </item>
+    <item>
+      <title>The Role of AI in Cybersecurity Blog Artificial Intelligence 11 Aug 2026 Jason Hodgert</title>
+      <link>https://www.sans.org/blog/role-ai-cybersecurity</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/role-ai-cybersecurity</guid>
+    </item>
+    <item>
+      <title>The Idaho Murders: Remembering Kaylee, Xana, Maddie, and Ethan Blog Digital Forensics and Incident Response 10 Aug 2026 Heather Barnhart</title>
+      <link>https://www.sans.org/blog/the-idaho-murders-remembering-kaylee-xana-maddie-ethan</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/the-idaho-murders-remembering-kaylee-xana-maddie-ethan</guid>
+    </item>
+    <item>
+      <title>VulnOps: A CISO’s Guide to Starting Implementation Blog Offensive Operations 5 Aug 2026 SANS Institute</title>
+      <link>https://www.sans.org/blog/vulnops-cisos-guide-to-starting-implementation</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/vulnops-cisos-guide-to-starting-implementation</guid>
+    </item>
+    <item>
+      <title>Nine Questions That Tell You Whether Your Team Could Handle an AI-Run Attack Blog Artificial Intelligence 5 Aug 2026 SANS Institute</title>
+      <link>https://www.sans.org/blog/nine-questions-that-tell-you-whether-your-team-could-handle-ai-run-attack</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/nine-questions-that-tell-you-whether-your-team-could-handle-ai-run-attack</guid>
+    </item>
+  </channel>
+</rss>
