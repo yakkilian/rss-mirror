@@ -11,6 +11,7 @@ FEEDS = {
     "dell": "https://investors.delltechnologies.com/rss/news-releases.xml",
     "oracle": "https://www.oracle.com/corporate/press/rss/rss-pr.xml",
     "broadcom": "https://investors.broadcom.com/rss/news-releases.xml",
+    "gartner": "https://www.gartner.com/en/newsroom/rss",
 }
 
 OUTPUT_DIR = Path("feeds")
