@@ -5,6 +5,11 @@
     <link>https://www.fortinet.com/blog/threat-research</link>
     <description>FortiGuard Labs Threat Research</description>
     <item>
+      <title>Casbaneiro: A Banking Trojan with Distributed Data-Receiving Servers</title>
+      <link>https://www.fortinet.com/blog/threat-research/casbaneiro-a-banking-trojan-with-distributed-data-receiving-servers</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/casbaneiro-a-banking-trojan-with-distributed-data-receiving-servers</guid>
+    </item>
+    <item>
       <title>Someone Else Is Using Your AI</title>
       <link>https://www.fortinet.com/blog/threat-research/someone-else-is-using-your-ai</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/someone-else-is-using-your-ai</guid>
@@ -48,11 +53,6 @@
       <title>Cybercriminals Are Targeting the FIFA World Cup 2026</title>
       <link>https://www.fortinet.com/blog/threat-research/cybercriminals-are-targeting-the-fifa-world-cup-2026</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/cybercriminals-are-targeting-the-fifa-world-cup-2026</guid>
-    </item>
-    <item>
-      <title>Inside the Cross-Platform Propagation of a New Gafgyt Variant C0XMO</title>
-      <link>https://www.fortinet.com/blog/threat-research/inside-cross-platform-propagation-of-new-gafgyt-variant-c0xmo</link>
-      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/inside-cross-platform-propagation-of-new-gafgyt-variant-c0xmo</guid>
     </item>
     <item>
       <title>RolandSkimmer: Silent Credit Card Thief Uncovered</title>
