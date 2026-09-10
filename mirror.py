@@ -9,6 +9,7 @@ FEEDS = {
     "nutanix": "https://ir.nutanix.com/rss/news-releases.xml",
     "fortinet": "https://investor.fortinet.com/rss/news-releases.xml",
     "dell": "https://investors.delltechnologies.com/rss/news-releases.xml",
+    "oracle": "https://www.oracle.com/corporate/press/rss/rss-pr.xml",
 }
 
 OUTPUT_DIR = Path("feeds")
