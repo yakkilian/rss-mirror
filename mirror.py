@@ -424,6 +424,70 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] sans: {e}")
+    # Création d'un RSS à partir des communiqués Omdia
+try:
+    omdia_url = "https://omdia.tech.informa.com/pr"
+
+    r = requests.get(omdia_url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+    seen = set()
+
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        url = urljoin(omdia_url, href)
+        title = " ".join(link.stripped_strings).strip()
+
+        if not url.startswith("https://omdia.tech.informa.com/pr/"):
+            continue
+
+        if url.rstrip("/") == omdia_url.rstrip("/"):
+            continue
+
+        if not title or len(title) < 15:
+            continue
+
+        if url in seen:
+            continue
+
+        seen.add(url)
+        items.append((title, url))
+
+        if len(items) >= 40:
+            break
+
+    if not items:
+        raise ValueError("Aucun communiqué Omdia trouvé")
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "Omdia – Press Releases"
+    ET.SubElement(channel, "link").text = omdia_url
+    ET.SubElement(channel, "description").text = "Derniers communiqués Omdia"
+
+    for title, url in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = title
+        ET.SubElement(item, "link").text = url
+        ET.SubElement(item, "guid", isPermaLink="true").text = url
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+    tree.write(
+        OUTPUT_DIR / "omdia.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] omdia: {len(items)} communiqués")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] omdia: {e}")
     
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
