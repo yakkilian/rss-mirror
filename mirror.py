@@ -772,5 +772,162 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] deloitte-ch: {e}")
+    # Création d'un RSS à partir des communiqués Forrester
+try:
+    forrester_url = "https://www.forrester.com/forrester-news/press-release/"
+    press_prefix = "https://www.forrester.com/press-newsroom/"
+
+    items = []
+    seen = set()
+
+    # Les deux premières pages suffisent pour récupérer les communiqués récents
+    archive_pages = [
+        forrester_url,
+        "https://www.forrester.com/forrester-news/press-release/page/2/",
+    ]
+
+    for archive_url in archive_pages:
+        r = requests.get(archive_url, headers=HEADERS, timeout=60)
+        r.raise_for_status()
+
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        for link in soup.find_all("a", href=True):
+            url = urljoin(archive_url, link["href"])
+
+            # Seuls les véritables communiqués
+            if not url.startswith(press_prefix):
+                continue
+
+            if url.rstrip("/") == press_prefix.rstrip("/"):
+                continue
+
+            if url in seen:
+                continue
+
+            title = " ".join(link.stripped_strings).strip()
+
+            # Les liens "Read More" pointent aussi vers le communiqué:
+            # on ne garde que le lien portant le vrai titre.
+            if not title or title.lower() in ("read more", "en savoir plus"):
+                continue
+
+            if len(title) < 15:
+                continue
+
+            seen.add(url)
+
+            description = ""
+
+            # Récupération du chapô/meta description
+            try:
+                article_r = requests.get(
+                    url,
+                    headers=HEADERS,
+                    timeout=30
+                )
+                article_r.raise_for_status()
+
+                article_soup = BeautifulSoup(
+                    article_r.text,
+                    "html.parser"
+                )
+
+                # Le H1 est la référence pour le titre
+                h1 = article_soup.find("h1")
+                if h1:
+                    article_title = " ".join(
+                        h1.stripped_strings
+                    ).strip()
+
+                    if article_title:
+                        title = article_title
+
+                meta_desc = article_soup.find(
+                    "meta",
+                    attrs={"name": "description"}
+                )
+
+                if meta_desc and meta_desc.get("content"):
+                    description = meta_desc["content"].strip()
+
+            except Exception as article_error:
+                print(
+                    f"[WARN] forrester article: "
+                    f"{url}: {article_error}"
+                )
+
+            items.append({
+                "title": title,
+                "url": url,
+                "description": description,
+            })
+
+            if len(items) >= 40:
+                break
+
+        if len(items) >= 40:
+            break
+
+    if not items:
+        raise ValueError("Aucun communiqué Forrester trouvé")
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(
+        channel,
+        "title"
+    ).text = "Forrester – Press Releases"
+
+    ET.SubElement(
+        channel,
+        "link"
+    ).text = forrester_url
+
+    ET.SubElement(
+        channel,
+        "description"
+    ).text = "Derniers communiqués de presse Forrester"
+
+    for entry in items:
+        item = ET.SubElement(channel, "item")
+
+        ET.SubElement(
+            item,
+            "title"
+        ).text = entry["title"]
+
+        ET.SubElement(
+            item,
+            "link"
+        ).text = entry["url"]
+
+        ET.SubElement(
+            item,
+            "guid",
+            isPermaLink="true"
+        ).text = entry["url"]
+
+        if entry["description"]:
+            ET.SubElement(
+                item,
+                "description"
+            ).text = entry["description"]
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+
+    tree.write(
+        OUTPUT_DIR / "forrester.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] forrester: {len(items)} communiqués")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] forrester: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
