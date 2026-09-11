@@ -1131,5 +1131,216 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] kpmg-ch: {e}")
+    # Création d'un RSS à partir des communiqués Nielsen
+try:
+    nielsen_url = "https://www.nielsen.com/news-center/type/press-release/"
+
+    items = []
+    seen = set()
+
+    archive_pages = [
+        nielsen_url,
+        "https://www.nielsen.com/news-center/type/press-release/page/2/",
+    ]
+
+    for archive_url in archive_pages:
+        r = requests.get(
+            archive_url,
+            headers=HEADERS,
+            timeout=60
+        )
+        r.raise_for_status()
+
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        for link in soup.find_all("a", href=True):
+            url = urljoin(archive_url, link["href"])
+            url = url.split("#")[0].split("?")[0]
+
+            # Les véritables articles du News Center
+            if "/news-center/" not in url:
+                continue
+
+            # Exclusion des pages d'archive
+            if "/type/" in url or "/page/" in url:
+                continue
+
+            if url.rstrip("/") == "https://www.nielsen.com/news-center":
+                continue
+
+            if url in seen:
+                continue
+
+            seen.add(url)
+
+            try:
+                article_r = requests.get(
+                    url,
+                    headers=HEADERS,
+                    timeout=30
+                )
+                article_r.raise_for_status()
+
+                article_soup = BeautifulSoup(
+                    article_r.text,
+                    "html.parser"
+                )
+
+                final_url = url
+                final_soup = article_soup
+
+                # Recherche d'une version française officielle
+                french_url = None
+
+                for alt in article_soup.find_all(
+                    "link",
+                    attrs={"hreflang": True, "href": True}
+                ):
+                    hreflang = (
+                        alt.get("hreflang") or ""
+                    ).lower()
+
+                    if hreflang.startswith("fr"):
+                        candidate = urljoin(
+                            url,
+                            alt["href"]
+                        )
+
+                        if "/fr/news-center/" in candidate:
+                            french_url = candidate
+                            break
+
+                # Si Nielsen propose une traduction française,
+                # on l'utilise.
+                if french_url:
+                    try:
+                        fr_r = requests.get(
+                            french_url,
+                            headers=HEADERS,
+                            timeout=30
+                        )
+                        fr_r.raise_for_status()
+
+                        fr_soup = BeautifulSoup(
+                            fr_r.text,
+                            "html.parser"
+                        )
+
+                        if fr_soup.find("h1"):
+                            final_url = (
+                                fr_r.url
+                                .split("#")[0]
+                                .split("?")[0]
+                            )
+                            final_soup = fr_soup
+
+                    except Exception as fr_error:
+                        print(
+                            f"[WARN] nielsen version FR indisponible: "
+                            f"{french_url}: {fr_error}"
+                        )
+
+                h1 = final_soup.find("h1")
+
+                if not h1:
+                    continue
+
+                title = " ".join(
+                    h1.stripped_strings
+                ).strip()
+
+                if not title:
+                    continue
+
+                description = ""
+
+                meta_desc = final_soup.find(
+                    "meta",
+                    attrs={"name": "description"}
+                )
+
+                if meta_desc and meta_desc.get("content"):
+                    description = meta_desc["content"].strip()
+
+                items.append({
+                    "title": title,
+                    "url": final_url,
+                    "description": description,
+                })
+
+                if len(items) >= 40:
+                    break
+
+            except Exception as article_error:
+                print(
+                    f"[WARN] nielsen article ignoré: "
+                    f"{url}: {article_error}"
+                )
+
+        if len(items) >= 40:
+            break
+
+    if not items:
+        raise ValueError(
+            "Aucun communiqué Nielsen trouvé"
+        )
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(
+        channel,
+        "title"
+    ).text = "Nielsen – Communiqués de presse"
+
+    ET.SubElement(
+        channel,
+        "link"
+    ).text = nielsen_url
+
+    ET.SubElement(
+        channel,
+        "description"
+    ).text = "Derniers communiqués de presse Nielsen"
+
+    for entry in items:
+        item = ET.SubElement(channel, "item")
+
+        ET.SubElement(
+            item,
+            "title"
+        ).text = entry["title"]
+
+        ET.SubElement(
+            item,
+            "link"
+        ).text = entry["url"]
+
+        ET.SubElement(
+            item,
+            "guid",
+            isPermaLink="true"
+        ).text = entry["url"]
+
+        if entry["description"]:
+            ET.SubElement(
+                item,
+                "description"
+            ).text = entry["description"]
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+
+    tree.write(
+        OUTPUT_DIR / "nielsen.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] nielsen: {len(items)} communiqués")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] nielsen: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
