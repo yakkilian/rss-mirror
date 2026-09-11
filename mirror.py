@@ -1342,5 +1342,223 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] nielsen: {e}")
+    # Création d'un RSS à partir des communiqués PwC Suisse
+try:
+    pwc_url = "https://www.pwc.ch/fr/centre-de-presse.html"
+    press_prefix = "https://www.pwc.ch/fr/centre-de-presse/"
+
+    candidates = []
+    seen = set()
+
+    def add_pwc_url(url):
+        url = url.split("#")[0].split("?")[0]
+
+        if not url.startswith(press_prefix):
+            return
+
+        if not url.endswith(".html"):
+            return
+
+        if url in seen:
+            return
+
+        seen.add(url)
+        candidates.append(url)
+
+    # 1. Lecture directe de la page médias PwC Suisse
+    r = requests.get(
+        pwc_url,
+        headers=HEADERS,
+        timeout=60
+    )
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    for link in soup.find_all("a", href=True):
+        url = urljoin(pwc_url, link["href"])
+        add_pwc_url(url)
+
+    # 2. Secours si les communiqués sont chargés dynamiquement
+    if not candidates:
+        print(
+            "[WARN] pwc-ch: aucun lien dans le HTML, "
+            "tentative via Bing RSS"
+        )
+
+        bing = requests.get(
+            "https://www.bing.com/search",
+            params={
+                "q": (
+                    "site:www.pwc.ch/fr/centre-de-presse/ "
+                    "\"PwC Suisse\""
+                ),
+                "format": "rss",
+            },
+            headers=HEADERS,
+            timeout=60,
+        )
+        bing.raise_for_status()
+
+        bing_root = ET.fromstring(bing.content)
+
+        for item in bing_root.findall(".//item"):
+            link = item.findtext("link")
+
+            if link:
+                add_pwc_url(link.strip())
+
+    if not candidates:
+        raise ValueError(
+            "Aucun communiqué PwC Suisse trouvé"
+        )
+
+    items = []
+
+    # Lecture des pages individuelles
+    for url in candidates[:40]:
+        try:
+            article_r = requests.get(
+                url,
+                headers=HEADERS,
+                timeout=30
+            )
+            article_r.raise_for_status()
+
+            article_soup = BeautifulSoup(
+                article_r.text,
+                "html.parser"
+            )
+
+            h1 = article_soup.find("h1")
+
+            if not h1:
+                continue
+
+            title = " ".join(
+                h1.stripped_strings
+            ).strip()
+
+            if not title:
+                continue
+
+            # Vérification supplémentaire:
+            # les pages de communiqué PwC indiquent généralement
+            # "Press Release"
+            page_text = article_soup.get_text(
+                " ",
+                strip=True
+            )
+
+            if "Press Release" not in page_text:
+                print(
+                    f"[WARN] pwc-ch page ignorée "
+                    f"(pas identifiée comme Press Release): {url}"
+                )
+                continue
+
+            description = ""
+
+            meta_desc = article_soup.find(
+                "meta",
+                attrs={"name": "description"}
+            )
+
+            if meta_desc and meta_desc.get("content"):
+                description = (
+                    meta_desc["content"].strip()
+                )
+
+            items.append({
+                "title": title,
+                "url": url,
+                "description": description,
+            })
+
+        except Exception as article_error:
+            print(
+                f"[WARN] pwc-ch article ignoré: "
+                f"{url}: {article_error}"
+            )
+
+    if not items:
+        raise ValueError(
+            "Communiqués PwC trouvés mais "
+            "aucune page exploitable"
+        )
+
+    rss = ET.Element(
+        "rss",
+        version="2.0"
+    )
+
+    channel = ET.SubElement(
+        rss,
+        "channel"
+    )
+
+    ET.SubElement(
+        channel,
+        "title"
+    ).text = "PwC Suisse – Communiqués de presse"
+
+    ET.SubElement(
+        channel,
+        "link"
+    ).text = pwc_url
+
+    ET.SubElement(
+        channel,
+        "description"
+    ).text = (
+        "Derniers communiqués de presse de PwC Suisse"
+    )
+
+    for entry in items:
+        item = ET.SubElement(
+            channel,
+            "item"
+        )
+
+        ET.SubElement(
+            item,
+            "title"
+        ).text = entry["title"]
+
+        ET.SubElement(
+            item,
+            "link"
+        ).text = entry["url"]
+
+        ET.SubElement(
+            item,
+            "guid",
+            isPermaLink="true"
+        ).text = entry["url"]
+
+        if entry["description"]:
+            ET.SubElement(
+                item,
+                "description"
+            ).text = entry["description"]
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+
+    tree.write(
+        OUTPUT_DIR / "pwc-ch.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(
+        f"[OK] pwc-ch: "
+        f"{len(items)} communiqués"
+    )
+
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] pwc-ch: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
