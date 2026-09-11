@@ -1342,21 +1342,51 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] nielsen: {e}")
-    # Création d'un RSS à partir des communiqués PwC Suisse
+   # Création d'un RSS à partir des communiqués PwC Suisse
 try:
+    import re
+    import html as html_lib
+    from urllib.parse import urlsplit, urlunsplit
+
     pwc_url = "https://www.pwc.ch/fr/centre-de-presse.html"
-    press_prefix = "https://www.pwc.ch/fr/centre-de-presse/"
+    PRESS_PATH = "/fr/centre-de-presse/"
 
     candidates = []
     seen = set()
 
-    def add_pwc_url(url):
-        url = url.split("#")[0].split("?")[0]
+    def clean_url(url):
+        url = html_lib.unescape(url)
+        url = url.replace("\\/", "/")
 
-        if not url.startswith(press_prefix):
+        p = urlsplit(url)
+
+        return urlunsplit((
+            p.scheme or "https",
+            p.netloc or "www.pwc.ch",
+            p.path,
+            "",
+            ""
+        ))
+
+    def add_candidate(url):
+        url = urljoin(pwc_url, url)
+        url = clean_url(url)
+
+        p = urlsplit(url)
+
+        if p.netloc.lower() not in (
+            "www.pwc.ch",
+            "pwc.ch"
+        ):
             return
 
-        if not url.endswith(".html"):
+        if not p.path.startswith(PRESS_PATH):
+            return
+
+        if not p.path.endswith(".html"):
+            return
+
+        if p.path == "/fr/centre-de-presse.html":
             return
 
         if url in seen:
@@ -1365,7 +1395,10 @@ try:
         seen.add(url)
         candidates.append(url)
 
-    # 1. Lecture directe de la page médias PwC Suisse
+    # --------------------------------------------------
+    # 1. Page PwC: liens HTML classiques
+    # --------------------------------------------------
+
     r = requests.get(
         pwc_url,
         headers=HEADERS,
@@ -1376,53 +1409,188 @@ try:
     soup = BeautifulSoup(r.text, "html.parser")
 
     for link in soup.find_all("a", href=True):
-        url = urljoin(pwc_url, link["href"])
-        add_pwc_url(url)
+        add_candidate(link["href"])
 
-    # 2. Secours si les communiqués sont chargés dynamiquement
+    # --------------------------------------------------
+    # 2. Recherche aussi les URL éventuellement
+    #    présentes dans JSON / JavaScript embarqué
+    # --------------------------------------------------
+
+    raw_html = html_lib.unescape(
+        r.text.replace("\\/", "/")
+    )
+
+    patterns = [
+        r'https?://(?:www\.)?pwc\.ch/fr/centre-de-presse/[A-Za-z0-9._~%/\-]+\.html',
+        r'/fr/centre-de-presse/[A-Za-z0-9._~%/\-]+\.html',
+    ]
+
+    for pattern in patterns:
+        for found in re.findall(
+            pattern,
+            raw_html,
+            flags=re.IGNORECASE
+        ):
+            add_candidate(found)
+
+    # --------------------------------------------------
+    # 3. Tentative via sitemap PwC
+    # --------------------------------------------------
+
     if not candidates:
+
+        sitemap_urls = [
+            "https://www.pwc.ch/sitemap.xml",
+            "https://www.pwc.ch/sitemap_index.xml",
+        ]
+
+        visited = set()
+
+        def crawl_sitemap(url, depth=0):
+
+            if depth > 2:
+                return
+
+            if url in visited:
+                return
+
+            visited.add(url)
+
+            try:
+                sr = requests.get(
+                    url,
+                    headers=HEADERS,
+                    timeout=60
+                )
+
+                if sr.status_code != 200:
+                    return
+
+                root = ET.fromstring(sr.content)
+
+            except Exception:
+                return
+
+            def lname(tag):
+                return tag.split("}")[-1]
+
+            if lname(root.tag) == "sitemapindex":
+
+                for child in root:
+
+                    loc = None
+
+                    for elem in child:
+
+                        if lname(elem.tag) == "loc":
+                            loc = (
+                                elem.text or ""
+                            ).strip()
+
+                    if loc:
+                        crawl_sitemap(
+                            loc,
+                            depth + 1
+                        )
+
+            elif lname(root.tag) == "urlset":
+
+                for child in root:
+
+                    for elem in child:
+
+                        if lname(elem.tag) == "loc":
+
+                            loc = (
+                                elem.text or ""
+                            ).strip()
+
+                            if loc:
+                                add_candidate(loc)
+
+        for sitemap_url in sitemap_urls:
+
+            crawl_sitemap(sitemap_url)
+
+            if candidates:
+                break
+
+    # --------------------------------------------------
+    # 4. Secours Bing
+    # --------------------------------------------------
+
+    if not candidates:
+
         print(
-            "[WARN] pwc-ch: aucun lien dans le HTML, "
-            "tentative via Bing RSS"
+            "[WARN] pwc-ch: "
+            "aucune URL via PwC, tentative Bing"
         )
 
-        bing = requests.get(
-            "https://www.bing.com/search",
-            params={
-                "q": (
-                    "site:www.pwc.ch/fr/centre-de-presse/ "
-                    "\"PwC Suisse\""
-                ),
-                "format": "rss",
-            },
-            headers=HEADERS,
-            timeout=60,
-        )
-        bing.raise_for_status()
+        queries = [
+            'site:www.pwc.ch/fr/centre-de-presse/ "Press Release"',
+            'site:www.pwc.ch/fr/centre-de-presse/ PwC Suisse',
+            'site:pwc.ch/fr/centre-de-presse/ 2026',
+        ]
 
-        bing_root = ET.fromstring(bing.content)
+        for query in queries:
 
-        for item in bing_root.findall(".//item"):
-            link = item.findtext("link")
+            try:
 
-            if link:
-                add_pwc_url(link.strip())
+                br = requests.get(
+                    "https://www.bing.com/search",
+                    params={
+                        "q": query,
+                        "format": "rss",
+                        "count": "50",
+                    },
+                    headers=HEADERS,
+                    timeout=60,
+                )
+
+                br.raise_for_status()
+
+                root = ET.fromstring(br.content)
+
+                for item in root.findall(".//item"):
+
+                    link = item.findtext("link")
+
+                    if link:
+                        add_candidate(link.strip())
+
+            except Exception as bing_error:
+
+                print(
+                    f"[WARN] pwc-ch Bing: "
+                    f"{bing_error}"
+                )
 
     if not candidates:
         raise ValueError(
             "Aucun communiqué PwC Suisse trouvé"
         )
 
+    print(
+        f"[INFO] pwc-ch: "
+        f"{len(candidates)} URL candidates"
+    )
+
+    # --------------------------------------------------
+    # Lecture des communiqués
+    # --------------------------------------------------
+
     items = []
 
-    # Lecture des pages individuelles
-    for url in candidates[:40]:
+    for url in candidates[:60]:
+
         try:
+
             article_r = requests.get(
                 url,
                 headers=HEADERS,
                 timeout=30
             )
+
             article_r.raise_for_status()
 
             article_soup = BeautifulSoup(
@@ -1442,19 +1610,18 @@ try:
             if not title:
                 continue
 
-            # Vérification supplémentaire:
-            # les pages de communiqué PwC indiquent généralement
-            # "Press Release"
             page_text = article_soup.get_text(
                 " ",
                 strip=True
             )
 
-            if "Press Release" not in page_text:
-                print(
-                    f"[WARN] pwc-ch page ignorée "
-                    f"(pas identifiée comme Press Release): {url}"
-                )
+            # Vérification qu'il s'agit bien
+            # d'un communiqué
+            if (
+                "Press Release" not in page_text
+                and
+                "Communiqué de presse" not in page_text
+            ):
                 continue
 
             description = ""
@@ -1464,7 +1631,10 @@ try:
                 attrs={"name": "description"}
             )
 
-            if meta_desc and meta_desc.get("content"):
+            if (
+                meta_desc
+                and meta_desc.get("content")
+            ):
                 description = (
                     meta_desc["content"].strip()
                 )
@@ -1475,7 +1645,11 @@ try:
                 "description": description,
             })
 
+            if len(items) >= 40:
+                break
+
         except Exception as article_error:
+
             print(
                 f"[WARN] pwc-ch article ignoré: "
                 f"{url}: {article_error}"
@@ -1483,9 +1657,13 @@ try:
 
     if not items:
         raise ValueError(
-            "Communiqués PwC trouvés mais "
-            "aucune page exploitable"
+            "Des pages PwC ont été trouvées, "
+            "mais aucun communiqué exploitable"
         )
+
+    # --------------------------------------------------
+    # RSS
+    # --------------------------------------------------
 
     rss = ET.Element(
         "rss",
@@ -1515,6 +1693,7 @@ try:
     )
 
     for entry in items:
+
         item = ET.SubElement(
             channel,
             "item"
@@ -1537,13 +1716,18 @@ try:
         ).text = entry["url"]
 
         if entry["description"]:
+
             ET.SubElement(
                 item,
                 "description"
             ).text = entry["description"]
 
     tree = ET.ElementTree(rss)
-    ET.indent(tree, space="  ")
+
+    ET.indent(
+        tree,
+        space="  "
+    )
 
     tree.write(
         OUTPUT_DIR / "pwc-ch.xml",
