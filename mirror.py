@@ -488,6 +488,69 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] omdia: {e}")
-    
+    # Création d'un RSS à partir de la press room Deloitte Suisse
+try:
+    deloitte_url = "https://www.deloitte.com/ch/fr/about/press-room.html"
+
+    r = requests.get(deloitte_url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    items = []
+    seen = set()
+
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        url = urljoin(deloitte_url, href)
+        title = " ".join(link.stripped_strings).strip()
+
+        if "/ch/fr/about/press-room/" not in url:
+            continue
+
+        if url.rstrip("/") == deloitte_url.rstrip("/"):
+            continue
+
+        if not title or len(title) < 15:
+            continue
+
+        if url in seen:
+            continue
+
+        seen.add(url)
+        items.append((title, url))
+
+        if len(items) >= 40:
+            break
+
+    if not items:
+        raise ValueError("Aucun communiqué Deloitte Suisse trouvé")
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(channel, "title").text = "Deloitte Suisse – Press Room"
+    ET.SubElement(channel, "link").text = deloitte_url
+    ET.SubElement(channel, "description").text = "Derniers communiqués Deloitte Suisse"
+
+    for title, url in items:
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = title
+        ET.SubElement(item, "link").text = url
+        ET.SubElement(item, "guid", isPermaLink="true").text = url
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+    tree.write(
+        OUTPUT_DIR / "deloitte-ch.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] deloitte-ch: {len(items)} communiqués")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] deloitte-ch: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
