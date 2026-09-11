@@ -1744,5 +1744,35 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] pwc-ch: {e}")
+    # Miroir du flux RSS officiel finews.ch
+try:
+    finews_url = "https://www.finews.ch/index.php?format=feed&type=rss"
+
+    r = requests.get(
+        finews_url,
+        headers=HEADERS,
+        timeout=60
+    )
+    r.raise_for_status()
+
+    # Vérifie que la réponse ressemble bien à un flux XML
+    content = r.content
+
+    if b"<rss" not in content and b"<feed" not in content:
+        raise ValueError(
+            "La réponse de finews.ch ne semble pas être un flux RSS/Atom"
+        )
+
+    (OUTPUT_DIR / "finews.xml").write_bytes(content)
+
+    print(
+        f"[OK] finews: flux RSS officiel copié "
+        f"({len(content)} octets)"
+    )
+
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] finews: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
