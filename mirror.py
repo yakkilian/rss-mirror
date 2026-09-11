@@ -490,57 +490,277 @@ except Exception as e:
     print(f"[ERREUR] omdia: {e}")
     # Création d'un RSS à partir de la press room Deloitte Suisse
 try:
+    import gzip
+    import re
+    from urllib.parse import urlsplit, urlunsplit
+
     deloitte_url = "https://www.deloitte.com/ch/fr/about/press-room.html"
 
-    r = requests.get(deloitte_url, headers=HEADERS, timeout=60)
-    r.raise_for_status()
+    # Deloitte utilise un index global de sitemaps.
+    sitemap_roots = [
+        "https://www.deloitte.com/sitemap_index.xml",
+        "https://www.deloitte.com/ch/fr/sitemap_index.xml",
+        "https://www.deloitte.com/ch/fr/sitemap.xml",
+    ]
 
-    soup = BeautifulSoup(r.text, "html.parser")
+    PRESS_PREFIX = "/ch/fr/about/press-room/"
 
-    items = []
-    seen = set()
+    candidates = {}
+    visited_sitemaps = set()
 
-    for link in soup.find_all("a", href=True):
-        href = link["href"]
-        url = urljoin(deloitte_url, href)
-        title = " ".join(link.stripped_strings).strip()
+    def clean_url(url):
+        """Supprime query string et fragment."""
+        p = urlsplit(url)
+        return urlunsplit((p.scheme, p.netloc, p.path, "", ""))
 
-        if "/ch/fr/about/press-room/" not in url:
-            continue
+    def is_press_release(url):
+        p = urlsplit(url)
 
-        if url.rstrip("/") == deloitte_url.rstrip("/"):
-            continue
+        return (
+            p.netloc.lower() in ("www.deloitte.com", "deloitte.com")
+            and p.path.startswith(PRESS_PREFIX)
+            and p.path.endswith(".html")
+            and p.path != "/ch/fr/about/press-room.html"
+        )
 
-        if not title or len(title) < 15:
-            continue
+    def get_xml(url):
+        r = requests.get(url, headers=HEADERS, timeout=60)
+        r.raise_for_status()
 
-        if url in seen:
-            continue
+        data = r.content
 
-        seen.add(url)
-        items.append((title, url))
+        # Certains sitemaps peuvent être gzipés.
+        if data[:2] == b"\x1f\x8b":
+            data = gzip.decompress(data)
 
-        if len(items) >= 40:
+        return ET.fromstring(data)
+
+    def local_name(tag):
+        return tag.split("}")[-1]
+
+    def crawl_sitemap(url, depth=0):
+        if url in visited_sitemaps:
+            return
+
+        if depth > 3:
+            return
+
+        if len(visited_sitemaps) >= 150:
+            return
+
+        visited_sitemaps.add(url)
+
+        try:
+            root = get_xml(url)
+        except Exception as e:
+            print(f"[WARN] deloitte-ch sitemap ignoré: {url}: {e}")
+            return
+
+        root_type = local_name(root.tag)
+
+        # Sitemap index -> contient d'autres sitemaps
+        if root_type == "sitemapindex":
+
+            child_sitemaps = []
+
+            for sitemap in root:
+                if local_name(sitemap.tag) != "sitemap":
+                    continue
+
+                loc = None
+
+                for child in sitemap:
+                    if local_name(child.tag) == "loc":
+                        loc = (child.text or "").strip()
+                        break
+
+                if loc:
+                    child_sitemaps.append(loc)
+
+            # L'index global Deloitte contient les variantes régionales.
+            # On privilégie celles dont le nom semble correspondre à CH.
+            if depth == 0:
+                swiss = [
+                    u for u in child_sitemaps
+                    if re.search(
+                        r"(^|[/_.-])ch([/_.-]|$)",
+                        urlsplit(u).path.lower()
+                    )
+                ]
+
+                if swiss:
+                    child_sitemaps = swiss
+
+            for child_url in child_sitemaps:
+                crawl_sitemap(child_url, depth + 1)
+
+        # Sitemap normal -> contient les pages
+        elif root_type == "urlset":
+
+            for entry in root:
+                if local_name(entry.tag) != "url":
+                    continue
+
+                loc = None
+                lastmod = ""
+
+                for child in entry:
+                    name = local_name(child.tag)
+
+                    if name == "loc":
+                        loc = (child.text or "").strip()
+
+                    elif name == "lastmod":
+                        lastmod = (child.text or "").strip()
+
+                if not loc:
+                    continue
+
+                loc = clean_url(loc)
+
+                if not is_press_release(loc):
+                    continue
+
+                candidates[loc] = lastmod
+
+    # 1. Tentative via les sitemaps Deloitte
+    for sitemap_url in sitemap_roots:
+        crawl_sitemap(sitemap_url)
+
+        if candidates:
             break
 
-    if not items:
+    # 2. Secours: recherche Bing en RSS
+    if not candidates:
+        print("[WARN] deloitte-ch: aucun résultat via sitemap, tentative Bing RSS")
+
+        bing = requests.get(
+            "https://www.bing.com/search",
+            params={
+                "q": 'site:www.deloitte.com/ch/fr/about/press-room/ "Deloitte Suisse"',
+                "format": "rss",
+            },
+            headers=HEADERS,
+            timeout=60,
+        )
+        bing.raise_for_status()
+
+        bing_root = ET.fromstring(bing.content)
+
+        for item in bing_root.findall(".//item"):
+            link = item.findtext("link")
+
+            if not link:
+                continue
+
+            link = clean_url(link.strip())
+
+            if is_press_release(link):
+                candidates[link] = ""
+
+    if not candidates:
         raise ValueError("Aucun communiqué Deloitte Suisse trouvé")
+
+    # Les URLs les plus récemment modifiées d'abord
+    urls = sorted(
+        candidates,
+        key=lambda u: candidates[u],
+        reverse=True
+    )[:40]
+
+    items = []
+
+    # Récupération du véritable titre de chaque communiqué
+    for url in urls:
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+            r.raise_for_status()
+
+            soup = BeautifulSoup(r.text, "html.parser")
+
+            h1 = soup.find("h1")
+
+            if not h1:
+                continue
+
+            title = " ".join(h1.stripped_strings).strip()
+
+            if not title:
+                continue
+
+            description = ""
+
+            meta_desc = soup.find(
+                "meta",
+                attrs={"name": "description"}
+            )
+
+            if meta_desc and meta_desc.get("content"):
+                description = meta_desc["content"].strip()
+
+            items.append({
+                "title": title,
+                "url": url,
+                "description": description,
+            })
+
+        except Exception as article_error:
+            print(
+                f"[WARN] deloitte-ch article ignoré: "
+                f"{url}: {article_error}"
+            )
+
+    if not items:
+        raise ValueError(
+            "Communiqués Deloitte trouvés mais impossible de lire leurs pages"
+        )
 
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
 
-    ET.SubElement(channel, "title").text = "Deloitte Suisse – Press Room"
-    ET.SubElement(channel, "link").text = deloitte_url
-    ET.SubElement(channel, "description").text = "Derniers communiqués Deloitte Suisse"
+    ET.SubElement(
+        channel,
+        "title"
+    ).text = "Deloitte Suisse – Press Room"
 
-    for title, url in items:
+    ET.SubElement(
+        channel,
+        "link"
+    ).text = deloitte_url
+
+    ET.SubElement(
+        channel,
+        "description"
+    ).text = "Derniers communiqués Deloitte Suisse"
+
+    for entry in items:
         item = ET.SubElement(channel, "item")
-        ET.SubElement(item, "title").text = title
-        ET.SubElement(item, "link").text = url
-        ET.SubElement(item, "guid", isPermaLink="true").text = url
+
+        ET.SubElement(
+            item,
+            "title"
+        ).text = entry["title"]
+
+        ET.SubElement(
+            item,
+            "link"
+        ).text = entry["url"]
+
+        ET.SubElement(
+            item,
+            "guid",
+            isPermaLink="true"
+        ).text = entry["url"]
+
+        if entry["description"]:
+            ET.SubElement(
+                item,
+                "description"
+            ).text = entry["description"]
 
     tree = ET.ElementTree(rss)
     ET.indent(tree, space="  ")
+
     tree.write(
         OUTPUT_DIR / "deloitte-ch.xml",
         encoding="utf-8",
