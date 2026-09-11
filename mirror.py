@@ -929,5 +929,207 @@ try:
 
 except Exception as e:
     print(f"[ERREUR] forrester: {e}")
+    # Création d'un RSS à partir des communiqués KPMG Suisse
+try:
+    kpmg_url = "https://kpmg.com/ch/en/media.html"
+
+    items = []
+    seen = set()
+
+    r = requests.get(kpmg_url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    for link in soup.find_all("a", href=True):
+        url = urljoin(kpmg_url, link["href"])
+
+        if "/ch/en/media/press-releases/" not in url:
+            continue
+
+        # Nettoyage éventuel des paramètres / fragments
+        url = url.split("#")[0].split("?")[0]
+
+        if url in seen:
+            continue
+
+        seen.add(url)
+
+        try:
+            article_r = requests.get(
+                url,
+                headers=HEADERS,
+                timeout=30
+            )
+            article_r.raise_for_status()
+
+            article_soup = BeautifulSoup(
+                article_r.text,
+                "html.parser"
+            )
+
+            final_url = url
+            final_soup = article_soup
+
+            # Cherche la version française officielle déclarée
+            # dans les balises hreflang de l'article.
+            french_url = None
+
+            for alt in article_soup.find_all(
+                "link",
+                attrs={"hreflang": True, "href": True}
+            ):
+                hreflang = (
+                    alt.get("hreflang") or ""
+                ).lower()
+
+                rel = alt.get("rel", [])
+
+                if isinstance(rel, str):
+                    rel = [rel]
+
+                if (
+                    "alternate" in rel
+                    and hreflang.startswith("fr")
+                ):
+                    candidate = urljoin(
+                        url,
+                        alt["href"]
+                    )
+
+                    if "/ch/fr/" in candidate:
+                        french_url = candidate
+                        break
+
+            # Si KPMG propose une version française,
+            # on l'utilise à la place de l'anglaise.
+            if french_url:
+                try:
+                    fr_r = requests.get(
+                        french_url,
+                        headers=HEADERS,
+                        timeout=30
+                    )
+                    fr_r.raise_for_status()
+
+                    fr_soup = BeautifulSoup(
+                        fr_r.text,
+                        "html.parser"
+                    )
+
+                    fr_h1 = fr_soup.find("h1")
+
+                    if (
+                        fr_h1
+                        and "/ch/fr/" in fr_r.url
+                    ):
+                        final_url = fr_r.url.split("#")[0].split("?")[0]
+                        final_soup = fr_soup
+
+                except Exception as fr_error:
+                    print(
+                        f"[WARN] kpmg-ch version FR indisponible: "
+                        f"{french_url}: {fr_error}"
+                    )
+
+            h1 = final_soup.find("h1")
+
+            if not h1:
+                continue
+
+            title = " ".join(
+                h1.stripped_strings
+            ).strip()
+
+            if not title:
+                continue
+
+            description = ""
+
+            meta_desc = final_soup.find(
+                "meta",
+                attrs={"name": "description"}
+            )
+
+            if meta_desc and meta_desc.get("content"):
+                description = meta_desc["content"].strip()
+
+            items.append({
+                "title": title,
+                "url": final_url,
+                "description": description,
+            })
+
+            if len(items) >= 40:
+                break
+
+        except Exception as article_error:
+            print(
+                f"[WARN] kpmg-ch article ignoré: "
+                f"{url}: {article_error}"
+            )
+
+    if not items:
+        raise ValueError(
+            "Aucun communiqué KPMG Suisse trouvé"
+        )
+
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+
+    ET.SubElement(
+        channel,
+        "title"
+    ).text = "KPMG Suisse – Communiqués de presse"
+
+    ET.SubElement(
+        channel,
+        "link"
+    ).text = "https://kpmg.com/ch/fr/media.html"
+
+    ET.SubElement(
+        channel,
+        "description"
+    ).text = "Derniers communiqués de presse de KPMG Suisse"
+
+    for entry in items:
+        item = ET.SubElement(channel, "item")
+
+        ET.SubElement(
+            item,
+            "title"
+        ).text = entry["title"]
+
+        ET.SubElement(
+            item,
+            "link"
+        ).text = entry["url"]
+
+        ET.SubElement(
+            item,
+            "guid",
+            isPermaLink="true"
+        ).text = entry["url"]
+
+        if entry["description"]:
+            ET.SubElement(
+                item,
+                "description"
+            ).text = entry["description"]
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+
+    tree.write(
+        OUTPUT_DIR / "kpmg-ch.xml",
+        encoding="utf-8",
+        xml_declaration=True,
+    )
+
+    print(f"[OK] kpmg-ch: {len(items)} communiqués")
+    successes += 1
+
+except Exception as e:
+    print(f"[ERREUR] kpmg-ch: {e}")
 if successes == 0:
     raise SystemExit("Aucun flux n'a pu être récupéré")
