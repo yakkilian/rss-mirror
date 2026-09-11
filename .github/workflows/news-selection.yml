@@ -1,0 +1,35 @@
+name: News selection test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  select-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install requests feedparser trafilatura
+
+      - name: Filter news
+        env:
+          FRESHRSS_AUTO_SUISSE: ${{ secrets.FRESHRSS_AUTO_SUISSE }}
+          FRESHRSS_AUTO_ICTJ_NEWS: ${{ secrets.FRESHRSS_AUTO_ICTJ_NEWS }}
+          FRESHRSS_AUTO_ICT_BEST: ${{ secrets.FRESHRSS_AUTO_ICT_BEST }}
+          FRESHRSS_AUTO_ICT: ${{ secrets.FRESHRSS_AUTO_ICT }}
+        run: python news_filter.py
+
+      - name: Save candidates
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-candidates
+          path: output/candidates.json
