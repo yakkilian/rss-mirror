@@ -5,6 +5,11 @@
     <link>https://new.abb.com/ch</link>
     <description>ABB Group press releases mirrored for FreshRSS</description>
     <item>
+      <title>Group press release 2026-09-14 ABB joins forces with Ferrari Hypersail to take Direct Current to new horizons</title>
+      <link>https://new.abb.com/news/detail/138721/abb-joins-forces-with-ferrari-hypersail-to-take-direct-current-to-new-horizons</link>
+      <guid isPermaLink="true">https://new.abb.com/news/detail/138721/abb-joins-forces-with-ferrari-hypersail-to-take-direct-current-to-new-horizons</guid>
+    </item>
+    <item>
       <title>Group press release 2026-09-09 New ABB and BCG report highlights growing role of direct current technologies in future power systems</title>
       <link>https://new.abb.com/news/detail/138572/new-abb-and-bcg-report-highlights-growing-role-of-direct-current-technologies-in-future-power-systems</link>
       <guid isPermaLink="true">https://new.abb.com/news/detail/138572/new-abb-and-bcg-report-highlights-growing-role-of-direct-current-technologies-in-future-power-systems</guid>
@@ -23,11 +28,6 @@
       <title>Group press release 2026-08-06 ABB invests in LevelTen Energy to advance clean energy procurement</title>
       <link>https://new.abb.com/news/detail/137745/abb-invests-in-levelten-energy-to-advance-clean-energy-procurement</link>
       <guid isPermaLink="true">https://new.abb.com/news/detail/137745/abb-invests-in-levelten-energy-to-advance-clean-energy-procurement</guid>
-    </item>
-    <item>
-      <title>Group press release 2026-07-16 Q2 2026 results</title>
-      <link>https://new.abb.com/news/detail/137496/q2-2026-results</link>
-      <guid isPermaLink="true">https://new.abb.com/news/detail/137496/q2-2026-results</guid>
     </item>
   </channel>
 </rss>
