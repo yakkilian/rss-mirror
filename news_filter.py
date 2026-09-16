@@ -1,6 +1,8 @@
+import calendar
 import json
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -21,11 +23,13 @@ HEADERS = {
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-# Pour le test, on ne prend que les articles des dernières 48 heures.
 LOOKBACK_HOURS = 48
 
-# Nombre maximal d'entrées demandées à chaque flux FreshRSS.
-MAX_ITEMS = 100
+# On évite désormais de couper artificiellement à 100.
+MAX_ITEMS = 300
+
+# Téléchargements simultanés.
+MAX_WORKERS = 12
 
 
 FEEDS = {
@@ -70,11 +74,6 @@ ICT_SWISS_KEYWORDS = [
 
 
 def freshrss_url(url):
-    """
-    Ajoute les paramètres FreshRSS.
-    On conserve aussi un filtrage de 48 h côté FreshRSS,
-    même si le script vérifie lui-même la date ensuite.
-    """
     parts = urlsplit(url)
     query = dict(parse_qsl(parts.query))
 
@@ -94,11 +93,29 @@ def freshrss_url(url):
     )
 
 
-def is_recent(entry):
+def entry_datetime(entry):
     """
-    Vérifie directement dans le script que l'article date
-    des dernières LOOKBACK_HOURS heures.
+    Essaie d'abord les dates déjà interprétées par feedparser.
     """
+
+    for key in (
+        "published_parsed",
+        "updated_parsed",
+        "created_parsed",
+    ):
+        value = entry.get(key)
+
+        if value:
+            try:
+                timestamp = calendar.timegm(value)
+
+                return datetime.fromtimestamp(
+                    timestamp,
+                    tz=timezone.utc,
+                )
+
+            except Exception:
+                pass
 
     date_value = (
         entry.get("published")
@@ -106,39 +123,46 @@ def is_recent(entry):
         or ""
     )
 
-    # Si aucune date n'est disponible, on conserve l'article
-    # par prudence plutôt que de risquer de manquer une news.
-    if not date_value:
+    if date_value:
+        try:
+            dt = parsedate_to_datetime(date_value)
+
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+
+            return dt.astimezone(timezone.utc)
+
+        except Exception:
+            pass
+
+    return None
+
+
+def is_recent(entry):
+    dt = entry_datetime(entry)
+
+    # Pas de date exploitable:
+    # on conserve par prudence.
+    if dt is None:
         return True
 
-    try:
-        dt = parsedate_to_datetime(date_value)
+    cutoff = (
+        datetime.now(timezone.utc)
+        - timedelta(hours=LOOKBACK_HOURS)
+    )
 
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-
-        cutoff = (
-            datetime.now(timezone.utc)
-            - timedelta(hours=LOOKBACK_HOURS)
-        )
-
-        return dt >= cutoff
-
-    except Exception:
-        # Date impossible à interpréter:
-        # on conserve l'article par prudence.
-        return True
+    return dt >= cutoff
 
 
 def rss_fallback(entry):
     """
-    Texte fourni par le RSS si le texte intégral
-    de la page ne peut pas être extrait.
+    Texte disponible directement dans l'entrée FreshRSS.
     """
+
     chunks = []
 
     if entry.get("summary"):
-        chunks.append(entry.summary)
+        chunks.append(entry["summary"])
 
     for content in entry.get("content", []):
         if content.get("value"):
@@ -146,21 +170,31 @@ def rss_fallback(entry):
 
     text = " ".join(chunks)
 
-    return re.sub(r"<[^>]+>", " ", text)
+    # Suppression simple des balises HTML.
+    text = re.sub(r"<[^>]+>", " ", text)
+
+    # Nettoyage des espaces.
+    text = re.sub(r"\s+", " ", text)
+
+    return text.strip()
 
 
-def fetch_full_text(url, fallback=""):
+def fetch_full_text(url):
     """
-    Télécharge l'article et extrait son contenu principal.
-    Si cela échoue, utilise le contenu présent dans le RSS.
+    Essaie de récupérer le texte intégral.
+
+    Renvoie:
+    texte, succès, erreur éventuelle
     """
+
     try:
         r = requests.get(
             url,
             headers=HEADERS,
-            timeout=30,
+            timeout=20,
             allow_redirects=True,
         )
+
         r.raise_for_status()
 
         text = extract(
@@ -171,26 +205,30 @@ def fetch_full_text(url, fallback=""):
         )
 
         if text and len(text.strip()) >= 200:
-            return text.strip(), "full"
+            return text.strip(), True, ""
 
-    except Exception as e:
-        print(
-            f"[WARN] Texte intégral inaccessible: "
-            f"{url}: {e}"
+        return "", False, "extraction insuffisante"
+
+    except requests.HTTPError as e:
+
+        status = (
+            e.response.status_code
+            if e.response is not None
+            else "?"
         )
 
-    return fallback.strip(), "rss"
+        return "", False, f"HTTP {status}"
+
+    except requests.Timeout:
+
+        return "", False, "timeout"
+
+    except Exception as e:
+
+        return "", False, str(e)[:200]
 
 
 def find_matches(text, keywords):
-    """
-    Recherche les mots-clés sans tenir compte
-    des majuscules/minuscules.
-
-    IA et TIC doivent apparaître comme mots complets.
-    'cyber' peut en revanche détecter cybersécurité,
-    cyberattaque, cybercriminel, etc.
-    """
     matches = []
 
     for keyword in keywords:
@@ -207,12 +245,68 @@ def find_matches(text, keywords):
                 matches.append(keyword)
 
         elif keyword.lower() in text.lower():
+
             matches.append(keyword)
 
     return matches
 
 
+def add_selected(
+    selected,
+    entry,
+    group,
+    matches,
+    text,
+    text_source,
+    selection_reason,
+):
+    url = entry.get("link", "").strip()
+    title = entry.get("title", "").strip()
+
+    if not url or not title:
+        return
+
+    if url not in selected:
+
+        selected[url] = {
+            "title": title,
+            "url": url,
+            "groups": [group],
+            "published": (
+                entry.get("published")
+                or entry.get("updated")
+                or ""
+            ),
+            "matched_keywords": list(matches),
+            "text_source": text_source,
+            "selection_reason": selection_reason,
+            "excerpt": text[:2000],
+        }
+
+    else:
+
+        if group not in selected[url]["groups"]:
+            selected[url]["groups"].append(group)
+
+        for match in matches:
+            if (
+                match
+                not in selected[url]["matched_keywords"]
+            ):
+                selected[url][
+                    "matched_keywords"
+                ].append(match)
+
+
 selected = {}
+
+unresolved = []
+
+# Les articles Suisse / ICT qui nécessitent
+# effectivement un téléchargement de page web.
+to_fetch = {}
+
+stats = {}
 
 
 for group, feed_url in FEEDS.items():
@@ -229,22 +323,31 @@ for group, feed_url in FEEDS.items():
             f"{parsed.bozo_exception}"
         )
 
+    received = len(parsed.entries)
+
+    recent_entries = [
+        entry
+        for entry in parsed.entries
+        if is_recent(entry)
+    ]
+
     print(
-        f"[INFO] {len(parsed.entries)} "
-        f"articles reçus de FreshRSS"
+        f"[INFO] {received} articles reçus de FreshRSS"
     )
 
-    recent_count = 0
+    print(
+        f"[INFO] {len(recent_entries)} articles "
+        f"datent des dernières {LOOKBACK_HOURS} h"
+    )
 
-    for entry in parsed.entries:
+    stats[group] = {
+        "received": received,
+        "recent": len(recent_entries),
+        "selected": 0,
+        "unresolved": 0,
+    }
 
-        # IMPORTANT:
-        # on élimine ici les vieux articles AVANT
-        # de télécharger leurs pages web.
-        if not is_recent(entry):
-            continue
-
-        recent_count += 1
+    for entry in recent_entries:
 
         url = entry.get("link", "").strip()
         title = entry.get("title", "").strip()
@@ -252,85 +355,205 @@ for group, feed_url in FEEDS.items():
         if not url or not title:
             continue
 
-        fallback = rss_fallback(entry)
+        rss_text = rss_fallback(entry)
 
-        full_text, extraction = fetch_full_text(
-            url,
-            fallback=fallback,
-        )
+        # -----------------------------------
+        # ICTj news / ICT best:
+        # on conserve absolument tout.
+        # Pas besoin de télécharger la page
+        # à ce stade.
+        # -----------------------------------
 
-        searchable = f"{title}\n{full_text}"
-
-        keep = False
-        matches = []
-
-        # Aucun filtre lexical pour ces deux catégories.
         if group in ("ICTj news", "ICT best"):
-            keep = True
 
-        # Sources suisses:
-        # recherche des mots-clés IT.
-        elif group == "Suisse":
-
-            matches = find_matches(
-                searchable,
-                SWISS_IT_KEYWORDS,
+            add_selected(
+                selected=selected,
+                entry=entry,
+                group=group,
+                matches=[],
+                text=rss_text,
+                text_source="rss",
+                selection_reason="all_from_group",
             )
 
-            keep = bool(matches)
+            stats[group]["selected"] += 1
 
-        # Sources ICT:
-        # recherche d'un lien géographique avec la Suisse.
-        elif group == "ICT":
-
-            matches = find_matches(
-                searchable,
-                ICT_SWISS_KEYWORDS,
-            )
-
-            keep = bool(matches)
-
-        if not keep:
             continue
 
-        # Déduplication par URL.
-        if url not in selected:
+        # -----------------------------------
+        # Suisse / ICT:
+        # le texte intégral est nécessaire
+        # pour appliquer correctement
+        # les mots-clés.
+        # -----------------------------------
 
-            selected[url] = {
-                "title": title,
-                "url": url,
-                "groups": [group],
-                "published": entry.get(
-                    "published",
-                    entry.get("updated", ""),
-                ),
-                "matched_keywords": matches,
-                "text_source": extraction,
-                "excerpt": full_text[:2000],
+        if url not in to_fetch:
+            to_fetch[url] = []
+
+        to_fetch[url].append(
+            {
+                "group": group,
+                "entry": entry,
+                "rss_text": rss_text,
             }
+        )
+
+
+print(
+    f"\n[INFO] {len(to_fetch)} pages web "
+    f"uniques à analyser"
+)
+
+
+# ===========================================
+# Téléchargement en parallèle
+# ===========================================
+
+fetch_results = {}
+
+
+with ThreadPoolExecutor(
+    max_workers=MAX_WORKERS
+) as executor:
+
+    futures = {
+        executor.submit(
+            fetch_full_text,
+            url,
+        ): url
+        for url in to_fetch
+    }
+
+    for future in as_completed(futures):
+
+        url = futures[future]
+
+        try:
+            fetch_results[url] = future.result()
+
+        except Exception as e:
+            fetch_results[url] = (
+                "",
+                False,
+                str(e)[:200],
+            )
+
+
+# ===========================================
+# Filtrage Suisse / ICT
+# ===========================================
+
+for url, records in to_fetch.items():
+
+    full_text, success, error = fetch_results.get(
+        url,
+        ("", False, "aucun résultat"),
+    )
+
+    for record in records:
+
+        group = record["group"]
+        entry = record["entry"]
+        rss_text = record["rss_text"]
+
+        title = entry.get("title", "").strip()
+
+        if group == "Suisse":
+            keywords = SWISS_IT_KEYWORDS
+        else:
+            keywords = ICT_SWISS_KEYWORDS
+
+        # -----------------------------------
+        # Texte intégral accessible
+        # -----------------------------------
+
+        if success:
+
+            searchable = (
+                f"{title}\n{full_text}"
+            )
+
+            matches = find_matches(
+                searchable,
+                keywords,
+            )
+
+            if matches:
+
+                add_selected(
+                    selected=selected,
+                    entry=entry,
+                    group=group,
+                    matches=matches,
+                    text=full_text,
+                    text_source="full",
+                    selection_reason="keyword_fulltext",
+                )
+
+                stats[group]["selected"] += 1
+
+            continue
+
+        # -----------------------------------
+        # Texte intégral inaccessible:
+        # on teste ce que contient FreshRSS.
+        # -----------------------------------
+
+        searchable = (
+            f"{title}\n{rss_text}"
+        )
+
+        matches = find_matches(
+            searchable,
+            keywords,
+        )
+
+        if matches:
+
+            add_selected(
+                selected=selected,
+                entry=entry,
+                group=group,
+                matches=matches,
+                text=rss_text,
+                text_source="rss",
+                selection_reason="keyword_rss_fallback",
+            )
+
+            stats[group]["selected"] += 1
 
         else:
 
-            if group not in selected[url]["groups"]:
-                selected[url]["groups"].append(group)
+            # IMPORTANT:
+            # on NE JETTE PLUS cet article.
+            # Il est conservé dans unresolved.json
+            # pour une récupération alternative
+            # à l'étape suivante.
 
-            for match in matches:
-                if (
-                    match
-                    not in selected[url]["matched_keywords"]
-                ):
-                    selected[url][
-                        "matched_keywords"
-                    ].append(match)
+            unresolved.append(
+                {
+                    "title": title,
+                    "url": url,
+                    "group": group,
+                    "published": (
+                        entry.get("published")
+                        or entry.get("updated")
+                        or ""
+                    ),
+                    "fetch_error": error,
+                    "rss_excerpt": rss_text[:2000],
+                }
+            )
 
-    print(
-        f"[INFO] {recent_count} articles "
-        f"datent des dernières {LOOKBACK_HOURS} h"
-    )
+            stats[group]["unresolved"] += 1
 
 
 results = list(selected.values())
 
+
+# ===========================================
+# Fichiers de sortie
+# ===========================================
 
 with open(
     OUTPUT_DIR / "candidates.json",
@@ -346,14 +569,54 @@ with open(
     )
 
 
+with open(
+    OUTPUT_DIR / "unresolved.json",
+    "w",
+    encoding="utf-8",
+) as f:
+
+    json.dump(
+        unresolved,
+        f,
+        ensure_ascii=False,
+        indent=2,
+    )
+
+
+# ===========================================
+# Résumé
+# ===========================================
+
+print("\n==============================")
+print("RÉSUMÉ PAR GROUPE")
+print("==============================")
+
+
+for group, s in stats.items():
+
+    print(
+        f"{group}: "
+        f"{s['received']} reçus | "
+        f"{s['recent']} récents | "
+        f"{s['selected']} retenus | "
+        f"{s['unresolved']} à vérifier"
+    )
+
+
 print("\n==============================")
 print(f"ARTICLES RETENUS: {len(results)}")
+print(
+    f"ARTICLES À VÉRIFIER: "
+    f"{len(unresolved)}"
+)
 print("==============================")
 
 
 for article in results:
 
-    groups = ", ".join(article["groups"])
+    groups = ", ".join(
+        article["groups"]
+    )
 
     keywords = ", ".join(
         article["matched_keywords"]
@@ -368,6 +631,11 @@ for article in results:
         print(
             f"  mots-clés: {keywords}"
         )
+
+    print(
+        f"  source texte: "
+        f"{article['text_source']}"
+    )
 
     print(
         f"  {article['url']}"
