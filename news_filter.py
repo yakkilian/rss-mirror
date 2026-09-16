@@ -91,14 +91,12 @@ ICT_SWISS_KEYWORDS = [
 # FRESHRSS
 # ============================================================
 
-def freshrss_url(url, offset=0):
+def freshrss_url(url, offset=None):
     """
-    Construit l'URL FreshRSS pour une page de 100 articles.
+    Construit l'URL FreshRSS.
 
-    Page 1: offset=0
-    Page 2: offset=100
-    Page 3: offset=200
-    etc.
+    Première page: aucun paramètre offset.
+    Pages suivantes: offset=100, 200, etc.
     """
 
     parts = urlsplit(url)
@@ -108,7 +106,13 @@ def freshrss_url(url, offset=0):
     query["nb"] = str(PAGE_SIZE)
     query["hours"] = str(LOOKBACK_HOURS)
     query["order"] = "DESC"
-    query["offset"] = str(offset)
+
+    # IMPORTANT:
+    # pas de offset=0 sur la première page
+    if offset is not None:
+        query["offset"] = str(offset)
+    else:
+        query.pop("offset", None)
 
     return urlunsplit(
         (
@@ -123,8 +127,10 @@ def freshrss_url(url, offset=0):
 
 def fetch_freshrss_entries(group, feed_url):
     """
-    Récupère toutes les pages FreshRSS disponibles
-    dans la fenêtre des dernières 48 heures.
+    Récupère les articles FreshRSS par pages de 100.
+
+    La première page est appelée sans offset,
+    exactement comme dans notre version qui fonctionnait.
     """
 
     entries = []
@@ -132,24 +138,22 @@ def fetch_freshrss_entries(group, feed_url):
 
     for page_number in range(MAX_PAGES):
 
-        offset = page_number * PAGE_SIZE
-
-        try:
-            r = requests.get(
-                freshrss_url(feed_url, offset),
-                headers=HEADERS,
-                timeout=30,
+        if page_number == 0:
+            # Première page: PAS de offset
+            url = freshrss_url(
+                feed_url,
+                offset=None,
             )
-            r.raise_for_status()
-
-        except Exception as e:
-            print(
-                f"[WARN] FreshRSS {group}, page "
-                f"{page_number + 1}: {e}"
+        else:
+            # Pages suivantes: 100, 200, 300...
+            url = freshrss_url(
+                feed_url,
+                offset=page_number * PAGE_SIZE,
             )
-            break
 
-        parsed = feedparser.parse(r.content)
+        # On utilise directement feedparser,
+        # comme dans la première version qui fonctionnait.
+        parsed = feedparser.parse(url)
 
         if parsed.bozo:
             print(
@@ -173,7 +177,6 @@ def fetch_freshrss_entries(group, feed_url):
 
         for entry in page_entries:
 
-            # Identifiant permettant d'éviter les doublons
             key = (
                 entry.get("link")
                 or entry.get("id")
@@ -193,22 +196,20 @@ def fetch_freshrss_entries(group, feed_url):
             entries.append(entry)
             added_this_page += 1
 
-        # Si FreshRSS renvoie moins de 100 éléments,
-        # nous sommes arrivés à la dernière page.
+        # Moins de 100 = dernière page.
         if len(page_entries) < PAGE_SIZE:
             break
 
-        # Protection supplémentaire si FreshRSS ignore offset:
-        # une page entière sans nouvel article = on arrête.
+        # Si FreshRSS ignore offset et renvoie
+        # exactement les mêmes articles, on arrête.
         if added_this_page == 0:
             print(
-                f"[WARN] {group}: pagination interrompue, "
-                "aucun nouvel article sur cette page"
+                f"[WARN] {group}: pagination arrêtée, "
+                "la page ne contient aucun nouvel article"
             )
             break
 
     return entries
-
 
 # ============================================================
 # DATES
