@@ -28,8 +28,10 @@ jobs:
           FRESHRSS_AUTO_ICT: ${{ secrets.FRESHRSS_AUTO_ICT }}
         run: python news_filter.py
 
-      - name: Save candidates
+      - name: Save results
         uses: actions/upload-artifact@v4
         with:
-          name: news-candidates
-          path: output/candidates.json
+          name: news-selection-results
+          path: |
+            output/candidates.json
+            output/unresolved.json
