@@ -1,4 +1,5 @@
 import calendar
+import html
 import json
 import os
 import re
@@ -13,6 +14,10 @@ import requests
 from trafilatura import extract
 
 
+# ============================================================
+# CONFIGURATION
+# ============================================================
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -23,12 +28,17 @@ HEADERS = {
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
+# Fenêtre temporelle de travail
 LOOKBACK_HOURS = 48
 
-# On évite désormais de couper artificiellement à 100.
-MAX_ITEMS = 300
+# FreshRSS nous a correctement renvoyé 100 articles.
+# On garde donc 100 par page et on utilise offset pour paginer.
+PAGE_SIZE = 100
 
-# Téléchargements simultanés.
+# Sécurité: maximum 10 pages = 1000 articles par groupe.
+MAX_PAGES = 10
+
+# Téléchargements simultanés des pages web
 MAX_WORKERS = 12
 
 
@@ -39,6 +49,10 @@ FEEDS = {
     "ICT": os.environ["FRESHRSS_AUTO_ICT"],
 }
 
+
+# ============================================================
+# MOTS-CLÉS
+# ============================================================
 
 SWISS_IT_KEYWORDS = [
     "numérique",
@@ -73,14 +87,28 @@ ICT_SWISS_KEYWORDS = [
 ]
 
 
-def freshrss_url(url):
+# ============================================================
+# FRESHRSS
+# ============================================================
+
+def freshrss_url(url, offset=0):
+    """
+    Construit l'URL FreshRSS pour une page de 100 articles.
+
+    Page 1: offset=0
+    Page 2: offset=100
+    Page 3: offset=200
+    etc.
+    """
+
     parts = urlsplit(url)
     query = dict(parse_qsl(parts.query))
 
     query["f"] = "rss"
-    query["nb"] = str(MAX_ITEMS)
+    query["nb"] = str(PAGE_SIZE)
     query["hours"] = str(LOOKBACK_HOURS)
     query["order"] = "DESC"
+    query["offset"] = str(offset)
 
     return urlunsplit(
         (
@@ -93,9 +121,102 @@ def freshrss_url(url):
     )
 
 
+def fetch_freshrss_entries(group, feed_url):
+    """
+    Récupère toutes les pages FreshRSS disponibles
+    dans la fenêtre des dernières 48 heures.
+    """
+
+    entries = []
+    seen = set()
+
+    for page_number in range(MAX_PAGES):
+
+        offset = page_number * PAGE_SIZE
+
+        try:
+            r = requests.get(
+                freshrss_url(feed_url, offset),
+                headers=HEADERS,
+                timeout=30,
+            )
+            r.raise_for_status()
+
+        except Exception as e:
+            print(
+                f"[WARN] FreshRSS {group}, page "
+                f"{page_number + 1}: {e}"
+            )
+            break
+
+        parsed = feedparser.parse(r.content)
+
+        if parsed.bozo:
+            print(
+                f"[WARN] Flux {group}, page "
+                f"{page_number + 1}: "
+                f"{parsed.bozo_exception}"
+            )
+
+        page_entries = parsed.entries
+
+        print(
+            f"[INFO] {group}: page "
+            f"{page_number + 1} -> "
+            f"{len(page_entries)} articles"
+        )
+
+        if not page_entries:
+            break
+
+        added_this_page = 0
+
+        for entry in page_entries:
+
+            # Identifiant permettant d'éviter les doublons
+            key = (
+                entry.get("link")
+                or entry.get("id")
+                or (
+                    entry.get("title", "")
+                    + entry.get("published", "")
+                )
+            )
+
+            if not key:
+                continue
+
+            if key in seen:
+                continue
+
+            seen.add(key)
+            entries.append(entry)
+            added_this_page += 1
+
+        # Si FreshRSS renvoie moins de 100 éléments,
+        # nous sommes arrivés à la dernière page.
+        if len(page_entries) < PAGE_SIZE:
+            break
+
+        # Protection supplémentaire si FreshRSS ignore offset:
+        # une page entière sans nouvel article = on arrête.
+        if added_this_page == 0:
+            print(
+                f"[WARN] {group}: pagination interrompue, "
+                "aucun nouvel article sur cette page"
+            )
+            break
+
+    return entries
+
+
+# ============================================================
+# DATES
+# ============================================================
+
 def entry_datetime(entry):
     """
-    Essaie d'abord les dates déjà interprétées par feedparser.
+    Essaie plusieurs formats de date proposés par feedparser.
     """
 
     for key in (
@@ -103,6 +224,7 @@ def entry_datetime(entry):
         "updated_parsed",
         "created_parsed",
     ):
+
         value = entry.get(key)
 
         if value:
@@ -139,10 +261,16 @@ def entry_datetime(entry):
 
 
 def is_recent(entry):
+    """
+    Double contrôle local des 48 dernières heures.
+
+    FreshRSS applique déjà hours=48, mais on ne dépend
+    pas uniquement de lui.
+    """
+
     dt = entry_datetime(entry)
 
-    # Pas de date exploitable:
-    # on conserve par prudence.
+    # Sans date exploitable, on conserve par prudence.
     if dt is None:
         return True
 
@@ -154,9 +282,13 @@ def is_recent(entry):
     return dt >= cutoff
 
 
+# ============================================================
+# CONTENU RSS
+# ============================================================
+
 def rss_fallback(entry):
     """
-    Texte disponible directement dans l'entrée FreshRSS.
+    Récupère le chapô / contenu fourni par FreshRSS.
     """
 
     chunks = []
@@ -170,21 +302,28 @@ def rss_fallback(entry):
 
     text = " ".join(chunks)
 
-    # Suppression simple des balises HTML.
+    text = html.unescape(text)
+
+    # Suppression simple des balises HTML
     text = re.sub(r"<[^>]+>", " ", text)
 
-    # Nettoyage des espaces.
+    # Nettoyage des espaces
     text = re.sub(r"\s+", " ", text)
 
     return text.strip()
 
 
+# ============================================================
+# RÉCUPÉRATION DU TEXTE INTÉGRAL
+# ============================================================
+
 def fetch_full_text(url):
     """
-    Essaie de récupérer le texte intégral.
+    Télécharge la page de l'article et tente d'en extraire
+    le contenu éditorial principal avec Trafilatura.
 
-    Renvoie:
-    texte, succès, erreur éventuelle
+    Retour:
+    (texte, succès, erreur)
     """
 
     try:
@@ -228,7 +367,19 @@ def fetch_full_text(url):
         return "", False, str(e)[:200]
 
 
+# ============================================================
+# FILTRAGE PAR MOTS-CLÉS
+# ============================================================
+
 def find_matches(text, keywords):
+    """
+    Recherche insensible à la casse.
+
+    IA et TIC doivent apparaître comme mots entiers.
+    'cyber' détecte volontairement cybersécurité,
+    cyberattaque, cybercriminel, etc.
+    """
+
     matches = []
 
     for keyword in keywords:
@@ -251,6 +402,10 @@ def find_matches(text, keywords):
     return matches
 
 
+# ============================================================
+# AJOUT D'UN ARTICLE RETENU
+# ============================================================
+
 def add_selected(
     selected,
     entry,
@@ -260,6 +415,7 @@ def add_selected(
     text_source,
     selection_reason,
 ):
+
     url = entry.get("link", "").strip()
     title = entry.get("title", "").strip()
 
@@ -280,6 +436,9 @@ def add_selected(
             "matched_keywords": list(matches),
             "text_source": text_source,
             "selection_reason": selection_reason,
+
+            # Pour l'instant, on conserve jusqu'à 2000 caractères.
+            # Cela inclut notamment les chapôs FreshRSS.
             "excerpt": text[:2000],
         }
 
@@ -289,6 +448,7 @@ def add_selected(
             selected[url]["groups"].append(group)
 
         for match in matches:
+
             if (
                 match
                 not in selected[url]["matched_keywords"]
@@ -298,12 +458,16 @@ def add_selected(
                 ].append(match)
 
 
+# ============================================================
+# TRAITEMENT DES 4 GROUPES
+# ============================================================
+
 selected = {}
 
 unresolved = []
 
-# Les articles Suisse / ICT qui nécessitent
-# effectivement un téléchargement de page web.
+# Pages qui nécessitent un téléchargement intégral.
+# Pour l'instant seulement Suisse + ICT.
 to_fetch = {}
 
 stats = {}
@@ -311,28 +475,26 @@ stats = {}
 
 for group, feed_url in FEEDS.items():
 
-    print(f"\n=== {group} ===")
+    print("\n==============================")
+    print(f"=== {group} ===")
+    print("==============================")
 
-    parsed = feedparser.parse(
-        freshrss_url(feed_url)
+    all_entries = fetch_freshrss_entries(
+        group,
+        feed_url,
     )
 
-    if parsed.bozo:
-        print(
-            f"[WARN] Flux {group}: "
-            f"{parsed.bozo_exception}"
-        )
-
-    received = len(parsed.entries)
+    received = len(all_entries)
 
     recent_entries = [
         entry
-        for entry in parsed.entries
+        for entry in all_entries
         if is_recent(entry)
     ]
 
     print(
-        f"[INFO] {received} articles reçus de FreshRSS"
+        f"[INFO] {received} articles uniques "
+        "reçus de FreshRSS"
     )
 
     print(
@@ -357,12 +519,16 @@ for group, feed_url in FEEDS.items():
 
         rss_text = rss_fallback(entry)
 
-        # -----------------------------------
-        # ICTj news / ICT best:
-        # on conserve absolument tout.
-        # Pas besoin de télécharger la page
-        # à ce stade.
-        # -----------------------------------
+        # ----------------------------------------------------
+        # ICTj news / ICT best
+        #
+        # Aucun filtre lexical:
+        # tous les articles récents deviennent candidats.
+        #
+        # On conserve déjà leur chapô / extrait RSS.
+        # Le texte intégral sera récupéré plus tard,
+        # avant la sélection éditoriale par IA.
+        # ----------------------------------------------------
 
         if group in ("ICTj news", "ICT best"):
 
@@ -380,12 +546,12 @@ for group, feed_url in FEEDS.items():
 
             continue
 
-        # -----------------------------------
-        # Suisse / ICT:
-        # le texte intégral est nécessaire
-        # pour appliquer correctement
-        # les mots-clés.
-        # -----------------------------------
+        # ----------------------------------------------------
+        # Suisse / ICT
+        #
+        # Ici le texte intégral est utile dès maintenant,
+        # puisque nous devons y chercher des mots-clés.
+        # ----------------------------------------------------
 
         if url not in to_fetch:
             to_fetch[url] = []
@@ -399,15 +565,17 @@ for group, feed_url in FEEDS.items():
         )
 
 
+print("\n==============================")
 print(
-    f"\n[INFO] {len(to_fetch)} pages web "
-    f"uniques à analyser"
+    f"[INFO] {len(to_fetch)} pages web uniques "
+    "à analyser en texte intégral"
 )
+print("==============================")
 
 
-# ===========================================
-# Téléchargement en parallèle
-# ===========================================
+# ============================================================
+# TÉLÉCHARGEMENT PARALLÈLE
+# ============================================================
 
 fetch_results = {}
 
@@ -429,9 +597,11 @@ with ThreadPoolExecutor(
         url = futures[future]
 
         try:
+
             fetch_results[url] = future.result()
 
         except Exception as e:
+
             fetch_results[url] = (
                 "",
                 False,
@@ -439,9 +609,9 @@ with ThreadPoolExecutor(
             )
 
 
-# ===========================================
-# Filtrage Suisse / ICT
-# ===========================================
+# ============================================================
+# FILTRAGE SUISSE / ICT
+# ============================================================
 
 for url, records in to_fetch.items():
 
@@ -463,9 +633,9 @@ for url, records in to_fetch.items():
         else:
             keywords = ICT_SWISS_KEYWORDS
 
-        # -----------------------------------
-        # Texte intégral accessible
-        # -----------------------------------
+        # ----------------------------------------------------
+        # Cas 1: texte intégral disponible
+        # ----------------------------------------------------
 
         if success:
 
@@ -494,10 +664,11 @@ for url, records in to_fetch.items():
 
             continue
 
-        # -----------------------------------
-        # Texte intégral inaccessible:
-        # on teste ce que contient FreshRSS.
-        # -----------------------------------
+        # ----------------------------------------------------
+        # Cas 2: page inaccessible
+        #
+        # On essaie titre + chapô FreshRSS.
+        # ----------------------------------------------------
 
         searchable = (
             f"{title}\n{rss_text}"
@@ -524,11 +695,13 @@ for url, records in to_fetch.items():
 
         else:
 
+            # ------------------------------------------------
             # IMPORTANT:
-            # on NE JETTE PLUS cet article.
-            # Il est conservé dans unresolved.json
-            # pour une récupération alternative
-            # à l'étape suivante.
+            #
+            # L'article n'est PAS jeté.
+            # Il passe dans unresolved.json afin qu'une
+            # autre méthode puisse l'examiner ensuite.
+            # ------------------------------------------------
 
             unresolved.append(
                 {
@@ -548,12 +721,12 @@ for url, records in to_fetch.items():
             stats[group]["unresolved"] += 1
 
 
+# ============================================================
+# FICHIERS DE SORTIE
+# ============================================================
+
 results = list(selected.values())
 
-
-# ===========================================
-# Fichiers de sortie
-# ===========================================
 
 with open(
     OUTPUT_DIR / "candidates.json",
@@ -583,9 +756,9 @@ with open(
     )
 
 
-# ===========================================
-# Résumé
-# ===========================================
+# ============================================================
+# RÉSUMÉ DU RUN
+# ============================================================
 
 print("\n==============================")
 print("RÉSUMÉ PAR GROUPE")
@@ -612,6 +785,7 @@ print(
 print("==============================")
 
 
+# Affichage des candidats pour contrôle manuel
 for article in results:
 
     groups = ", ".join(
