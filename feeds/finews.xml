@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Fri, 18 Sep 2026 14:29:38 +0200</lastBuildDate>
+		<lastBuildDate>Fri, 18 Sep 2026 20:26:23 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Kann Europa wirklich auf aktives Management verzichten?</title>
+			<link>https://www.finews.ch/news/finanzplatz/73642-aktives-management-europa-finanzielle-souveraenitaet-maxime-carmignac</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73642-aktives-management-europa-finanzielle-souveraenitaet-maxime-carmignac</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Carmignac_Maxime.png" alt="Maxime Carmignac, CEO von Carmignac UK und die Tochter von Firmengründer die Tochter von Edouard Carmignac. (Bild: zVg)"></p><p><strong>Die passive Vermögensverwaltung boomt. Doch der zunehmende Einsatz von Indexstrategien in Europa bleibt nicht ohne Folgen: Er belastet Renditen, die Finanzierung von Unternehmen und die allgemeine finanzielle Souveränität Europas, wie Maxime Carmignac, CEO Carmignac UK, in ihrem Beitrag für finews.first schreibt.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Fri, 18 Sep 2026 14:50:09 +0200</pubDate>
+		</item>
 		<item>
 			<title>Zuger Kantonalbank ernennt neuen Anlagechef</title>
 			<link>https://www.finews.ch/news/banken/73654-zuger-kantonalbank-alexander-hunziker-cio-anlagechef</link>
@@ -200,18 +212,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Wed, 16 Sep 2026 09:20:18 +0200</pubDate>
-		</item>
-		<item>
-			<title>Wo der Blitz war, steht jetzt die Fünfzig</title>
-			<link>https://www.finews.ch/themen/high-end/73633-iwc-schaffhausen-ingenieur-automatic-limited-50th-anniversary-gerald-genta-alexia-evelyne-genta</link>
-			<guid isPermaLink="true">https://www.finews.ch/themen/high-end/73633-iwc-schaffhausen-ingenieur-automatic-limited-50th-anniversary-gerald-genta-alexia-evelyne-genta</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/iwc_ingenieur_header.jpg" alt="Evelyne und Alexia Genta vor einer historischen Werkzeichnung der Ingenieur SL. (Bild: IWC)"></p><p><strong>Fünfzig Jahre nach der Lancierung der Ingenieur SL widmet IWC Schaffhausen dem Design von Gérald Genta zwei limitierte Jubiläumsmodelle. Dazu veröffentlicht die Manufaktur ein Videointerview mit dessen Witwe und Tochter, die den Relaunch der Kollektion seit 2023 begleitet haben.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>High-End</category>
-			<category>Themen</category>
-			<category>ROOT</category>
-			<pubDate>Wed, 16 Sep 2026 14:28:09 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
