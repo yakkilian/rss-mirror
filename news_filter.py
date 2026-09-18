@@ -131,8 +131,8 @@ def fetch_freshrss_entries(group, feed_url):
     """
     Récupère les articles FreshRSS par pages de 100.
 
-    La première page est appelée sans offset,
-    exactement comme dans notre version qui fonctionnait.
+    La pagination s'arrête dès qu'une page entière
+    ne contient plus aucun article des dernières 48 h.
     """
 
     entries = []
@@ -141,20 +141,16 @@ def fetch_freshrss_entries(group, feed_url):
     for page_number in range(MAX_PAGES):
 
         if page_number == 0:
-            # Première page: PAS de offset
             url = freshrss_url(
                 feed_url,
                 offset=None,
             )
         else:
-            # Pages suivantes: 100, 200, 300...
             url = freshrss_url(
                 feed_url,
                 offset=page_number * PAGE_SIZE,
             )
 
-        # On utilise directement feedparser,
-        # comme dans la première version qui fonctionnait.
         parsed = feedparser.parse(url)
 
         if parsed.bozo:
@@ -176,8 +172,12 @@ def fetch_freshrss_entries(group, feed_url):
             break
 
         added_this_page = 0
+        recent_this_page = 0
 
         for entry in page_entries:
+
+            if is_recent(entry):
+                recent_this_page += 1
 
             key = (
                 entry.get("link")
@@ -198,16 +198,33 @@ def fetch_freshrss_entries(group, feed_url):
             entries.append(entry)
             added_this_page += 1
 
-        # Moins de 100 = dernière page.
+        print(
+            f"[INFO] {group}: "
+            f"{recent_this_page} articles récents "
+            f"sur cette page"
+        )
+
+        # Moins de 100 = dernière page disponible
         if len(page_entries) < PAGE_SIZE:
             break
 
-        # Si FreshRSS ignore offset et renvoie
-        # exactement les mêmes articles, on arrête.
+        # Aucun article récent sur cette page:
+        # comme FreshRSS trie du plus récent au plus ancien,
+        # inutile d'aller chercher les pages suivantes.
+        if recent_this_page == 0:
+            print(
+                f"[INFO] {group}: arrêt pagination, "
+                f"plus aucun article des dernières "
+                f"{LOOKBACK_HOURS} h"
+            )
+            break
+
+        # Protection si FreshRSS renvoie à nouveau
+        # exactement les mêmes articles.
         if added_this_page == 0:
             print(
                 f"[WARN] {group}: pagination arrêtée, "
-                "la page ne contient aucun nouvel article"
+                "aucun nouvel article sur cette page"
             )
             break
 
