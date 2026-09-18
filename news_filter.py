@@ -28,17 +28,11 @@ HEADERS = {
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-# Fenêtre temporelle de travail
 LOOKBACK_HOURS = 48
 
-# FreshRSS nous a correctement renvoyé 100 articles.
-# On garde donc 100 par page et on utilise offset pour paginer.
 PAGE_SIZE = 100
-
-# Sécurité: maximum 10 pages = 1000 articles par groupe.
 MAX_PAGES = 10
 
-# Téléchargements simultanés des pages web
 MAX_WORKERS = 12
 
 
@@ -88,15 +82,112 @@ ICT_SWISS_KEYWORDS = [
 
 
 # ============================================================
+# URLS / DÉDOUBLONNAGE
+# ============================================================
+
+def canonical_key(url):
+    """
+    Retire quelques paramètres de tracking afin que deux URL
+    identiques ne deviennent pas deux candidats différents.
+    """
+
+    try:
+        parts = urlsplit(url)
+
+        clean_query = []
+
+        for key, value in parse_qsl(
+            parts.query,
+            keep_blank_values=True,
+        ):
+            low = key.lower()
+
+            if low.startswith("utm_"):
+                continue
+
+            if low in {
+                "feedref",
+                "oc",
+            }:
+                continue
+
+            clean_query.append((key, value))
+
+        return urlunsplit(
+            (
+                parts.scheme.lower(),
+                parts.netloc.lower(),
+                parts.path.rstrip("/"),
+                urlencode(clean_query),
+                "",
+            )
+        )
+
+    except Exception:
+        return url
+
+
+def businesswire_language(url):
+    """
+    Détecte la langue dans une URL Business Wire, par exemple:
+    /en/
+    /fr/
+    /de/
+    /it/
+    /zh-CN/
+    """
+
+    try:
+        parts = urlsplit(url)
+
+        if "businesswire.com" not in parts.netloc.lower():
+            return None
+
+        match = re.search(
+            r"/news/home/\d+/([A-Za-z]{2}(?:-[A-Za-z]{2})?)(?:/|$)",
+            parts.path,
+        )
+
+        if match:
+            return match.group(1).lower()
+
+    except Exception:
+        pass
+
+    return None
+
+
+def skip_unverified_businesswire_translation(url):
+    """
+    Cette règle ne s'applique QU'AUX articles dont le texte
+    intégral est inaccessible ET dont aucun mot-clé n'a été
+    trouvé dans le titre/chapô.
+
+    Dans ce cas de précaution, on ne transmet à l'IA que les
+    versions françaises et anglaises de Business Wire.
+
+    Un article Business Wire qui a réellement passé le filtre
+    lexical n'est jamais supprimé ici.
+    """
+
+    lang = businesswire_language(url)
+
+    if lang is None:
+        return False
+
+    return lang not in {"fr", "en"}
+
+
+# ============================================================
 # FRESHRSS
 # ============================================================
 
 def freshrss_url(url, offset=None):
     """
-    Construit l'URL FreshRSS.
+    Pas de paramètre hours:
+    il vide le flux sur cette instance FreshRSS.
 
-    Pas de filtre temporel côté FreshRSS:
-    le contrôle des 48 h est fait ensuite en Python.
+    Le contrôle des 48 h est effectué en Python.
     """
 
     parts = urlsplit(url)
@@ -106,9 +197,6 @@ def freshrss_url(url, offset=None):
     query["nb"] = str(PAGE_SIZE)
     query["order"] = "DESC"
 
-    # IMPORTANT:
-    # hours est volontairement supprimé car il vide
-    # le flux sur cette instance FreshRSS.
     query.pop("hours", None)
 
     if offset is not None:
@@ -129,10 +217,10 @@ def freshrss_url(url, offset=None):
 
 def fetch_freshrss_entries(group, feed_url):
     """
-    Récupère les articles FreshRSS par pages de 100.
+    Récupère les pages FreshRSS de 100 articles.
 
-    La pagination s'arrête dès qu'une page entière
-    ne contient plus aucun article des dernières 48 h.
+    Arrêt dès qu'une page entière ne contient plus
+    aucun article des dernières 48 h.
     """
 
     entries = []
@@ -179,10 +267,16 @@ def fetch_freshrss_entries(group, feed_url):
             if is_recent(entry):
                 recent_this_page += 1
 
-            key = (
+            raw_url = (
                 entry.get("link")
                 or entry.get("id")
-                or (
+                or ""
+            )
+
+            key = (
+                canonical_key(raw_url)
+                if raw_url
+                else (
                     entry.get("title", "")
                     + entry.get("published", "")
                 )
@@ -201,16 +295,12 @@ def fetch_freshrss_entries(group, feed_url):
         print(
             f"[INFO] {group}: "
             f"{recent_this_page} articles récents "
-            f"sur cette page"
+            "sur cette page"
         )
 
-        # Moins de 100 = dernière page disponible
         if len(page_entries) < PAGE_SIZE:
             break
 
-        # Aucun article récent sur cette page:
-        # comme FreshRSS trie du plus récent au plus ancien,
-        # inutile d'aller chercher les pages suivantes.
         if recent_this_page == 0:
             print(
                 f"[INFO] {group}: arrêt pagination, "
@@ -219,8 +309,6 @@ def fetch_freshrss_entries(group, feed_url):
             )
             break
 
-        # Protection si FreshRSS renvoie à nouveau
-        # exactement les mêmes articles.
         if added_this_page == 0:
             print(
                 f"[WARN] {group}: pagination arrêtée, "
@@ -230,14 +318,12 @@ def fetch_freshrss_entries(group, feed_url):
 
     return entries
 
+
 # ============================================================
 # DATES
 # ============================================================
 
 def entry_datetime(entry):
-    """
-    Essaie plusieurs formats de date proposés par feedparser.
-    """
 
     for key in (
         "published_parsed",
@@ -281,16 +367,10 @@ def entry_datetime(entry):
 
 
 def is_recent(entry):
-    """
-    Double contrôle local des 48 dernières heures.
-
-    FreshRSS applique déjà hours=48, mais on ne dépend
-    pas uniquement de lui.
-    """
 
     dt = entry_datetime(entry)
 
-    # Sans date exploitable, on conserve par prudence.
+    # Sans date exploitable, conservation par prudence.
     if dt is None:
         return True
 
@@ -307,9 +387,6 @@ def is_recent(entry):
 # ============================================================
 
 def rss_fallback(entry):
-    """
-    Récupère le chapô / contenu fourni par FreshRSS.
-    """
 
     chunks = []
 
@@ -324,27 +401,26 @@ def rss_fallback(entry):
 
     text = html.unescape(text)
 
-    # Suppression simple des balises HTML
-    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(
+        r"<[^>]+>",
+        " ",
+        text,
+    )
 
-    # Nettoyage des espaces
-    text = re.sub(r"\s+", " ", text)
+    text = re.sub(
+        r"\s+",
+        " ",
+        text,
+    )
 
     return text.strip()
 
 
 # ============================================================
-# RÉCUPÉRATION DU TEXTE INTÉGRAL
+# TEXTE INTÉGRAL
 # ============================================================
 
 def fetch_full_text(url):
-    """
-    Télécharge la page de l'article et tente d'en extraire
-    le contenu éditorial principal avec Trafilatura.
-
-    Retour:
-    (texte, succès, erreur)
-    """
 
     try:
         r = requests.get(
@@ -388,17 +464,10 @@ def fetch_full_text(url):
 
 
 # ============================================================
-# FILTRAGE PAR MOTS-CLÉS
+# MOTS-CLÉS
 # ============================================================
 
 def find_matches(text, keywords):
-    """
-    Recherche insensible à la casse.
-
-    IA et TIC doivent apparaître comme mots entiers.
-    'cyber' détecte volontairement cybersécurité,
-    cyberattaque, cybercriminel, etc.
-    """
 
     matches = []
 
@@ -423,7 +492,7 @@ def find_matches(text, keywords):
 
 
 # ============================================================
-# AJOUT D'UN ARTICLE RETENU
+# AJOUT D'UN CANDIDAT
 # ============================================================
 
 def add_selected(
@@ -434,6 +503,8 @@ def add_selected(
     text,
     text_source,
     selection_reason,
+    needs_ai_review=False,
+    fetch_error="",
 ):
 
     url = entry.get("link", "").strip()
@@ -442,9 +513,11 @@ def add_selected(
     if not url or not title:
         return
 
-    if url not in selected:
+    key = canonical_key(url)
 
-        selected[url] = {
+    if key not in selected:
+
+        selected[key] = {
             "title": title,
             "url": url,
             "groups": [group],
@@ -456,38 +529,41 @@ def add_selected(
             "matched_keywords": list(matches),
             "text_source": text_source,
             "selection_reason": selection_reason,
+            "needs_ai_review": needs_ai_review,
+            "fetch_error": fetch_error,
 
-            # Pour l'instant, on conserve jusqu'à 2000 caractères.
-            # Cela inclut notamment les chapôs FreshRSS.
-            "excerpt": text[:2000],
+            # Titre + chapô / extrait seront donc disponibles
+            # pour la future étape IA.
+            "excerpt": text[:3000],
         }
 
     else:
 
-        if group not in selected[url]["groups"]:
-            selected[url]["groups"].append(group)
+        if group not in selected[key]["groups"]:
+            selected[key]["groups"].append(group)
 
         for match in matches:
 
             if (
                 match
-                not in selected[url]["matched_keywords"]
+                not in selected[key]["matched_keywords"]
             ):
-                selected[url][
+                selected[key][
                     "matched_keywords"
                 ].append(match)
 
 
 # ============================================================
-# TRAITEMENT DES 4 GROUPES
+# TRAITEMENT
 # ============================================================
 
 selected = {}
 
+# Ce fichier reste un diagnostic technique.
+# Ses articles peuvent désormais AUSSI être présents
+# dans candidates.json.
 unresolved = []
 
-# Pages qui nécessitent un téléchargement intégral.
-# Pour l'instant seulement Suisse + ICT.
 to_fetch = {}
 
 stats = {}
@@ -526,7 +602,9 @@ for group, feed_url in FEEDS.items():
         "received": received,
         "recent": len(recent_entries),
         "selected": 0,
-        "unresolved": 0,
+        "keyword_match": 0,
+        "precaution": 0,
+        "businesswire_skipped": 0,
     }
 
     for entry in recent_entries:
@@ -540,14 +618,9 @@ for group, feed_url in FEEDS.items():
         rss_text = rss_fallback(entry)
 
         # ----------------------------------------------------
-        # ICTj news / ICT best
-        #
-        # Aucun filtre lexical:
-        # tous les articles récents deviennent candidats.
-        #
-        # On conserve déjà leur chapô / extrait RSS.
-        # Le texte intégral sera récupéré plus tard,
-        # avant la sélection éditoriale par IA.
+        # ICTj news / ICT best:
+        # tout passe à l'étape IA.
+        # Le chapô RSS est conservé.
         # ----------------------------------------------------
 
         if group in ("ICTj news", "ICT best"):
@@ -560,6 +633,7 @@ for group, feed_url in FEEDS.items():
                 text=rss_text,
                 text_source="rss",
                 selection_reason="all_from_group",
+                needs_ai_review=False,
             )
 
             stats[group]["selected"] += 1
@@ -567,16 +641,20 @@ for group, feed_url in FEEDS.items():
             continue
 
         # ----------------------------------------------------
-        # Suisse / ICT
-        #
-        # Ici le texte intégral est utile dès maintenant,
-        # puisque nous devons y chercher des mots-clés.
+        # Suisse / ICT:
+        # téléchargement du texte intégral pour
+        # appliquer correctement le filtre lexical.
         # ----------------------------------------------------
 
-        if url not in to_fetch:
-            to_fetch[url] = []
+        key = canonical_key(url)
 
-        to_fetch[url].append(
+        if key not in to_fetch:
+            to_fetch[key] = {
+                "url": url,
+                "records": [],
+            }
+
+        to_fetch[key]["records"].append(
             {
                 "group": group,
                 "entry": entry,
@@ -607,22 +685,22 @@ with ThreadPoolExecutor(
     futures = {
         executor.submit(
             fetch_full_text,
-            url,
-        ): url
-        for url in to_fetch
+            data["url"],
+        ): key
+        for key, data in to_fetch.items()
     }
 
     for future in as_completed(futures):
 
-        url = futures[future]
+        key = futures[future]
 
         try:
 
-            fetch_results[url] = future.result()
+            fetch_results[key] = future.result()
 
         except Exception as e:
 
-            fetch_results[url] = (
+            fetch_results[key] = (
                 "",
                 False,
                 str(e)[:200],
@@ -633,20 +711,25 @@ with ThreadPoolExecutor(
 # FILTRAGE SUISSE / ICT
 # ============================================================
 
-for url, records in to_fetch.items():
+for key, data in to_fetch.items():
+
+    url = data["url"]
 
     full_text, success, error = fetch_results.get(
-        url,
+        key,
         ("", False, "aucun résultat"),
     )
 
-    for record in records:
+    for record in data["records"]:
 
         group = record["group"]
         entry = record["entry"]
         rss_text = record["rss_text"]
 
-        title = entry.get("title", "").strip()
+        title = entry.get(
+            "title",
+            "",
+        ).strip()
 
         if group == "Suisse":
             keywords = SWISS_IT_KEYWORDS
@@ -654,7 +737,7 @@ for url, records in to_fetch.items():
             keywords = ICT_SWISS_KEYWORDS
 
         # ----------------------------------------------------
-        # Cas 1: texte intégral disponible
+        # TEXTE INTÉGRAL DISPONIBLE
         # ----------------------------------------------------
 
         if success:
@@ -678,16 +761,18 @@ for url, records in to_fetch.items():
                     text=full_text,
                     text_source="full",
                     selection_reason="keyword_fulltext",
+                    needs_ai_review=False,
                 )
 
                 stats[group]["selected"] += 1
+                stats[group]["keyword_match"] += 1
 
             continue
 
         # ----------------------------------------------------
-        # Cas 2: page inaccessible
+        # TEXTE INTÉGRAL INACCESSIBLE
         #
-        # On essaie titre + chapô FreshRSS.
+        # On essaie le titre + chapô FreshRSS.
         # ----------------------------------------------------
 
         searchable = (
@@ -701,6 +786,7 @@ for url, records in to_fetch.items():
 
         if matches:
 
+            # Le mot-clé est déjà confirmé par le RSS.
             add_selected(
                 selected=selected,
                 entry=entry,
@@ -709,19 +795,12 @@ for url, records in to_fetch.items():
                 text=rss_text,
                 text_source="rss",
                 selection_reason="keyword_rss_fallback",
+                needs_ai_review=False,
+                fetch_error=error,
             )
 
             stats[group]["selected"] += 1
-
-        else:
-
-            # ------------------------------------------------
-            # IMPORTANT:
-            #
-            # L'article n'est PAS jeté.
-            # Il passe dans unresolved.json afin qu'une
-            # autre méthode puisse l'examiner ensuite.
-            # ------------------------------------------------
+            stats[group]["keyword_match"] += 1
 
             unresolved.append(
                 {
@@ -734,15 +813,95 @@ for url, records in to_fetch.items():
                         or ""
                     ),
                     "fetch_error": error,
-                    "rss_excerpt": rss_text[:2000],
+                    "rss_excerpt": rss_text[:3000],
+                    "candidate_action": (
+                        "included_keyword_match"
+                    ),
                 }
             )
 
-            stats[group]["unresolved"] += 1
+            continue
+
+        # ----------------------------------------------------
+        # PAS DE TEXTE INTÉGRAL + PAS DE MOT-CLÉ VISIBLE
+        #
+        # Au lieu de jeter l'article, on le transmet à l'IA
+        # avec son chapô RSS comme candidat de précaution.
+        # ----------------------------------------------------
+
+        diagnostic = {
+            "title": title,
+            "url": url,
+            "group": group,
+            "published": (
+                entry.get("published")
+                or entry.get("updated")
+                or ""
+            ),
+            "fetch_error": error,
+            "rss_excerpt": rss_text[:3000],
+        }
+
+        # ----------------------------------------------------
+        # Business Wire:
+        #
+        # parmi ces candidats NON CONFIRMÉS uniquement,
+        # on évite de transmettre toutes les traductions.
+        #
+        # FR + EN conservés.
+        # Les autres langues restent dans unresolved.json
+        # pour audit, mais ne sont pas envoyées à l'IA.
+        # ----------------------------------------------------
+
+        if skip_unverified_businesswire_translation(
+            url
+        ):
+
+            diagnostic[
+                "candidate_action"
+            ] = (
+                "excluded_non_fr_en_businesswire"
+            )
+
+            unresolved.append(
+                diagnostic
+            )
+
+            stats[group][
+                "businesswire_skipped"
+            ] += 1
+
+            continue
+
+        # Candidat de précaution transmis à l'IA.
+        diagnostic[
+            "candidate_action"
+        ] = "included_for_ai_review"
+
+        unresolved.append(
+            diagnostic
+        )
+
+        add_selected(
+            selected=selected,
+            entry=entry,
+            group=group,
+            matches=[],
+            text=rss_text,
+            text_source="rss",
+            selection_reason=(
+                "technical_fallback_unverified"
+            ),
+            needs_ai_review=True,
+            fetch_error=error,
+        )
+
+        stats[group]["selected"] += 1
+        stats[group]["precaution"] += 1
 
 
 # ============================================================
-# FICHIERS DE SORTIE
+# SORTIES
 # ============================================================
 
 results = list(selected.values())
@@ -777,7 +936,7 @@ with open(
 
 
 # ============================================================
-# RÉSUMÉ DU RUN
+# RÉSUMÉ
 # ============================================================
 
 print("\n==============================")
@@ -791,21 +950,44 @@ for group, s in stats.items():
         f"{group}: "
         f"{s['received']} reçus | "
         f"{s['recent']} récents | "
-        f"{s['selected']} retenus | "
-        f"{s['unresolved']} à vérifier"
+        f"{s['selected']} candidats | "
+        f"{s['keyword_match']} match mot-clé | "
+        f"{s['precaution']} précaution | "
+        f"{s['businesswire_skipped']} "
+        "BW langues écartées"
     )
 
 
+precaution_count = sum(
+    1
+    for article in results
+    if article.get("needs_ai_review")
+)
+
+
+bw_skipped_count = sum(
+    s["businesswire_skipped"]
+    for s in stats.values()
+)
+
+
 print("\n==============================")
-print(f"ARTICLES RETENUS: {len(results)}")
+print(f"CANDIDATS POUR L'IA: {len(results)}")
 print(
-    f"ARTICLES À VÉRIFIER: "
+    f"DONT CANDIDATS DE PRÉCAUTION: "
+    f"{precaution_count}"
+)
+print(
+    f"BUSINESS WIRE LANGUES ÉCARTÉES: "
+    f"{bw_skipped_count}"
+)
+print(
+    f"ÉCHECS TECHNIQUES JOURNALISÉS: "
     f"{len(unresolved)}"
 )
 print("==============================")
 
 
-# Affichage des candidats pour contrôle manuel
 for article in results:
 
     groups = ", ".join(
@@ -816,8 +998,15 @@ for article in results:
         article["matched_keywords"]
     )
 
+    marker = (
+        " [À ÉVALUER]"
+        if article["needs_ai_review"]
+        else ""
+    )
+
     print(
-        f"\n[{groups}] "
+        f"\n[{groups}]"
+        f"{marker} "
         f"{article['title']}"
     )
 
@@ -829,6 +1018,11 @@ for article in results:
     print(
         f"  source texte: "
         f"{article['text_source']}"
+    )
+
+    print(
+        f"  raison: "
+        f"{article['selection_reason']}"
     )
 
     print(
