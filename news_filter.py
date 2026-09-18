@@ -95,8 +95,8 @@ def freshrss_url(url, offset=None):
     """
     Construit l'URL FreshRSS.
 
-    Première page: aucun paramètre offset.
-    Pages suivantes: offset=100, 200, etc.
+    Pas de filtre temporel côté FreshRSS:
+    le contrôle des 48 h est fait ensuite en Python.
     """
 
     parts = urlsplit(url)
@@ -104,11 +104,13 @@ def freshrss_url(url, offset=None):
 
     query["f"] = "rss"
     query["nb"] = str(PAGE_SIZE)
-    query["hours"] = str(LOOKBACK_HOURS)
     query["order"] = "DESC"
 
     # IMPORTANT:
-    # pas de offset=0 sur la première page
+    # hours est volontairement supprimé car il vide
+    # le flux sur cette instance FreshRSS.
+    query.pop("hours", None)
+
     if offset is not None:
         query["offset"] = str(offset)
     else:
