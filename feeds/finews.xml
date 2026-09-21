@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Mon, 21 Sep 2026 02:31:41 +0200</lastBuildDate>
+		<lastBuildDate>Mon, 21 Sep 2026 08:33:03 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Zwei Wealth hegt ambitionierte Expansionspläne</title>
+			<link>https://www.finews.ch/news/finanzplatz/73652-zwei-wealth-expansion-deutschland-uk-wealth-officer-swiss-life</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73652-zwei-wealth-expansion-deutschland-uk-wealth-officer-swiss-life</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Zwei_Wealth.png" alt="Die Zürcher Wealth-Management-Plattform lanciert die nächste Wachstumsphase. (Bild: zVg)"></p><p><strong>Zuerst die Schweiz, dann das Ausland: Die Swiss-Life-Tochter Zwei Wealth treibt die Expansion voran und setzt die Messlatte dabei hoch.&nbsp;</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Mon, 21 Sep 2026 06:00:09 +0200</pubDate>
+		</item>
 		<item>
 			<title>Kann Europa wirklich auf aktives Management verzichten?</title>
 			<link>https://www.finews.ch/news/finanzplatz/73642-aktives-management-europa-finanzielle-souveraenitaet-maxime-carmignac</link>
@@ -200,18 +212,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Wed, 16 Sep 2026 16:37:40 +0200</pubDate>
-		</item>
-		<item>
-			<title>«Schweizer Vermögensverwalter brauchen direkten Zugang zu Asien»</title>
-			<link>https://www.finews.ch/news/banken/73411-dbs-schweiz-vermoegensverwalter-family-offices-asien-singapur</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/banken/73411-dbs-schweiz-vermoegensverwalter-family-offices-asien-singapur</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/08/DBS_zwo_.png" alt="«Für viele vermögende Familien ist Asien zu einer zentralen Säule ihrer langfristigen Wachstumsstrategie geworden»: Rüdiger von Wedel, Managing Director bei DBS Bank in Singapur. (Bilder: zVg)"></p><p><strong>DBS will die Zusammenarbeit mit europäischen externen Vermögensverwaltern und Family Offices vertiefen. Ein besonderer Fokus liegt dabei auf der Schweiz. Laut Rüdiger von Wedel geht es dabei um weit mehr als die Bereitstellung eines Buchungszentrums in Singapur.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Banken</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Wed, 16 Sep 2026 09:20:18 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
