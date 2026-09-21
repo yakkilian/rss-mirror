@@ -5,6 +5,11 @@
     <link>https://new.abb.com/ch</link>
     <description>ABB Group press releases mirrored for FreshRSS</description>
     <item>
+      <title>Group press release 2026-09-21 ABB’s new direct current portfolio aims to rewire AI data center energy infrastructure</title>
+      <link>https://new.abb.com/news/detail/138900/abbs-new-direct-current-portfolio-aims-to-rewire-ai-data-center-energy-infrastructure</link>
+      <guid isPermaLink="true">https://new.abb.com/news/detail/138900/abbs-new-direct-current-portfolio-aims-to-rewire-ai-data-center-energy-infrastructure</guid>
+    </item>
+    <item>
       <title>Group press release 2026-09-14 ABB joins forces with Ferrari Hypersail to take Direct Current to new horizons</title>
       <link>https://new.abb.com/news/detail/138721/abb-joins-forces-with-ferrari-hypersail-to-take-direct-current-to-new-horizons</link>
       <guid isPermaLink="true">https://new.abb.com/news/detail/138721/abb-joins-forces-with-ferrari-hypersail-to-take-direct-current-to-new-horizons</guid>
@@ -23,11 +28,6 @@
       <title>Group press release 2026-08-18 ABB selected by Statkraft to modernize three Norwegian hydropower plants</title>
       <link>https://new.abb.com/news/detail/138060/abb-selected-by-statkraft-to-modernize-three-norwegian-hydropower-plants</link>
       <guid isPermaLink="true">https://new.abb.com/news/detail/138060/abb-selected-by-statkraft-to-modernize-three-norwegian-hydropower-plants</guid>
-    </item>
-    <item>
-      <title>Group press release 2026-08-06 ABB invests in LevelTen Energy to advance clean energy procurement</title>
-      <link>https://new.abb.com/news/detail/137745/abb-invests-in-levelten-energy-to-advance-clean-energy-procurement</link>
-      <guid isPermaLink="true">https://new.abb.com/news/detail/137745/abb-invests-in-levelten-energy-to-advance-clean-energy-procurement</guid>
     </item>
   </channel>
 </rss>
