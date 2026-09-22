@@ -5,6 +5,11 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>The Cybersecurity Claims in “We Must Pace the Frontier” Blog Artificial Intelligence 21 Sep 2026 Rob T. Lee,  Melissa Bischoping,  Viswanath (Vis) Chirravuri + 11 more</title>
+      <link>https://www.sans.org/blog/cybersecurity-claims-we-must-pace-frontier</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/cybersecurity-claims-we-must-pace-frontier</guid>
+    </item>
+    <item>
       <title>What Comes After Behavior Change? Blog Artificial Intelligence 9 Sep 2026 Lance Spitzner</title>
       <link>https://www.sans.org/blog/what-comes-after-behavior-change</link>
       <guid isPermaLink="true">https://www.sans.org/blog/what-comes-after-behavior-change</guid>
@@ -58,11 +63,6 @@
       <title>VulnOps: A CISO’s Guide to Starting Implementation Blog Offensive Operations 5 Aug 2026 SANS Institute</title>
       <link>https://www.sans.org/blog/vulnops-cisos-guide-to-starting-implementation</link>
       <guid isPermaLink="true">https://www.sans.org/blog/vulnops-cisos-guide-to-starting-implementation</guid>
-    </item>
-    <item>
-      <title>Nine Questions That Tell You Whether Your Team Could Handle an AI-Run Attack Blog Artificial Intelligence 5 Aug 2026 SANS Institute</title>
-      <link>https://www.sans.org/blog/nine-questions-that-tell-you-whether-your-team-could-handle-ai-run-attack</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/nine-questions-that-tell-you-whether-your-team-could-handle-ai-run-attack</guid>
     </item>
   </channel>
 </rss>
