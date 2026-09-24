@@ -5,6 +5,11 @@
     <link>https://www.fortinet.com/blog/threat-research</link>
     <description>FortiGuard Labs Threat Research</description>
     <item>
+      <title>Uncovering a SectopRAT Variant Embedded in Legitimate Software</title>
+      <link>https://www.fortinet.com/blog/threat-research/uncovering-a-sectoprat-variant-embedded-in-legitimate-software</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/uncovering-a-sectoprat-variant-embedded-in-legitimate-software</guid>
+    </item>
+    <item>
       <title>Casbaneiro: A Banking Trojan with Distributed Data-Receiving Servers</title>
       <link>https://www.fortinet.com/blog/threat-research/casbaneiro-a-banking-trojan-with-distributed-data-receiving-servers</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/casbaneiro-a-banking-trojan-with-distributed-data-receiving-servers</guid>
@@ -48,11 +53,6 @@
       <title>Threat Actors Weaponize AI Hype to Deliver AsyncRAT</title>
       <link>https://www.fortinet.com/blog/threat-research/threat-actors-weaponize-ai-hype-to-deliver-asyncrat</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/threat-actors-weaponize-ai-hype-to-deliver-asyncrat</guid>
-    </item>
-    <item>
-      <title>Cybercriminals Are Targeting the FIFA World Cup 2026</title>
-      <link>https://www.fortinet.com/blog/threat-research/cybercriminals-are-targeting-the-fifa-world-cup-2026</link>
-      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/cybercriminals-are-targeting-the-fifa-world-cup-2026</guid>
     </item>
     <item>
       <title>RolandSkimmer: Silent Credit Card Thief Uncovered</title>
