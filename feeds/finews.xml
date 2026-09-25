@@ -5,7 +5,7 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Fri, 25 Sep 2026 14:30:38 +0200</lastBuildDate>
+		<lastBuildDate>Fri, 25 Sep 2026 20:26:24 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
@@ -22,16 +22,28 @@
 			<pubDate>Fri, 25 Sep 2026 11:22:46 +0200</pubDate>
 		</item>
 		<item>
-			<title>«Die Grossen haben kein Interesse daran, die KI-Entwicklung zu bremsen»</title>
-			<link>https://www.finews.ch/news/banken/73718-nicolas-bickel-edmond-de-rothschild-ki-us-zinsen-dollar-anleihen</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/banken/73718-nicolas-bickel-edmond-de-rothschild-ki-us-zinsen-dollar-anleihen</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Bickel_Nicolas.png" alt="Nicolas Bickel ist Group Head of Investment bei Edmond de Rothschild. (Bild: zVg)"></p><p><strong>Die KI-Euphorie lässt nach, doch Technologiewerte bleiben stark. Nicolas Bickel von Edmond de Rothschild erklärt, wie er KI, steigende US-Zinsen und den Dollar einschätzt und wo er derzeit Anlagechancen sieht.</strong></p>
+			<title>Die gefährliche Abhängigkeit von US-Aktien</title>
+			<link>https://www.finews.ch/news/finanzplatz/73716-us-aktien-exzeptionalismus-portfoliorisiko-robeco-david-blitz</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73716-us-aktien-exzeptionalismus-portfoliorisiko-robeco-david-blitz</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Robecco_.png" alt="David Blitz, Chief Researcher und Peter van der Welle, Strategist, beide bei Robeco. (Bilder: zVg)"></p><p><strong>Die jahrelange Dominanz von US-Aktien hat in vielen Portfolios erhebliche Klumpenrisiken geschaffen. David Blitz und Peter van der Welle von Robeco erklären, weshalb die Erfolgsserie der Wall Street nicht einfach fortgeschrieben werden sollte und wo sie neue Chancen sehen.</strong></p>
 </div>]]></description>
 			<category>Haupteintrag</category>
-			<category>Banken</category>
+			<category>Finanzplatz</category>
 			<category>News</category>
 			<category>ROOT</category>
-			<pubDate>Fri, 25 Sep 2026 12:28:45 +0200</pubDate>
+			<pubDate>Fri, 25 Sep 2026 14:56:23 +0200</pubDate>
+		</item>
+		<item>
+			<title>Mobiliar-Anlagechef: «Wir brauchen kein digitales Gold – wir haben das richtige»</title>
+			<link>https://www.finews.ch/news/versicherungen/73707-mobiliar-anlagechef-michael-christen-gold-bitcoin-ki-asset-management</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/versicherungen/73707-mobiliar-anlagechef-michael-christen-gold-bitcoin-ki-asset-management</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Christen_Michael_.png" alt="«Wir haben eine privilegierte Ausgangslage»: Mobiliar-Anlagechef Michael Christen. (Bild: zVg)"></p><p><strong>Die Mobiliar setzt auf langfristiges Investieren, Diversifikation und aktives Management. Anlagechef Michael Christen erklärt, weshalb ihn geopolitische Risiken und die Konzentration bei KI-Aktien beschäftigen und warum Bitcoin kein Thema ist.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Versicherungen</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Fri, 25 Sep 2026 06:00:37 +0200</pubDate>
 		</item>
 		<item>
 			<title>Was Banken von booking.com lernen können</title>
@@ -44,6 +56,18 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Fri, 25 Sep 2026 10:33:41 +0200</pubDate>
+		</item>
+		<item>
+			<title>«Die Grossen haben kein Interesse daran, die KI-Entwicklung zu bremsen»</title>
+			<link>https://www.finews.ch/news/banken/73718-nicolas-bickel-edmond-de-rothschild-ki-us-zinsen-dollar-anleihen</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/banken/73718-nicolas-bickel-edmond-de-rothschild-ki-us-zinsen-dollar-anleihen</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Bickel_Nicolas.png" alt="Nicolas Bickel ist Group Head of Investment bei Edmond de Rothschild. (Bild: zVg)"></p><p><strong>Die KI-Euphorie lässt nach, doch Technologiewerte bleiben stark. Nicolas Bickel von Edmond de Rothschild erklärt, wie er KI, steigende US-Zinsen und den Dollar einschätzt und wo er derzeit Anlagechancen sieht.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Banken</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Fri, 25 Sep 2026 12:28:45 +0200</pubDate>
 		</item>
 		<item>
 			<title>Bendura Bank feiert zehn Jahre in Hongkonger Hand</title>
@@ -80,18 +104,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Fri, 25 Sep 2026 09:40:24 +0200</pubDate>
-		</item>
-		<item>
-			<title>Mobiliar-Anlagechef: «Wir brauchen kein digitales Gold – wir haben das richtige»</title>
-			<link>https://www.finews.ch/news/versicherungen/73707-mobiliar-anlagechef-michael-christen-gold-bitcoin-ki-asset-management</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/versicherungen/73707-mobiliar-anlagechef-michael-christen-gold-bitcoin-ki-asset-management</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Christen_Michael_.png" alt="«Wir haben eine privilegierte Ausgangslage»: Mobiliar-Anlagechef Michael Christen. (Bild: zVg)"></p><p><strong>Die Mobiliar setzt auf langfristiges Investieren, Diversifikation und aktives Management. Anlagechef Michael Christen erklärt, weshalb ihn geopolitische Risiken und die Konzentration bei KI-Aktien beschäftigen und warum Bitcoin kein Thema ist.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Versicherungen</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Fri, 25 Sep 2026 06:00:37 +0200</pubDate>
 		</item>
 		<item>
 			<title>Acrevis holt neuen Private-Banking-Chef von Grossbank</title>
@@ -212,18 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Thu, 24 Sep 2026 11:25:35 +0200</pubDate>
-		</item>
-		<item>
-			<title>Nationalbank macht beim Zinserhöhungszyklus (noch) nicht mit</title>
-			<link>https://www.finews.ch/news/finanzplatz/73698-nationalbank-geldpolitik-zinsentscheid-snb-nullzinspolitik-zinsbonus-frankenabwertung</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73698-nationalbank-geldpolitik-zinsentscheid-snb-nullzinspolitik-zinsbonus-frankenabwertung</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/SNB-Gebaeude.jpg" alt="(Bild: SNB)"></p><p><strong>Die Schweizerische Nationalbank bleibt ihrer Nullzinspolitik treu und verzichtet damit darauf, sich dem internationalen Trend der Geldpolitik zu höheren Leitsätzen anzuschliessen. Ihre Inflationsprognose hebt sie nur sehr sanft an.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Thu, 24 Sep 2026 09:53:12 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
