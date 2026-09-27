@@ -5,22 +5,10 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Sun, 27 Sep 2026 14:28:31 +0200</lastBuildDate>
+		<lastBuildDate>Sun, 27 Sep 2026 20:26:43 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
-		<item>
-			<title>Mobiliar-Anlagechef: «Wir brauchen kein digitales Gold – wir haben das richtige»</title>
-			<link>https://www.finews.ch/news/versicherungen/73707-mobiliar-anlagechef-michael-christen-gold-bitcoin-ki-asset-management</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/versicherungen/73707-mobiliar-anlagechef-michael-christen-gold-bitcoin-ki-asset-management</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Christen_Michael_.png" alt="«Wir haben eine privilegierte Ausgangslage»: Mobiliar-Anlagechef Michael Christen. (Bild: zVg)"></p><p><strong>Die Mobiliar setzt auf langfristiges Investieren, Diversifikation und aktives Management. Anlagechef Michael Christen erklärt, weshalb ihn geopolitische Risiken und die Konzentration bei KI-Aktien beschäftigen und warum Bitcoin kein Thema ist.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Versicherungen</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Fri, 25 Sep 2026 06:00:37 +0200</pubDate>
-		</item>
 		<item>
 			<title>Fusionsgerüchte um UBS: Ein Trotzen? Nicht doch!</title>
 			<link>https://www.finews.ch/news/banken/73730-ubs-fusionsgeruechte-morgan-stanley-grossbankenregulierung-standort-schweiz</link>
@@ -34,18 +22,6 @@
 			<pubDate>Fri, 25 Sep 2026 11:22:46 +0200</pubDate>
 		</item>
 		<item>
-			<title>Die gefährliche Abhängigkeit von US-Aktien</title>
-			<link>https://www.finews.ch/news/finanzplatz/73716-us-aktien-exzeptionalismus-portfoliorisiko-robeco-david-blitz</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73716-us-aktien-exzeptionalismus-portfoliorisiko-robeco-david-blitz</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Robecco_.png" alt="David Blitz, Chief Researcher und Peter van der Welle, Strategist, beide bei Robeco. (Bilder: zVg)"></p><p><strong>Die jahrelange Dominanz von US-Aktien hat in vielen Portfolios erhebliche Klumpenrisiken geschaffen. David Blitz und Peter van der Welle von Robeco erklären, weshalb die Erfolgsserie der Wall Street nicht einfach fortgeschrieben werden sollte und wo sie neue Chancen sehen.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Fri, 25 Sep 2026 14:56:23 +0200</pubDate>
-		</item>
-		<item>
 			<title>Was Banken von booking.com lernen können</title>
 			<link>https://www.finews.ch/news/banken/73715-mathis-boldt-giata-podcast-banken-booking-ki-daten-fintech</link>
 			<guid isPermaLink="true">https://www.finews.ch/news/banken/73715-mathis-boldt-giata-podcast-banken-booking-ki-daten-fintech</guid>
@@ -56,6 +32,30 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Fri, 25 Sep 2026 10:33:41 +0200</pubDate>
+		</item>
+		<item>
+			<title>Mobiliar-Anlagechef: «Wir brauchen kein digitales Gold – wir haben das richtige»</title>
+			<link>https://www.finews.ch/news/versicherungen/73707-mobiliar-anlagechef-michael-christen-gold-bitcoin-ki-asset-management</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/versicherungen/73707-mobiliar-anlagechef-michael-christen-gold-bitcoin-ki-asset-management</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Christen_Michael_.png" alt="«Wir haben eine privilegierte Ausgangslage»: Mobiliar-Anlagechef Michael Christen. (Bild: zVg)"></p><p><strong>Die Mobiliar setzt auf langfristiges Investieren, Diversifikation und aktives Management. Anlagechef Michael Christen erklärt, weshalb ihn geopolitische Risiken und die Konzentration bei KI-Aktien beschäftigen und warum Bitcoin kein Thema ist.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Versicherungen</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Fri, 25 Sep 2026 06:00:37 +0200</pubDate>
+		</item>
+		<item>
+			<title>Die gefährliche Abhängigkeit von US-Aktien</title>
+			<link>https://www.finews.ch/news/finanzplatz/73716-us-aktien-exzeptionalismus-portfoliorisiko-robeco-david-blitz</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73716-us-aktien-exzeptionalismus-portfoliorisiko-robeco-david-blitz</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Robecco_.png" alt="David Blitz, Chief Researcher und Peter van der Welle, Strategist, beide bei Robeco. (Bilder: zVg)"></p><p><strong>Die jahrelange Dominanz von US-Aktien hat in vielen Portfolios erhebliche Klumpenrisiken geschaffen. David Blitz und Peter van der Welle von Robeco erklären, weshalb die Erfolgsserie der Wall Street nicht einfach fortgeschrieben werden sollte und wo sie neue Chancen sehen.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Fri, 25 Sep 2026 14:56:23 +0200</pubDate>
 		</item>
 		<item>
 			<title>«Die Grossen haben kein Interesse daran, die KI-Entwicklung zu bremsen»</title>
