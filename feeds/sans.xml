@@ -5,6 +5,11 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>Behavior Change Is Not the Finish Line Blog Security Awareness 29 Sep 2026 SANS Institute</title>
+      <link>https://www.sans.org/blog/behavior-change-is-not-the-finish-line</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/behavior-change-is-not-the-finish-line</guid>
+    </item>
+    <item>
       <title>The Questions Critical Infrastructure Leaders Should Be Asking Blog Industrial Control Systems Security 28 Sep 2026 Tim Conway</title>
       <link>https://www.sans.org/blog/questions-critical-infrastructure-leaders-should-be-asking</link>
       <guid isPermaLink="true">https://www.sans.org/blog/questions-critical-infrastructure-leaders-should-be-asking</guid>
@@ -53,11 +58,6 @@
       <title>From Alerts to Adversaries: A Pragmatic Guide to Launching (and Maturing) Your Threat Hunting Program Blog Cybersecurity Leadership 20 Aug 2026 Jan D'Herdt</title>
       <link>https://www.sans.org/blog/from-alerts-to-adversaries-a-pragmatic-guide-to-launching-and-maturing-your-threat-hunting-program</link>
       <guid isPermaLink="true">https://www.sans.org/blog/from-alerts-to-adversaries-a-pragmatic-guide-to-launching-and-maturing-your-threat-hunting-program</guid>
-    </item>
-    <item>
-      <title>The Role of AI in Cybersecurity Blog Artificial Intelligence 11 Aug 2026 Jason Hodgert</title>
-      <link>https://www.sans.org/blog/role-ai-cybersecurity</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/role-ai-cybersecurity</guid>
     </item>
   </channel>
 </rss>
