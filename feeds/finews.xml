@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Sun, 27 Sep 2026 20:26:43 +0200</lastBuildDate>
+		<lastBuildDate>Mon, 28 Sep 2026 07:18:36 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Finanzjobs werden knapper – diese Bereiche bieten noch Chancen</title>
+			<link>https://www.finews.ch/news/finanzplatz/73731-finanzjobs-schweiz-berufsaussichten-ki-family-offices-wealth-management</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73731-finanzjobs-schweiz-berufsaussichten-ki-family-offices-wealth-management</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Bankenplatz.png" alt="Wolken über dem Bankenplatz Schweiz; im Bild der Zürcher Paradeplatz. (Bild: finews)"></p><p><strong>Mehr als acht von zehn Befragten erwarten weniger Stellen in der Schweizer Finanzbranche. Dies ergibt die jüngste Berufsaussichten-Umfrage. Gleichzeitig scheint der Druck durch KI zu wachsen. Vor allem in zwei Berufsfeldern erwarten die Arbeitnehmenden neue Chancen.&nbsp;</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Mon, 28 Sep 2026 06:00:00 +0200</pubDate>
+		</item>
 		<item>
 			<title>Fusionsgerüchte um UBS: Ein Trotzen? Nicht doch!</title>
 			<link>https://www.finews.ch/news/banken/73730-ubs-fusionsgeruechte-morgan-stanley-grossbankenregulierung-standort-schweiz</link>
@@ -212,18 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Thu, 24 Sep 2026 06:00:00 +0200</pubDate>
-		</item>
-		<item>
-			<title>1875 Finance holt prominenten Schweizer Private Banker</title>
-			<link>https://www.finews.ch/news/finanzplatz/73706-1875-finance-peter-raskin-director-zuerich-private-banking</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73706-1875-finance-peter-raskin-director-zuerich-private-banking</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Peter_Raskin.png" alt="«1875 Finance ermöglicht es mir, mich wieder auf das zu konzentrieren, was mir am wichtigsten ist: die Kunden und die Kollegen»: Peter Raskin. (Bild: zVg)"></p><p><strong>Der unabhängige Vermögensverwalter 1875 Finance vermeldet die Verpflichtung von Peter Raskin. Der frühere CEO von Berenberg Schweiz und Bergos soll als Director das Privatkundengeschäft in Zürich ausbauen.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Thu, 24 Sep 2026 11:25:35 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
