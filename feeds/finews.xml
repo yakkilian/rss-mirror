@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Wed, 30 Sep 2026 00:13:28 +0200</lastBuildDate>
+		<lastBuildDate>Wed, 30 Sep 2026 07:28:48 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Daniel Bühr: «Wir haben kein Gesetzes-, sondern ein Umsetzungsproblem»</title>
+			<link>https://www.finews.ch/news/finanzplatz/73758-daniel-lucien-buehr-governance-verwaltungsrat-aufsicht-kontrolle</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73758-daniel-lucien-buehr-governance-verwaltungsrat-aufsicht-kontrolle</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/Daniel_Buehr.png" alt="«Die obersten Organe nehmen sich zu wenig Zeit, die Umsetzung ihrer eigenen Vorgaben kritisch zu überprüfen»: Anwalt Daniel Bühr. (Bild: zVg)"></p><p><strong>Noch nie wurde so viel kontrolliert. Gleichwohl sehen wir immer wieder gravierende Verfehlungen. Der Wirtschaftsanwalt Daniel Lucien Bühr erklärt im Interview, weshalb mehr Regulierung das Problem nicht löst – und warum Verwaltungsräte die Leistung bei Aufsicht und Kontrolle messen sollten.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Wed, 30 Sep 2026 06:00:00 +0200</pubDate>
+		</item>
 		<item>
 			<title>Das GZO Spital Wetzikon weicht nicht von seiner Linie ab</title>
 			<link>https://www.finews.ch/news/finanzplatz/73747-gzo-spital-wetzikon-glaeubigerversammlung-spitalleitung-sachwalter-nachlassvertrag</link>
@@ -212,18 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Mon, 28 Sep 2026 15:19:46 +0200</pubDate>
-		</item>
-		<item>
-			<title>Wohl der nächste Whisky-Weltrekord</title>
-			<link>https://www.finews.ch/themen/high-end/73742-9-oktober-sothebys-whisky-macallan-1926-schaetzpreis-bis-2-2-millionen-pfund-1987-5000-pfund-damals-teuerste-spirituose-der-welt</link>
-			<guid isPermaLink="true">https://www.finews.ch/themen/high-end/73742-9-oktober-sothebys-whisky-macallan-1926-schaetzpreis-bis-2-2-millionen-pfund-1987-5000-pfund-damals-teuerste-spirituose-der-welt</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/09/w.jpg" alt=""></p><p><strong>Am 9. Oktober versteigert Sotheby's einen Macallan 1926. Der Schätzpreis geht bis 2,2 Millionen Pfund. Als 1987 eine 7-Deziliter Flasche verkauft wurde, kostete sie&nbsp;5'000 Pfund&nbsp;und galt damals als teuerste Spirituose der Welt.&nbsp;</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>High-End</category>
-			<category>Themen</category>
-			<category>ROOT</category>
-			<pubDate>Mon, 28 Sep 2026 14:41:59 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
