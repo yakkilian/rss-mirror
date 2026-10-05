@@ -5,6 +5,11 @@
     <link>https://www.fortinet.com/blog/threat-research</link>
     <description>FortiGuard Labs Threat Research</description>
     <item>
+      <title>ClingSTUN Linux Backdoor Abuses Public STUN Infrastructure</title>
+      <link>https://www.fortinet.com/blog/threat-research/clingstun-linux-backdoor-abuses-public-stun-infrastructure</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/clingstun-linux-backdoor-abuses-public-stun-infrastructure</guid>
+    </item>
+    <item>
       <title>Uncovering a SectopRAT Variant Embedded in Legitimate Software</title>
       <link>https://www.fortinet.com/blog/threat-research/uncovering-a-sectoprat-variant-embedded-in-legitimate-software</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/uncovering-a-sectoprat-variant-embedded-in-legitimate-software</guid>
@@ -48,11 +53,6 @@
       <title>From CI/CD to Cloud Data: How Shai Hulud Persistence Leads to Redshift Breach</title>
       <link>https://www.fortinet.com/blog/threat-research/from-ci-cd-to-cloud-data-how-shai-hulud-persistence-leads-to-redshift-breach</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/from-ci-cd-to-cloud-data-how-shai-hulud-persistence-leads-to-redshift-breach</guid>
-    </item>
-    <item>
-      <title>Threat Actors Weaponize AI Hype to Deliver AsyncRAT</title>
-      <link>https://www.fortinet.com/blog/threat-research/threat-actors-weaponize-ai-hype-to-deliver-asyncrat</link>
-      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/threat-actors-weaponize-ai-hype-to-deliver-asyncrat</guid>
     </item>
     <item>
       <title>RolandSkimmer: Silent Credit Card Thief Uncovered</title>
