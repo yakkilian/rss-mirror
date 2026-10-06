@@ -5,6 +5,11 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>What Happens When AI Gives Us Answers Before We’ve Learned How to Ask the Questions? Blog Artificial Intelligence 5 Oct 2026 Bryan Simon</title>
+      <link>https://www.sans.org/blog/what-happens-when-ai-gives-us-answers-before-weve-learned-how-ask-questions</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/what-happens-when-ai-gives-us-answers-before-weve-learned-how-ask-questions</guid>
+    </item>
+    <item>
       <title>Four Conversations to Have With Your Family This October Blog Security Awareness 1 Oct 2026 Heather Barnhart</title>
       <link>https://www.sans.org/blog/four-conversations-to-have-with-your-family-this-october</link>
       <guid isPermaLink="true">https://www.sans.org/blog/four-conversations-to-have-with-your-family-this-october</guid>
@@ -53,11 +58,6 @@
       <title>SEC501 Major Update: Applied Cyber Defense for AI-Accelerated Attacks Blog Cyber Defense 25 Aug 2026 Ross Bergman</title>
       <link>https://www.sans.org/blog/sec501-major-update-applied-cyber-defense-ai-accelerated-attacks</link>
       <guid isPermaLink="true">https://www.sans.org/blog/sec501-major-update-applied-cyber-defense-ai-accelerated-attacks</guid>
-    </item>
-    <item>
-      <title>The Security Autonomy Matrix: Deciding What Your AI Agents May Do on Their Own Blog Artificial Intelligence 24 Aug 2026 Lenny Zeltser</title>
-      <link>https://www.sans.org/blog/security-autonomy-matrix-deciding-what-your-ai-agents-may-do-their-own</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/security-autonomy-matrix-deciding-what-your-ai-agents-may-do-their-own</guid>
     </item>
   </channel>
 </rss>
