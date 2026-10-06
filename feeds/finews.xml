@@ -5,22 +5,10 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Tue, 06 Oct 2026 15:21:10 +0200</lastBuildDate>
+		<lastBuildDate>Wed, 07 Oct 2026 00:40:31 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
-		<item>
-			<title>Schweizer Single Family Offices geben sich neue Spielregeln</title>
-			<link>https://www.finews.ch/news/finanzplatz/73856-single-family-offices-code-conduct-ubp-finews-governance</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73856-single-family-offices-code-conduct-ubp-finews-governance</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/UBP_Gruppenbild_.png" alt="Kurt Moosmann, Carl Wieandt, Monica Espinosa, Dominik Buholzer und Adrian Künzi. (Bild: zVg)" width="1206" height="724" loading="lazy"></p><p><strong>Mit einem Code of Conduct will die Swiss Single Family Office Association Standards setzen. An einem Event von UBP und finews in Zürich diskutierten Vertreter von Family Offices und Finanzbranche darüber, was der Kodex in der Praxis bedeutet und weshalb die Anforderungen an Single Family Offices steigen.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Tue, 06 Oct 2026 10:15:24 +0200</pubDate>
-		</item>
 		<item>
 			<title>BNP Paribas stellt Schweizer Führung neu auf</title>
 			<link>https://www.finews.ch/news/finanzplatz/73867-bnp-paribas-asset-management-fuehrungswechsel-frederick-widl-ceo</link>
@@ -32,6 +20,18 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Tue, 06 Oct 2026 13:53:50 +0200</pubDate>
+		</item>
+		<item>
+			<title>Schweizer Single Family Offices geben sich neue Spielregeln</title>
+			<link>https://www.finews.ch/news/finanzplatz/73856-single-family-offices-code-conduct-ubp-finews-governance</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73856-single-family-offices-code-conduct-ubp-finews-governance</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/UBP_Gruppenbild_.png" alt="Kurt Moosmann, Carl Wieandt, Monica Espinosa, Dominik Buholzer und Adrian Künzi. (Bild: zVg)" width="1206" height="724" loading="lazy"></p><p><strong>Mit einem Code of Conduct will die Swiss Single Family Office Association Standards setzen. An einem Event von UBP und finews in Zürich diskutierten Vertreter von Family Offices und Finanzbranche darüber, was der Kodex in der Praxis bedeutet und weshalb die Anforderungen an Single Family Offices steigen.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Tue, 06 Oct 2026 10:15:24 +0200</pubDate>
 		</item>
 		<item>
 			<title>Justiz versteigert vier Lamborghinis mit «Vergangenheit»</title>
