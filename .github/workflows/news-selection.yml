@@ -2,6 +2,16 @@ name: News selection test
 
 on:
   workflow_dispatch:
+    inputs:
+      lookback_hours:
+        description: "Fenêtre de collecte en heures"
+        required: true
+        default: "18"
+        type: choice
+        options:
+          - "8"
+          - "18"
+          - "48"
 
 jobs:
   select-news:
@@ -26,6 +36,7 @@ jobs:
           FRESHRSS_AUTO_ICTJ_NEWS: ${{ secrets.FRESHRSS_AUTO_ICTJ_NEWS }}
           FRESHRSS_AUTO_ICT_BEST: ${{ secrets.FRESHRSS_AUTO_ICT_BEST }}
           FRESHRSS_AUTO_ICT: ${{ secrets.FRESHRSS_AUTO_ICT }}
+          LOOKBACK_HOURS: ${{ inputs.lookback_hours }}
         run: python news_filter.py
 
       - name: Save results
