@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Wed, 07 Oct 2026 15:18:25 +0200</lastBuildDate>
+		<lastBuildDate>Thu, 08 Oct 2026 01:05:37 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>GZO: Gläubiger sollen «Abstimmungsformular wegwerfen»</title>
+			<link>https://www.finews.ch/news/finanzplatz/73894-gzo-spital-wetzikon-gregor-greber-clearway-capital-konkurs-ist-besser-als-thurmed</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73894-gzo-spital-wetzikon-gregor-greber-clearway-capital-konkurs-ist-besser-als-thurmed</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/gzo.jpg" alt="(Bild: GZO Spital Wetzikon)"></p><p><strong>Drei Wochen vor der Gläubigerversammlung bekräftigt die Ablehnungsfront beim GZO: Ein Konkurs sei besser als das zur Abstimmung stehende Angebot von&nbsp;Thurmed. Das Argument wird auch mit Zahlen untermauert.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Wed, 07 Oct 2026 16:06:47 +0200</pubDate>
+		</item>
 		<item>
 			<title>Raoul Würgler: «Protokollschreiben ist eine spannende Aufgabe» </title>
 			<link>https://www.finews.ch/themen/high-end/73879-raoul-wuergler-protokollschreiben-ist-eine-spannende-aufgabe-interview-backstage-afbs-2</link>
@@ -212,18 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Tue, 06 Oct 2026 10:27:12 +0200</pubDate>
-		</item>
-		<item>
-			<title>Andreas Schüpbach: «Eine Lizenz in der Schweiz genügt nicht mehr»</title>
-			<link>https://www.finews.ch/news/finanzplatz/73839-marcuard-heritage-interview-andreas-schuepbach-vr-praesident-abu-dhabi-singapur</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73839-marcuard-heritage-interview-andreas-schuepbach-vr-praesident-abu-dhabi-singapur</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/andreas_schuepbach_farbe.jpg" alt="Andreas Schuepbach. (Bild: Marcuard Heritage)" width="646" height="388" loading="lazy"></p><p><strong>Marcuard Heritage ist heute an vier Standorten von vier verschiedenen Behörden lizenziert. Im Interview mit finews erklärt VR-Präsident Andreas Schüpbach weshalb er Regulierung als Chance begreift, wie das Kontrollsystem über die Landesgrenzen hinweg funktioniert und wohin die Wachstumsreise als Nächstes führt.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Tue, 06 Oct 2026 07:07:29 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
