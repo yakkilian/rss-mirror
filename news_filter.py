@@ -28,7 +28,7 @@ HEADERS = {
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-LOOKBACK_HOURS = 48
+LOOKBACK_HOURS = int(os.environ.get("LOOKBACK_HOURS", "48"))
 
 PAGE_SIZE = 100
 MAX_PAGES = 10
