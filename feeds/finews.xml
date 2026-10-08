@@ -5,7 +5,7 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Thu, 08 Oct 2026 15:24:20 +0200</lastBuildDate>
+		<lastBuildDate>Fri, 09 Oct 2026 01:20:30 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
@@ -20,6 +20,30 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Thu, 08 Oct 2026 13:30:02 +0200</pubDate>
+		</item>
+		<item>
+			<title>Mastercard führt Offline-Zahlungen europaweit ein</title>
+			<link>https://www.finews.ch/news/finanzplatz/73911-mastercard-offline-zahlung-europa</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73911-mastercard-offline-zahlung-europa</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/mastercard_shutter.webp" alt="(Bild: Shutterstock) "></p><p><strong>Das bargeldlose Zahlen wird bei den Konsumentinnen und Konsumenten immer beliebter. Doch bei einem Stromausfall, oder wenn der Bezahlterminal keine Verbindung zum Netz aufbauen kann, steht man plötzlich ziemlich hilflos vor der Kasse. Mastercard führt nun die Offline-Zahlung in Europa ein.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Thu, 08 Oct 2026 16:15:15 +0200</pubDate>
+		</item>
+		<item>
+			<title>Finma erlässt neue Regeln beim Onboarding neuer Kunden</title>
+			<link>https://www.finews.ch/news/banken/73910-finma-onboarding-regeln-video-online-identifizierung</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/banken/73910-finma-onboarding-regeln-video-online-identifizierung</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/finma.webp" alt="(Bild: Finma)"></p><p><strong>In ihrem Rundschreiben zu «Video- und Online-Identifizierung» passt die Finma die Anforderungen für Banken beim Onboarding neuer Kundinnen und Kunden an. Damit wird auf die technologische Entwicklung reagiert und die Möglichkeiten des elektronischen Identitätsnachweises.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Banken</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Thu, 08 Oct 2026 15:33:55 +0200</pubDate>
 		</item>
 		<item>
 			<title>Erik Fruytier: «Zinserhöhungen können die Strasse von Hormus nicht wieder öffnen» </title>
@@ -200,30 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Wed, 07 Oct 2026 12:11:42 +0200</pubDate>
-		</item>
-		<item>
-			<title>Vaudoise AM erweitert Verwaltungsrat</title>
-			<link>https://www.finews.ch/news/versicherungen/73882-vaudoise-asset-management-neue-mitglieder-verwaltungsrat</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/versicherungen/73882-vaudoise-asset-management-neue-mitglieder-verwaltungsrat</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/Vaudoise125ans1.jpg" alt="(Bild: Vaudoise)"></p><p><strong>Die Vaudoise Asset Management bekommt zwei neue Mitglieder für den Verwaltungsrat. Damit wird das Gremium nach der Übernahme der Procimmo Group erweitert.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Versicherungen</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Wed, 07 Oct 2026 11:24:15 +0200</pubDate>
-		</item>
-		<item>
-			<title>Brenninkmeyer-Familie vollzieht Generationenwechsel bei 40-Milliarden-Gruppe</title>
-			<link>https://www.finews.ch/news/finanzplatz/73869-brenninkmeyer-familie-generationenwechsel-cofra-holding-florian-brenninkmeyer-40-milliarden</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73869-brenninkmeyer-familie-generationenwechsel-cofra-holding-florian-brenninkmeyer-40-milliarden</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/Cofra_Florian_Brenninkmeyer.png" alt="wird per April 2027 neuer Verwaltungsratspräsident der Familienholding: Florian Brenninkmeyer. (Bild: zVg)" width="646" height="388" loading="lazy"></p><p><strong>Bei der Zuger Cofra Holding übernimmt Florian Brenninkmeyer das Präsidium des Verwaltungsrats. Der bisherige Finanzchef steht für die sechste Generation der Eigentümerfamilie hinter C&amp;A und übernimmt eine Investmentgruppe mit 40 Milliarden Euro verwaltetem Vermögen.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Wed, 07 Oct 2026 06:30:00 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
