@@ -13,40 +13,91 @@ on:
           - "18"
           - "48"
 
+  schedule:
+    # GitHub utilise UTC.
+    # On prévoit les horaires possibles été/hiver.
+    # L'étape "Determine run parameters" vérifie ensuite
+    # qu'il est réellement 08h ou 15h en Suisse.
+    - cron: "0 6,7,13,14 * * 1-5"
+
+
 jobs:
   select-news:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Determine run parameters
+        id: params
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            LOOKBACK="${{ inputs.lookback_hours }}"
+            DATE_LOCAL=$(TZ=Europe/Zurich date +%F)
+
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "lookback_hours=$LOOKBACK" >> "$GITHUB_OUTPUT"
+            echo "lot_id=${DATE_LOCAL}-manual-${GITHUB_RUN_ID}" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          HOUR_LOCAL=$(TZ=Europe/Zurich date +%H)
+          DATE_LOCAL=$(TZ=Europe/Zurich date +%F)
+
+          if [ "$HOUR_LOCAL" = "08" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "lookback_hours=18" >> "$GITHUB_OUTPUT"
+            echo "lot_id=${DATE_LOCAL}-01" >> "$GITHUB_OUTPUT"
+
+          elif [ "$HOUR_LOCAL" = "15" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "lookback_hours=8" >> "$GITHUB_OUTPUT"
+            echo "lot_id=${DATE_LOCAL}-02" >> "$GITHUB_OUTPUT"
+
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+
       - name: Checkout repository
+        if: steps.params.outputs.should_run == 'true'
         uses: actions/checkout@v4
 
+
       - name: Set up Python
+        if: steps.params.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+
       - name: Install dependencies
+        if: steps.params.outputs.should_run == 'true'
         run: |
           pip install requests feedparser trafilatura
 
+
       - name: Filter news
+        if: steps.params.outputs.should_run == 'true'
         env:
           FRESHRSS_AUTO_SUISSE: ${{ secrets.FRESHRSS_AUTO_SUISSE }}
           FRESHRSS_AUTO_ICTJ_NEWS: ${{ secrets.FRESHRSS_AUTO_ICTJ_NEWS }}
           FRESHRSS_AUTO_ICT_BEST: ${{ secrets.FRESHRSS_AUTO_ICT_BEST }}
           FRESHRSS_AUTO_ICT: ${{ secrets.FRESHRSS_AUTO_ICT }}
-          LOOKBACK_HOURS: ${{ inputs.lookback_hours }}
-        run: python news_filter.py
-        
+          LOOKBACK_HOURS: ${{ steps.params.outputs.lookback_hours }}
+        run: |
+          python news_filter.py
+
+
       - name: Send candidates by email
+        if: steps.params.outputs.should_run == 'true'
         env:
           SMTP_HOST: ${{ secrets.OVH_SMTP_HOST }}
           SMTP_PORT: ${{ secrets.OVH_SMTP_PORT }}
           SMTP_USER: ${{ secrets.OVH_SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.OVH_SMTP_PASSWORD }}
           MAIL_TO: ${{ secrets.ICTJ_MAIL_TO }}
-          LOOKBACK_HOURS: ${{ inputs.lookback_hours }}
+          LOOKBACK_HOURS: ${{ steps.params.outputs.lookback_hours }}
+          LOT_ID: ${{ steps.params.outputs.lot_id }}
         run: |
           python - <<'PY'
           import os
@@ -60,20 +111,23 @@ jobs:
           if not file_path.exists():
               raise FileNotFoundError("output/candidates.json introuvable")
 
-          lookback = os.environ.get("LOOKBACK_HOURS", "test")
-          run_id = os.environ.get("GITHUB_RUN_ID", "unknown")
+          lookback = os.environ["LOOKBACK_HOURS"]
+          lot_id = os.environ["LOT_ID"]
 
           msg = EmailMessage()
+
           msg["Subject"] = (
-              f"ICTJ_AUTO_CANDIDATES | TEST-GITHUB-{run_id} | {lookback}h"
+              f"ICTJ_AUTO_CANDIDATES | {lot_id} | {lookback}h"
           )
+
           msg["From"] = os.environ["SMTP_USER"]
           msg["To"] = os.environ["MAIL_TO"]
 
           msg.set_content(
               "Fichier candidates.json généré automatiquement "
               "par la veille GitHub ICTjournal.\n\n"
-              "Test du transfert GitHub → Gmail → Drive."
+              f"Lot : {lot_id}\n"
+              f"Fenêtre : {lookback} h\n"
           )
 
           msg.add_attachment(
@@ -92,18 +146,28 @@ jobs:
               smtp.ehlo()
               smtp.starttls(context=context)
               smtp.ehlo()
+
               smtp.login(
                   os.environ["SMTP_USER"],
                   os.environ["SMTP_PASSWORD"]
               )
+
               smtp.send_message(msg)
 
-          print("E-mail envoyé avec candidates.json.")
+          print(
+              f"E-mail envoyé avec candidates.json "
+              f"({lot_id}, fenêtre {lookback} h)."
+          )
           PY
+
+
       - name: Save results
+        if: steps.params.outputs.should_run == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: news-selection-results
+          name: news-selection-${{ steps.params.outputs.lot_id }}
           path: |
             output/candidates.json
             output/unresolved.json
+          retention-days: 7
+          if-no-files-found: warn
