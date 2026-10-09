@@ -1,4 +1,4 @@
-name: News selection test
+name: ICTjournal news selection
 
 on:
   workflow_dispatch:
@@ -14,11 +14,11 @@ on:
           - "48"
 
   schedule:
-    # GitHub utilise UTC.
-    # On prévoit les horaires possibles été/hiver.
-    # L'étape "Determine run parameters" vérifie ensuite
-    # qu'il est réellement 08h ou 15h en Suisse.
-    - cron: "0 6,7,13,14 * * 1-5"
+    - cron: "50 7 * * 1-5"
+      timezone: "Europe/Zurich"
+
+    - cron: "50 14 * * 1-5"
+      timezone: "Europe/Zurich"
 
 
 jobs:
@@ -30,54 +30,44 @@ jobs:
         id: params
         shell: bash
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            LOOKBACK="${{ inputs.lookback_hours }}"
-            DATE_LOCAL=$(TZ=Europe/Zurich date +%F)
-
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            echo "lookback_hours=$LOOKBACK" >> "$GITHUB_OUTPUT"
-            echo "lot_id=${DATE_LOCAL}-manual-${GITHUB_RUN_ID}" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          HOUR_LOCAL=$(TZ=Europe/Zurich date +%H)
           DATE_LOCAL=$(TZ=Europe/Zurich date +%F)
 
-          if [ "$HOUR_LOCAL" = "08" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            LOOKBACK="${{ inputs.lookback_hours }}"
+
+            echo "lookback_hours=$LOOKBACK" >> "$GITHUB_OUTPUT"
+            echo "lot_id=${DATE_LOCAL}-manual-${GITHUB_RUN_ID}" >> "$GITHUB_OUTPUT"
+
+          elif [ "${{ github.event.schedule }}" = "50 7 * * 1-5" ]; then
             echo "lookback_hours=18" >> "$GITHUB_OUTPUT"
             echo "lot_id=${DATE_LOCAL}-01" >> "$GITHUB_OUTPUT"
 
-          elif [ "$HOUR_LOCAL" = "15" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "50 14 * * 1-5" ]; then
             echo "lookback_hours=8" >> "$GITHUB_OUTPUT"
             echo "lot_id=${DATE_LOCAL}-02" >> "$GITHUB_OUTPUT"
 
           else
-            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "Déclencheur inconnu."
+            exit 1
           fi
 
 
       - name: Checkout repository
-        if: steps.params.outputs.should_run == 'true'
         uses: actions/checkout@v4
 
 
       - name: Set up Python
-        if: steps.params.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
 
       - name: Install dependencies
-        if: steps.params.outputs.should_run == 'true'
         run: |
           pip install requests feedparser trafilatura
 
 
       - name: Filter news
-        if: steps.params.outputs.should_run == 'true'
         env:
           FRESHRSS_AUTO_SUISSE: ${{ secrets.FRESHRSS_AUTO_SUISSE }}
           FRESHRSS_AUTO_ICTJ_NEWS: ${{ secrets.FRESHRSS_AUTO_ICTJ_NEWS }}
@@ -89,7 +79,6 @@ jobs:
 
 
       - name: Send candidates by email
-        if: steps.params.outputs.should_run == 'true'
         env:
           SMTP_HOST: ${{ secrets.OVH_SMTP_HOST }}
           SMTP_PORT: ${{ secrets.OVH_SMTP_PORT }}
@@ -139,19 +128,16 @@ jobs:
 
           host = os.environ["SMTP_HOST"]
           port = int(os.environ["SMTP_PORT"])
-
           context = ssl.create_default_context()
 
           with smtplib.SMTP(host, port, timeout=30) as smtp:
               smtp.ehlo()
               smtp.starttls(context=context)
               smtp.ehlo()
-
               smtp.login(
                   os.environ["SMTP_USER"],
                   os.environ["SMTP_PASSWORD"]
               )
-
               smtp.send_message(msg)
 
           print(
@@ -162,7 +148,6 @@ jobs:
 
 
       - name: Save results
-        if: steps.params.outputs.should_run == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: news-selection-${{ steps.params.outputs.lot_id }}
