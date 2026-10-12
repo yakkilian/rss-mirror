@@ -5,6 +5,11 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>Zero Trust for AI Agents Starts With Fixing Zero Visibility Blog Artificial Intelligence 12 Oct 2026 Ismael Valenzuela</title>
+      <link>https://www.sans.org/blog/zero-trust-ai-agents-starts-fixing-zero-visibility</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/zero-trust-ai-agents-starts-fixing-zero-visibility</guid>
+    </item>
+    <item>
       <title>What Happens When AI Gives Us Answers Before We’ve Learned How to Ask the Questions? Blog Artificial Intelligence 5 Oct 2026 Bryan Simon</title>
       <link>https://www.sans.org/blog/what-happens-when-ai-gives-us-answers-before-weve-learned-how-ask-questions</link>
       <guid isPermaLink="true">https://www.sans.org/blog/what-happens-when-ai-gives-us-answers-before-weve-learned-how-ask-questions</guid>
@@ -53,11 +58,6 @@
       <title>SANS Stay Ahead of Ransomware August 2026: Hot Off the Press Blog Digital Forensics and Incident Response 25 Aug 2026 Mari DeGrazia</title>
       <link>https://www.sans.org/blog/sans-stay-ahead-of-ransomware-august-2026-hot-off-the-press</link>
       <guid isPermaLink="true">https://www.sans.org/blog/sans-stay-ahead-of-ransomware-august-2026-hot-off-the-press</guid>
-    </item>
-    <item>
-      <title>SEC501 Major Update: Applied Cyber Defense for AI-Accelerated Attacks Blog Cyber Defense 25 Aug 2026 Ross Bergman</title>
-      <link>https://www.sans.org/blog/sec501-major-update-applied-cyber-defense-ai-accelerated-attacks</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/sec501-major-update-applied-cyber-defense-ai-accelerated-attacks</guid>
     </item>
   </channel>
 </rss>
