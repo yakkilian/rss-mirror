@@ -14,11 +14,13 @@ on:
           - "48"
 
   schedule:
-    - cron: "50 7 * * 1-5"
-      timezone: "Europe/Zurich"
-
-    - cron: "50 14 * * 1-5"
-      timezone: "Europe/Zurich"
+    # 07:50 et 14:50 en Suisse, été comme hiver.
+    # GitHub planifie en UTC : on couvre CEST (+02:00) et CET (+01:00).
+    # Le cron qui ne correspond pas au décalage suisse actuel est ignoré.
+    - cron: "50 5 * * 1-5"
+    - cron: "50 6 * * 1-5"
+    - cron: "50 12 * * 1-5"
+    - cron: "50 13 * * 1-5"
 
 
 jobs:
@@ -31,43 +33,63 @@ jobs:
         shell: bash
         run: |
           DATE_LOCAL=$(TZ=Europe/Zurich date +%F)
+          OFFSET=$(TZ=Europe/Zurich date +%z)
+          SCHEDULE="${{ github.event.schedule }}"
 
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             LOOKBACK="${{ inputs.lookback_hours }}"
 
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
             echo "lookback_hours=$LOOKBACK" >> "$GITHUB_OUTPUT"
             echo "lot_id=${DATE_LOCAL}-manual-${GITHUB_RUN_ID}" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
 
-          elif [ "${{ github.event.schedule }}" = "50 7 * * 1-5" ]; then
+          if [ "$OFFSET" = "+0200" ] && [ "$SCHEDULE" = "50 5 * * 1-5" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
             echo "lookback_hours=18" >> "$GITHUB_OUTPUT"
             echo "lot_id=${DATE_LOCAL}-01" >> "$GITHUB_OUTPUT"
 
-          elif [ "${{ github.event.schedule }}" = "50 14 * * 1-5" ]; then
+          elif [ "$OFFSET" = "+0100" ] && [ "$SCHEDULE" = "50 6 * * 1-5" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "lookback_hours=18" >> "$GITHUB_OUTPUT"
+            echo "lot_id=${DATE_LOCAL}-01" >> "$GITHUB_OUTPUT"
+
+          elif [ "$OFFSET" = "+0200" ] && [ "$SCHEDULE" = "50 12 * * 1-5" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "lookback_hours=8" >> "$GITHUB_OUTPUT"
+            echo "lot_id=${DATE_LOCAL}-02" >> "$GITHUB_OUTPUT"
+
+          elif [ "$OFFSET" = "+0100" ] && [ "$SCHEDULE" = "50 13 * * 1-5" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
             echo "lookback_hours=8" >> "$GITHUB_OUTPUT"
             echo "lot_id=${DATE_LOCAL}-02" >> "$GITHUB_OUTPUT"
 
           else
-            echo "Déclencheur inconnu."
-            exit 1
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "Cron ignoré : $SCHEDULE, décalage suisse actuel : $OFFSET"
           fi
 
-
       - name: Checkout repository
+        if: steps.params.outputs.should_run == 'true'
         uses: actions/checkout@v4
 
 
       - name: Set up Python
+        if: steps.params.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
 
       - name: Install dependencies
+        if: steps.params.outputs.should_run == 'true'
         run: |
           pip install requests feedparser trafilatura
 
 
       - name: Filter news
+        if: steps.params.outputs.should_run == 'true'
         env:
           FRESHRSS_AUTO_SUISSE: ${{ secrets.FRESHRSS_AUTO_SUISSE }}
           FRESHRSS_AUTO_ICTJ_NEWS: ${{ secrets.FRESHRSS_AUTO_ICTJ_NEWS }}
@@ -79,6 +101,7 @@ jobs:
 
 
       - name: Send candidates by email
+        if: steps.params.outputs.should_run == 'true'
         env:
           SMTP_HOST: ${{ secrets.OVH_SMTP_HOST }}
           SMTP_PORT: ${{ secrets.OVH_SMTP_PORT }}
@@ -148,6 +171,7 @@ jobs:
 
 
       - name: Save results
+        if: steps.params.outputs.should_run == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: news-selection-${{ steps.params.outputs.lot_id }}
