@@ -12,15 +12,11 @@ on:
           - "8"
           - "18"
           - "48"
-
-  schedule:
-    # 07:50 et 14:50 en Suisse, été comme hiver.
-    # GitHub planifie en UTC : on couvre CEST (+02:00) et CET (+01:00).
-    # Le cron qui ne correspond pas au décalage suisse actuel est ignoré.
-    - cron: "50 5 * * 1-5"
-    - cron: "50 6 * * 1-5"
-    - cron: "50 12 * * 1-5"
-    - cron: "50 13 * * 1-5"
+      lot_id:
+        description: "Identifiant du lot (optionnel)"
+        required: false
+        default: ""
+        type: string
 
 
 jobs:
@@ -33,42 +29,18 @@ jobs:
         shell: bash
         run: |
           DATE_LOCAL=$(TZ=Europe/Zurich date +%F)
-          OFFSET=$(TZ=Europe/Zurich date +%z)
-          SCHEDULE="${{ github.event.schedule }}"
+          LOOKBACK="${{ inputs.lookback_hours }}"
+          REQUESTED_LOT="${{ inputs.lot_id }}"
 
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            LOOKBACK="${{ inputs.lookback_hours }}"
-
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            echo "lookback_hours=$LOOKBACK" >> "$GITHUB_OUTPUT"
-            echo "lot_id=${DATE_LOCAL}-manual-${GITHUB_RUN_ID}" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          if [ "$OFFSET" = "+0200" ] && [ "$SCHEDULE" = "50 5 * * 1-5" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            echo "lookback_hours=18" >> "$GITHUB_OUTPUT"
-            echo "lot_id=${DATE_LOCAL}-01" >> "$GITHUB_OUTPUT"
-
-          elif [ "$OFFSET" = "+0100" ] && [ "$SCHEDULE" = "50 6 * * 1-5" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            echo "lookback_hours=18" >> "$GITHUB_OUTPUT"
-            echo "lot_id=${DATE_LOCAL}-01" >> "$GITHUB_OUTPUT"
-
-          elif [ "$OFFSET" = "+0200" ] && [ "$SCHEDULE" = "50 12 * * 1-5" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            echo "lookback_hours=8" >> "$GITHUB_OUTPUT"
-            echo "lot_id=${DATE_LOCAL}-02" >> "$GITHUB_OUTPUT"
-
-          elif [ "$OFFSET" = "+0100" ] && [ "$SCHEDULE" = "50 13 * * 1-5" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            echo "lookback_hours=8" >> "$GITHUB_OUTPUT"
-            echo "lot_id=${DATE_LOCAL}-02" >> "$GITHUB_OUTPUT"
-
+          if [ -n "$REQUESTED_LOT" ]; then
+            LOT_ID="$REQUESTED_LOT"
           else
-            echo "should_run=false" >> "$GITHUB_OUTPUT"
-            echo "Cron ignoré : $SCHEDULE, décalage suisse actuel : $OFFSET"
+            LOT_ID="${DATE_LOCAL}-manual-${GITHUB_RUN_ID}"
           fi
+
+          echo "should_run=true" >> "$GITHUB_OUTPUT"
+          echo "lookback_hours=$LOOKBACK" >> "$GITHUB_OUTPUT"
+          echo "lot_id=$LOT_ID" >> "$GITHUB_OUTPUT"
 
       - name: Checkout repository
         if: steps.params.outputs.should_run == 'true'
