@@ -5,6 +5,16 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>A Visual Summary of SANS DFIR Summit 2026 Blog Digital Forensics and Incident Response 16 Oct 2026 SANS Institute</title>
+      <link>https://www.sans.org/blog/visual-summary-of-sans-dfir-summit-2026</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/visual-summary-of-sans-dfir-summit-2026</guid>
+    </item>
+    <item>
+      <title>AI in ICS/OT Cybersecurity: Adopting AI with Safety Top of Mind (Part 2) Blog Industrial Control Systems Security 15 Oct 2026 Dean Parsons</title>
+      <link>https://www.sans.org/blog/ai-in-icsot-cybersecurity-adopting-ai-with-safety-top-of-mind-part-2</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/ai-in-icsot-cybersecurity-adopting-ai-with-safety-top-of-mind-part-2</guid>
+    </item>
+    <item>
       <title>Zero Trust for AI Agents Starts With Fixing Zero Visibility Blog Artificial Intelligence 12 Oct 2026 Ismael Valenzuela</title>
       <link>https://www.sans.org/blog/zero-trust-ai-agents-starts-fixing-zero-visibility</link>
       <guid isPermaLink="true">https://www.sans.org/blog/zero-trust-ai-agents-starts-fixing-zero-visibility</guid>
@@ -48,16 +58,6 @@
       <title>Cloud-Native Forensic Imaging Part 2 Blog Digital Forensics and Incident Response 3 Sep 2026 Megan Roddie-Fonseca</title>
       <link>https://www.sans.org/blog/cloud-native-forensic-imaging-part-2</link>
       <guid isPermaLink="true">https://www.sans.org/blog/cloud-native-forensic-imaging-part-2</guid>
-    </item>
-    <item>
-      <title>A Visual Summary of SANS Security Awareness &amp; Culture Summit 2026 Blog Security Awareness 27 Aug 2026 SANS Institute</title>
-      <link>https://www.sans.org/blog/a-visual-summary-of-sans-security-awareness-culture-summit-2026</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/a-visual-summary-of-sans-security-awareness-culture-summit-2026</guid>
-    </item>
-    <item>
-      <title>SANS Stay Ahead of Ransomware August 2026: Hot Off the Press Blog Digital Forensics and Incident Response 25 Aug 2026 Mari DeGrazia</title>
-      <link>https://www.sans.org/blog/sans-stay-ahead-of-ransomware-august-2026-hot-off-the-press</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/sans-stay-ahead-of-ransomware-august-2026-hot-off-the-press</guid>
     </item>
   </channel>
 </rss>
