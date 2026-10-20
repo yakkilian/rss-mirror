@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Tue, 20 Oct 2026 00:21:10 +0200</lastBuildDate>
+		<lastBuildDate>Tue, 20 Oct 2026 06:45:12 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Aon warnt: Die einstigen Cashcows der Versicherer geraten unter Druck</title>
+			<link>https://www.finews.ch/news/versicherungen/74041-aon-trendbarometer-2026-2027-schweiz-versicherungen-cyber-ki-rueckversicherung</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/versicherungen/74041-aon-trendbarometer-2026-2027-schweiz-versicherungen-cyber-ki-rueckversicherung</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/Aon_Pascal_Mayerhofer.png" alt="Pascal Mayerhofer, Chief Broking Officer von Aon Schweiz: Steigende Schadenkosten, künstliche Intelligenz und zunehmender internationaler Wettbewerb stellen die Schweizer Versicherungsbranche vor neue Herausforderungen. (Bild: zVg)"></p><p><strong>Steigende Schadenkosten, neue Cyberrisiken und die rasante Entwicklung künstlicher Intelligenz verändern das Versicherungsgeschäft. Gleichzeitig nimmt der internationale Wettbewerb zu. Der neue Aon-Trendbarometer zeigt, wo Schweizer Player unter Druck geraten.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Versicherungen</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Tue, 20 Oct 2026 06:00:00 +0200</pubDate>
+		</item>
 		<item>
 			<title>«150 Reaktoren in fünf Jahren: Für den KI-Investitionswahn reicht der Strom nicht»</title>
 			<link>https://www.finews.ch/news/finanzplatz/73925-laszlo-goemoeri-ki-boom-strombedarf-kupfer-engpaesse-blasenrisiko</link>
@@ -212,18 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Fri, 16 Oct 2026 07:02:03 +0200</pubDate>
-		</item>
-		<item>
-			<title>Stefan Walter widmet sich der Vermögensverwaltung und setzt neuen Akzent</title>
-			<link>https://www.finews.ch/news/finanzplatz/74012-stefan-walter-direktor-finma-vermoegensverwaltungsgeschaeft-aufsichtsmitteilung-wettbewerbsfaehigkeit</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/74012-stefan-walter-direktor-finma-vermoegensverwaltungsgeschaeft-aufsichtsmitteilung-wettbewerbsfaehigkeit</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/Stefan-Walter_Finma.png" alt="Finma-Direktor Stefan Walter nutzt einen Auftritt im Tessin dazu, altbekannte Botschaften mit einem neuen Akzent zu platzieren. (Bild: zVg)"></p><p><strong>Der Direktor der Finma begründet, weshalb sich die Aufsicht intensiv mit dem Vermögensverwaltungsgeschäft beschäftigt und erklärt, welchen Ansatz sie dabei verfolgt. Auffällig ist, dass Stefan Walter die Bedeutung der Wettbewerbsfähigkeit des Finanzplatzes Schweiz gleich mehrfach betont.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Thu, 15 Oct 2026 16:28:42 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
