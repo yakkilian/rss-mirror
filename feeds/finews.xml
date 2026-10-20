@@ -5,7 +5,7 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Tue, 20 Oct 2026 13:31:50 +0200</lastBuildDate>
+		<lastBuildDate>Tue, 20 Oct 2026 18:59:41 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
@@ -20,6 +20,54 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Tue, 20 Oct 2026 10:48:55 +0200</pubDate>
+		</item>
+		<item>
+			<title>Nach UBS und Nu: Auch Stripe wird Partner von Mercedes-AMG Petronas</title>
+			<link>https://www.finews.ch/themen/high-end/74080-formel-1-mercedes-amg-petronas-stripe-zahlungspartner-fintech-nu-toto-wolff-john-collison-2027</link>
+			<guid isPermaLink="true">https://www.finews.ch/themen/high-end/74080-formel-1-mercedes-amg-petronas-stripe-zahlungspartner-fintech-nu-toto-wolff-john-collison-2027</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/formel1-mercedes-amg-petronas.jpg" alt="Toto Wolff (r) und John Collison. (Bild: zVg)"></p><p><strong>Das Formel-1-Team von Mercedes holt nach der Neobank Nu ein zweites Fintech an Bord. Der Zahlungsdienstleister Stripe wird globaler Zahlungspartner. Er ist ab der Saison 2027 auf den Rennwagen zu sehen.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>High-End</category>
+			<category>Themen</category>
+			<category>ROOT</category>
+			<pubDate>Tue, 20 Oct 2026 16:37:58 +0200</pubDate>
+		</item>
+		<item>
+			<title>Nachfolge: Reiche Unternehmerfamilien sind kaum vorbereitet</title>
+			<link>https://www.finews.ch/news/banken/74073-nachfolgeplanung-herausforderungen-fuer-sehr-vermoegende-familien-family-barometer-2026-von-julius-baer-2-3-prozent-der-unternehmerfamilien-umfassend-vorbereitet-hindernis-mangelnde-einigkeit-innerhalb-der-familie</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/banken/74073-nachfolgeplanung-herausforderungen-fuer-sehr-vermoegende-familien-family-barometer-2026-von-julius-baer-2-3-prozent-der-unternehmerfamilien-umfassend-vorbereitet-hindernis-mangelnde-einigkeit-innerhalb-der-familie</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/jb.jpg" alt="Der «Family Barometer 2026» von Julius Bär befasst sich unter anderem mit der Nachfolgeplanung bei sehr vermögende Familien. (Bild Shutterstock)"></p><p><strong>Die Nachfolgeplanung gehört zu den grössten Herausforderungen für sehr vermögende Familien. Laut dem neuen «Family Barometer 2026» von Julius Bär sind nur wenige Unternehmerfamilien darauf vorbereitet. Das grösste Hindernis ist dabei nicht das Geld.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Banken</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Tue, 20 Oct 2026 13:40:38 +0200</pubDate>
+		</item>
+		<item>
+			<title>Commerzbank-Übernahme: Bafin büsst UniCredit-Partner </title>
+			<link>https://www.finews.ch/news/banken/74079-commerzbank-unicredit-nomura-stimmrechtsmeldungen-deutsche-finanzaufsicht-busse-320000-euro</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/banken/74079-commerzbank-unicredit-nomura-stimmrechtsmeldungen-deutsche-finanzaufsicht-busse-320000-euro</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/n.jpg" alt="Nomura meldete zu spät oder falsch und zahlt nun eine kleine Busse. (Bild Shutterstock)"></p><p><strong>Die geplante Übernahme der Commerzbank durch UniCredit hat für die japanische Investmentbank Nomura ein Nachspiel. Wegen verspäteter oder fehlerhaften Stimmrechtsmeldungen verhängte die deutsche Finanzaufsicht eine Busse. Gleichzeitig treibt UniCredit den Umbau des eigenen Geschäfts voran.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Banken</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Tue, 20 Oct 2026 15:04:01 +0200</pubDate>
+		</item>
+		<item>
+			<title>Google-Cloud-Störung trifft Revolut und britische Banken</title>
+			<link>https://www.finews.ch/news/banken/74077-google-cloud-outage-revolut-uk-banks</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/banken/74077-google-cloud-outage-revolut-uk-banks</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/google_cloud-logo.jpg" alt="(Bild: Google Cloud)"></p><p><strong>Eine Störung bei Google Cloud hat am frühen Dienstag Bankdienstleistungen in Grossbritannien beeinträchtigt, darunter auch die des Finanzdienstleisters Revolut.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Banken</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Tue, 20 Oct 2026 14:13:37 +0200</pubDate>
 		</item>
 		<item>
 			<title>AXA Schweiz ernennt neuen Chief Investment Officer</title>
@@ -176,54 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Tue, 20 Oct 2026 07:00:01 +0200</pubDate>
-		</item>
-		<item>
-			<title>«150 Reaktoren in fünf Jahren: Für den KI-Investitionswahn reicht der Strom nicht»</title>
-			<link>https://www.finews.ch/news/finanzplatz/73925-laszlo-goemoeri-ki-boom-strombedarf-kupfer-engpaesse-blasenrisiko</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/73925-laszlo-goemoeri-ki-boom-strombedarf-kupfer-engpaesse-blasenrisiko</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/laslo.jpg" alt="Laszlo Gömöri, CEO der Market-Timing- und Behavioural-Analytics-Firma Spectralwaves. (Bild zVg)"></p><p><strong>Um den prognostizierten Strombedarf der US-Rechenzentren in den nächsten fünf Jahren zu decken, bräuchte es das Äquivalent von 150 Kernreaktoren. Ein Experte ordnet ein.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Mon, 19 Oct 2026 14:32:10 +0200</pubDate>
-		</item>
-		<item>
-			<title>Macher des Proseccos Nummer eins</title>
-			<link>https://www.finews.ch/themen/high-end/74051-bottega-prosecco-goldene-flasche-verkostung-vergani-zuerich</link>
-			<guid isPermaLink="true">https://www.finews.ch/themen/high-end/74051-bottega-prosecco-goldene-flasche-verkostung-vergani-zuerich</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/bottega_teaser_646x388.jpg" alt="Sandro Bottega. (Bild: zVg)" width="646" height="388" loading="lazy"></p><p><strong>Die goldene Flasche hat Bottega weltweit bekannt gemacht: Im internationalen Reisehandel ist Bottega Gold der meistverkaufte Prosecco. Dahinter steht ein Familienunternehmen aus dem Veneto, das Herkunft, Kellerarbeit und Gestaltung eng verbindet. Eine Verkostung bei Vergani in Zürich zeigt saubere, harmonische Prosecchi und zwei 2021er, die einen genaueren Blick verdienen.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>High-End</category>
-			<category>Themen</category>
-			<category>ROOT</category>
-			<pubDate>Mon, 19 Oct 2026 15:30:36 +0200</pubDate>
-		</item>
-		<item>
-			<title>Der «Röstigraben» beim Anlegen lässt sich nur teilweise erklären</title>
-			<link>https://www.finews.ch/news/banken/74038-umfrage-deutschschweiz-besitzen-58-prozent-der-bevoelkerung-wertschriften-westschweiz-37-prozent-hochschule-luzern-einkommen-und-vermoegen-unterschied-nur-teilweise-erklaeren-finanzwissen-risikobereitschaft</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/banken/74038-umfrage-deutschschweiz-besitzen-58-prozent-der-bevoelkerung-wertschriften-westschweiz-37-prozent-hochschule-luzern-einkommen-und-vermoegen-unterschied-nur-teilweise-erklaeren-finanzwissen-risikobereitschaft</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/studie.jpg" alt="Auch innerhalb vergleichbarer Einkommens-, Vermögens- und Bildungsgruppen investieren Deutschschweizer häufiger in Wertschriften als Leute aus der Romandie. (Bild KI)"></p><p><strong>In der Deutschschweiz besitzen 58 Prozent der Bevölkerung Wertschriften, in der Westschweiz sind es lediglich 37 Prozent. Eine Untersuchung der Hochschule Luzern zeigt, dass Einkommen und Vermögen diesen Unterschied nur teilweise erklären. Auch Finanzwissen, Risikobereitschaft und möglicherweise kulturelle Faktoren spielen eine wichtige Rolle.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Banken</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Mon, 19 Oct 2026 10:54:10 +0200</pubDate>
-		</item>
-		<item>
-			<title>Angelo Accardi: «Wir wachsen, indem wir Marktanteile gewinnen»</title>
-			<link>https://www.finews.ch/news/finanzplatz/74014-angelo-accardi-forvismazars-big4-revisionswesen-wirtschaftspruefung-akquisitionen-unternehmensberatung</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/74014-angelo-accardi-forvismazars-big4-revisionswesen-wirtschaftspruefung-akquisitionen-unternehmensberatung</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/Angelo_Accardi-Forvis-Mazars.png" alt="Gemäss Angelo Accardi ein neuer Trend auf der Kundenseite: «Sie prüfen zunehmend genau, in welchen KI-gestützten Anwendungen ihre Daten bei der Revisionsstelle oder Beratungsgesellschaft verarbeitet werden.» (Bild: Forvis Mazars)"></p><p><strong>Der CEO von Forvis Mazars erklärt, weshalb international aufgestellte Prüfungs- und Beratungsgesellschaften, die nicht zu den&nbsp; Big Four zählen, in der Schweiz Mandate gewinnen. Und Angelo Accardi begründet, weshalb es richtig war, dass sein Unternehmen&nbsp;die Entwicklung bestimmter KI-Anwendungen zurückgestellt hat, auch wenn dies Zeit kostete.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Mon, 19 Oct 2026 06:00:58 +0200</pubDate>
 		</item>
 	</channel>
 </rss>

@@ -5,6 +5,11 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>Why AI Confidence Is Not Validation Blog Artificial Intelligence 20 Oct 2026 Heather Barnhart</title>
+      <link>https://www.sans.org/blog/why-ai-confidence-is-not-validation</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/why-ai-confidence-is-not-validation</guid>
+    </item>
+    <item>
       <title>A Visual Summary of SANS DFIR Summit 2026 Blog Digital Forensics and Incident Response 16 Oct 2026 SANS Institute</title>
       <link>https://www.sans.org/blog/visual-summary-of-sans-dfir-summit-2026</link>
       <guid isPermaLink="true">https://www.sans.org/blog/visual-summary-of-sans-dfir-summit-2026</guid>
@@ -53,11 +58,6 @@
       <title>Frontier AI:Vulnerability Management's System Revolution Blog Artificial Intelligence 4 Sep 2026 Kevin Garvey</title>
       <link>https://www.sans.org/blog/frontier-aivulnerability-managements-system-revolution</link>
       <guid isPermaLink="true">https://www.sans.org/blog/frontier-aivulnerability-managements-system-revolution</guid>
-    </item>
-    <item>
-      <title>Cloud-Native Forensic Imaging Part 2 Blog Digital Forensics and Incident Response 3 Sep 2026 Megan Roddie-Fonseca</title>
-      <link>https://www.sans.org/blog/cloud-native-forensic-imaging-part-2</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/cloud-native-forensic-imaging-part-2</guid>
     </item>
   </channel>
 </rss>
