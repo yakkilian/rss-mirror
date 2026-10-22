@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Wed, 21 Oct 2026 23:39:22 +0200</lastBuildDate>
+		<lastBuildDate>Thu, 22 Oct 2026 06:39:01 +0200</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Christian Gattiker: «Es nimmt Dimensionen an, die schwindelerregend sind»</title>
+			<link>https://www.finews.ch/news/banken/74101-christian-gattiker-julius-baer-ai-investment-boom-europe-switzerland</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/banken/74101-christian-gattiker-julius-baer-ai-investment-boom-europe-switzerland</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/Christian_Gattiker_.png" alt="«Es greift zu kurz, nur auf die prominentesten Unternehmen zu schauen»: Christian Gattiker. (Bild: zVg)"></p><p><strong>Der Investitionsboom rund um künstliche Intelligenz verändert die Spielregeln an den Finanzmärkten. Christian Gattiker von Julius Bär erklärt, wann die Entwicklung gefährlich werden könnte, weshalb Europa ein Reformfenster nutzen muss und worauf es für die Schweiz ankommt.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Banken</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Thu, 22 Oct 2026 06:00:00 +0200</pubDate>
+		</item>
 		<item>
 			<title>ETF-Boom in Deutschland: Was Schweizer Anbieter aufhorchen lässt</title>
 			<link>https://www.finews.ch/news/finanzplatz/74103-deutschland-etfs-im-wert-von-697-milliarden-euro-untersuchung-des-fondsverbands-bvi-zeigt-starke-konzentration-aktien-etfs-entfallen-96-prozent-des-vermoegens-auf-indizes-von-nur-fuenf-anbietern</link>
@@ -212,18 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Tue, 20 Oct 2026 10:29:33 +0200</pubDate>
-		</item>
-		<item>
-			<title>Schweizer Vermögende wollen KI, aber keinen Roboter als Anlageberater</title>
-			<link>https://www.finews.ch/news/finanzplatz/74064-kuenstliche-intelligenz-vermoegende-schweizer-anleger-persoenliche-beratung-neue-avaloq-studie-digitalisierung</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/74064-kuenstliche-intelligenz-vermoegende-schweizer-anleger-persoenliche-beratung-neue-avaloq-studie-digitalisierung</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/Unknown.png" alt="Laut Umfrage möchten fast 40 Prozent bei der Beratung ganz auf KI verzichten. (Bild KI)"></p><p><strong>Künstliche Intelligenz stösst bei vermögenden Schweizer Anlegern auf Interesse. Die persönliche Beratung soll sie allerdings nicht ersetzen. Gleichzeitig zeigt eine neue Avaloq-Studie, dass zahlreiche Vermögensverwalter bei der Digitalisierung hinter den Erwartungen zurückbleiben.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Tue, 20 Oct 2026 11:05:19 +0200</pubDate>
 		</item>
 	</channel>
 </rss>
