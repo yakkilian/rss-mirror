@@ -5,6 +5,11 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>The Readiness Gap: Most Organisations Don't Know What AI They're Running Blog Artificial Intelligence 23 Oct 2026 Silvano Sogus</title>
+      <link>https://www.sans.org/blog/readiness-gap-most-organisations-dont-know-what-ai-theyre-running</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/readiness-gap-most-organisations-dont-know-what-ai-theyre-running</guid>
+    </item>
+    <item>
       <title>The AI Act Is a Security Law in Disguise, Part 1 Blog Artificial Intelligence 22 Oct 2026 Silvano Sogus</title>
       <link>https://www.sans.org/blog/ai-act-security-law-disguise-part-1</link>
       <guid isPermaLink="true">https://www.sans.org/blog/ai-act-security-law-disguise-part-1</guid>
@@ -58,11 +63,6 @@
       <title>The Questions Critical Infrastructure Leaders Should Be Asking Blog Industrial Control Systems Security 28 Sep 2026 Tim Conway</title>
       <link>https://www.sans.org/blog/questions-critical-infrastructure-leaders-should-be-asking</link>
       <guid isPermaLink="true">https://www.sans.org/blog/questions-critical-infrastructure-leaders-should-be-asking</guid>
-    </item>
-    <item>
-      <title>The Cybersecurity Claims in “We Must Pace the Frontier” Blog Artificial Intelligence 21 Sep 2026 Rob T. Lee,  Melissa Bischoping,  Viswanath (Vis) Chirravuri + 12 more</title>
-      <link>https://www.sans.org/blog/cybersecurity-claims-we-must-pace-frontier</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/cybersecurity-claims-we-must-pace-frontier</guid>
     </item>
   </channel>
 </rss>
