@@ -68,8 +68,45 @@ jobs:
           FRESHRSS_AUTO_ICT_BEST: ${{ secrets.FRESHRSS_AUTO_ICT_BEST }}
           FRESHRSS_AUTO_ICT: ${{ secrets.FRESHRSS_AUTO_ICT }}
           LOOKBACK_HOURS: ${{ steps.params.outputs.lookback_hours }}
+          LOT_ID: ${{ steps.params.outputs.lot_id }}
         run: |
           python news_filter.py
+
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+
+          path = Path("output/candidates.json")
+          data = json.loads(path.read_text(encoding="utf-8"))
+
+          if not isinstance(data, list):
+              raise TypeError("candidates.json doit rester une liste")
+
+          lot_id = os.environ["LOT_ID"]
+          lookback_hours = int(os.environ["LOOKBACK_HOURS"])
+          collected_at = datetime.now(timezone.utc)
+          window_start = collected_at - timedelta(hours=lookback_hours)
+
+          for item in data:
+              if not isinstance(item, dict):
+                  continue
+              item["lot_id"] = lot_id
+              item["lookback_hours"] = lookback_hours
+              item["collected_at_utc"] = collected_at.isoformat()
+              item["collection_window_start_utc"] = window_start.isoformat()
+
+          path.write_text(
+              json.dumps(data, ensure_ascii=False, indent=2),
+              encoding="utf-8",
+          )
+
+          print(
+              f"Métadonnées du lot ajoutées : {lot_id}, "
+              f"{lookback_hours} h, collecte {collected_at.isoformat()}"
+          )
+          PY
 
 
       - name: Send candidates by email
