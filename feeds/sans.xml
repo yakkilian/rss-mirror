@@ -5,6 +5,11 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>SANS Threat Analysis Rundown in Review: Takedowns Are Not Kills Blog Digital Forensics and Incident Response 26 Oct 2026 Sean O'Connor</title>
+      <link>https://www.sans.org/blog/sans-threat-analysis-rundown-review-takedowns-are-not-kills</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/sans-threat-analysis-rundown-review-takedowns-are-not-kills</guid>
+    </item>
+    <item>
       <title>The Readiness Gap: Most Organisations Don't Know What AI They're Running Blog Artificial Intelligence 23 Oct 2026 Silvano Sogus</title>
       <link>https://www.sans.org/blog/readiness-gap-most-organisations-dont-know-what-ai-theyre-running</link>
       <guid isPermaLink="true">https://www.sans.org/blog/readiness-gap-most-organisations-dont-know-what-ai-theyre-running</guid>
@@ -15,9 +20,9 @@
       <guid isPermaLink="true">https://www.sans.org/blog/eu-ai-act-applies-beyond-ai-you-buy</guid>
     </item>
     <item>
-      <title>The AI Act Is a Security Law in Disguise, Part 1 Blog Artificial Intelligence 22 Oct 2026 Silvano Sogus</title>
-      <link>https://www.sans.org/blog/ai-act-security-law-disguise-part-1</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/ai-act-security-law-disguise-part-1</guid>
+      <title>The EU AI Act Is a Security Law in Disguise Blog Artificial Intelligence 22 Oct 2026 Silvano Sogus</title>
+      <link>https://www.sans.org/blog/ai-act-security-law-disguise</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/ai-act-security-law-disguise</guid>
     </item>
     <item>
       <title>Putting AI Security into Action: Key Takeaways from the SANS Govern Field Guide Blog Artificial Intelligence 20 Oct 2026 Chris Edmundson</title>
@@ -58,11 +63,6 @@
       <title>Behavior Change Is Not the Finish Line Blog Security Awareness 29 Sep 2026 SANS Institute</title>
       <link>https://www.sans.org/blog/behavior-change-is-not-the-finish-line</link>
       <guid isPermaLink="true">https://www.sans.org/blog/behavior-change-is-not-the-finish-line</guid>
-    </item>
-    <item>
-      <title>The Questions Critical Infrastructure Leaders Should Be Asking Blog Industrial Control Systems Security 28 Sep 2026 Tim Conway</title>
-      <link>https://www.sans.org/blog/questions-critical-infrastructure-leaders-should-be-asking</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/questions-critical-infrastructure-leaders-should-be-asking</guid>
     </item>
   </channel>
 </rss>

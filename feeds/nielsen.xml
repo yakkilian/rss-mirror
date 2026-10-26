@@ -5,6 +5,11 @@
     <link>https://www.nielsen.com/news-center/type/press-release/</link>
     <description>Derniers communiqués de presse Nielsen</description>
     <item>
+      <title>Précision</title>
+      <link>https://www.nielsen.com/fr/news-center/2026/point-of-clarification/</link>
+      <guid isPermaLink="true">https://www.nielsen.com/fr/news-center/2026/point-of-clarification/</guid>
+    </item>
+    <item>
       <title>L'audience télévisée marque le pas dans les rapports Nielsen du mois d'août, alors que les événements sportifs marquent une pause et que la rentrée scolaire bat son plein</title>
       <link>https://www.nielsen.com/fr/news-center/2026/tv-viewing-cools-off-in-nielsens-august-gauge-reports-as-sports-take-a-breather-and-school-resumes/</link>
       <guid isPermaLink="true">https://www.nielsen.com/fr/news-center/2026/tv-viewing-cools-off-in-nielsens-august-gauge-reports-as-sports-take-a-breather-and-school-resumes/</guid>
@@ -49,11 +54,6 @@
       <link>https://www.nielsen.com/fr/news-center/2026/nielsen-launches-ctv-ad-spend-data-into-its-french-ad-intel-product/</link>
       <guid isPermaLink="true">https://www.nielsen.com/fr/news-center/2026/nielsen-launches-ctv-ad-spend-data-into-its-french-ad-intel-product/</guid>
       <description>Découvrez les nouvelles données sur les dépenses publicitaires consacrées à la télévision connectée en France : Nielsen enrichit son produit Ad Intel en y ajoutant des analyses et des informations plus approfondies.</description>
-    </item>
-    <item>
-      <title>La consommation télévisuelle déjoue le ralentissement estival habituel, portée par la Coupe du monde et le streaming, selon les rapports « Gauge » de Nielsen pour le mois de juillet</title>
-      <link>https://www.nielsen.com/fr/news-center/2026/tv-usage-kicks-usual-summer-slowdown-fueled-by-world-cup-and-streaming-in-nielsens-july-gauge-reports/</link>
-      <guid isPermaLink="true">https://www.nielsen.com/fr/news-center/2026/tv-usage-kicks-usual-summer-slowdown-fueled-by-world-cup-and-streaming-in-nielsens-july-gauge-reports/</guid>
     </item>
   </channel>
 </rss>
