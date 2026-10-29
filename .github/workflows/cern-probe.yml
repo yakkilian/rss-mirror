@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "cern_probe.py"
+      - "cern_feed.py"
 
 permissions:
   contents: write
