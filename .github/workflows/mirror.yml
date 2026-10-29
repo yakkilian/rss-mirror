@@ -28,6 +28,7 @@ jobs:
         run: |
           python mirror.py
           python agefi_feed.py
+          python cern_feed.py
 
       - name: Commit updated feeds
         run: |
