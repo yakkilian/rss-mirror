@@ -5,7 +5,171 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Thu, 29 Oct 2026 12:56:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 22:45:07 +0000</lastBuildDate>
+    <item>
+      <title>Ypsomed, une croissance qui divise les analystes</title>
+      <link>https://agefi.com/actualites/marches/ypsomed-une-croissance-qui-divise-les-analystes</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544930</guid>
+      <description>L’ACTION DÉCODÉE. Le spécialiste des systèmes d’injection profite de l’essor des traitements contre l’obésité. Mais les perspectives de certains médicaments et la valorisation du titre suscitent des réserves.</description>
+      <pubDate>Thu, 29 Oct 2026 18:30:00 +0000</pubDate>
+      <category>marches</category>
+      <category>Santé</category>
+      <category>Ypsomed</category>
+      <category>Swiss Medtech</category>
+      <category>SIX</category>
+    </item>
+    <item>
+      <title>«La Suisse a montré ses compétences dans les drones civils»</title>
+      <link>https://agefi.com/actualites/politique/la-suisse-a-montre-ses-competences-dans-les-drones-civils</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544925</guid>
+      <description>Guy Parmelin défend la révision de la loi fédérale sur le matériel de guerre. Le conseiller fédéral voit dans le savoir-faire suisse un potentiel qui dépasse la fourniture de composants. Grand entretien (2/2).</description>
+      <pubDate>Thu, 29 Oct 2026 18:30:00 +0000</pubDate>
+      <category>politique</category>
+      <category>Guy Parmelin</category>
+      <category>Drones</category>
+      <category>Armement</category>
+      <category>Allemagne</category>
+      <category>Votations</category>
+    </item>
+    <item>
+      <title>«A terme, les mesures protectionnistes deviendront insupportables»</title>
+      <link>https://agefi.com/actualites/politique/a-terme-les-mesures-protectionnistes-deviendront-insupportables</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544918</guid>
+      <description>A deux mois de son départ du Conseil fédéral, Guy Parmelin dresse le bilan de sa politique commerciale et défend l’ouverture des marchés face à la multiplication des obstacles aux échanges. Grand entretien (1/2).</description>
+      <pubDate>Thu, 29 Oct 2026 18:30:00 +0000</pubDate>
+      <category>politique</category>
+      <category>Guy Parmelin</category>
+      <category>Libre-échange</category>
+      <category>Mercosur</category>
+      <category>Union européenne</category>
+    </item>
+    <item>
+      <title>Les créanciers rappellent les priorités à GZO</title>
+      <link>https://agefi.com/actualites/editorial/les-creanciers-rappellent-les-priorites-a-gzo</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544928</guid>
+      <description>La faible participation à l’assemblée des créanciers de mercredi renforce la perspective d’un échec fatal pour l’hôpital de Wetzikon.</description>
+      <pubDate>Thu, 29 Oct 2026 18:00:00 +0000</pubDate>
+      <category>editorial</category>
+      <category>Obligations</category>
+      <category>Hôpitaux</category>
+      <category>Zurich</category>
+      <category>Santé</category>
+    </item>
+    <item>
+      <title>Le «best of» de l’éco-finance en v.o.</title>
+      <link>https://agefi.com/actualites/opinions/le-best-of-de-leco-finance-en-vo-70</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544922</guid>
+      <description>Octobre 2026. Une sélection de quatre livres «coups de cœur» proposée par la librairie Payot.</description>
+      <pubDate>Thu, 29 Oct 2026 18:00:00 +0000</pubDate>
+      <category>opinions</category>
+    </item>
+    <item>
+      <title>Les data centers remplissent les carnets de commandes et... les avions</title>
+      <link>https://agefi.com/actualites/marches/les-data-centers-remplissent-les-carnets-de-commandes-et-les-avions</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544932</guid>
+      <description>Les dernières publications confirment la puissance du cycle d’investissement dans l’intelligence artificielle et sa diffusion à l’ensemble de la chaîne industrielle.</description>
+      <pubDate>Thu, 29 Oct 2026 17:30:00 +0000</pubDate>
+      <category>marches</category>
+      <category>Intelligence artificielle</category>
+      <category>Investissements</category>
+      <category>ABB</category>
+      <category>Kuehne + Nagel</category>
+    </item>
+    <item>
+      <title>Le SMI franchit la barre des 14.800 points</title>
+      <link>https://agefi.com/actualites/marches/le-smi-franchit-la-barre-des-14800-points</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544931</guid>
+      <description>Le SMI a terminé en hausse de 1,21% à 14.756,86 points, avec un plus haut à 14.861,53 et un plus bas à 14.656,57. Le SLI a avancé de 1,10% à 2367,32 points et le SPI de 1,01% à 20.793,53 points.</description>
+      <pubDate>Thu, 29 Oct 2026 17:19:00 +0000</pubDate>
+      <category>marches</category>
+      <category>SMI</category>
+      <category>Bourse Zurich</category>
+    </item>
+    <item>
+      <title>Echange avec l’enchanteur du libre-échange</title>
+      <link>https://agefi.com/actualites/opinions/echange-avec-lenchanteur-du-libre-echange</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544927</guid>
+      <description>Le regard décalé du dessinateur Pécub sur une actualité marquante de la semaine.</description>
+      <pubDate>Thu, 29 Oct 2026 17:00:00 +0000</pubDate>
+      <category>opinions</category>
+      <category>Conseil fédéral</category>
+      <category>Guy Parmelin</category>
+    </item>
+    <item>
+      <title>Peut-on encore se fier au taux neutre pour qualifier l’action des banques centrales?</title>
+      <link>https://agefi.com/actualites/marches/peut-on-encore-se-fier-au-taux-neutre-pour-qualifier-laction-des-banques-centrales</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544885</guid>
+      <description>Les banquiers centraux ont décidé de l’écarter de leur communication, les mouvements structurels à l’œuvre dans les économies étant difficilement mesurables.</description>
+      <pubDate>Thu, 29 Oct 2026 17:00:00 +0000</pubDate>
+      <category>marches</category>
+      <category>Politique monétaire</category>
+      <category>Banque centrale</category>
+      <category>Taux d'intérêt</category>
+    </item>
+    <item>
+      <title>Référendum contre le logiciel américain Epic des hôpitaux vaudois</title>
+      <link>https://agefi.com/actualites/politique/referendum-contre-le-logiciel-americain-epic-des-hopitaux-vaudois</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544929</guid>
+      <description>Le comité, qui dénonce les risques de dépendance financière et technologique envers une entreprise américaine, doit récolter 12’000 signatures d’ici au 5 décembre.</description>
+      <pubDate>Thu, 29 Oct 2026 16:31:48 +0000</pubDate>
+      <category>politique</category>
+      <category>Hôpitaux</category>
+      <category>Vaud</category>
+    </item>
+    <item>
+      <title>UBS: un transfert du siège pourrait coûter autant que le renforcement des fonds propres</title>
+      <link>https://agefi.com/actualites/entreprises/ubs-un-transfert-du-siege-pourrait-couter-autant-que-le-renforcement-des-fonds-propres</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544926</guid>
+      <description>Selon Reuters, une analyse interne du gouvernement évoque des coûts de plusieurs milliards pour une délocalisation, notamment aux Etats-Unis ou au Royaume-Uni.</description>
+      <pubDate>Thu, 29 Oct 2026 14:43:45 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Banques</category>
+      <category>UBS</category>
+    </item>
+    <item>
+      <title>Non à une hausse de la TVA sans réforme structurelle</title>
+      <link>https://agefi.com/actualites/opinions/non-a-une-hausse-de-la-tva-sans-reforme-structurelle</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544895</guid>
+      <description>Le Centre patronal juge la mesure insuffisante pour financer la 13e rente AVS et réclame une réforme sérieuse, avec une évaluation globale des coûts à long terme.</description>
+      <pubDate>Thu, 29 Oct 2026 14:00:00 +0000</pubDate>
+      <category>opinions</category>
+      <category>AVS</category>
+      <category>Fiscalité</category>
+      <category>TVA</category>
+    </item>
+    <item>
+      <title>La croissance américaine grimpe à 3,4% au troisième trimestre</title>
+      <link>https://agefi.com/actualites/macroeconomie/la-croissance-americaine-grimpe-a-34-au-troisieme-trimestre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544924</guid>
+      <description>Après 2,2% au deuxième trimestre, la progression du PIB est portée par les investissements et la consommation des ménages. Elle dépasse les 3,1% attendus par les analystes.</description>
+      <pubDate>Thu, 29 Oct 2026 13:47:53 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>PIB</category>
+      <category>Etats-Unis</category>
+      <category>Croissance</category>
+    </item>
+    <item>
+      <title>Etats-Unis: l’inflation PCE grimpe à 3,6% en septembre</title>
+      <link>https://agefi.com/actualites/macroeconomie/etats-unis-linflation-pce-accelere-a-36-en-septembre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544923</guid>
+      <description>L’indice, mesure privilégiée par la Réserve fédérale, a progressé de 0,5% sur un mois. Sur un an, la hausse des prix reste légèrement inférieure aux 3,7% attendus par les analystes.</description>
+      <pubDate>Thu, 29 Oct 2026 13:34:47 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Inflation</category>
+      <category>Etats-Unis</category>
+      <category>Prix à la consommation</category>
+    </item>
+    <item>
+      <title>Christine Lagarde annonce son départ anticipé, la BCE maintient ses taux</title>
+      <link>https://agefi.com/actualites/marches/christine-lagarde-quittera-la-presidence-de-la-bce-le-7-fevrier-2027</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544920</guid>
+      <description>La présidente quittera ses fonctions le 7 février, avant la fin de son mandat prévue fin octobre 2027, ouvrant sa succession. Le taux de dépôt reste fixé à 2,5%.</description>
+      <pubDate>Thu, 29 Oct 2026 13:15:00 +0000</pubDate>
+      <category>marches</category>
+      <category>Banque centrale européenne</category>
+      <category>BCE</category>
+      <category>Christine Lagarde</category>
+    </item>
     <item>
       <title>Le fret ferroviaire suisse face aux impératifs de rentabilité</title>
       <link>https://agefi.com/actualites/macroeconomie/le-fret-ferroviaire-suisse-face-aux-imperatifs-de-rentabilite</link>
@@ -27,17 +191,6 @@
       <category>Voyages</category>
     </item>
     <item>
-      <title>Christine Lagarde quittera la présidence de la BCE le 7 février 2027</title>
-      <link>https://agefi.com/actualites/marches/christine-lagarde-quittera-la-presidence-de-la-bce-le-7-fevrier-2027</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544920</guid>
-      <description>Ce départ interviendra près de neuf mois avant la fin de son mandat, prévue fin octobre 2027. Son successeur sera nommé par le Conseil européen.</description>
-      <pubDate>Thu, 29 Oct 2026 10:58:24 +0000</pubDate>
-      <category>marches</category>
-      <category>Banque centrale européenne</category>
-      <category>BCE</category>
-      <category>Christine Lagarde</category>
-    </item>
-    <item>
       <title>Oerlikon confirme ses objectifs pour 2026 après un trimestre en croissance</title>
       <link>https://agefi.com/actualites/entreprises/oerlikon-confirme-ses-objectifs-pour-2026-apres-un-trimestre-en-croissance</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/544902</guid>
@@ -56,18 +209,6 @@
       <category>marches</category>
       <category>Bourse Zurich</category>
       <category>SMI</category>
-    </item>
-    <item>
-      <title>«A terme, les mesures protectionnistes deviendront insupportables»</title>
-      <link>https://agefi.com/actualites/politique/a-terme-les-mesures-protectionnistes-deviendront-insupportables</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544918</guid>
-      <description>A deux mois de son départ du Conseil fédéral, Guy Parmelin dresse le bilan de sa politique commerciale et défend l’ouverture des marchés face à la multiplication des obstacles aux échanges. Grand entretien (1/2).</description>
-      <pubDate>Thu, 29 Oct 2026 10:10:25 +0000</pubDate>
-      <category>politique</category>
-      <category>Guy Parmelin</category>
-      <category>Libre-échange</category>
-      <category>Mercosur</category>
-      <category>Union européenne</category>
     </item>
     <item>
       <title>Shell voit son bénéfice net plus que doubler au troisième trimestre</title>
@@ -201,17 +342,17 @@
       <title>Glencore accroît de 3% sa production de cuivre sur neuf mois</title>
       <link>https://agefi.com/actualites/entreprises/glencore-accroit-de-3-sa-production-de-cuivre-sur-neuf-mois</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/544906</guid>
-      <description>Le groupe zougois a produit 598.600 tonnes de cuivre sur les neuf premiers mois de 2026, soit une hausse de 12% à périmètre constant. Il maintient ses objectifs annuels pour l’activité minière.</description>
+      <description>Le groupe zougois a produit 598.600 tonnes de cuivre de janvier à septembre 2026, soit une hausse de 12% à périmètre constant. Il maintient ses objectifs annuels pour l’activité minière.</description>
       <pubDate>Thu, 29 Oct 2026 07:59:24 +0000</pubDate>
       <category>entreprises</category>
       <category>Glencore</category>
       <category>Matières premières</category>
     </item>
     <item>
-      <title>Vontobel accroît ses actifs sous gestion de 6% sur neuf mois</title>
+      <title>Vontobel atteint un record d’avoirs malgré une collecte décevante</title>
       <link>https://agefi.com/actualites/entreprises/vontobel-accroit-ses-actifs-sous-gestion-de-6-sur-neuf-mois</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/544903</guid>
-      <description>Les avoirs ont atteint 255,1 milliards de francs à fin septembre. Les afflux nets de capitaux de 1,9 milliard restent inférieurs aux 3,5 milliards attendus par les analystes.</description>
+      <description>Les actifs sous gestion de la banque zurichoise ont progressé de 6% sur 9 mois. Les entrées nettes déçoivent toutefois, pénalisées par les sorties de capitaux de la clientèle institutionnelle.</description>
       <pubDate>Thu, 29 Oct 2026 07:07:32 +0000</pubDate>
       <category>entreprises</category>
       <category>Vontobel</category>
@@ -499,142 +640,6 @@
       <pubDate>Wed, 28 Oct 2026 07:42:50 +0000</pubDate>
       <category>trajectoires</category>
       <category>Straumann</category>
-    </item>
-    <item>
-      <title>Rieter abaisse ses prévisions malgré la croissance portée par Barmag</title>
-      <link>https://agefi.com/actualites/entreprises/rieter-abaisse-ses-previsions-malgre-la-croissance-portee-par-barmag</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544875</guid>
-      <description>Le fabricant zurichois de machines textiles vise désormais une marge Ebit comprise entre -2% et 0%, contre 0% à 3% auparavant, sur fond de reprise plus lente que prévu et de pressions sur les marges.</description>
-      <pubDate>Wed, 28 Oct 2026 07:27:24 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Rieter</category>
-      <category>Industrie</category>
-    </item>
-    <item>
-      <title>Landis+Gyr boucle son programme de rachat d’actions de 30,5 millions de francs</title>
-      <link>https://agefi.com/actualites/entreprises/landisgyr-boucle-son-programme-de-rachat-dactions-de-305-millions-de-francs</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544874</guid>
-      <description>Le fabricant zougois a acquis 605.430 actions nominatives à un prix moyen de 50,36 francs. Au 27 octobre, il détenait 10% de ses titres en circulation.</description>
-      <pubDate>Wed, 28 Oct 2026 07:11:27 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Landis+Gyr</category>
-      <category>Actions</category>
-    </item>
-    <item>
-      <title>Dormakaba accroît ses ventes de 5,2% au premier trimestre</title>
-      <link>https://agefi.com/actualites/entreprises/dormakaba-accroit-ses-ventes-de-52-au-premier-trimestre</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544873</guid>
-      <description>Le spécialiste zurichois des accès sécurisés a réalisé un chiffre d’affaires de 702,9 millions de francs à fin septembre. La croissance organique atteint 4%, portée par les volumes et les prix.</description>
-      <pubDate>Wed, 28 Oct 2026 06:54:46 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Dormakaba</category>
-      <category>Sécurité</category>
-    </item>
-    <item>
-      <title>L’art de tourner en rond</title>
-      <link>https://agefi.com/actualites/editorial/lart-de-tourner-en-rond</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544861</guid>
-      <description>Deux ans après son lancement, la table ronde sur les coûts de la santé multiplie les mesures sans résultats chiffrés. De quoi nourrir le doute sur sa pertinence.</description>
-      <pubDate>Tue, 27 Oct 2026 18:30:00 +0000</pubDate>
-      <category>editorial</category>
-      <category>Santé</category>
-      <category>Primes maladie</category>
-      <category>Elisabeth Baume-Schneider</category>
-    </item>
-    <item>
-      <title>Un appel à élargir le pool des dommages naturels aux séismes</title>
-      <link>https://agefi.com/actualites/politique/un-appel-a-elargir-le-pool-des-dommages-naturels-aux-seismes</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544860</guid>
-      <description>La Mobilière reste confiante dans l’assurabilité des risques naturels en Suisse. Sa CEO plaide pour étendre la couverture aux tremblements de terre, qui ne figurent pas parmi les neuf risques couverts.</description>
-      <pubDate>Tue, 27 Oct 2026 18:30:00 +0000</pubDate>
-      <category>politique</category>
-      <category>La Mobilière</category>
-      <category>Assurances</category>
-      <category>Valais</category>
-    </item>
-    <item>
-      <title>«L'eau constitue le principal risque financier lié à la nature»</title>
-      <link>https://agefi.com/actualites/entreprises/nous-avons-ete-surpris-par-lampleur-des-dommages</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544859</guid>
-      <description>Le coût de la grêle du 28 août a dépassé le scénario le plus défavorable de La Mobilière. Sa CEO Michèle Rodoni explique pourquoi les risques climatiques imposent de revoir les modèles utilisés dans l’assurance.</description>
-      <pubDate>Tue, 27 Oct 2026 18:30:00 +0000</pubDate>
-      <category>entreprises</category>
-      <category>La Mobilière</category>
-      <category>Assurances</category>
-      <category>Climat</category>
-      <category>Eau</category>
-      <category>Biodiversité</category>
-      <category>Agriculture</category>
-    </item>
-    <item>
-      <title>Investissement durable: La Mobilière se veut «pragmatique»</title>
-      <link>https://agefi.com/actualites/marches/investissement-durable-la-mobiliere-se-veut-pragmatique</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544857</guid>
-      <description>Rendement, décarbonation et exclusions ciblées guident les placements de la compagnie d’assurance. La CEO Michèle Rodoni explique la place du dialogue et son choix parmi les initiatives collectives.</description>
-      <pubDate>Tue, 27 Oct 2026 18:30:00 +0000</pubDate>
-      <category>marches</category>
-      <category>La Mobilière</category>
-      <category>Investissement durable</category>
-      <category>Assurances</category>
-      <category>Climat</category>
-    </item>
-    <item>
-      <title>Un couple, deux fiscalités: vraiment?</title>
-      <link>https://agefi.com/actualites/opinions/un-couple-deux-fiscalites-vraiment</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544851</guid>
-      <description>L'initiative soumise au vote en novembre ferait cohabiter imposition commune au niveau fédéral et taxation individuelle dans les cantons. Cela compliquerait les démarches des ménages et des administrations.</description>
-      <pubDate>Tue, 27 Oct 2026 18:00:00 +0000</pubDate>
-      <category>opinions</category>
-      <category>Fiscalité</category>
-    </item>
-    <item>
-      <title>La Bourse suisse termine en hausse soutenue par Novartis</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-termine-en-hausse-soutenue-par-novartis</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544868</guid>
-      <description>Le SMI a terminé en hausse de 0,40% à 14.597,63 points. Le SLI a gagné 0,37% à 2345,67 points et le SPI a pris 0,46% à 20.599,98 points.</description>
-      <pubDate>Tue, 27 Oct 2026 17:30:23 +0000</pubDate>
-      <category>marches</category>
-      <category>SMI</category>
-      <category>Bourse Zurich</category>
-    </item>
-    <item>
-      <title>Les emprunts allemands bénéficient d’un mouvement de fuite vers la sécurité</title>
-      <link>https://agefi.com/actualites/marches/les-emprunts-allemands-beneficient-dun-mouvement-de-fuite-vers-la-securite</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544839</guid>
-      <description>La clémence de Moody’s à l’égard de la France ne résout en rien une crise budgétaire vouée à se prolonger. L’écart de rendement à 10 ans avec l’Allemagne a culminé à 175 points de base.</description>
-      <pubDate>Tue, 27 Oct 2026 17:30:00 +0000</pubDate>
-      <category>marches</category>
-      <category>Obligations</category>
-      <category>France</category>
-      <category>BCE</category>
-    </item>
-    <item>
-      <title>La Compagnie des Alpes accroît ses revenus</title>
-      <link>https://agefi.com/actualites/entreprises/la-compagnie-des-alpes-accroit-ses-revenus</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544867</guid>
-      <description>Le chiffre d’affaires du groupe français atteint 1,43 milliard d’euros en 2025-2026. Le groupe vise une croissance de l’EBO autour de 6%, hors plus-values de cession de biens immobilisés de Tignes.</description>
-      <pubDate>Tue, 27 Oct 2026 17:23:07 +0000</pubDate>
-      <category>entreprises</category>
-    </item>
-    <item>
-      <title>Tableau de bord de la finance durable: actions marchés émergents</title>
-      <link>https://agefi.com/actualites/marches/tableau-de-bord-de-la-finance-durable-actions-marches-emergents-51</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544841</guid>
-      <description>Cette semaine «L’Agefi» et Conser - ESG Verifier comparent deux ETF qui investissent dans un panier d’actions marchés émergents. S’y ajoutent les dernières nouvelles de l’investissement ESG.</description>
-      <pubDate>Tue, 27 Oct 2026 17:15:00 +0000</pubDate>
-      <category>marches</category>
-      <category>Finance durable</category>
-      <category>ETF</category>
-      <category>ESG</category>
-    </item>
-    <item>
-      <title>RHT: l’horlogerie prend acte du retour à la normale voulu à Berne</title>
-      <link>https://agefi.com/actualites/politique/rht-lhorlogerie-prend-acte-du-retour-a-la-normale-voulu-a-berne</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544866</guid>
-      <description>Le Conseil fédéral envisage un retour échelonné de 24 à 12 mois d’indemnisation maximale courant 2027, selon l’évolution économique. La CPIH doit encore discuter d’une prise de position.</description>
-      <pubDate>Tue, 27 Oct 2026 17:13:38 +0000</pubDate>
-      <category>politique</category>
-      <category>Horlogerie</category>
     </item>
   </channel>
 </rss>

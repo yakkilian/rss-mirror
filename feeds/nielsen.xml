@@ -6,6 +6,11 @@
     <description>Derniers communiqués de presse Nielsen</description>
     <item>
       <title>Précision</title>
+      <link>https://www.nielsen.com/fr/news-center/2026/point-of-clarification-2/</link>
+      <guid isPermaLink="true">https://www.nielsen.com/fr/news-center/2026/point-of-clarification-2/</guid>
+    </item>
+    <item>
+      <title>Précision</title>
       <link>https://www.nielsen.com/fr/news-center/2026/point-of-clarification/</link>
       <guid isPermaLink="true">https://www.nielsen.com/fr/news-center/2026/point-of-clarification/</guid>
     </item>
@@ -49,12 +54,6 @@
       <link>https://www.nielsen.com/fr/news-center/2026/nielsen-accelerates-streaming-data-delivery-with-enhancements-to-streaming-content-ratings/</link>
       <guid isPermaLink="true">https://www.nielsen.com/fr/news-center/2026/nielsen-accelerates-streaming-data-delivery-with-enhancements-to-streaming-content-ratings/</guid>
       <description>Nielsen améliore ses mesures d'audience des contenus en streaming grâce à la diffusion quotidienne de données, ce qui permet d'obtenir plus rapidement des informations utiles à la prise de décisions stratégiques dans le domaine des médias.</description>
-    </item>
-    <item>
-      <title>NIELSEN LANCE LES DONNÉES DE DÉPENSES PUBLICITAIRES CTV DANS SON PRODUIT AD INTEL FRANCE</title>
-      <link>https://www.nielsen.com/fr/news-center/2026/nielsen-launches-ctv-ad-spend-data-into-its-french-ad-intel-product/</link>
-      <guid isPermaLink="true">https://www.nielsen.com/fr/news-center/2026/nielsen-launches-ctv-ad-spend-data-into-its-french-ad-intel-product/</guid>
-      <description>Découvrez les nouvelles données sur les dépenses publicitaires consacrées à la télévision connectée en France : Nielsen enrichit son produit Ad Intel en y ajoutant des analyses et des informations plus approfondies.</description>
     </item>
   </channel>
 </rss>
