@@ -1,3 +1,4 @@
+import json
 import re
 from urllib.parse import urljoin
 
@@ -10,23 +11,41 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/155.0.0.0 Safari/537.36"
     ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/json,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.7",
 }
 
-URLS = [
+SITE_URLS = [
     "https://agefi.com/robots.txt",
     "https://agefi.com/sitemap.xml",
     "https://agefi.com/sitemap_index.xml",
     "https://agefi.com/sitemap-index.xml",
     "https://agefi.com/actualites",
+]
+
+API_URLS = [
     "https://api.agefi.com/",
+    "https://api.agefi.com/v1",
+    "https://api.agefi.com/v1/",
+    "https://api.agefi.com/docs",
+    "https://api.agefi.com/v1/docs",
+    "https://api.agefi.com/openapi.json",
+    "https://api.agefi.com/v1/openapi.json",
+    "https://api.agefi.com/swagger.json",
+    "https://api.agefi.com/v1/articles",
+    "https://api.agefi.com/v1/posts",
+    "https://api.agefi.com/v1/news",
+    "https://api.agefi.com/v1/actualites",
+    "https://api.agefi.com/v1/contents",
+    "https://api.agefi.com/v1/content",
+    "https://api.agefi.com/v1/search",
 ]
 
 session = requests.Session()
 session.headers.update(HEADERS)
 
-for url in URLS:
+
+def report(url, full=False):
     print("\n" + "=" * 80)
     print("URL:", url)
 
@@ -38,10 +57,29 @@ for url in URLS:
         print("LENGTH:", len(r.content))
 
         text = r.text
-        compact = re.sub(r"\s+", " ", text[:1200])
-        print("HEAD:", compact)
+        if full:
+            print("BODY:")
+            print(text[:12000])
+        else:
+            compact = re.sub(r"\s+", " ", text[:1800])
+            print("HEAD:", compact)
 
-        if "xml" in (r.headers.get("content-type") or "").lower() or "<urlset" in text[:5000] or "<sitemapindex" in text[:5000]:
+        content_type = (r.headers.get("content-type") or "").lower()
+
+        if "json" in content_type:
+            try:
+                payload = r.json()
+                print("JSON TYPE:", type(payload).__name__)
+                if isinstance(payload, dict):
+                    print("JSON KEYS:", sorted(payload.keys())[:100])
+                elif isinstance(payload, list):
+                    print("JSON ITEMS:", len(payload))
+                    if payload:
+                        print("FIRST ITEM:", json.dumps(payload[0], ensure_ascii=False)[:2000])
+            except Exception as e:
+                print("JSON PARSE ERROR:", repr(e))
+
+        if "xml" in content_type or "<urlset" in text[:5000] or "<sitemapindex" in text[:5000]:
             locs = re.findall(r"<loc>\s*(.*?)\s*</loc>", text, flags=re.I | re.S)
             article_locs = [x for x in locs if "/actualites/" in x]
             print("XML LOCS:", len(locs))
@@ -49,7 +87,7 @@ for url in URLS:
             for item in article_locs[:20]:
                 print("  ARTICLE:", item)
 
-        if "text/html" in (r.headers.get("content-type") or "").lower() or "<html" in text[:1000].lower():
+        if "text/html" in content_type or "<html" in text[:1000].lower():
             soup = BeautifulSoup(text, "html.parser")
             hrefs = []
             seen = set()
@@ -69,15 +107,16 @@ for url in URLS:
             for src in scripts[:20]:
                 print("  SCRIPT:", src)
 
-            if "api.agefi.com" in text:
-                print("FOUND api.agefi.com IN HTML")
-                for m in re.finditer(r".{0,180}api\.agefi\.com.{0,260}", text, flags=re.I | re.S):
-                    print("  API CONTEXT:", re.sub(r"\s+", " ", m.group(0))[:500])
-
-            raw_articles = sorted(set(re.findall(r"https?://[^\"'<>\\s]+/actualites/[^\"'<>\\s]+", text)))
-            print("RAW ARTICLE URLS:", len(raw_articles))
-            for item in raw_articles[:20]:
-                print("  RAW:", item)
-
     except Exception as e:
         print("ERROR:", repr(e))
+
+
+for url in SITE_URLS:
+    report(url, full=url.endswith("/robots.txt"))
+
+print("\n" + "#" * 80)
+print("# API PROBE")
+print("#" * 80)
+
+for url in API_URLS:
+    report(url)
