@@ -39,7 +39,7 @@ for page in range(1, PAGES + 1):
     response = session.get(url, timeout=30)
     response.raise_for_status()
 
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(response.content, "html.parser")
     times = soup.find_all("time")
     print(f"[INFO] CERN page {page}: {len(times)} dated cards")
 
