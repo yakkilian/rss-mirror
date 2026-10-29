@@ -72,6 +72,10 @@ def report(url, full=False):
                 print("JSON TYPE:", type(payload).__name__)
                 if isinstance(payload, dict):
                     print("JSON KEYS:", sorted(payload.keys())[:100])
+                    if isinstance(payload.get("articles"), list):
+                        print("ARTICLE COUNT:", len(payload["articles"]))
+                    if "pagination" in payload:
+                        print("PAGINATION:", json.dumps(payload["pagination"], ensure_ascii=False))
                 elif isinstance(payload, list):
                     print("JSON ITEMS:", len(payload))
                     if payload:
