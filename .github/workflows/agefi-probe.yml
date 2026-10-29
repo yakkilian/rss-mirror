@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "agefi_probe.py"
+      - "agefi_feed.py"
 
 jobs:
   probe:
@@ -23,3 +24,13 @@ jobs:
 
       - name: Probe Agefi
         run: python agefi_probe.py
+
+      - name: Build Agefi RSS
+        run: python agefi_feed.py
+
+      - name: Upload Agefi RSS test
+        uses: actions/upload-artifact@v4
+        with:
+          name: agefi-rss-test
+          path: feeds/agefi.xml
+          retention-days: 2
