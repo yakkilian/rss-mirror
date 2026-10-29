@@ -7,6 +7,9 @@ on:
       - "agefi_probe.py"
       - "agefi_feed.py"
 
+permissions:
+  contents: write
+
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -28,9 +31,14 @@ jobs:
       - name: Build Agefi RSS
         run: python agefi_feed.py
 
-      - name: Upload Agefi RSS test
-        uses: actions/upload-artifact@v4
-        with:
-          name: agefi-rss-test
-          path: feeds/agefi.xml
-          retention-days: 2
+      - name: Commit Agefi RSS
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feeds/agefi.xml
+          if git diff --cached --quiet; then
+            echo "No Agefi feed changes"
+          else
+            git commit -m "Add Agefi RSS feed"
+            git push
+          fi
