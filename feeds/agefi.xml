@@ -5,7 +5,98 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Fri, 30 Oct 2026 12:49:56 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 22:17:24 +0000</lastBuildDate>
+    <item>
+      <title>Les profits des cinq majors pétrogazières totalisent plus de 50 milliards de dollars</title>
+      <link>https://agefi.com/actualites/entreprises/les-profits-des-cinq-majors-petrogazieres-totalisent-plus-de-50-milliards-de-dollars</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544961</guid>
+      <description>Elles ont présenté jeudi et vendredi des résultats stratosphériques, dopés par le prix des hydrocarbures, les activités de raffinage et les tensions sur le gazole.</description>
+      <pubDate>Fri, 30 Oct 2026 18:06:04 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Pétrole</category>
+      <category>Gaz</category>
+      <category>Résultats</category>
+    </item>
+    <item>
+      <title>Bourses mondiales: octobre s'achève sur une chute de la tech</title>
+      <link>https://agefi.com/actualites/marches/bourses-mondiales-octobre-sacheve-sur-une-chute-de-la-tech</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544960</guid>
+      <description>Vers 17h50, le Nasdaq chutait de 2,94%, le S&amp;P de 1,80% et le DJ 0,87%. Paris a fini stable  (-0,01%), comme Londres (+0,07%), Francfort a perdu 0,85%, Milan 1,00% et Madrid 1,09%.</description>
+      <pubDate>Fri, 30 Oct 2026 17:54:00 +0000</pubDate>
+      <category>marches</category>
+      <category>Wall Street</category>
+      <category>Bourses</category>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>L’appel de Swissmem pour «exploiter intelligemment les données industrielles»</title>
+      <link>https://agefi.com/actualites/entreprises/lappel-de-swissmem-pour-exploiter-intelligemment-les-donnees-industrielles</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544959</guid>
+      <description>Les données industrielles, issues des machines-outils des entreprises, permettent d’anticiper certaines défaillances, soutient Adam Gontarz, membre de la direction de la faîtière Swissmem.</description>
+      <pubDate>Fri, 30 Oct 2026 17:03:19 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Industrie</category>
+      <category>PME</category>
+      <category>Swissmem</category>
+    </item>
+    <item>
+      <title>Un premier Patriot devrait être livré à mi-2027</title>
+      <link>https://agefi.com/actualites/politique/un-premier-patriot-devrait-etre-livre-a-mi-2027</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544957</guid>
+      <description>Le ministre de la défense, Martin Pfister, a annoncé qu'une première unité du système américain arriverait l'année prochaine. Information confirmée par l'ambassadrice américaine en Suisse.</description>
+      <pubDate>Fri, 30 Oct 2026 15:54:24 +0000</pubDate>
+      <category>politique</category>
+      <category>Suisse</category>
+      <category>Armée</category>
+    </item>
+    <item>
+      <title>F-35: une commission s'attaque aux mandataires juridiques externes</title>
+      <link>https://agefi.com/actualites/politique/f-35-une-commission-sattaque-aux-mandataires-juridiques-externes</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544956</guid>
+      <description>Pour la commission des affaires juridiques du National, «la Confédération a subi un préjudice». Elle demande au Conseil fédéral d'examiner d'éventuelles prétentions en responsabilité civile.</description>
+      <pubDate>Fri, 30 Oct 2026 15:41:17 +0000</pubDate>
+      <category>politique</category>
+      <category>Suisse</category>
+      <category>Armée</category>
+    </item>
+    <item>
+      <title>Publicité politique autorisée dans les médias sans redevance</title>
+      <link>https://agefi.com/actualites/politique/publicite-politique-autorisee-dans-les-medias-sans-redevance</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544955</guid>
+      <description>La commission des télécommunications des Etats donne suite à une initiative en ce sens. Elle estime que cela générerait des recettes pour les radios et les télévisions privées, qui gagneraient en compétitivité.</description>
+      <pubDate>Fri, 30 Oct 2026 15:34:01 +0000</pubDate>
+      <category>politique</category>
+      <category>Suisse</category>
+      <category>Médias</category>
+    </item>
+    <item>
+      <title>Les marchés reculent, Wall Street plombée par l'IA</title>
+      <link>https://agefi.com/actualites/marches/les-marches-reculent-wall-street-plombee-par-lia</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544954</guid>
+      <description>Vers 14h50, Paris était stable (+0,07%), Londres prenait 0,16%, Francfort cédait 0,94% et Milan 0,95%. A Wall Street, le Nasdaq perdait 2,19%, le S&amp;P 500 1,20% et le DJ 0,39%.</description>
+      <pubDate>Fri, 30 Oct 2026 15:12:09 +0000</pubDate>
+      <category>marches</category>
+      <category>Wall Street</category>
+      <category>Bourses</category>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>Ruag réclame 51 millions à dix personnes</title>
+      <link>https://agefi.com/actualites/entreprises/martin-pfister-juge-inacceptables-les-irregularites-revelees-par-lenquete-de-ruag</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544953</guid>
+      <description>Les procédures pénales et civiles restent pendantes. Le ministre de la défense Martin Pfister a chargé un groupe de travail d’évaluer les conclusions de l’enquête et les mesures prises.</description>
+      <pubDate>Fri, 30 Oct 2026 14:10:24 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Ruag</category>
+    </item>
+    <item>
+      <title>BIC ouvre sa collection d’art au public dans un musée virtuel</title>
+      <link>https://agefi.com/actualites/life/lart-au-bic</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544149</guid>
+      <description>Depuis les années 1990, BIC rassemble des œuvres réalisées avec ses stylos. Plus de 250 créations exposées à Clichy (FR) sont désormais accessibles au monde entier grâce à un musée virtuel, à portée de clics.</description>
+      <pubDate>Fri, 30 Oct 2026 14:00:00 +0000</pubDate>
+      <category>life</category>
+    </item>
     <item>
       <title>Piratage de Binance: des experts pointent la Corée du Nord</title>
       <link>https://agefi.com/actualites/entreprises/piratage-de-binance-des-experts-pointent-la-coree-du-nord</link>
@@ -513,109 +604,6 @@
       <category>Idorsia</category>
       <category>Biotech</category>
       <category>Pharma</category>
-    </item>
-    <item>
-      <title>Glencore accroît de 3% sa production de cuivre sur neuf mois</title>
-      <link>https://agefi.com/actualites/entreprises/glencore-accroit-de-3-sa-production-de-cuivre-sur-neuf-mois</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544906</guid>
-      <description>Le groupe zougois a produit 598.600 tonnes de cuivre de janvier à septembre 2026, soit une hausse de 12% à périmètre constant. Il maintient ses objectifs annuels pour l’activité minière.</description>
-      <pubDate>Thu, 29 Oct 2026 07:59:24 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Glencore</category>
-      <category>Matières premières</category>
-    </item>
-    <item>
-      <title>Vontobel atteint un record d’avoirs malgré une collecte décevante</title>
-      <link>https://agefi.com/actualites/entreprises/vontobel-accroit-ses-actifs-sous-gestion-de-6-sur-neuf-mois</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544903</guid>
-      <description>Les actifs sous gestion de la banque zurichoise ont progressé de 6% sur 9 mois. Les entrées nettes déçoivent toutefois, pénalisées par les sorties de capitaux de la clientèle institutionnelle.</description>
-      <pubDate>Thu, 29 Oct 2026 07:07:32 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Vontobel</category>
-      <category>Banques</category>
-      <category>Gestion d'actifs</category>
-    </item>
-    <item>
-      <title>Zurich, Cartier, Nescafé et Nestlé parmi les 100 marques mondiales les plus valorisées</title>
-      <link>https://agefi.com/actualites/entreprises/zurich-cartier-nescafe-et-nestle-parmi-les-100-marques-mondiales-les-plus-valorisees</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544901</guid>
-      <description>Au 58e rang du classement Best Global Brands d’Interbrand, Zurich Insurance est la mieux classée des sociétés suisses et des nouveaux entrants, avec une marque valorisée à 15 milliards de dollars.</description>
-      <pubDate>Thu, 29 Oct 2026 06:33:15 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Zurich Insurance</category>
-      <category>Nestlé</category>
-      <category>Cartier</category>
-      <category>Richemont</category>
-    </item>
-    <item>
-      <title>La Fed maintient ses taux avant les élections de mi-mandat aux Etats-Unis</title>
-      <link>https://agefi.com/actualites/marches/la-fed-maintient-ses-taux-avant-les-elections-de-mi-mandat-aux-etats-unis</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544899</guid>
-      <description>Les taux restent entre 3,75% et 4%, malgré deux voix en faveur d’une hausse. Kevin Warsh assure que le scrutin du 3 novembre n’a joué aucun rôle dans la décision.</description>
-      <pubDate>Thu, 29 Oct 2026 06:18:56 +0000</pubDate>
-      <category>marches</category>
-      <category>Fed</category>
-      <category>Etats-Unis</category>
-      <category>Banque centrale</category>
-      <category>Taux directeurs</category>
-    </item>
-    <item>
-      <title>La Bourse suisse attentiste avant la Fed</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-attentiste-avant-la-fed</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544898</guid>
-      <description>L'indice SMI a clôturé en baisse de 0,11% à 14.581,10 points, plus haut à 14.621 et plus bas à 14.489. Le SLI a reculé de 0,18% à 2341,55 points et le SPI a fini stable (-0,07%) à 20.585,22 points.</description>
-      <pubDate>Wed, 28 Oct 2026 17:28:04 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-      <category>SLI</category>
-      <category>SPI</category>
-    </item>
-    <item>
-      <title>UBS: «Un bilan fort est un avantage concurrentiel»</title>
-      <link>https://agefi.com/actualites/entreprises/ubs-un-bilan-fort-est-un-avantage-concurrentiel</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544897</guid>
-      <description>Beat Wittmann, de Porta Advisors, soutient les exigences de fonds propres proposées pour UBS. Il estime qu’un bilan solide peut attirer des clients et renforcer la compétitivité de la banque.</description>
-      <pubDate>Wed, 28 Oct 2026 16:59:32 +0000</pubDate>
-      <category>entreprises</category>
-      <category>UBS</category>
-      <category>Conseil fédéral</category>
-      <category>Finma</category>
-      <category>Credit Suisse</category>
-      <category>Gestion de fortune</category>
-    </item>
-    <item>
-      <title>Un accident de parcours qui est un avertissement pour Sandoz</title>
-      <link>https://agefi.com/actualites/entreprises/un-accident-de-parcours-qui-est-un-avertissement-pour-sandoz</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544896</guid>
-      <description>COMMENTAIRE. Le troisième trimestre a mis en évidence le risque de capacités de production restreignant le potentiel lié à la vague de lancements de biosimilaires prévus pour les 15 prochaines années.</description>
-      <pubDate>Wed, 28 Oct 2026 15:43:49 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Sandoz</category>
-      <category>Médicaments</category>
-      <category>Pharma</category>
-      <category>Bourse Zurich</category>
-    </item>
-    <item>
-      <title>Le Royaume-Uni double temporairement la surtaxe sur les bénéfices des banques</title>
-      <link>https://agefi.com/actualites/politique/le-royaume-uni-double-temporairement-la-surtaxe-sur-les-benefices-des-banques</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544894</guid>
-      <description>Le gouvernement travailliste portera la taxe de 3% à 6% à partir de janvier 2027 pour financer les aides énergétiques. La mesure doit rester en vigueur pendant quinze mois.</description>
-      <pubDate>Wed, 28 Oct 2026 14:51:35 +0000</pubDate>
-      <category>politique</category>
-      <category>Royaume-Uni</category>
-      <category>Banques</category>
-      <category>Taxes</category>
-      <category>Énergies</category>
-    </item>
-    <item>
-      <title>Patrick Fetzer nommé directeur général de Ruag</title>
-      <link>https://agefi.com/actualites/trajectoires/patrick-fetzer-nomme-directeur-general-de-ruag</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544893</guid>
-      <description>Actuellement chargé de la transformation mondiale chez Swisslog, il succédera à Oliver Müller le 1er janvier 2027, qui assure l’intérim depuis mars et quittera l’entreprise après une phase de transition.</description>
-      <pubDate>Wed, 28 Oct 2026 14:35:44 +0000</pubDate>
-      <category>trajectoires</category>
-      <category>Ruag</category>
     </item>
   </channel>
 </rss>
