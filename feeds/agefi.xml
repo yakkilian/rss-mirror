@@ -5,7 +5,30 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sat, 31 Oct 2026 05:33:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 12:20:46 +0000</lastBuildDate>
+    <item>
+      <title>Ignazio Cassis renoue le dialogue avec la Corée du Nord</title>
+      <link>https://agefi.com/actualites/politique/ignazio-cassis-renoue-le-dialogue-avec-la-coree-du-nord</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544962</guid>
+      <description>Le conseiller fédéral a achevé vendredi une visite de deux jours à Pyongyang, où il a participé notamment à la réouverture du bureau diplomatique suisse.</description>
+      <pubDate>Sat, 31 Oct 2026 07:20:35 +0000</pubDate>
+      <category>politique</category>
+      <category>Ignazio Cassis</category>
+      <category>Asie</category>
+      <category>Diplomatie</category>
+    </item>
+    <item>
+      <title>Guy Parmelin, Diesel, Lex UBS: les trois mots-clés de la semaine</title>
+      <link>https://agefi.com/actualites/politique/guy-parmelin-diesel-lex-ubs-les-trois-mots-cles-de-la-semaine</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544952</guid>
+      <description>Vous n’avez pas eu le temps de suivre toute l’actualité économique et financière ces derniers jours? Voici les trois informations qui ont marqué cette semaine.</description>
+      <pubDate>Sat, 31 Oct 2026 07:15:00 +0000</pubDate>
+      <category>politique</category>
+      <category>Guy Parmelin</category>
+      <category>Conseil fédéral</category>
+      <category>UBS</category>
+      <category>Énergies</category>
+    </item>
     <item>
       <title>Les profits des cinq majors pétrogazières totalisent plus de 50 milliards de dollars</title>
       <link>https://agefi.com/actualites/entreprises/les-profits-des-cinq-majors-petrogazieres-totalisent-plus-de-50-milliards-de-dollars</link>
@@ -582,27 +605,6 @@
       <description>Quelque 100 patients atteints d’infections pulmonaires ou sanguines résistantes doivent être recrutés. Un premier bilan intermédiaire est attendu au premier semestre 2027.</description>
       <pubDate>Thu, 29 Oct 2026 08:51:49 +0000</pubDate>
       <category>entreprises</category>
-      <category>Pharma</category>
-    </item>
-    <item>
-      <title>La Bourse suisse démarre dans le vert, sous une pluie de résultats</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-demarre-dans-le-vert-sous-une-pluie-de-resultats</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544908</guid>
-      <description>Vers 09h15, le SMI grimpait de 0,69% à 14.681,59 points, tandis que le SLI gagnait 0,55% à 2354,32 points et le SPI 0,60% à 20.708,90 points.</description>
-      <pubDate>Thu, 29 Oct 2026 08:49:42 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-    </item>
-    <item>
-      <title>Idorsia creuse ses pertes malgré l’essor des ventes de Quviviq</title>
-      <link>https://agefi.com/actualites/entreprises/idorsia-creuse-ses-pertes-malgre-lessor-des-ventes-de-quviviq</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544907</guid>
-      <description>Les ventes du somnifère ont bondi de plus de 50% sur neuf mois, à 142 millions de francs, mais la chute des revenus issus des partenariats a pesé sur le chiffre d’affaires. La perte nette a été multipliée par six.</description>
-      <pubDate>Thu, 29 Oct 2026 08:36:53 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Idorsia</category>
-      <category>Biotech</category>
       <category>Pharma</category>
     </item>
   </channel>
