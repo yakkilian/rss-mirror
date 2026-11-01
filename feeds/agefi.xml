@@ -5,7 +5,31 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sun, 01 Nov 2026 05:58:49 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 13:17:05 +0000</lastBuildDate>
+    <item>
+      <title>Alliance F veut former la future génération de femmes politiques</title>
+      <link>https://agefi.com/actualites/politique/alliance-f-veut-former-la-future-generation-de-femmes-politiques</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544964</guid>
+      <description>Le mouvement interpartis lance une «Academy», un «programme complet» qui vise à former «la prochaine génération de femmes leaders dans la politique en Suisse».</description>
+      <pubDate>Sun, 01 Nov 2026 10:10:20 +0000</pubDate>
+      <category>politique</category>
+      <category>Parlement</category>
+      <category>Élections</category>
+      <category>Berne</category>
+      <category>Partis politiques</category>
+    </item>
+    <item>
+      <title>Réorganisation de Migros, tutelle de Crans-Montana et scandale chez Ruag: la revue de presse dominicale</title>
+      <link>https://agefi.com/actualites/entreprises/reorganisation-de-migros-tutelle-de-crans-montana-et-scandale-chez-ruag-la-revue-de-presse-dominicale</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544963</guid>
+      <description>La redistribution des bénéfices de Migros, mais aussi une demande de mise sous tutelle de Crans-Montana ou les demandes de renforcement du CDF suite au scandale chez Ruag font les titres de Une ce dimanche.</description>
+      <pubDate>Sun, 01 Nov 2026 09:18:09 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Migros</category>
+      <category>Ruag</category>
+      <category>Finances</category>
+      <category>CFF</category>
+    </item>
     <item>
       <title>Ignazio Cassis renoue le dialogue avec la Corée du Nord</title>
       <link>https://agefi.com/actualites/politique/ignazio-cassis-renoue-le-dialogue-avec-la-coree-du-nord</link>
@@ -588,24 +612,6 @@
       <pubDate>Thu, 29 Oct 2026 09:05:24 +0000</pubDate>
       <category>entreprises</category>
       <category>Implenia</category>
-    </item>
-    <item>
-      <title>Addex émet 93 millions de nouvelles actions</title>
-      <link>https://agefi.com/actualites/entreprises/addex-emet-93-millions-de-nouvelles-actions</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544910</guid>
-      <description>Entièrement souscrits par sa filiale Addex Pharma, les nouveaux titres portent le capital social à 3,1 millions de francs. Le nombre d’actions en circulation reste inchangé.</description>
-      <pubDate>Thu, 29 Oct 2026 09:01:41 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Addex Therapeutics</category>
-    </item>
-    <item>
-      <title>Bioversys lance un essai clinique pour son BV100</title>
-      <link>https://agefi.com/actualites/entreprises/bioversys-lance-un-essai-clinique-pour-son-bv100</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544909</guid>
-      <description>Quelque 100 patients atteints d’infections pulmonaires ou sanguines résistantes doivent être recrutés. Un premier bilan intermédiaire est attendu au premier semestre 2027.</description>
-      <pubDate>Thu, 29 Oct 2026 08:51:49 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Pharma</category>
     </item>
   </channel>
 </rss>
