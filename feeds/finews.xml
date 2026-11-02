@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Sun, 01 Nov 2026 23:01:13 +0100</lastBuildDate>
+		<lastBuildDate>Mon, 02 Nov 2026 06:57:53 +0100</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>«Unsere Investorenbasis ist viel breiter und diversifizierter als bei Private Credits»</title>
+			<link>https://www.finews.ch/news/finanzplatz/74216-scott-caraher-nuveen-seniorloans-clo-fixedincome-kreditzyklus-assetallocation-zinsrisiko-volatilitaet</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/74216-scott-caraher-nuveen-seniorloans-clo-fixedincome-kreditzyklus-assetallocation-zinsrisiko-volatilitaet</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/Scott_Caraher_Nuveen1.jpg" alt="Scott Caraher: «Über Senior Loans haben Anleger Zugang zur ganzen Breite der Wirtschaft, kotierten und nicht kotierten Unternehmen.» (Bild: Nuveen)"></p><p><strong>Senior Loans dämpfen in Zeiten steigender Zinsen die Volatilität des Fixed-Income-Portfolios. Für Scott Caraher,&nbsp;Head of Leveraged Finance Portfolio Management bei Nuveen, ist das Timing aber nicht entscheidend. Und er flicht den Anlegern ein Kränzchen: «<strong>Sie verstehen die Eigenheiten von Senior Loans in der Regel sehr gut.»</strong></strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Mon, 02 Nov 2026 06:00:26 +0100</pubDate>
+		</item>
 		<item>
 			<title>Partners Group: Ein Befreiungsschlag mit Risiken</title>
 			<link>https://www.finews.ch/news/finanzplatz/74205-partners-group-evergreen-fonds-aufspaltung-liquiditaetsprobleme</link>
@@ -213,18 +225,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Thu, 29 Oct 2026 14:00:39 +0100</pubDate>
-		</item>
-		<item>
-			<title>Stablecoins: Privatbank zeigt, was Unternehmen jetzt wissen müssen</title>
-			<link>https://www.finews.ch/news/banken/74242-maerki-baumann-stablecoins-unternehmen-zahlungsverkehr-liquiditaetsmanagement-digital-economy-award</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/banken/74242-maerki-baumann-stablecoins-unternehmen-zahlungsverkehr-liquiditaetsmanagement-digital-economy-award</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/10/stablecoin_1.png" alt=""></p><p><strong>Stablecoins könnten den Zahlungsverkehr und die Liquiditätssteuerung von Unternehmen verändern. Doch welche konkreten Vorteile bieten sie, und welche regulatorischen und steuerlichen Fragen gilt es zu beachten? Im Rahmen des Digital Economy Award in Zürich zeigt die Privatbank Maerki Baumann, worauf es beim praktischen Einsatz ankommt.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Banken</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Thu, 29 Oct 2026 15:51:21 +0100</pubDate>
 		</item>
 	</channel>
 </rss>
