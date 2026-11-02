@@ -5,6 +5,11 @@
     <link>https://www.fortinet.com/blog/threat-research</link>
     <description>FortiGuard Labs Threat Research</description>
     <item>
+      <title>BITTER Expands Its Arsenal with PapRAT</title>
+      <link>https://www.fortinet.com/blog/threat-research/bitter-expands-its-arsenal-with-paprat</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/bitter-expands-its-arsenal-with-paprat</guid>
+    </item>
+    <item>
       <title>ClingSTUN Linux Backdoor Abuses Public STUN Infrastructure</title>
       <link>https://www.fortinet.com/blog/threat-research/clingstun-linux-backdoor-abuses-public-stun-infrastructure</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/clingstun-linux-backdoor-abuses-public-stun-infrastructure</guid>
@@ -48,11 +53,6 @@
       <title>Analysis of Ongoing Ousaban Attacks Targeting the Iberian Peninsula</title>
       <link>https://www.fortinet.com/blog/threat-research/analysis-of-ongoing-ousaban-attacks-targeting-the-iberian-peninsula</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/analysis-of-ongoing-ousaban-attacks-targeting-the-iberian-peninsula</guid>
-    </item>
-    <item>
-      <title>From CI/CD to Cloud Data: How Shai Hulud Persistence Leads to Redshift Breach</title>
-      <link>https://www.fortinet.com/blog/threat-research/from-ci-cd-to-cloud-data-how-shai-hulud-persistence-leads-to-redshift-breach</link>
-      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/from-ci-cd-to-cloud-data-how-shai-hulud-persistence-leads-to-redshift-breach</guid>
     </item>
     <item>
       <title>RolandSkimmer: Silent Credit Card Thief Uncovered</title>
