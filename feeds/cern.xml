@@ -5,7 +5,21 @@
     <link>https://home.cern/tag/news/</link>
     <description>Latest CERN news mirrored for FreshRSS and ICTjournal monitoring.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:58:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 14:06:55 +0000</lastBuildDate>
+    <item>
+      <title>A new chapter for Open Research Europe</title>
+      <link>https://home.cern/a-new-chapter-for-open-research-europe/</link>
+      <guid isPermaLink="true">https://home.cern/a-new-chapter-for-open-research-europe/</guid>
+      <description>Open Research Europe (ORE), the open-access publishing platform, has entered a new phase as a collective European publishing service, now operated by CERN. The relaunch expands eligibility beyond researchers funded through European Union programmes, giving more than 2.5 million scientists access to the platform. The ORE platform was launched by the European Commission in 2021 to provide a</description>
+      <pubDate>Tue, 03 Nov 2026 15:00:53 +0100</pubDate>
+    </item>
+    <item>
+      <title>LHCb finds evidence of one-in-ten-billion particle decay</title>
+      <link>https://home.cern/lhcb-finds-evidence-of-one-in-ten-billion-particle-decay/</link>
+      <guid isPermaLink="true">https://home.cern/lhcb-finds-evidence-of-one-in-ten-billion-particle-decay/</guid>
+      <description>They say good things come to those who wait, and the LHCb Collaboration’s latest result marks a major milestone in a decades-long search. As announced in a seminar held at CERN today, the Collaboration has found evidence of a one-in-ten-billion decay of a beauty particle, becoming the first to do so using data from a single experiment.</description>
+      <pubDate>Tue, 03 Nov 2026 11:04:53 +0100</pubDate>
+    </item>
     <item>
       <title>In the wake of partons</title>
       <link>https://home.cern/in-the-wake-of-partons/</link>
@@ -201,20 +215,6 @@
       <guid isPermaLink="true">https://home.cern/celebrating-john-elliss-enduring-legacy/</guid>
       <description>On 31 July, colleagues and friends of theoretical physicist John Ellis came together to celebrate his 80th birthday and almost 60 years of service to CERN and the wider particle physics community. “Many of us were amazed to learn of John’s significant impact on fields besides our own,” said physicist Matthew McCullough, Deputy Head of</description>
       <pubDate>Thu, 20 Aug 2026 10:04:07 +0200</pubDate>
-    </item>
-    <item>
-      <title>Computer Security: AI – Game over, mankind?</title>
-      <link>https://home.cern/computer-security-ai-game-over-mankind/</link>
-      <guid isPermaLink="true">https://home.cern/computer-security-ai-game-over-mankind/</guid>
-      <description>With the more and more prevalent use of agentic AI, i.e. programmed agents acting and working on our behalf, and in a fully interconnected world, i.e. us living in symbiosis with the Internet, smartphones and control systems, how far-fetched is it that humans can actually become a threat to an AI system such that it</description>
-      <pubDate>Thu, 20 Aug 2026 09:57:36 +0200</pubDate>
-    </item>
-    <item>
-      <title>Cyclists speed by CMS</title>
-      <link>https://home.cern/cyclists-speed-by-cms/</link>
-      <guid isPermaLink="true">https://home.cern/cyclists-speed-by-cms/</guid>
-      <description>Competitors in the Tour de France Femmes pedalled past LHC Point 5 on Monday, 3 August</description>
-      <pubDate>Wed, 19 Aug 2026 16:08:17 +0200</pubDate>
     </item>
   </channel>
 </rss>
