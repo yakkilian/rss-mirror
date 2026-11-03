@@ -5,7 +5,51 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Mon, 02 Nov 2026 15:42:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 00:58:32 +0000</lastBuildDate>
+    <item>
+      <title>A Lausanne, le Clos des Hêtres conçu autour des arbres centenaires</title>
+      <link>https://agefi.com/actualites/immo/au-rythme-des-arbres</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544358</guid>
+      <description>Signé RDR architectes et labellisé Minergie-ECO, le projet compte 18 logements en PPE répartis dans trois bâtiments. Deux appartements de 4,5 pièces, de 127 m2 habitables chacun, sont encore disponibles.</description>
+      <pubDate>Mon, 02 Nov 2026 23:00:00 +0000</pubDate>
+      <category>immo</category>
+    </item>
+    <item>
+      <title>Le SMI in extremis à l'équilibre</title>
+      <link>https://agefi.com/actualites/marches/le-smi-in-extremis-dans-le-vert</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544993</guid>
+      <description>A la Bourse suisse, l'indice vedette a fini stable (-0,05%) à 14.802,50 points, alors que le SLI a pris 0,39% à 2380,73 points et le SPI 0,10% à 20.867,74 points.</description>
+      <pubDate>Mon, 02 Nov 2026 17:25:08 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourse Zurich</category>
+      <category>SMI</category>
+      <category>SPI</category>
+      <category>SLI</category>
+    </item>
+    <item>
+      <title>Le nouveau PIB cantonal remet la productivité au centre du débat</title>
+      <link>https://agefi.com/actualites/macroeconomie/le-nouveau-pib-cantonal-remet-la-productivite-au-centre-du-debat</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544992</guid>
+      <description>Le changement de méthode de l’Office fédéral de la statistique (OFS) révèle des écarts de création de valeur jusqu’ici lissés entre cantons. De quoi repenser certaines priorités de politique économique.</description>
+      <pubDate>Mon, 02 Nov 2026 16:08:55 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Genève</category>
+      <category>Zoug</category>
+      <category>PIB</category>
+      <category>Emplois</category>
+      <category>Matières premières</category>
+      <category>OFS</category>
+    </item>
+    <item>
+      <title>L’activité manufacturière accélère légèrement aux Etats-Unis en octobre</title>
+      <link>https://agefi.com/actualites/macroeconomie/lactivite-manufacturiere-accelere-legerement-aux-etats-unis-en-octobre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544991</guid>
+      <description>L’indice PMI de l’ISM gagne un point à 55,5%, alors que les analystes tablaient sur une stabilité. La confiance des entreprises recule pour le troisième mois consécutif.</description>
+      <pubDate>Mon, 02 Nov 2026 16:05:59 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>PMI</category>
+      <category>Etats-Unis</category>
+    </item>
     <item>
       <title>Le pétrole chute de plus de 6% sur fond d’espoirs</title>
       <link>https://agefi.com/actualites/marches/le-petrole-chute-de-plus-de-6-sur-fond-despoirs</link>
@@ -570,50 +614,6 @@
       <pubDate>Fri, 30 Oct 2026 07:11:05 +0000</pubDate>
       <category>politique</category>
       <category>Mercosur</category>
-    </item>
-    <item>
-      <title>Landis+Gyr renoue avec les bénéfices au premier semestre 2026/27</title>
-      <link>https://agefi.com/actualites/entreprises/landisgyr-renoue-avec-les-benefices-au-premier-semestre-202627</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544934</guid>
-      <description>Le groupe zougois affiche un bénéfice net de 58,5 millions de dollars, malgré des ventes en baisse de 6,3%. Il relève sa prévision de marge Ebitda ajustée pour l’exercice.</description>
-      <pubDate>Fri, 30 Oct 2026 06:56:33 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Landis+Gyr</category>
-    </item>
-    <item>
-      <title>Binance annonce une cyberattaque et suspend les dépôts et les retraits</title>
-      <link>https://agefi.com/actualites/entreprises/binance-annonce-une-cyberattaque-et-suspend-les-depots-et-les-retraits</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544933</guid>
-      <description>La plateforme fait état de 2,54 milliards de dollars gelés. Chainalysis estime à environ 5,9 milliards de dollars le montant volé, tandis que les principales cryptomonnaies reculent.</description>
-      <pubDate>Fri, 30 Oct 2026 06:48:52 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Cryptomonnaies</category>
-      <category>Piratage</category>
-    </item>
-    <item>
-      <title>Ypsomed, une croissance qui divise les analystes</title>
-      <link>https://agefi.com/actualites/marches/ypsomed-une-croissance-qui-divise-les-analystes</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544930</guid>
-      <description>L’ACTION DÉCODÉE. Le spécialiste des systèmes d’injection profite de l’essor des traitements contre l’obésité. Mais les perspectives de certains médicaments et la valorisation du titre suscitent des réserves.</description>
-      <pubDate>Thu, 29 Oct 2026 18:30:00 +0000</pubDate>
-      <category>marches</category>
-      <category>Santé</category>
-      <category>Ypsomed</category>
-      <category>Swiss Medtech</category>
-      <category>SIX</category>
-    </item>
-    <item>
-      <title>«La Suisse a montré ses compétences dans les drones civils»</title>
-      <link>https://agefi.com/actualites/politique/la-suisse-a-montre-ses-competences-dans-les-drones-civils</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/544925</guid>
-      <description>Guy Parmelin défend la révision de la loi fédérale sur le matériel de guerre. Le conseiller fédéral voit dans le savoir-faire suisse un potentiel qui dépasse la fourniture de composants. Grand entretien (2/2).</description>
-      <pubDate>Thu, 29 Oct 2026 18:30:00 +0000</pubDate>
-      <category>politique</category>
-      <category>Guy Parmelin</category>
-      <category>Drones</category>
-      <category>Armement</category>
-      <category>Allemagne</category>
-      <category>Votations</category>
     </item>
   </channel>
 </rss>
