@@ -5,7 +5,56 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Wed, 04 Nov 2026 14:27:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 23:40:45 +0000</lastBuildDate>
+    <item>
+      <title>Le SMI franchit les 15.000 points en clôture</title>
+      <link>https://agefi.com/actualites/marches/le-smi-franchit-les-15000-points-en-cloture</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545073</guid>
+      <description>L'indice vedette a avancé de 1,9% à 15.022,85 points, après avoir ouvert en hausse d'à peine 0,02%. Le SLI a pris 1,8% à 2417,13 points et le SPI 1,7% à 21.157,72 points.</description>
+      <pubDate>Wed, 04 Nov 2026 17:28:17 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourse Zurich</category>
+      <category>SMI</category>
+      <category>SPI</category>
+      <category>SLI</category>
+    </item>
+    <item>
+      <title>Pourquoi les assureurs s’opposent le plus à la hausse du taux minimum LPP</title>
+      <link>https://agefi.com/actualites/politique/pourquoi-les-assureurs-sopposent-le-plus-a-la-hausse-du-taux-minimum-lpp</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545072</guid>
+      <description>ANALYSE. Les syndicats jubilent après le relèvement record à 2%. Pourtant, certains assurés risquent de le regretter.</description>
+      <pubDate>Wed, 04 Nov 2026 16:33:33 +0000</pubDate>
+      <category>politique</category>
+      <category>Prévoyance</category>
+      <category>LPP</category>
+      <category>Taux</category>
+      <category>Assurances</category>
+      <category>Placements</category>
+    </item>
+    <item>
+      <title>Le Conseil fédéral lance la «réforme d’intégration» de l’AI</title>
+      <link>https://agefi.com/actualites/politique/le-conseil-federal-lance-la-reforme-dintegration-de-lai</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545071</guid>
+      <description>Mise en consultation jusqu’au 4 février 2027, la réforme vise la réadaptation, surtout des jeunes, et prévoit une hausse des cotisations de 0,2 point.</description>
+      <pubDate>Wed, 04 Nov 2026 15:57:24 +0000</pubDate>
+      <category>politique</category>
+      <category>Assurances</category>
+      <category>AVS</category>
+      <category>Conseil fédéral</category>
+    </item>
+    <item>
+      <title>Le déficit commercial américain reste élevé en septembre</title>
+      <link>https://agefi.com/actualites/macroeconomie/le-deficit-commercial-americain-reste-eleve-en-septembre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545070</guid>
+      <description>Le solde des échanges de biens et services s’améliore légèrement par rapport aux 105,7 milliards d’août. Les analystes anticipaient un déficit de 107,7 milliards de dollars.</description>
+      <pubDate>Wed, 04 Nov 2026 14:39:51 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Etats-Unis</category>
+      <category>Commerce</category>
+      <category>Balance commerciale</category>
+      <category>Exportations</category>
+      <category>Importations</category>
+    </item>
     <item>
       <title>Etats-Unis: les créations d’emplois privés continuent de ralentir en octobre</title>
       <link>https://agefi.com/actualites/macroeconomie/etats-unis-les-creations-demplois-prives-continuent-de-ralentir-en-octobre</link>
@@ -111,6 +160,20 @@
       <category>FDA</category>
     </item>
     <item>
+      <title>Le dollar recule après la victoire démocrate aux élections de mi-mandat aux Etats-Unis</title>
+      <link>https://agefi.com/actualites/marches/le-dollar-recule-apres-la-victoire-democrate-aux-elections-de-mi-mandat-aux-etats-unis</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545043</guid>
+      <description>Vers 11h55 mercredi, le billet vert perdait 0,49% face à l’euro. Le nouveau rapport de force politique pourrait freiner la relance budgétaire et les investissements dans l’intelligence artificielle.</description>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 +0000</pubDate>
+      <category>marches</category>
+      <category>Devises</category>
+      <category>Franc suisse</category>
+      <category>Etats-Unis</category>
+      <category>Mid-terms</category>
+      <category>Élections USA</category>
+      <category>Exportations</category>
+    </item>
+    <item>
       <title>L’industrie suisse ne prévoit pas d’afflux d’huile de palme malaisienne</title>
       <link>https://agefi.com/actualites/politique/lindustrie-suisse-ne-prevoit-pas-dafflux-dhuile-de-palme-malaisienne</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/545061</guid>
@@ -177,10 +240,10 @@
       <category>Banque Bonhôte</category>
     </item>
     <item>
-      <title>Responsable des activités immobilières multigérants nommé chez PAA</title>
+      <title>Alexander J. Lukesch dirigera les activités immobilières multigérants chez PAA</title>
       <link>https://agefi.com/actualites/trajectoires/responsable-des-activites-immobilieres-multigerants-nomme-chez-paa</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/545056</guid>
-      <description>Pictet Alternative Advisors (PAA) a annoncé la nomination d’Alexander J. Lukesch au poste de Head of Multi Manager Real Estate.</description>
+      <description>Pictet Alternative Advisors (PAA) a annoncé la nomination d’Alexander J. Lukesch au poste de Head of Multi Manager Real Estate.</description>
       <pubDate>Wed, 04 Nov 2026 10:23:47 +0000</pubDate>
       <category>trajectoires</category>
       <category>Pictet</category>
@@ -309,20 +372,6 @@
       <category>Cliniques</category>
       <category>Aevis Victoria</category>
       <category>Santé</category>
-    </item>
-    <item>
-      <title>Le dollar recule après la victoire démocrate aux élections de mi-mandat aux Etats-Unis</title>
-      <link>https://agefi.com/actualites/marches/le-dollar-recule-apres-la-victoire-democrate-aux-elections-de-mi-mandat-aux-etats-unis</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545043</guid>
-      <description>Vers 7 heures mercredi, le cours s’établissait à 0,81670 USD/CHF, contre 0,82062 la veille au soir. Selon Banque Migros, le renforcement du franc accentue la pression sur les exportateurs suisses.</description>
-      <pubDate>Wed, 04 Nov 2026 07:18:10 +0000</pubDate>
-      <category>marches</category>
-      <category>Devises</category>
-      <category>Franc suisse</category>
-      <category>Etats-Unis</category>
-      <category>Mid-terms</category>
-      <category>Élections USA</category>
-      <category>Exportations</category>
     </item>
     <item>
       <title>Les prix d’achat des logements reculent en octobre en Suisse</title>
@@ -618,47 +667,6 @@
       <category>Intelligence artificielle</category>
       <category>Chine</category>
       <category>Etats-Unis</category>
-    </item>
-    <item>
-      <title>Le recours à l’IA pour interpréter ses symptômes double en un an</title>
-      <link>https://agefi.com/actualites/entreprises/le-recours-a-lia-pour-interpreter-ses-symptomes-double-en-un-an</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545012</guid>
-      <description>Selon l’étude de la CSS menée auprès de 2459 personnes en Suisse, cette pratique est passée de 20% à 42%. Elle concerne 62% des jeunes adultes et 30% des plus de 65 ans.</description>
-      <pubDate>Tue, 03 Nov 2026 10:13:15 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Santé</category>
-      <category>Intelligence artificielle</category>
-    </item>
-    <item>
-      <title>Le Technical Watchmaker Show prépare son retour en 2027</title>
-      <link>https://agefi.com/actualites/entreprises/le-technical-watchmaker-show-prepare-son-retour-en-2027</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545011</guid>
-      <description>Après l’annulation de son édition 2026 faute d’exposants, le salon de La Chaux-de-Fonds revoit son format, avec deux jours de manifestation, des stands simplifiés et des tarifs réduits.</description>
-      <pubDate>Tue, 03 Nov 2026 10:09:05 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Salons</category>
-      <category>Horlogerie</category>
-    </item>
-    <item>
-      <title>GiFi placé en redressement judiciaire à Toulouse</title>
-      <link>https://agefi.com/actualites/entreprises/gifi-place-en-redressement-judiciaire-a-toulouse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545010</guid>
-      <description>Le tribunal a ouvert une période d’observation de six mois pour le groupe, dont les magasins emploient 6000 personnes en France. Une nouvelle audience est prévue le 8 janvier.</description>
-      <pubDate>Tue, 03 Nov 2026 09:59:11 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Commerce</category>
-    </item>
-    <item>
-      <title>Les salaires nominaux devraient augmenter de 1% en Suisse en 2027, selon UBS</title>
-      <link>https://agefi.com/actualites/macroeconomie/les-salaires-nominaux-devraient-augmenter-de-1-en-suisse-en-2027-selon-ubs</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545009</guid>
-      <description>La progression des salaires réels devrait ralentir à 0,2%, contre 0,4% en 2026. La hausse prévue des primes d’assurance maladie pèserait aussi sur le revenu disponible.</description>
-      <pubDate>Tue, 03 Nov 2026 09:43:31 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Salaires</category>
-      <category>UBS</category>
-      <category>Inflation</category>
-      <category>Assurance maladie</category>
     </item>
   </channel>
 </rss>
