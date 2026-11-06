@@ -5,7 +5,16 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Thu, 05 Nov 2026 19:56:35 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 06:34:49 +0000</lastBuildDate>
+    <item>
+      <title>Asmallworld sanctionné par le régulateur de la Bourse suisse</title>
+      <link>https://agefi.com/actualites/entreprises/asmallworld-sanctionne-par-le-regulateur-de-la-bourse-suisse</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545117</guid>
+      <description>SIX Exchange Regulation a constaté des violations des règles d’information financière et de publicité événementielle. La décision n’est pas encore entrée en force.</description>
+      <pubDate>Fri, 06 Nov 2026 06:32:33 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Asmallworld</category>
+    </item>
     <item>
       <title>La Suisse doit résoudre le problème de l’approvisionnement en hiver d’ici à 2050</title>
       <link>https://agefi.com/actualites/entreprises/la-suisse-doit-resoudre-le-probleme-de-lapprovisionnement-en-hiver-dici-a-2050</link>
@@ -648,15 +657,6 @@
       <category>Asie</category>
       <category>Huile de palme</category>
       <category>Commerce</category>
-    </item>
-    <item>
-      <title>Le Conseil fédéral relève le taux d’intérêt minimal de la LPP à 2%</title>
-      <link>https://agefi.com/actualites/politique/le-conseil-federal-releve-le-taux-dinteret-minimal-de-la-lpp-a-2</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545060</guid>
-      <description>La décision dépasse la recommandation de 1,75% de la commission LPP. Le gouvernement invoque l’évolution positive des placements et la solidité des institutions de prévoyance.</description>
-      <pubDate>Wed, 04 Nov 2026 11:04:10 +0000</pubDate>
-      <category>politique</category>
-      <category>LPP</category>
     </item>
   </channel>
 </rss>

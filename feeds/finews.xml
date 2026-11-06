@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Thu, 05 Nov 2026 20:56:33 +0100</lastBuildDate>
+		<lastBuildDate>Fri, 06 Nov 2026 07:34:47 +0100</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Liontrust-CEO: «Wollen Schweizer Geschäft auf breitere Beine stellen»</title>
+			<link>https://www.finews.ch/news/finanzplatz/74286-liontrust-john-ions-schweiz-expansion-uebernahme-gam-asset-management</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/74286-liontrust-john-ions-schweiz-expansion-uebernahme-gam-asset-management</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/11/Liontrust_john_ions.png" alt="«Ein oder zwei grosse Aufträge bedeuten noch nicht, dass man einen Markt erschlossen hat»: Liontrust-CEO John Ions. (Bild: zVg)" width="646" height="388" loading="lazy"></p><p><strong>Liontrust-Chef John Ions will das Geschäft in der Schweiz ausbauen und prüft dazu auch den Kauf eines Vermögensverwalters. Im Interview erklärt er, weshalb ihn das Scheitern der GAM-Übernahme nicht von seinem Kurs abbringt.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Fri, 06 Nov 2026 06:00:00 +0100</pubDate>
+		</item>
 		<item>
 			<title>«Bundesrat» Martin Schlegel gegen die UBS</title>
 			<link>https://www.finews.ch/news/finanzplatz/74351-martin-schlegel-snb-politik-tbtf-bundesrat-keller-sutter-kommentar</link>
@@ -212,18 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Wed, 04 Nov 2026 15:00:00 +0100</pubDate>
-		</item>
-		<item>
-			<title>Die wichtigste Rendite hier am Paradeplatz ist ein Lächeln</title>
-			<link>https://www.finews.ch/themen/high-end/74330-carsten-k-rath-mandarin-oriental-savoy-zuerich-paradeplatz</link>
-			<guid isPermaLink="true">https://www.finews.ch/themen/high-end/74330-carsten-k-rath-mandarin-oriental-savoy-zuerich-paradeplatz</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/11/Mandarin_Oriental_Header.jpg" alt="Zürich aus der ersten Reihe: Vom Balkon der Presidential Suite blickt der Gast direkt auf das Leben rund um den Paradeplatz. (Bild: zVg)" width="646" height="388" loading="lazy"></p><p><strong>Unser Kolumnist kehrt ins Mandarin Oriental Savoy zurück. Zwei Jahre nach dem Neustart hat sich Zürichs ältestes Grandhotel mitten im Herzen des Finanzplatzes bemerkenswert positioniert. Weshalb wahrer Luxus bereits beim Doorman beginnt.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>High-End</category>
-			<category>Themen</category>
-			<category>ROOT</category>
-			<pubDate>Wed, 04 Nov 2026 14:30:58 +0100</pubDate>
 		</item>
 	</channel>
 </rss>
