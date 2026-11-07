@@ -5,7 +5,25 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sat, 07 Nov 2026 05:55:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 12:56:39 +0000</lastBuildDate>
+    <item>
+      <title>1363 milliards de francs investis dans des fonds durables</title>
+      <link>https://agefi.com/actualites/marches/1363-milliards-de-francs-investis-dans-des-fonds-durables</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545147</guid>
+      <description>Selon une étude de la Haute école de Lucerne, la hausse annuelle de 11% des actifs tient surtout aux gains boursiers, les nouveaux apports de capitaux étant quasi inexistants.</description>
+      <pubDate>Sat, 07 Nov 2026 08:52:36 +0000</pubDate>
+      <category>marches</category>
+      <category>Développement durable</category>
+      <category>Finance durable</category>
+    </item>
+    <item>
+      <title>LPP, AELE, transition énergétique: les trois mots-clés de la semaine</title>
+      <link>https://agefi.com/actualites/politique/lpp-aele-transition-energetique-les-trois-mots-cles-de-la-semaine</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545124</guid>
+      <description>Vous n’avez pas eu le temps de suivre toute l’actualité économique et financière ces derniers jours? Voici les trois informations qui ont marqué cette semaine.</description>
+      <pubDate>Sat, 07 Nov 2026 07:30:00 +0000</pubDate>
+      <category>politique</category>
+    </item>
     <item>
       <title>Un monde divisé au chevet du climat à la COP31</title>
       <link>https://agefi.com/actualites/politique/un-monde-divise-au-chevet-du-climat-a-la-cop31</link>
@@ -582,25 +600,6 @@
       <category>Genève</category>
       <category>Construction</category>
       <category>Votations</category>
-    </item>
-    <item>
-      <title>Allemagne: les commandes industrielles rebondissent de 4,4% en septembre</title>
-      <link>https://agefi.com/actualites/macroeconomie/allemagne-les-commandes-industrielles-rebondissent-de-44-en-septembre</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545092</guid>
-      <description>La hausse mensuelle est portée notamment par l’automobile, après un recul global de 10,1% en août. Les grosses commandes ont de nouveau déçu, selon Destatis.</description>
-      <pubDate>Thu, 05 Nov 2026 09:47:36 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Allemagne</category>
-      <category>Industrie</category>
-    </item>
-    <item>
-      <title>Pax nomme Kevin Brand chef de produit</title>
-      <link>https://agefi.com/actualites/trajectoires/pax-nomme-kevin-brand-chef-de-produit</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545091</guid>
-      <description>Il prendra ses fonctions au plus tard le 1er mai 2027, succédant à Yvonne Häring, qui deviendra directrice générale de la coopérative au 1er janvier 2027.</description>
-      <pubDate>Thu, 05 Nov 2026 09:25:20 +0000</pubDate>
-      <category>trajectoires</category>
-      <category>Assurances</category>
     </item>
   </channel>
 </rss>
