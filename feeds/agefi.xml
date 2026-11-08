@@ -5,7 +5,26 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sun, 08 Nov 2026 05:57:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 13:18:35 +0000</lastBuildDate>
+    <item>
+      <title>L'UDC Thomas Aeschi brigue un siège au Conseil fédéral</title>
+      <link>https://agefi.com/actualites/politique/ludc-thomas-aeschi-brigue-un-siege-au-conseil-federal</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545150</guid>
+      <description>Le chef du groupe parlementaire du parti agrarien est l'un de ceux qui souhaitent succéder au ministre démissionnaire Guy Parmelin.</description>
+      <pubDate>Sun, 08 Nov 2026 08:26:27 +0000</pubDate>
+      <category>politique</category>
+      <category>UDC</category>
+      <category>Conseil fédéral</category>
+      <category>Guy Parmelin</category>
+    </item>
+    <item>
+      <title>Enquêtes sur la «Lex On» et sur les factures Covid, la revue de presse dominicale</title>
+      <link>https://agefi.com/actualites/entreprises/enquetes-sur-la-lex-on-et-sur-les-factures-de-la-periode-covid-cest-la-revue-de-presse</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545149</guid>
+      <description>Les journaux du dimanche évoquent également une alliance envisagée entre la Lega tessinoise et la branche cantonale de l’UDC, et le renvoi de certains Ukrainiens admis sous statut S.</description>
+      <pubDate>Sun, 08 Nov 2026 08:08:36 +0000</pubDate>
+      <category>entreprises</category>
+    </item>
     <item>
       <title>Rexhep Rexhepi remporte l’Aiguille d’or au GPHG</title>
       <link>https://agefi.com/actualites/entreprises/rexhep-rexhepi-remporte-laiguille-dor-au-gphg</link>
@@ -583,23 +602,6 @@
       <category>entreprises</category>
       <category>Swiss Re</category>
       <category>Assurances</category>
-    </item>
-    <item>
-      <title>Degussa recrute Florian Höller chez Philoro comme directeur financier</title>
-      <link>https://agefi.com/actualites/trajectoires/degussa-recrute-florian-holler-chez-philoro-comme-directeur-financier</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545095</guid>
-      <description>Agé de 36 ans, il succédera à l’administrateur Tino Porzel, qui assurait l’intérim depuis juin au sein du négociant en or et métaux précieux sis à Baar.</description>
-      <pubDate>Thu, 05 Nov 2026 10:25:03 +0000</pubDate>
-      <category>trajectoires</category>
-    </item>
-    <item>
-      <title>Valérie Noël nommée à la tête d’Arab Bank Switzerland ME à Abu Dhabi</title>
-      <link>https://agefi.com/actualites/trajectoires/valerie-noel-nommee-a-la-tete-darab-bank-switzerland-me-a-abou-dabi</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545094</guid>
-      <description>La nomination accompagne le lancement des activités de la filiale au sein de l’Abu Dhabi Global Market. L’entité conseillera ses clients sur leurs actifs numériques.</description>
-      <pubDate>Thu, 05 Nov 2026 10:20:30 +0000</pubDate>
-      <category>trajectoires</category>
-      <category>Banques</category>
     </item>
   </channel>
 </rss>
