@@ -5,6 +5,11 @@
     <link>https://www.fortinet.com/blog/threat-research</link>
     <description>FortiGuard Labs Threat Research</description>
     <item>
+      <title>Analyzing an Illegal Android Gambling App Built with Flutter</title>
+      <link>https://www.fortinet.com/blog/threat-research/analyzing-an-illegal-android-gambling-app-built-with-flutter</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/analyzing-an-illegal-android-gambling-app-built-with-flutter</guid>
+    </item>
+    <item>
       <title>BITTER Expands Its Arsenal with PapRAT</title>
       <link>https://www.fortinet.com/blog/threat-research/bitter-expands-its-arsenal-with-paprat</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/bitter-expands-its-arsenal-with-paprat</guid>
@@ -48,11 +53,6 @@
       <title>The TTF Trap: A Global Campaign of a Low-Detection Lua Loader</title>
       <link>https://www.fortinet.com/blog/threat-research/the-ttf-trap-a-global-campaign-of-a-low-detection-lua-loader</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/the-ttf-trap-a-global-campaign-of-a-low-detection-lua-loader</guid>
-    </item>
-    <item>
-      <title>Analysis of Ongoing Ousaban Attacks Targeting the Iberian Peninsula</title>
-      <link>https://www.fortinet.com/blog/threat-research/analysis-of-ongoing-ousaban-attacks-targeting-the-iberian-peninsula</link>
-      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/analysis-of-ongoing-ousaban-attacks-targeting-the-iberian-peninsula</guid>
     </item>
     <item>
       <title>RolandSkimmer: Silent Credit Card Thief Uncovered</title>
