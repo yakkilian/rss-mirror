@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Sun, 08 Nov 2026 14:18:33 +0100</lastBuildDate>
+		<lastBuildDate>Mon, 09 Nov 2026 07:17:22 +0100</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Banque-Heritage-CEO zu Verkaufsgerüchten: «Bin zu jung für die Pension»</title>
+			<link>https://www.finews.ch/news/banken/74358-banque-heritage-marcos-esteve-wachstum-zuerich-vermoegensverwalter-verkauf</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/banken/74358-banque-heritage-marcos-esteve-wachstum-zuerich-vermoegensverwalter-verkauf</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/11/Esteve_Marcos_Banque_Heritage.png" alt="Marcos Esteve, CEO der Banque Heritage, will die verwalteten Vermögen auf 20 Milliarden Franken steigern. (Bild: zVg)" width="646" height="388" loading="lazy"></p><p><strong>Die Genfer Banque Heritage prüft den Einstieg ins Geschäft mit unabhängigen Vermögensverwaltern. CEO Marcos Esteve erklärt, weshalb die Bank ihre Präsenz in Zürich ausbauen will und warum sich die hartnäckigen Verkaufsgerüchte nicht bewahrheiten werden.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Banken</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Mon, 09 Nov 2026 06:00:00 +0100</pubDate>
+		</item>
 		<item>
 			<title>Liontrust-CEO: «Wollen Schweizer Geschäft auf breitere Beine stellen»</title>
 			<link>https://www.finews.ch/news/finanzplatz/74286-liontrust-john-ions-schweiz-expansion-uebernahme-gam-asset-management</link>
@@ -213,18 +225,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Thu, 05 Nov 2026 09:08:45 +0100</pubDate>
-		</item>
-		<item>
-			<title>Pax besetzt Führungsposition mit Mann von visavis</title>
-			<link>https://www.finews.ch/news/versicherungen/74342-pax-cpo-kevin-brand-visavis</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/versicherungen/74342-pax-cpo-kevin-brand-visavis</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/11/Kevin-Brand-Pax-CPO.jpg" alt="Wechselt von der visavis Versicherung zur Pax: Kevin Brand. (Bild: zVg)" width="646" height="388" loading="lazy"></p><p><strong>Kevin Brand wechselt von der visavis Versicherung zur Pax. Er übernimmt die Funktion, die bisher Yvonne Häring bekleidete. Diese wird bald CEO der Pax-Gruppe werden.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Versicherungen</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Thu, 05 Nov 2026 08:58:33 +0100</pubDate>
 		</item>
 	</channel>
 </rss>

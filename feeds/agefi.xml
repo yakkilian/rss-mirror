@@ -5,7 +5,19 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sun, 08 Nov 2026 13:18:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 06:17:23 +0000</lastBuildDate>
+    <item>
+      <title>ABB et Softbank examinent séparer les activités chinoises de Robotique</title>
+      <link>https://agefi.com/actualites/entreprises/abb-et-softbank-examinent-separer-les-activites-chinoises-de-robotique</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545151</guid>
+      <description>Cette option vise à sauver la cession de la division, valorisée à environ 5,4 milliards de dollars, après le refus des autorités chinoises. Un accord reste incertain.</description>
+      <pubDate>Mon, 09 Nov 2026 06:12:48 +0000</pubDate>
+      <category>entreprises</category>
+      <category>ABB</category>
+      <category>Robotique</category>
+      <category>Chine</category>
+      <category>Softbank</category>
+    </item>
     <item>
       <title>L'UDC Thomas Aeschi brigue un siège au Conseil fédéral</title>
       <link>https://agefi.com/actualites/politique/ludc-thomas-aeschi-brigue-un-siege-au-conseil-federal</link>
@@ -592,16 +604,6 @@
       <category>marches</category>
       <category>Bourse Zurich</category>
       <category>SMI</category>
-    </item>
-    <item>
-      <title>Swiss Re relève son bénéfice de 3% sur neuf mois</title>
-      <link>https://agefi.com/actualites/entreprises/swiss-re-accroit-son-benefice-de-3-sur-neuf-mois</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545076</guid>
-      <description>Le réassureur zurichois a dégagé un profit net de 4,2 milliards de dollars et confirme son objectif de 4,5 milliards pour 2026. Ses recettes d’assurance ont baissé de 3% à 31,2 milliards.</description>
-      <pubDate>Thu, 05 Nov 2026 10:30:00 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Swiss Re</category>
-      <category>Assurances</category>
     </item>
   </channel>
 </rss>
