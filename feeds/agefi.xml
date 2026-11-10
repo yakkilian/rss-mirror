@@ -5,7 +5,30 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Mon, 09 Nov 2026 16:22:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 01:32:12 +0000</lastBuildDate>
+    <item>
+      <title>Energie: les entreprises pourraient se défendre contre les drones</title>
+      <link>https://agefi.com/actualites/politique/energie-les-entreprises-pourraient-se-defendre-contre-les-drones</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545185</guid>
+      <description>La Confédération élabore une «base légale» pour que les exploitants d'installations énergétiques puissent être autorisés à se défendre contre le sabotage et les attaques de drones.</description>
+      <pubDate>Mon, 09 Nov 2026 17:58:32 +0000</pubDate>
+      <category>politique</category>
+      <category>Suisse</category>
+      <category>Énergies</category>
+      <category>Drones</category>
+    </item>
+    <item>
+      <title>Le SMI clôture dans le vert après une remontée</title>
+      <link>https://agefi.com/actualites/marches/le-smi-cloture-dans-le-vert-apres-une-remontee</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545184</guid>
+      <description>L'indice vedette a fini en hausse de 1,01% à 14.946,15 points, plus haut à 14.951 points. Le SLI a avancé de 0,82% à 2398,64 points et l'indice général SPI de 0,97% à 21.033,26 points.</description>
+      <pubDate>Mon, 09 Nov 2026 17:26:41 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourse Zurich</category>
+      <category>SMI</category>
+      <category>SPI</category>
+      <category>SLI</category>
+    </item>
     <item>
       <title>Les Bourses mondiales portées par la tech et le recul du pétrole</title>
       <link>https://agefi.com/actualites/marches/les-bourses-mondiales-portees-par-la-tech-et-le-recul-du-petrole</link>
@@ -33,7 +56,7 @@
       <title>Nvidia ouvre une enquête sur des soupçons d’espionnage visant Jensen Huang</title>
       <link>https://agefi.com/actualites/entreprises/nvidia-ouvre-une-enquete-sur-des-soupcons-despionnage-visant-jensen-huang</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/545181</guid>
-      <description>Les autorités américaines soupçonnent la maîtresse chinoise du CEO d’avoir été recrutée par les services chinois. Pékin dément. L’action reculait de 5% vers 10h00 sur Tradegate.</description>
+      <description>Les autorités américaines soupçonnent la maîtresse chinoise du CEO d’avoir été recrutée par les services chinois. Pékin dément. L’action reculait de 4,88% vers 16h00.</description>
       <pubDate>Mon, 09 Nov 2026 15:48:51 +0000</pubDate>
       <category>entreprises</category>
       <category>Nvidia</category>
@@ -583,24 +606,6 @@
       <pubDate>Fri, 06 Nov 2026 06:48:21 +0000</pubDate>
       <category>entreprises</category>
       <category>Medacta</category>
-    </item>
-    <item>
-      <title>SwissAI réclame une évaluation nationale</title>
-      <link>https://agefi.com/actualites/politique/swissai-reclame-une-evaluation-nationale</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545118</guid>
-      <description>L’association souhaite que le Conseil fédéral confie une étude à des institutions indépendantes et que les résultats soient présentés avant le sommet international sur l’IA de juin 2027 à Genève.</description>
-      <pubDate>Fri, 06 Nov 2026 06:44:45 +0000</pubDate>
-      <category>politique</category>
-      <category>Intelligence artificielle</category>
-    </item>
-    <item>
-      <title>Asmallworld sanctionné par le régulateur de la Bourse suisse</title>
-      <link>https://agefi.com/actualites/entreprises/asmallworld-sanctionne-par-le-regulateur-de-la-bourse-suisse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545117</guid>
-      <description>SIX Exchange Regulation a constaté des violations des règles d’information financière et de publicité événementielle. La décision n’est pas encore entrée en force.</description>
-      <pubDate>Fri, 06 Nov 2026 06:32:33 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Asmallworld</category>
     </item>
   </channel>
 </rss>
