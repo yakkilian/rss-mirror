@@ -5,7 +5,142 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Tue, 10 Nov 2026 14:50:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 23:17:05 +0000</lastBuildDate>
+    <item>
+      <title>Le bilan environnemental de l’IA reste à établir</title>
+      <link>https://agefi.com/actualites/editorial/le-bilan-environnemental-de-lia-reste-a-etablir</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545224</guid>
+      <description>L’intelligence artificielle consomme de l’énergie, mais pourrait aussi en économiser. Les entreprises doivent mieux documenter leurs besoins et les bénéfices annoncés pour éclairer les investisseurs.</description>
+      <pubDate>Tue, 10 Nov 2026 18:30:00 +0000</pubDate>
+      <category>editorial</category>
+      <category>Intelligence artificielle</category>
+      <category>Énergies</category>
+      <category>Environnement</category>
+      <category>Wall Street</category>
+    </item>
+    <item>
+      <title>Light Frame lève 5,1 millions de dollars pour son système bancaire</title>
+      <link>https://agefi.com/actualites/entreprises/light-frame-leve-51-millions-de-dollars-pour-son-systeme-bancaire</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545220</guid>
+      <description>La fintech lausannoise, dirigée par Schuyler Weiss, a développé une solution déjà utilisée par plusieurs établissements financiers. Elle entend se faire une place sur un marché dominé par des acteurs établis.</description>
+      <pubDate>Tue, 10 Nov 2026 18:30:00 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Banques</category>
+      <category>Informatique</category>
+      <category>Start-up</category>
+    </item>
+    <item>
+      <title>Assouplir le frein à l’endettement, «une stratégie de buffet à volonté»</title>
+      <link>https://agefi.com/actualites/politique/assouplir-le-frein-a-lendettement-une-strategie-de-buffet-a-volonte</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545219</guid>
+      <description>Pour des raisons différentes, tant le Vert vaudois Didier Lohri que l’économiste Christoph Schaltegger estiment que les villes se trompent de cible en appelant à réformer le frein à l’endettement au niveau fédéral.</description>
+      <pubDate>Tue, 10 Nov 2026 18:30:00 +0000</pubDate>
+      <category>politique</category>
+      <category>Dette</category>
+      <category>Conseil fédéral</category>
+      <category>Cantons</category>
+      <category>Finances</category>
+    </item>
+    <item>
+      <title>Les licornes s’ouvrent à davantage d'investisseurs</title>
+      <link>https://agefi.com/actualites/entreprises/les-licornes-souvrent-aux-investisseurs-particuliers</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545217</guid>
+      <description>Longtemps réservé aux investisseurs avertis, l’accès aux géants technologiques non cotés se démocratise. Plateformes, fonds et produits dérivés multiplient les possibilités, malgré des risques persistants.</description>
+      <pubDate>Tue, 10 Nov 2026 18:30:00 +0000</pubDate>
+      <category>entreprises</category>
+      <category>IPO</category>
+      <category>Bourses</category>
+      <category>Private Equity</category>
+      <category>ChatGPT</category>
+      <category>SpaceX</category>
+    </item>
+    <item>
+      <title>Bilatérales: le dernier mot ne suffit pas</title>
+      <link>https://agefi.com/actualites/opinions/bilaterales-le-dernier-mot-ne-suffit-pas</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545209</guid>
+      <description>Dans le débat sur les Bilatérales III, nous voulons savoir qui décide. Fort bien. Mais il reste une autre question: quand la Suisse peut-elle encore faire valoir ses intérêts?</description>
+      <pubDate>Tue, 10 Nov 2026 18:00:00 +0000</pubDate>
+      <category>opinions</category>
+      <category>Suisse - UE</category>
+      <category>Bilatérales lll</category>
+    </item>
+    <item>
+      <title>Les obligations retrouvent de l’attrait</title>
+      <link>https://agefi.com/actualites/marches/les-obligations-retrouvent-de-lattrait</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545221</guid>
+      <description>La hausse des rendements pèse sur les performances, mais améliore les perspectives des investisseurs.</description>
+      <pubDate>Tue, 10 Nov 2026 17:45:00 +0000</pubDate>
+      <category>marches</category>
+      <category>Obligations</category>
+      <category>Politique monétaire</category>
+      <category>Taux</category>
+      <category>Intelligence artificielle</category>
+    </item>
+    <item>
+      <title>Donald Trump privé de la complaisance du Congrès</title>
+      <link>https://agefi.com/actualites/marches/donald-trump-prive-de-la-complaisance-du-congres</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545225</guid>
+      <description>Le triomphe des démocrates a reçu un accueil agité à Wall Street, mais serein sur le marché obligataire.</description>
+      <pubDate>Tue, 10 Nov 2026 17:30:00 +0000</pubDate>
+      <category>marches</category>
+      <category>Obligations</category>
+      <category>Etats-Unis</category>
+    </item>
+    <item>
+      <title>La Bourse suisse termine la séance à plus de 15.000 points</title>
+      <link>https://agefi.com/actualites/marches/la-bourse-suisse-termine-la-seance-a-plus-de-15000-points</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545223</guid>
+      <description>Le SMI a terminé sur une hausse de 0,61% à 15.037,94 points. Le SLI a suivi la même tendance en progressant de 0,47% à 2409,84 points et le SPI de 0,53% à 21.144,31 points.</description>
+      <pubDate>Tue, 10 Nov 2026 17:27:00 +0000</pubDate>
+      <category>marches</category>
+      <category>SMI</category>
+      <category>Bourse Zurich</category>
+    </item>
+    <item>
+      <title>Le prestataire de Publica visé par une demande de rançon</title>
+      <link>https://agefi.com/actualites/entreprises/le-prestataire-de-publica-vise-par-une-demande-de-rancon</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545222</guid>
+      <description>La demande adressée à PK Softech AG ne précisait ni montant ni délai, selon le SEPOS. Les services fédéraux impliqués n’ont connaissance d’aucune demande les visant.</description>
+      <pubDate>Tue, 10 Nov 2026 17:06:55 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Cybersécurité</category>
+    </item>
+    <item>
+      <title>Tableau de bord de la finance durable: actions Etats-Unis</title>
+      <link>https://agefi.com/actualites/marches/tableau-de-bord-de-la-finance-durable-actions-etats-unis-67</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545180</guid>
+      <description>Cette semaine «L’Agefi» et Conser - ESG Verifier comparent deux ETF qui investissent dans un panier d’actions américaines. S’y ajoutent les dernières nouvelles de l’investissement ESG.</description>
+      <pubDate>Tue, 10 Nov 2026 17:00:00 +0000</pubDate>
+      <category>marches</category>
+      <category>ETF</category>
+      <category>ESG</category>
+      <category>Finance durable</category>
+    </item>
+    <item>
+      <title>Sunrise choisit la manière forte pour rester dans la course</title>
+      <link>https://agefi.com/actualites/entreprises/sunrise-choisit-la-maniere-forte-pour-rester-dans-la-course</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545218</guid>
+      <description>COMMENTAIRE. Défendre sa position sur le marché des télécoms tout en offrant le meilleur rendement aux actionnaires relève déjà d’un tour de force.</description>
+      <pubDate>Tue, 10 Nov 2026 16:04:16 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Sunrise</category>
+      <category>Swisscom</category>
+      <category>Télécoms</category>
+    </item>
+    <item>
+      <title>Les banques étrangères regrettent le retard pris en Suisse en matière d’IA</title>
+      <link>https://agefi.com/actualites/entreprises/les-banques-etrangeres-regrettent-le-retard-pris-en-suisse-en-matiere-dia</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545216</guid>
+      <description>Une régulation difficile à mettre en œuvre au quotidien et le retard pris dans l’intelligence artificielle préoccupent toujours plus les établissements étrangers présents dans le pays, d’après une étude.</description>
+      <pubDate>Tue, 10 Nov 2026 15:02:07 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Banques</category>
+      <category>Union européenne</category>
+      <category>Intelligence artificielle</category>
+      <category>UBS</category>
+      <category>Credit Suisse</category>
+      <category>Crédits</category>
+    </item>
     <item>
       <title>Le marché suisse de l’apprentissage peine à faire coïncider offre et demande</title>
       <link>https://agefi.com/actualites/macroeconomie/le-marche-suisse-de-lapprentissage-peine-a-faire-coincider-offre-et-demande</link>
@@ -518,129 +653,6 @@
       <category>CPH Chemie+Papier Holding</category>
       <category>Pharma</category>
       <category>Suisse</category>
-    </item>
-    <item>
-      <title>Cicor décroche deux contrats dans la défense européenne</title>
-      <link>https://agefi.com/actualites/entreprises/cicor-decroche-deux-contrats-dans-le-secteur-de-la-defense-en-europe</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545156</guid>
-      <description>Les nouvelles commandes du fabricant saint-gallois devraient générer près de 20 millions de francs de chiffre d’affaires dès 2027. La production sera assurée en France et au Royaume-Uni.</description>
-      <pubDate>Mon, 09 Nov 2026 07:14:48 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Cicor</category>
-      <category>Europe</category>
-      <category>Armée</category>
-      <category>Aéronautique</category>
-    </item>
-    <item>
-      <title>Première incursion de Sandoz au Brésil sur le marché du GLP-1</title>
-      <link>https://agefi.com/actualites/entreprises/premiere-incursion-de-sandoz-au-bresil-sur-le-marche-du-glp-1</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545155</guid>
-      <description>Le géant pharmaceutique bâlois lance l’Owozy, développé par Adalvo et autorisé contre le diabète de type 2.</description>
-      <pubDate>Mon, 09 Nov 2026 06:59:52 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Sandoz</category>
-      <category>Brésil</category>
-      <category>Santé</category>
-      <category>Pharma</category>
-    </item>
-    <item>
-      <title>SFP compte augmenter le capital de son fonds SPF à hauteur de 80 millions de francs</title>
-      <link>https://agefi.com/actualites/entreprises/sfp-compte-augmenter-le-capital-de-son-fonds-spf-a-hauteur-de-80-millions-de-francs</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545154</guid>
-      <description>Pour le Sustainable property fund, la levée de capital servira à étendre et optimiser le parc immobilier ainsi qu’à rembourser des dettes.</description>
-      <pubDate>Mon, 09 Nov 2026 06:51:51 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Immobilier</category>
-      <category>Investissements</category>
-    </item>
-    <item>
-      <title>Les candidats du centre droit largement devant à Fribourg</title>
-      <link>https://agefi.com/actualites/politique/les-candidats-du-centre-droit-largement-devant-a-fribourg</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545153</guid>
-      <description>L’Entente fribourgeoise, qui réunit Le Centre, le PLR et l’UDC, devance clairement l’Alliance de gauche dans la course au Conseil d’Etat, après dépouillement de 105 des 120 communes.</description>
-      <pubDate>Mon, 09 Nov 2026 06:39:58 +0000</pubDate>
-      <category>politique</category>
-      <category>Fribourg</category>
-      <category>Élections</category>
-    </item>
-    <item>
-      <title>La hausse des prix à la production en Chine atteint 5,7% en octobre</title>
-      <link>https://agefi.com/actualites/macroeconomie/la-hausse-des-prix-a-la-production-en-chine-atteint-57-en-octobre</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545152</guid>
-      <description>Ce niveau est le plus élevé depuis 2022. Mais l’inflation à la consommation ralentit par contre à 0,7% sur un an.</description>
-      <pubDate>Mon, 09 Nov 2026 06:21:39 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Chine</category>
-      <category>Inflation</category>
-    </item>
-    <item>
-      <title>ABB et Softbank examinent une séparation des activités chinoises de robotique</title>
-      <link>https://agefi.com/actualites/entreprises/abb-et-softbank-examinent-separer-les-activites-chinoises-de-robotique</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545151</guid>
-      <description>Cette option vise à sauver la cession de la division, valorisée à environ 5,4 milliards de dollars, après le refus des autorités chinoises. Un accord reste incertain.</description>
-      <pubDate>Mon, 09 Nov 2026 06:12:48 +0000</pubDate>
-      <category>entreprises</category>
-      <category>ABB</category>
-      <category>Robotique</category>
-      <category>Chine</category>
-      <category>Softbank</category>
-    </item>
-    <item>
-      <title>L'UDC Thomas Aeschi brigue un siège au Conseil fédéral</title>
-      <link>https://agefi.com/actualites/politique/ludc-thomas-aeschi-brigue-un-siege-au-conseil-federal</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545150</guid>
-      <description>Le chef du groupe parlementaire du parti agrarien est l'un de ceux qui souhaitent succéder au ministre démissionnaire Guy Parmelin.</description>
-      <pubDate>Sun, 08 Nov 2026 08:26:27 +0000</pubDate>
-      <category>politique</category>
-      <category>UDC</category>
-      <category>Conseil fédéral</category>
-      <category>Guy Parmelin</category>
-    </item>
-    <item>
-      <title>Enquêtes sur la «Lex On» et sur les factures Covid, la revue de presse dominicale</title>
-      <link>https://agefi.com/actualites/entreprises/enquetes-sur-la-lex-on-et-sur-les-factures-de-la-periode-covid-cest-la-revue-de-presse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545149</guid>
-      <description>Les journaux du dimanche évoquent également une alliance envisagée entre la Lega tessinoise et la branche cantonale de l’UDC, et le renvoi de certains Ukrainiens admis sous statut S.</description>
-      <pubDate>Sun, 08 Nov 2026 08:08:36 +0000</pubDate>
-      <category>entreprises</category>
-    </item>
-    <item>
-      <title>Rexhep Rexhepi remporte l’Aiguille d’or au GPHG</title>
-      <link>https://agefi.com/actualites/entreprises/rexhep-rexhepi-remporte-laiguille-dor-au-gphg</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545148</guid>
-      <description>L’horloger indépendant genevois a décroché la plus haute distinction du Grand Prix d’horlogerie de Genève pour son Chronographe Flyback. Cette édition a été marquée par de nouvelles catégories et un jury remanié.</description>
-      <pubDate>Sat, 07 Nov 2026 21:52:33 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Horlogerie</category>
-      <category>GPHG</category>
-      <category>Genève</category>
-    </item>
-    <item>
-      <title>1363 milliards de francs investis dans des fonds durables</title>
-      <link>https://agefi.com/actualites/marches/1363-milliards-de-francs-investis-dans-des-fonds-durables</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545147</guid>
-      <description>Selon une étude de la Haute école de Lucerne, la hausse annuelle de 11% des actifs tient surtout aux gains boursiers, les nouveaux apports de capitaux étant quasi inexistants.</description>
-      <pubDate>Sat, 07 Nov 2026 08:52:36 +0000</pubDate>
-      <category>marches</category>
-      <category>Développement durable</category>
-      <category>Finance durable</category>
-    </item>
-    <item>
-      <title>LPP, AELE, transition énergétique: les trois mots-clés de la semaine</title>
-      <link>https://agefi.com/actualites/politique/lpp-aele-transition-energetique-les-trois-mots-cles-de-la-semaine</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545124</guid>
-      <description>Vous n’avez pas eu le temps de suivre toute l’actualité économique et financière ces derniers jours? Voici les trois informations qui ont marqué cette semaine.</description>
-      <pubDate>Sat, 07 Nov 2026 07:30:00 +0000</pubDate>
-      <category>politique</category>
-    </item>
-    <item>
-      <title>Un monde divisé au chevet du climat à la COP31</title>
-      <link>https://agefi.com/actualites/politique/un-monde-divise-au-chevet-du-climat-a-la-cop31</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545146</guid>
-      <description>Les pays ont rendez-vous à partir de lundi à Antalya en Turquie pour répondre à la crise climatique, mais la tâche s'annonce ardue tant les divisions sont nombreuses.</description>
-      <pubDate>Fri, 06 Nov 2026 17:52:16 +0000</pubDate>
-      <category>politique</category>
-      <category>Climat</category>
     </item>
   </channel>
 </rss>
