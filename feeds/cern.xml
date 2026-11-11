@@ -5,7 +5,28 @@
     <link>https://home.cern/tag/news/</link>
     <description>Latest CERN news mirrored for FreshRSS and ICTjournal monitoring.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Nov 2026 06:06:52 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 14:13:23 +0000</lastBuildDate>
+    <item>
+      <title>CERN to host its third Art and Science Summit, The Hybrid Nexus, on 19 and 20 November</title>
+      <link>https://home.cern/cern-to-host-its-third-art-and-science-summit-the-hybrid-nexus-on-19-and-20-november/</link>
+      <guid isPermaLink="true">https://home.cern/cern-to-host-its-third-art-and-science-summit-the-hybrid-nexus-on-19-and-20-november/</guid>
+      <description>CERN is delighted to announce the programme for The Hybrid Nexus, the third edition of CERN’s annual Art and Science Summit. Hosted at the Science Gateway, the Summit is Arts at CERN’s flagship event and a key occasion to reaffirm the Organization’s commitment to fostering dialogue between fundamental research and the arts. Over two days, beginning on the</description>
+      <pubDate>Wed, 11 Nov 2026 14:02:05 +0100</pubDate>
+    </item>
+    <item>
+      <title>Integrating renewable solar energy to cover CERN’s energy needs: a subtle and complex balancing act</title>
+      <link>https://home.cern/integrating-renewable-solar-energy-to-cover-cerns-energy-needs-a-subtle-and-complex-balancing-act/</link>
+      <guid isPermaLink="true">https://home.cern/integrating-renewable-solar-energy-to-cover-cerns-energy-needs-a-subtle-and-complex-balancing-act/</guid>
+      <description>Less than two years after CERN signed three long-term solar power purchase agreements (PPAs), two of the three installations are now fully operational. Following successful commissioning and testing phases, the Terres Salées solar plant, in the Bouches-du-Rhône department in southern France, began supplying electricity in May 2026. The Séranon plant, in the Alpes-Maritimes department, followed</description>
+      <pubDate>Wed, 11 Nov 2026 12:55:18 +0100</pubDate>
+    </item>
+    <item>
+      <title>Computer Security: AI floods</title>
+      <link>https://home.cern/computer-security-ai-floods/</link>
+      <guid isPermaLink="true">https://home.cern/computer-security-ai-floods/</guid>
+      <description>A brave new world. With the rise of AI, skills are changing drastically. Untalented individuals like me can become Spotify artists making it into the top ten, or Netflix deepfake artificial movie stars (avatars?) or, maybe more realistically, geeky programmers of fancy new apps and webpages. Pure creativity for those who were excluded before because</description>
+      <pubDate>Wed, 11 Nov 2026 12:04:45 +0100</pubDate>
+    </item>
     <item>
       <title>A new chapter for Open Research Europe</title>
       <link>https://home.cern/a-new-chapter-for-open-research-europe/</link>
@@ -194,27 +215,6 @@
       <guid isPermaLink="true">https://home.cern/positrons-pass-test-for-the-future-circular-collider/</guid>
       <description>An experiment at the Paul Scherrer Institute (PSI) in Switzerland has successfully produced, captured and transported positrons using a novel system developed for CERN’s proposed Future Circular Collider (FCC). The results show that the key elements of the FCC positron-source concept can operate together, representing an important advance for this technically demanding aspect of the</description>
       <pubDate>Wed, 26 Aug 2026 11:53:23 +0200</pubDate>
-    </item>
-    <item>
-      <title>Final tests for the AMS upgrade before spaceflight</title>
-      <link>https://home.cern/final-tests-for-the-ams-upgrade-before-spaceflight/</link>
-      <guid isPermaLink="true">https://home.cern/final-tests-for-the-ams-upgrade-before-spaceflight/</guid>
-      <description>A new layer of silicon sensors is being tested at CERN before being sent to the International Space Station</description>
-      <pubDate>Fri, 21 Aug 2026 11:25:43 +0200</pubDate>
-    </item>
-    <item>
-      <title>Accelerator Report: Final countdown – CERN’s injector complex enters its last stretch before LS3</title>
-      <link>https://home.cern/accelerator-report-final-countdown-cerns-injector-complex-enters-its-last-stretch-before-ls3/</link>
-      <guid isPermaLink="true">https://home.cern/accelerator-report-final-countdown-cerns-injector-complex-enters-its-last-stretch-before-ls3/</guid>
-      <description>The LHC has already fallen silent for Long Shutdown 3 (LS3), but elsewhere across CERN’s accelerator complex the pace remains intense. With just a week and a half of beam operation remaining, the countdown has begun for all the machines, which will switch off their beams at 6.00 a.m. on Monday, 31 August, marking the</description>
-      <pubDate>Thu, 20 Aug 2026 11:30:56 +0200</pubDate>
-    </item>
-    <item>
-      <title>Celebrating John Ellis’s enduring legacy</title>
-      <link>https://home.cern/celebrating-john-elliss-enduring-legacy/</link>
-      <guid isPermaLink="true">https://home.cern/celebrating-john-elliss-enduring-legacy/</guid>
-      <description>On 31 July, colleagues and friends of theoretical physicist John Ellis came together to celebrate his 80th birthday and almost 60 years of service to CERN and the wider particle physics community. “Many of us were amazed to learn of John’s significant impact on fields besides our own,” said physicist Matthew McCullough, Deputy Head of</description>
-      <pubDate>Thu, 20 Aug 2026 10:04:07 +0200</pubDate>
     </item>
   </channel>
 </rss>
