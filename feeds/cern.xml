@@ -5,7 +5,14 @@
     <link>https://home.cern/tag/news/</link>
     <description>Latest CERN news mirrored for FreshRSS and ICTjournal monitoring.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Nov 2026 00:38:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 15:07:32 +0000</lastBuildDate>
+    <item>
+      <title>Ecologists working to better understand and protect the environment</title>
+      <link>https://home.cern/ecologists-working-to-better-understand-and-protect-the-environment/</link>
+      <guid isPermaLink="true">https://home.cern/ecologists-working-to-better-understand-and-protect-the-environment/</guid>
+      <description>As part of the Future Circular Collider (FCC) studies, environmental specialists are carrying out inventories of wildlife, flora and natural habitats in France and Switzerland. Before any decision is taken on the project, this work aims to establish a baseline of the areas under consideration and to provide an improved understanding of any potential environmental</description>
+      <pubDate>Thu, 12 Nov 2026 11:17:32 +0100</pubDate>
+    </item>
     <item>
       <title>CERN to host its third Art and Science Summit, The Hybrid Nexus, on 19 and 20 November</title>
       <link>https://home.cern/cern-to-host-its-third-art-and-science-summit-the-hybrid-nexus-on-19-and-20-november/</link>
@@ -201,20 +208,6 @@
       <guid isPermaLink="true">https://home.cern/all-cern-accelerators-now-on-the-road-to-hilumi/</guid>
       <description>CERN’s injector complex and Antimatter Factory took their final steps towards Long Shutdown 3 (LS3) this morning, as the last particle beams were extracted and the machines fell silent. This milestone follows the shutdown of the Large Hadron Collider (LHC) in June, which marked the beginning of LS3 for the Laboratory’s flagship accelerator. While the</description>
       <pubDate>Mon, 31 Aug 2026 11:43:57 +0200</pubDate>
-    </item>
-    <item>
-      <title>ATLAS and CMS narrow in on double-Higgs production</title>
-      <link>https://home.cern/atlas-and-cms-narrow-in-on-double-higgs-production/</link>
-      <guid isPermaLink="true">https://home.cern/atlas-and-cms-narrow-in-on-double-higgs-production/</guid>
-      <description>Finding one Higgs boson was hard enough, but physicists at the Large Hadron Collider (LHC) are hunting for something even more elusive: pairs of Higgs bosons. At the recent International Conference on High Energy Physics 2026, the ATLAS and CMS Collaborations presented new constraints on the double-Higgs production rate, providing insight into how the Higgs</description>
-      <pubDate>Thu, 27 Aug 2026 13:40:06 +0200</pubDate>
-    </item>
-    <item>
-      <title>Positrons pass test for the Future Circular Collider</title>
-      <link>https://home.cern/positrons-pass-test-for-the-future-circular-collider/</link>
-      <guid isPermaLink="true">https://home.cern/positrons-pass-test-for-the-future-circular-collider/</guid>
-      <description>An experiment at the Paul Scherrer Institute (PSI) in Switzerland has successfully produced, captured and transported positrons using a novel system developed for CERN’s proposed Future Circular Collider (FCC). The results show that the key elements of the FCC positron-source concept can operate together, representing an important advance for this technically demanding aspect of the</description>
-      <pubDate>Wed, 26 Aug 2026 11:53:23 +0200</pubDate>
     </item>
   </channel>
 </rss>
