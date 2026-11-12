@@ -5,7 +5,107 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Wed, 11 Nov 2026 14:13:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:38:34 +0000</lastBuildDate>
+    <item>
+      <title>Les actionnaires d'EasyJet approuvent le rachat par l'américain Apollo</title>
+      <link>https://agefi.com/actualites/entreprises/les-actionnaires-deasyjet-approuvent-le-rachat-par-apollo</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545255</guid>
+      <description>Au total, 97% des actionnaires votants se sont prononcés en faveur de cette acquisition à 5,7 milliards de livres sterling (environ 6,3 milliards de francs). L'opération doit être finalisée début 2027.</description>
+      <pubDate>Wed, 11 Nov 2026 17:56:20 +0000</pubDate>
+      <category>entreprises</category>
+      <category>EasyJet</category>
+      <category>Transports</category>
+    </item>
+    <item>
+      <title>Le SMI défend avec succès la barre des 15.000</title>
+      <link>https://agefi.com/actualites/marches/le-smi-defend-avec-succes-la-barre-des-15000</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545253</guid>
+      <description>L'indice vedette a fini sur une légère hausse de 0,11% à 15.053,86, points. L'indice SLI a clôturé sur un gain de 0,32% à 2417,58 points. L'indice élargi SPI a gagné 0,24% à 21.194,70 points.</description>
+      <pubDate>Wed, 11 Nov 2026 17:34:44 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourse Zurich</category>
+      <category>SMI</category>
+      <category>SPI</category>
+      <category>SLI</category>
+    </item>
+    <item>
+      <title>Toujours plus de passagers à l’aéroport de Zurich en octobre</title>
+      <link>https://agefi.com/actualites/entreprises/toujours-plus-de-passagers-a-laeroport-de-zurich-en-octobre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545252</guid>
+      <description>Les voyageurs en transit ont représenté 27,3% du total. Le taux d’occupation des sièges a reculé à 82,9% et le fret a diminué de 14,1% sur un an.</description>
+      <pubDate>Wed, 11 Nov 2026 17:04:46 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Aéroport de Zurich</category>
+      <category>Transports</category>
+    </item>
+    <item>
+      <title>Wall Street reprend des forces grâce à la tech, CoreWeave en locomotive</title>
+      <link>https://agefi.com/actualites/marches/wall-street-reprend-des-forces-grace-a-la-tech-coreweave-en-locomotive</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545251</guid>
+      <description>La société américaine, qui construit des centres de données optimisés pour l’IA et loue ensuite leur puissance informatique, a annoncé des résultats meilleurs que prévu et repris des couleurs sur les marchés.</description>
+      <pubDate>Wed, 11 Nov 2026 16:55:03 +0000</pubDate>
+      <category>marches</category>
+      <category>Wall Street</category>
+      <category>Intelligence artificielle</category>
+      <category>Nvidia</category>
+    </item>
+    <item>
+      <title>La souveraineté numérique relance le débat sur la politique industrielle</title>
+      <link>https://agefi.com/actualites/politique/la-souverainete-numerique-relance-le-debat-sur-la-politique-industrielle</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545250</guid>
+      <description>Face à la dépendance envers les géants technologiques étrangers, une commission du National examine jeudi l’opportunité d’un soutien étatique pour renforcer les capacités numériques suisses.</description>
+      <pubDate>Wed, 11 Nov 2026 16:11:55 +0000</pubDate>
+      <category>politique</category>
+      <category>Numérique</category>
+      <category>Parlement</category>
+      <category>Suisse</category>
+      <category>Intelligence artificielle</category>
+    </item>
+    <item>
+      <title>Tarifs des soins ambulatoires: le Conseil fédéral veut des corrections</title>
+      <link>https://agefi.com/actualites/politique/tarifs-des-soins-ambulatoires-le-conseil-federal-veut-des-corrections</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545249</guid>
+      <description>Sur la base de la révision proposée pour l’année prochaine, le Collège a refusé certaines modifications et enjoint à respecter la neutralité des coûts et à revaloriser la médecine de famille.</description>
+      <pubDate>Wed, 11 Nov 2026 15:57:02 +0000</pubDate>
+      <category>politique</category>
+      <category>Santé</category>
+      <category>Hôpitaux</category>
+      <category>prio.swiss</category>
+      <category>Conseil fédéral</category>
+    </item>
+    <item>
+      <title>Swiss supprime Dubaï de son plan de vol hivernal</title>
+      <link>https://agefi.com/actualites/entreprises/swiss-supprime-dubai-de-son-plan-de-vol-hivernal</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545248</guid>
+      <description>Pour des raisons opérationnnelles, la compagnie aérienne ne reprendra pas comme prévu le 25 novembre ses liaisons vers la destination du golfe P--ersique, suspendues à la suite de la guerre en Iran.</description>
+      <pubDate>Wed, 11 Nov 2026 15:21:56 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Transports</category>
+      <category>Aéronautique</category>
+      <category>Swiss</category>
+    </item>
+    <item>
+      <title>ABB investit 4 millions de francs au Tessin</title>
+      <link>https://agefi.com/actualites/entreprises/abb-investit-4-millions-de-francs-au-tessin</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545247</guid>
+      <description>Le site de Quartino du groupe zurichois accueillera une ligne de production dédiée au système d'alimentation électrique HiPerGuard.</description>
+      <pubDate>Wed, 11 Nov 2026 14:57:07 +0000</pubDate>
+      <category>entreprises</category>
+      <category>ABB</category>
+      <category>Electrotechnique</category>
+      <category>Tessin</category>
+    </item>
+    <item>
+      <title>Le PIB, un indicateur trompeur</title>
+      <link>https://agefi.com/actualites/opinions/le-pib-un-indicateur-trompeur</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545245</guid>
+      <description>La richesse d’un pays ne se résume pas à ses échanges marchands. Pour mieux évaluer le progrès, un outil de mesure intégrant les dimensions sociales et environnementales s’impose.</description>
+      <pubDate>Wed, 11 Nov 2026 14:31:37 +0000</pubDate>
+      <category>opinions</category>
+      <category>PIB</category>
+      <category>Croissance</category>
+      <category>Environnement</category>
+    </item>
     <item>
       <title>Six candidats pour le deuxième tour au Conseil d’Etat à Fribourg</title>
       <link>https://agefi.com/actualites/politique/six-candidats-pour-le-deuxieme-tour-au-conseil-detat-a-fribourg</link>
@@ -131,7 +231,7 @@
       <title>Ypsomed relève ses prévisions de croissance à mi-parcours</title>
       <link>https://agefi.com/actualites/entreprises/ypsomed-releve-ses-previsions-de-croissance-a-mi-parcours</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/545230</guid>
-      <description>Le fabricant bernois d’auto-injecteurs vise une progression de 13% à 16%, contre 12% à 15% auparavant, après une hausse de 17,5% des revenus de Delivery Systems au premier semestre.</description>
+      <description>Le fabricant bernois d’auto-injecteurs vise une progression de 13% à 16%, contre 12% à 15% auparavant, après une hausse de 17,5% des revenus de Delivery Systems au premier semestre.</description>
       <pubDate>Wed, 11 Nov 2026 07:23:39 +0000</pubDate>
       <category>entreprises</category>
       <category>Ypsomed</category>
@@ -159,17 +259,17 @@
       <title>Swiss Life poursuit sa croissance sur neuf mois</title>
       <link>https://agefi.com/actualites/entreprises/swiss-life-poursuit-sa-croissance-sur-neuf-mois</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/545227</guid>
-      <description>Les recettes de primes et le produit des commissions du groupe zurichois dépassent les attentes des analystes. Toutes les divisions ont enregistré une croissance.</description>
+      <description>Les recettes de primes et le produit des commissions du groupe zurichois dépassent les attentes des analystes. Toutes les divisions ont enregistré une hausse.</description>
       <pubDate>Wed, 11 Nov 2026 06:37:22 +0000</pubDate>
       <category>entreprises</category>
       <category>Swiss Life</category>
       <category>Assurances</category>
     </item>
     <item>
-      <title>Alcon progresse à nouveau au 3e trimestre</title>
+      <title>Alcon progresse à nouveau au troisième trimestre</title>
       <link>https://agefi.com/actualites/entreprises/alcon-progresse-a-nouveau-au-3e-trimestre</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/545226</guid>
-      <description>Le chiffre d’affaires du spécialiste des soins oculaires a augmenté de 5% à 2,7 milliards de dollars au troisième trimestre 2026. Le groupe prévoit une croissance annuelle des ventes d’environ 6%.</description>
+      <description>Le chiffre d’affaires du spécialiste des soins oculaires a augmenté de 5% à 2,7 milliards de dollars au troisième trimestre 2026. Le groupe prévoit une croissance annuelle des ventes de 6%.</description>
       <pubDate>Wed, 11 Nov 2026 06:30:53 +0000</pubDate>
       <category>entreprises</category>
       <category>Alcon</category>
@@ -539,108 +639,6 @@
       <category>Banques centrales</category>
       <category>Matières premières</category>
       <category>Asie</category>
-    </item>
-    <item>
-      <title>Roche lance une étude de phase II contre la maladie d’Alzheimer</title>
-      <link>https://agefi.com/actualites/entreprises/roche-lance-une-etude-de-phase-ii-contre-la-maladie-dalzheimer</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545193</guid>
-      <description>L’étude «Tarbela-AD» évalue le traitement à un stade symptomatique précoce. Le groupe bâlois a aussi initié le programme pivot «Preventron» sur son trontinémab.</description>
-      <pubDate>Tue, 10 Nov 2026 07:13:29 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Roche</category>
-      <category>Pharma</category>
-    </item>
-    <item>
-      <title>BKW confirme ses objectifs malgré une production pénalisée par la sécheresse</title>
-      <link>https://agefi.com/actualites/entreprises/bkw-confirme-ses-objectifs-malgre-une-production-penalisee-par-la-secheresse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545192</guid>
-      <description>Le groupe bernois attend un résultat d’exploitation dans le bas de sa fourchette cible de 650 à 750 millions de francs. Son modèle d’affaires diversifié a eu un effet stabilisateur, selon l’entreprise.</description>
-      <pubDate>Tue, 10 Nov 2026 07:04:13 +0000</pubDate>
-      <category>entreprises</category>
-      <category>BKW</category>
-      <category>Électricité</category>
-      <category>Énergies</category>
-    </item>
-    <item>
-      <title>Aebi Schmidt reprend OJ Watson et renforce sa présence en Amérique du Nord</title>
-      <link>https://agefi.com/actualites/entreprises/aebi-schmidt-reprend-oj-watson-et-renforce-sa-presence-en-amerique-du-nord</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545191</guid>
-      <description>L’équipementier américain a réalisé environ 28 millions de dollars de chiffre d’affaires l’an dernier. La transaction, dont le prix n’a pas été dévoilé, devrait être finalisée d’ici la fin de 2026.</description>
-      <pubDate>Tue, 10 Nov 2026 06:46:23 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Véhicules</category>
-      <category>Etats-Unis</category>
-      <category>Industrie</category>
-    </item>
-    <item>
-      <title>Sunrise retrouve les bénéfices au troisième trimestre</title>
-      <link>https://agefi.com/actualites/entreprises/sunrise-retrouve-les-benefices-au-troisieme-trimestre</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545190</guid>
-      <description>L’opérateur a dégagé un bénéfice net de 0,8 million de francs, tandis que son chiffre d’affaires a baissé de 1,2% à 732 millions. Il confirme ses objectifs pour 2026.</description>
-      <pubDate>Tue, 10 Nov 2026 06:35:46 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Sunrise</category>
-      <category>Opérateur</category>
-      <category>Télécoms</category>
-    </item>
-    <item>
-      <title>L’excédent commercial chinois dépasse 1000 milliards de dollars</title>
-      <link>https://agefi.com/actualites/macroeconomie/lexcedent-commercial-chinois-depasse-1000-milliards-de-dollars</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545188</guid>
-      <description>Les exportations ont progressé de 35,2% sur un an en octobre, à 412,3 milliards de dollars, avec de fortes hausses vers l’UE et les Etats-Unis, sur fond d’atonie du marché intérieur.</description>
-      <pubDate>Tue, 10 Nov 2026 06:24:17 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Chine</category>
-      <category>Commerce</category>
-      <category>Balance commerciale</category>
-      <category>Exportations</category>
-      <category>Importations</category>
-      <category>Intelligence artificielle</category>
-    </item>
-    <item>
-      <title>SGS double ses capacités dans les tests alimentaires en Amérique du Nord</title>
-      <link>https://agefi.com/actualites/entreprises/sgs-double-ses-capacites-dans-les-tests-alimentaires-en-amerique-du-nord</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545187</guid>
-      <description>Le groupe zougois reprend l’américain Deibel Laboratories et ses plus de 400 collaborateurs. La finalisation de l’opération est prévue début 2027.</description>
-      <pubDate>Tue, 10 Nov 2026 06:17:30 +0000</pubDate>
-      <category>entreprises</category>
-      <category>SGS</category>
-      <category>Laboratoires</category>
-      <category>Etats-Unis</category>
-    </item>
-    <item>
-      <title>Energie: les entreprises pourraient se défendre contre les drones</title>
-      <link>https://agefi.com/actualites/politique/energie-les-entreprises-pourraient-se-defendre-contre-les-drones</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545185</guid>
-      <description>La Confédération élabore une «base légale» pour que les exploitants d'installations énergétiques puissent être autorisés à se défendre contre le sabotage et les attaques de drones.</description>
-      <pubDate>Mon, 09 Nov 2026 17:58:32 +0000</pubDate>
-      <category>politique</category>
-      <category>Suisse</category>
-      <category>Énergies</category>
-      <category>Drones</category>
-    </item>
-    <item>
-      <title>Le SMI clôture dans le vert après une remontée</title>
-      <link>https://agefi.com/actualites/marches/le-smi-cloture-dans-le-vert-apres-une-remontee</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545184</guid>
-      <description>L'indice vedette a fini en hausse de 1,01% à 14.946,15 points, plus haut à 14.951 points. Le SLI a avancé de 0,82% à 2398,64 points et l'indice général SPI de 0,97% à 21.033,26 points.</description>
-      <pubDate>Mon, 09 Nov 2026 17:26:41 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-      <category>SPI</category>
-      <category>SLI</category>
-    </item>
-    <item>
-      <title>Les Bourses mondiales portées par la tech et le recul du pétrole</title>
-      <link>https://agefi.com/actualites/marches/les-bourses-mondiales-portees-par-la-tech-et-le-recul-du-petrole</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545183</guid>
-      <description>Vers 16h00, Paris prenait 1,23%, Londres 0,74% et Francfort 1,58%. A Wall Street, le Dow Jones gagnait 1,50%, le Nasdaq grimpait de 2,22% et le S&amp;P 500 s'octroyait 1,81%.</description>
-      <pubDate>Mon, 09 Nov 2026 16:17:19 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourses</category>
-      <category>Europe</category>
-      <category>Wall Street</category>
     </item>
   </channel>
 </rss>
