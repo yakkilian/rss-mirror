@@ -5,7 +5,14 @@
     <link>https://home.cern/tag/news/</link>
     <description>Latest CERN news mirrored for FreshRSS and ICTjournal monitoring.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Nov 2026 06:35:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 19:39:36 +0000</lastBuildDate>
+    <item>
+      <title>SND@LHC experiment set to push the neutrino frontier</title>
+      <link>https://home.cern/sndlhc-experiment-set-to-push-the-neutrino-frontier/</link>
+      <guid isPermaLink="true">https://home.cern/sndlhc-experiment-set-to-push-the-neutrino-frontier/</guid>
+      <description>Neutrinos – vanishingly light particles that scarcely interact with matter – remain deeply mysterious even 70 years after their discovery. These fundamental particles come in three flavours: electron, muon and tau. Experiments across the globe have worked to uncover the properties of these different flavours but the antimatter partner of the tau neutrino has still</description>
+      <pubDate>Fri, 13 Nov 2026 09:57:09 +0100</pubDate>
+    </item>
     <item>
       <title>Winners of the CMS PhD Thesis Awards are celebrated at CERN</title>
       <link>https://home.cern/winners-of-the-cms-phd-thesis-awards-are-celebrated-at-cern/</link>
@@ -208,13 +215,6 @@
       <guid isPermaLink="true">https://home.cern/computer-security-hot-review-summer-cool-deployment-autumn/</guid>
       <description>This summer has seen a plethora of different assessments of the Organization’s security posture and stance. While an external vulnerability scan of CERN’s Internet presence and a red-teaming penetration test are still ongoing, the Computer Security Office, in collaboration with the IT Department, is continuing to mitigate the findings of the 2023 cybersecurity audit, the</description>
       <pubDate>Tue, 01 Sep 2026 14:31:31 +0200</pubDate>
-    </item>
-    <item>
-      <title>All CERN accelerators now on the road to HiLumi</title>
-      <link>https://home.cern/all-cern-accelerators-now-on-the-road-to-hilumi/</link>
-      <guid isPermaLink="true">https://home.cern/all-cern-accelerators-now-on-the-road-to-hilumi/</guid>
-      <description>CERN’s injector complex and Antimatter Factory took their final steps towards Long Shutdown 3 (LS3) this morning, as the last particle beams were extracted and the machines fell silent. This milestone follows the shutdown of the Large Hadron Collider (LHC) in June, which marked the beginning of LS3 for the Laboratory’s flagship accelerator. While the</description>
-      <pubDate>Mon, 31 Aug 2026 11:43:57 +0200</pubDate>
     </item>
   </channel>
 </rss>
