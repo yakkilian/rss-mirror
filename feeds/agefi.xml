@@ -5,7 +5,25 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Thu, 12 Nov 2026 23:35:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 06:35:40 +0000</lastBuildDate>
+    <item>
+      <title>La vie en rose et Balaboosté entrent sur le marché suisse à Genève</title>
+      <link>https://agefi.com/actualites/entreprises/la-vie-en-rose-et-balabooste-entrent-sur-le-marche-suisse-a-geneve</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545299</guid>
+      <description>Les deux enseignes ouvriront leurs boutiques le 1er décembre au centre commercial Confederation. Il s’agit aussi de la première implantation en Europe du détaillant canadien de lingerie.</description>
+      <pubDate>Fri, 13 Nov 2026 06:35:26 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Commerce</category>
+    </item>
+    <item>
+      <title>Une panne mondiale perturbe Microsoft</title>
+      <link>https://agefi.com/actualites/entreprises/une-panne-mondiale-perturbe-microsoft</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545298</guid>
+      <description>Des problèmes ont été signalés jeudi dans 74 pays et territoires, selon Downdetector. Le groupe américain constate un «rétablissement limité» peu après 18 heures.</description>
+      <pubDate>Fri, 13 Nov 2026 06:18:14 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Microsoft</category>
+    </item>
     <item>
       <title>L’angle mort du credit crunch</title>
       <link>https://agefi.com/actualites/editorial/langle-mort-du-credit-crunch</link>
@@ -646,27 +664,6 @@
       <category>Fret</category>
       <category>Transports</category>
       <category>Suisse</category>
-    </item>
-    <item>
-      <title>Le budget de la Ville de Genève approuvé en commission</title>
-      <link>https://agefi.com/actualites/politique/le-budget-de-la-ville-de-geneve-approuve-en-commission</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545241</guid>
-      <description>Le projet de budget amendé du Conseil municipal pour 2027 prévoit un déficit de 32 millions de francs. Rejeté par la gauche, il sera examiné le 12 décembre en plénière.</description>
-      <pubDate>Wed, 11 Nov 2026 13:18:57 +0000</pubDate>
-      <category>politique</category>
-      <category>Genève</category>
-    </item>
-    <item>
-      <title>Les ventes et les commandes d’Aebi Schmidt ont progressé sur neuf mois</title>
-      <link>https://agefi.com/actualites/entreprises/les-ventes-et-les-commandes-daebi-schmidt-ont-progresse-sur-neuf-mois</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545240</guid>
-      <description>Le chiffre d’affaires du constructeur de véhicules agricoles et d’entretien s’est enrobé de 1,4% sur un an entre janvier et septembre, à 1,4 milliard de dollars.</description>
-      <pubDate>Wed, 11 Nov 2026 13:15:25 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Industrie</category>
-      <category>Agriculture</category>
-      <category>Tourisme</category>
-      <category>Machines</category>
     </item>
   </channel>
 </rss>
