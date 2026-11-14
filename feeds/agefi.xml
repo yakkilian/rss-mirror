@@ -5,7 +5,40 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sat, 14 Nov 2026 06:14:49 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 13:29:41 +0000</lastBuildDate>
+    <item>
+      <title>SpaceX échoue à rattraper le premier étage de Starship</title>
+      <link>https://agefi.com/actualites/entreprises/spacex-echoue-a-rattraper-le-premier-etage-de-starship</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545323</guid>
+      <description>Les efforts se concentrent désormais sur la récupération du vaisseau Starship, ce qui serait une première renouant avec l'histoire des navettes spatiales de la NASA.</description>
+      <pubDate>Sat, 14 Nov 2026 08:25:19 +0000</pubDate>
+      <category>entreprises</category>
+      <category>SpaceX</category>
+      <category>Aérospatial</category>
+      <category>Elon Musk</category>
+      <category>Nasdaq</category>
+      <category>Nasa</category>
+    </item>
+    <item>
+      <title>Réduire les émissions de CO2 dans les villes grâce aux chantiers électriques</title>
+      <link>https://agefi.com/actualites/entreprises/reduire-les-emissions-de-co2-dans-les-villes-grace-aux-chantiers-electriques</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545322</guid>
+      <description>Une étude comparative de deux chantiers à Bâle a constaté une baisse des émissions carbone de 87% sur le chantier électrique par rapport à celui utilisant des engins diesel.</description>
+      <pubDate>Sat, 14 Nov 2026 08:14:38 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Construction</category>
+      <category>Environnement</category>
+      <category>Climat</category>
+      <category>Développement durable</category>
+    </item>
+    <item>
+      <title>Prévoyance, Rexhep Rexhepi, génériques: les trois mots-clés de la semaine</title>
+      <link>https://agefi.com/actualites/entreprises/prevoyance-rexhep-rexhepi-generiques-les-trois-mots-cles-de-la-semaine</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545305</guid>
+      <description>Vous n’avez pas eu le temps de suivre toute l’actualité économique et financière ces derniers jours? Voici les trois informations qui ont marqué cette semaine.</description>
+      <pubDate>Sat, 14 Nov 2026 07:30:00 +0000</pubDate>
+      <category>entreprises</category>
+    </item>
     <item>
       <title>COP31: Al Gore fustige le droit de veto de l'Arabie saoudite</title>
       <link>https://agefi.com/actualites/politique/cop31-al-gore-fustige-le-droit-de-veto-de-larabie-saoudite</link>
@@ -611,39 +644,6 @@
       <category>PIB</category>
       <category>Croissance</category>
       <category>Intelligence artificielle</category>
-    </item>
-    <item>
-      <title>L’emploi progresse de 0,5% sur un an en Suisse au troisième trimestre</title>
-      <link>https://agefi.com/actualites/macroeconomie/lemploi-progresse-de-05-sur-un-an-en-suisse-au-troisieme-trimestre</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545269</guid>
-      <description>Le pays comptait 5,39 millions de personnes en emploi, mais la hausse se limitait à 0,1% en équivalent plein temps. Le taux de chômage au sens du BIT est passé de 5,1% à 5,6% sur un an.</description>
-      <pubDate>Thu, 12 Nov 2026 08:57:03 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Emplois</category>
-      <category>Suisse</category>
-      <category>OFS</category>
-      <category>Chômage</category>
-      <category>ORP</category>
-    </item>
-    <item>
-      <title>La Bourse suisse se rapproche des 15.200 points</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-se-rapproche-des-15200-points</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545268</guid>
-      <description>Vers 09h10, l’indice SMI avançait de 0,87% à 15.184,90 points. Le SLI grimpait de 0,79% à 2436,61 points et le SPI de 0,78% à 21.360,59 points.</description>
-      <pubDate>Thu, 12 Nov 2026 08:51:24 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-    </item>
-    <item>
-      <title>Zurich Insurance affiche une hausse de ses primes sur neuf mois</title>
-      <link>https://agefi.com/actualites/entreprises/zurich-insurance-affiche-une-hausse-de-ses-primes-sur-neuf-mois</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545258</guid>
-      <description>Les primes brutes en dommages et accidents ont progressé de 8% à 42,14 milliards de dollars. En assurance-vie, les primes et autres apports ont augmenté de 7% à 28,59 milliards.</description>
-      <pubDate>Thu, 12 Nov 2026 08:50:00 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Zurich Insurance</category>
-      <category>Assurances</category>
     </item>
   </channel>
 </rss>
