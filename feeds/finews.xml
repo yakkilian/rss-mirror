@@ -5,22 +5,10 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Sun, 15 Nov 2026 07:22:16 +0100</lastBuildDate>
+		<lastBuildDate>Sun, 15 Nov 2026 19:49:51 +0100</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
-		<item>
-			<title>KI kann wie ein Anwalt schreiben – aber kann sie auch wie einer denken?</title>
-			<link>https://www.finews.ch/news/finanzplatz/74447-ki-anwaelte-vertrauen-juristische-kuenstliche-intelligenz</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/74447-ki-anwaelte-vertrauen-juristische-kuenstliche-intelligenz</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/11/Dominique_Lecocq1.png" alt="Dominique Lecocq, Gründer von Laine Neural Network. (Bild: zVg)"></p><p><strong>Juristische KI wird das Vertrauen der Anwaltschaft erst dann gewinnen, wenn sie über die blosse Fähigkeit, überzeugende Texte zu verfassen, hinausgeht und verlässliche juristische Schlussfolgerungen liefert, schreibt Dominique Lecocq in seinem Beitrag für finews.first.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Fri, 13 Nov 2026 15:01:08 +0100</pubDate>
-		</item>
 		<item>
 			<title>Blackrock-Schweiz-Chef: «Manchmal vermisse ich den Mut»</title>
 			<link>https://www.finews.ch/news/finanzplatz/74475-blackrock-schweiz-dirk-klee-etf-boom-private-markets-ki-podcast</link>
@@ -32,6 +20,18 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Fri, 13 Nov 2026 14:37:52 +0100</pubDate>
+		</item>
+		<item>
+			<title>KI kann wie ein Anwalt schreiben – aber kann sie auch wie einer denken?</title>
+			<link>https://www.finews.ch/news/finanzplatz/74447-ki-anwaelte-vertrauen-juristische-kuenstliche-intelligenz</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/74447-ki-anwaelte-vertrauen-juristische-kuenstliche-intelligenz</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/11/Dominique_Lecocq1.png" alt="Dominique Lecocq, Gründer von Laine Neural Network. (Bild: zVg)"></p><p><strong>Juristische KI wird das Vertrauen der Anwaltschaft erst dann gewinnen, wenn sie über die blosse Fähigkeit, überzeugende Texte zu verfassen, hinausgeht und verlässliche juristische Schlussfolgerungen liefert, schreibt Dominique Lecocq in seinem Beitrag für finews.first.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Finanzplatz</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Fri, 13 Nov 2026 15:01:08 +0100</pubDate>
 		</item>
 		<item>
 			<title>«Schweiz hat aktive ETFs früher verstanden als andere Märkte»</title>

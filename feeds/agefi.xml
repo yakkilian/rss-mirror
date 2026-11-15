@@ -5,7 +5,67 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sun, 15 Nov 2026 06:22:17 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 18:49:52 +0000</lastBuildDate>
+    <item>
+      <title>Booking. com: près de 800 hôtels suisses participent à la plainte collective</title>
+      <link>https://agefi.com/actualites/entreprises/booking-com-pres-de-800-hotels-suisses-participent-a-la-plainte-collective</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545328</guid>
+      <description>Un communiqué d'Hotelleriesuisse indique que les plaignants réclament des dommages-intérêts pour l'utilisation de clauses de parité.</description>
+      <pubDate>Sun, 15 Nov 2026 14:55:31 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Hôtellerie</category>
+      <category>Tourisme</category>
+      <category>Comco</category>
+    </item>
+    <item>
+      <title>Les travaux pour le parc éolien Sur Grati (VD) peuvent reprendre</title>
+      <link>https://agefi.com/actualites/entreprises/les-travaux-pour-le-parc-eolien-sur-grati-vd-peuvent-reprendre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545327</guid>
+      <description>Si les six éoliennes sont désormais montées, c'est le poste électrique du Day qui a été retardé par des recours. Le deuxième plus important parc éolien de Suisse renforcera la production hivernale dès 2028.</description>
+      <pubDate>Sun, 15 Nov 2026 10:53:08 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Énergies</category>
+      <category>Électricité</category>
+      <category>Vaud</category>
+    </item>
+    <item>
+      <title>COP31: la phase décisive est à venir lors de la deuxième semaine</title>
+      <link>https://agefi.com/actualites/politique/cop31-la-phase-decisive-est-a-venir-lors-de-la-deuxieme-semaine</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545326</guid>
+      <description>Le chef de la délégation suisse Felix Wertli cherche à éviter tout recul sur les progrès réalisés dans le cadre de l’Accord de Paris. Une décision en faveur de l’électrification constituerait un signe positif.</description>
+      <pubDate>Sun, 15 Nov 2026 10:38:43 +0000</pubDate>
+      <category>politique</category>
+      <category>Climat</category>
+      <category>COP31</category>
+      <category>Confédération</category>
+      <category>Énergies</category>
+      <category>Électricité</category>
+    </item>
+    <item>
+      <title>Un sommet Xi-Trump-Poutine jeudi confirmé par Washington et Moscou</title>
+      <link>https://agefi.com/actualites/politique/un-sommet-xi-trump-poutine-jeudi-confirme-par-washington-et-moscou</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545325</guid>
+      <description>La Chine n'a toutefois pas confirmé la tenue de cette rencontre. Et l'Ukraine ne figurera pas à l'agenda des pourparlers.</description>
+      <pubDate>Sun, 15 Nov 2026 08:29:35 +0000</pubDate>
+      <category>politique</category>
+      <category>Etats-Unis</category>
+      <category>Russie</category>
+      <category>Chine</category>
+      <category>Moyen-Orient</category>
+    </item>
+    <item>
+      <title>Incidents chez Ruag, Vail Resorts en Suisse et parlementaires actifs: la revue de presse dominicale</title>
+      <link>https://agefi.com/actualites/entreprises/incidents-chez-ruag-vail-resorts-en-suisse-et-parlementaires-actifs-la-revue-de-presse-dominicale</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545324</guid>
+      <description>Des incidents non inclus dans l’enquête de Ruag, des actionnaires de Vail Resorts qui critiquent les investissements en Suisse et des interventions nombreuses de parlementaires au menu de la presse du dimanche.</description>
+      <pubDate>Sun, 15 Nov 2026 08:16:27 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Ruag</category>
+      <category>Confédération</category>
+      <category>Remontées mécaniques suisses</category>
+      <category>Migros</category>
+      <category>UDC</category>
+    </item>
     <item>
       <title>SpaceX échoue à rattraper le premier étage de Starship</title>
       <link>https://agefi.com/actualites/entreprises/spacex-echoue-a-rattraper-le-premier-etage-de-starship</link>
@@ -591,59 +651,6 @@
       <category>Fenaco</category>
       <category>Salaires</category>
       <category>Syndicats</category>
-    </item>
-    <item>
-      <title>BKW renforce son pôle d’ingénierie avec le rachat de Gerber Architekten</title>
-      <link>https://agefi.com/actualites/entreprises/bkw-renforce-son-pole-dingenierie-avec-le-rachat-de-gerber-architekten</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545273</guid>
-      <description>Le cabinet d’architecture allemand emploie près de 280 personnes. Le montant de l’acquisition par l’énergéticien bernois n’a pas été dévoilé.</description>
-      <pubDate>Thu, 12 Nov 2026 10:34:32 +0000</pubDate>
-      <category>entreprises</category>
-      <category>BKW</category>
-      <category>Énergies</category>
-      <category>Ingénierie</category>
-      <category>Allemagne</category>
-    </item>
-    <item>
-      <title>Stadler Rail remporte une première commande de 63 trams en Finlande</title>
-      <link>https://agefi.com/actualites/entreprises/stadler-rail-remporte-une-premiere-commande-de-63-trams-en-finlande</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545272</guid>
-      <description>Le contrat avec l’opérateur finlandais Pääkaupunkiseudun Kaupunkiliikenne Oy porte sur des Tango Nordic et prévoit une option pour jusqu’à 120 véhicules supplémentaires.</description>
-      <pubDate>Thu, 12 Nov 2026 09:50:21 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Stadler Rail</category>
-      <category>Transports</category>
-    </item>
-    <item>
-      <title>Romande Energie va créer une filiale dédiée à sa transformation numérique</title>
-      <link>https://agefi.com/actualites/entreprises/romande-energie-va-creer-une-filiale-dediee-a-sa-transformation-numerique</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545271</guid>
-      <description>Assia Garbinato dirigera la nouvelle structure dès le 1er janvier. Fabrice Granzotto, venu de Groupe E, rejoindra la direction générale comme directeur Digital au 1er février 2027.</description>
-      <pubDate>Thu, 12 Nov 2026 09:43:27 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Romande Energie</category>
-      <category>Énergies</category>
-    </item>
-    <item>
-      <title>Sonova relève ses objectifs annuels après un semestre en hausse</title>
-      <link>https://agefi.com/actualites/entreprises/sonova-releve-ses-objectifs-annuels-apres-un-semestre-en-hausse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545259</guid>
-      <description>Les ventes ont progressé de 6,7% à 1,83 milliard de francs. Le groupe vise désormais une augmentation de l’Ebit de base de 10% à 13% en monnaies locales, contre 7% à 10% auparavant.</description>
-      <pubDate>Thu, 12 Nov 2026 09:40:00 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Sonova</category>
-    </item>
-    <item>
-      <title>Royaume-Uni: le PIB progresse de 0,7% au troisième trimestre, porté par l’IA</title>
-      <link>https://agefi.com/actualites/macroeconomie/royaume-uni-le-pib-progresse-de-07-au-troisieme-trimestre-porte-par-lia</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545270</guid>
-      <description>Les services ont progressé de 0,9% sur les trois mois jusqu’en septembre 2026, contribuant à la résistance de l’économie face à la hausse des prix de l’énergie liée à la guerre au Moyen-Orient.</description>
-      <pubDate>Thu, 12 Nov 2026 09:20:21 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Royaume-Uni</category>
-      <category>PIB</category>
-      <category>Croissance</category>
-      <category>Intelligence artificielle</category>
     </item>
   </channel>
 </rss>
