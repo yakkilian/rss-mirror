@@ -69,8 +69,21 @@ jobs:
           FRESHRSS_AUTO_ICT: ${{ secrets.FRESHRSS_AUTO_ICT }}
           LOOKBACK_HOURS: ${{ steps.params.outputs.lookback_hours }}
           LOT_ID: ${{ steps.params.outputs.lot_id }}
+          PYTHONUNBUFFERED: "1"
+          PYTHONFAULTHANDLER: "1"
         run: |
+          set +e
           python news_filter.py
+          STATUS=$?
+          set -e
+
+          if [ "$STATUS" -eq 139 ]; then
+            echo "::warning::news_filter.py a subi un segmentation fault (139). Nouvelle tentative unique."
+            sleep 5
+            python news_filter.py
+          elif [ "$STATUS" -ne 0 ]; then
+            exit "$STATUS"
+          fi
 
           python - <<'PY'
           import json
