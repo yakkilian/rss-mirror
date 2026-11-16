@@ -5,7 +5,15 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sun, 15 Nov 2026 18:49:52 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 06:20:57 +0000</lastBuildDate>
+    <item>
+      <title>Le ménage déclaré est-il en train de devenir un luxe?</title>
+      <link>https://agefi.com/actualites/entreprises/le-menage-declare-est-il-en-train-de-devenir-un-luxe</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545212</guid>
+      <description>Entre pouvoir d’achat, coût du travail et fiscalité, comment préserver un service déclaré accessible au plus grand nombre?</description>
+      <pubDate>Mon, 16 Nov 2026 06:00:00 +0000</pubDate>
+      <category>entreprises</category>
+    </item>
     <item>
       <title>Booking. com: près de 800 hôtels suisses participent à la plainte collective</title>
       <link>https://agefi.com/actualites/entreprises/booking-com-pres-de-800-hotels-suisses-participent-a-la-plainte-collective</link>
@@ -640,17 +648,6 @@
       <category>Impôts</category>
       <category>Taxes</category>
       <category>Conseil fédéral</category>
-    </item>
-    <item>
-      <title>Fenaco augmentera sa masse salariale de 1% en 2027</title>
-      <link>https://agefi.com/actualites/entreprises/fenaco-augmentera-sa-masse-salariale-de-1-en-2027</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545274</guid>
-      <description>Dès le 1er janvier, la coopérative agricole bernoise accordera 40 francs de plus par mois aux employés gagnant jusqu’à 5000 francs, après un accord avec Unia et Syna.</description>
-      <pubDate>Thu, 12 Nov 2026 10:39:44 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Fenaco</category>
-      <category>Salaires</category>
-      <category>Syndicats</category>
     </item>
   </channel>
 </rss>

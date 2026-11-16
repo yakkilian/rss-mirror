@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Sun, 15 Nov 2026 19:49:51 +0100</lastBuildDate>
+		<lastBuildDate>Mon, 16 Nov 2026 07:20:55 +0100</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Vontobel setzt auf eine neue Erfolgsformel</title>
+			<link>https://www.finews.ch/news/banken/74481-vontobel-strategie-vermoegensverwaltung-groesse-anlagekompetenz-ki-kopieren</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/banken/74481-vontobel-strategie-vermoegensverwaltung-groesse-anlagekompetenz-ki-kopieren</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/11/Vontobel_1.png" alt="KI allein versteht noch keinen Kunden: Bank Vontobel. (Bild: zVg)"></p><p><strong>Im Wettbewerb der Vermögensverwalter galt Grösse lange als entscheidender Erfolgsfaktor. Vontobel stellt dieser Logik die Bedeutung nachweisbarer Anlagekompetenz gegenüber, wie einem internen Positionspapier zu entnehmen ist.&nbsp;</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Banken</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Mon, 16 Nov 2026 06:00:06 +0100</pubDate>
+		</item>
 		<item>
 			<title>Blackrock-Schweiz-Chef: «Manchmal vermisse ich den Mut»</title>
 			<link>https://www.finews.ch/news/finanzplatz/74475-blackrock-schweiz-dirk-klee-etf-boom-private-markets-ki-podcast</link>
@@ -212,18 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Thu, 12 Nov 2026 09:17:59 +0100</pubDate>
-		</item>
-		<item>
-			<title>Raiffeisen schlägt «Weisse Zonen» gegen Wohnungsnot vor</title>
-			<link>https://www.finews.ch/news/finanzplatz/74460-raiffeisen-immobilien-preise-mieten-q3-2026-verdichtung</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/74460-raiffeisen-immobilien-preise-mieten-q3-2026-verdichtung</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/Standard-Bilder/baustelle-zürich-schweiz-shutter.jpg" alt="(Bild: Shutterstock)" width="646" height="388" loading="lazy"></p><p><strong>Die Preise für Wohneigentum in der Schweiz steigen weiter deutlich. Gleichzeitig nimmt die Knappheit am Mietwohnungsmarkt zu. Raiffeisen Schweiz schlägt deshalb einen neuen Ansatz vor: In sogenannten «Weissen Zonen» sollen Bauvorschriften befristet gelockert und konkrete Ziele für zusätzlichen Wohnraum festgelegt werden.</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Thu, 12 Nov 2026 08:12:49 +0100</pubDate>
 		</item>
 	</channel>
 </rss>
