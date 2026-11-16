@@ -5,6 +5,16 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>Designing a Malware Analysis Lab With REMnux Blog Digital Forensics and Incident Response 17 Nov 2026 Lenny Zeltser</title>
+      <link>https://www.sans.org/blog/designing-a-malware-analysis-lab-with-remnux</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/designing-a-malware-analysis-lab-with-remnux</guid>
+    </item>
+    <item>
+      <title>Your Local AI Server Is Not Local: Finding Exposed Ollama Hosts Without Crossing the Line Blog Cloud Security 16 Nov 2026 Kenneth G. Hartman</title>
+      <link>https://www.sans.org/blog/your-local-ai-server-is-not-local-finding-exposed-ollama-hosts-without-crossing-line</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/your-local-ai-server-is-not-local-finding-exposed-ollama-hosts-without-crossing-line</guid>
+    </item>
+    <item>
       <title>The SANS 2026 State of ICS/OT Security Report: Moving From Detection to Resilience Blog Industrial Control Systems Security 10 Nov 2026 Jason Christopher</title>
       <link>https://www.sans.org/blog/sans-2026-state-icsot-security-report-moving-from-detection-to-resilience</link>
       <guid isPermaLink="true">https://www.sans.org/blog/sans-2026-state-icsot-security-report-moving-from-detection-to-resilience</guid>
@@ -53,16 +63,6 @@
       <title>A Visual Summary of SANS DFIR Summit 2026 Blog Digital Forensics and Incident Response 16 Oct 2026 SANS Institute</title>
       <link>https://www.sans.org/blog/visual-summary-of-sans-dfir-summit-2026</link>
       <guid isPermaLink="true">https://www.sans.org/blog/visual-summary-of-sans-dfir-summit-2026</guid>
-    </item>
-    <item>
-      <title>AI in ICS/OT Cybersecurity: Adopting AI with Safety Top of Mind (Part 2) Blog Industrial Control Systems Security 15 Oct 2026 Dean Parsons</title>
-      <link>https://www.sans.org/blog/ai-in-icsot-cybersecurity-adopting-ai-with-safety-top-of-mind-part-2</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/ai-in-icsot-cybersecurity-adopting-ai-with-safety-top-of-mind-part-2</guid>
-    </item>
-    <item>
-      <title>Zero Trust for AI Agents Starts With Fixing Zero Visibility Blog Artificial Intelligence 12 Oct 2026 Ismael Valenzuela</title>
-      <link>https://www.sans.org/blog/zero-trust-ai-agents-starts-fixing-zero-visibility</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/zero-trust-ai-agents-starts-fixing-zero-visibility</guid>
     </item>
   </channel>
 </rss>
