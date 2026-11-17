@@ -1,5 +1,6 @@
 import calendar
 import html
+import hashlib
 import json
 import os
 import re
@@ -123,6 +124,18 @@ def canonical_key(url):
 
     except Exception:
         return url
+
+
+def candidate_id(url):
+    """
+    Identifiant stable et déterministe pour un candidat.
+    Il dépend uniquement de l'URL canonique afin qu'un même article
+    conserve le même identifiant d'un run à l'autre.
+    """
+    normalized = canonical_key(url) or url
+    return hashlib.sha256(
+        normalized.encode("utf-8")
+    ).hexdigest()[:24]
 
 
 def businesswire_language(url):
@@ -616,6 +629,7 @@ def add_selected(
     )
 
     new_item = {
+        "candidat_id": candidate_id(url),
         "title": title,
         "url": url,
         "source": source_name(entry, url),
