@@ -5,7 +5,325 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Wed, 18 Nov 2026 07:20:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 20:28:51 +0000</lastBuildDate>
+    <item>
+      <title>Les Bourses dans le rouge, Nvidia en fort recul</title>
+      <link>https://agefi.com/actualites/marches/les-bourses-dans-le-rouge-nvidia-en-fort-recul</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545445</guid>
+      <description>En clôture, Paris a lâché 0,85%, Francfort 1,19%, Londres 1,30% et Milan 1,32%. A Wall Street, vers 17h45, l'indice Nasdaq cédait 0,11%, le S&amp;P 500 0,47% et le Dow Jones 1,15%.</description>
+      <pubDate>Wed, 18 Nov 2026 17:55:28 +0000</pubDate>
+      <category>marches</category>
+      <category>Wall Street</category>
+      <category>Europe</category>
+      <category>Bourses</category>
+    </item>
+    <item>
+      <title>Le SMI dans le rouge malgré une tentative de rebond</title>
+      <link>https://agefi.com/actualites/marches/le-smi-dans-le-rouge-malgre-une-tentative-de-rebond</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545444</guid>
+      <description>L'indice vedette a clôturé en repli de 0,60% à 14.886,12 points. Le SLI a perdu à 0,44% à 2388,69 points. L'indicateur élargi SPI a fini en baisse de 0,53% à 20.936,66 points.</description>
+      <pubDate>Wed, 18 Nov 2026 17:30:55 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourse Zurich</category>
+      <category>SMI</category>
+      <category>SLI</category>
+      <category>SPI</category>
+    </item>
+    <item>
+      <title>Pictet inaugure son campus genevois</title>
+      <link>https://agefi.com/actualites/entreprises/pictet-inaugure-son-campus</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545443</guid>
+      <description>Le groupe bancaire privé a étrenné aujourd'hui le Campus Pictet de Rochemont, aux Acacias 66. La direction a réaffirmé son ancrage historique à Genève.</description>
+      <pubDate>Wed, 18 Nov 2026 17:13:50 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Suisse</category>
+      <category>Banques</category>
+      <category>Pictet</category>
+    </item>
+    <item>
+      <title>Cifi souhaite que tout soit entrepris pour augmenter l’offre de logements</title>
+      <link>https://agefi.com/actualites/entreprises/cifi-souhaite-tout-entreprendre-pour-augmenter-loffre-de-logements</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545442</guid>
+      <description>Les projets de transformation de zones industrielles peuvent contribuer à atténuer la pénurie. Les obstacles légaux sont pourtant importants.</description>
+      <pubDate>Wed, 18 Nov 2026 16:50:06 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Immobilier</category>
+      <category>Loyers</category>
+      <category>Logements</category>
+      <category>Genève</category>
+      <category>Lausanne</category>
+    </item>
+    <item>
+      <title>Une commission privilégie le référendum facultatif sur les accords avec l'UE</title>
+      <link>https://agefi.com/actualites/politique/une-commission-privilegie-le-referendum-facultatif-sur-les-accords-avec-lue</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545441</guid>
+      <description>La commission de politique extérieure du National est d’un avis contraire à celle des institutions politiques qui s’est prononcée pour un référendum obligatoire à la double majorité.</description>
+      <pubDate>Wed, 18 Nov 2026 16:37:19 +0000</pubDate>
+      <category>politique</category>
+      <category>Suisse - UE</category>
+      <category>Bilatérales lll</category>
+      <category>Parlement</category>
+    </item>
+    <item>
+      <title>Les Bourses en ordre dispersé, l'action Nvidia en léger recul</title>
+      <link>https://agefi.com/actualites/marches/les-bourses-en-ordre-disperse-laction-nvidia-en-leger-recul</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545440</guid>
+      <description>Vers 16h15, Paris cédait 0,45%, Francfort 0,69%, Londres 0,98% et Milan 0,74%. A Wall Street, l'indice Nasdaq prenait 0,57% et ll'indice S&amp;P 500 était stable (+0,03%). Le Dow Jones cédait 0,73%.</description>
+      <pubDate>Wed, 18 Nov 2026 16:07:31 +0000</pubDate>
+      <category>marches</category>
+      <category>Wall Street</category>
+      <category>Bourses</category>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>L’UDC a choisi un ticket à deux candidats pour succéder à Guy Parmelin</title>
+      <link>https://agefi.com/actualites/politique/ludc-a-choisi-un-ticket-a-deux-candidats-pour-succeder-a-guy-parmelin</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545439</guid>
+      <description>La présidence du groupe a suivi suit la recommandation de la commission de sélection. Les noms des deux prétendants seront dévoilés vendredi.</description>
+      <pubDate>Wed, 18 Nov 2026 15:55:51 +0000</pubDate>
+      <category>politique</category>
+      <category>UDC</category>
+      <category>Conseil fédéral</category>
+      <category>Parlement</category>
+    </item>
+    <item>
+      <title>Wall Street sans conviction, l'action Nvidia recule</title>
+      <link>https://agefi.com/actualites/marches/wall-street-sans-conviction-laction-nvidia-recule</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545438</guid>
+      <description>Vers 16h00, l'indice Nasdaq à forte coloration technologique prenait 0,48%, l'indice élargi S&amp;P 500 était stable (+0,08%). Seul le Dow Jones évoluait en recul, cédant 0,63%.</description>
+      <pubDate>Wed, 18 Nov 2026 15:39:21 +0000</pubDate>
+      <category>marches</category>
+      <category>Wall Street</category>
+      <category>Nvidia</category>
+    </item>
+    <item>
+      <title>Reto Dahinden élu président de prio.swiss</title>
+      <link>https://agefi.com/actualites/trajectoires/reto-dahinden-elu-president-de-prioswiss</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545437</guid>
+      <description>L’assemblée générale de la faîtière des assureurs maladie a choisi l'ancien directeur général de Swica pour succéder à Felix Gutzwiller.</description>
+      <pubDate>Wed, 18 Nov 2026 15:30:22 +0000</pubDate>
+      <category>trajectoires</category>
+      <category>Santé</category>
+      <category>prio.swiss</category>
+      <category>Assurance maladie</category>
+    </item>
+    <item>
+      <title>Le canton du Jura augmentera les allocations familiales</title>
+      <link>https://agefi.com/actualites/politique/le-canton-du-jura-augmentera-les-allocations-familiales</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545436</guid>
+      <description>Le gouvernement a pris cette décision afin de répondre au renchérissement. Ces hausses seront effectives à partir du 1er janvier 2027. La dernière adaptation datait de 2020.</description>
+      <pubDate>Wed, 18 Nov 2026 15:18:17 +0000</pubDate>
+      <category>politique</category>
+      <category>Suisse</category>
+      <category>Jura</category>
+    </item>
+    <item>
+      <title>Prevision Medicine lève 5,4 millions de dollars lors d’un tour de table mené par ACE Ventures</title>
+      <link>https://agefi.com/actualites/communiques-dentreprises/prevision-medicine-leve-54-millions-de-dollars-lors-dun-tour-de-table-mene-par-ace-ventures</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545377</guid>
+      <description>Prevision Medicine, une jeune entreprise innovante spécialisée dans l’oncologie de précision, a récemment levé 5,4 millions de dollars lors d’un tour de financement d’amorçage.</description>
+      <pubDate>Wed, 18 Nov 2026 14:30:00 +0000</pubDate>
+      <category>communiques-dentreprises</category>
+    </item>
+    <item>
+      <title>Feux d’artifice: l’obsession d’éteindre les fêtes</title>
+      <link>https://agefi.com/actualites/opinions/feux-dartifice-lobsession-deteindre-les-fetes</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545423</guid>
+      <description>L’initiative soumise au vote le 29 novembre vise à protéger les animaux. Une interdiction est une nouvelle atteinte aux libertés individuelles et une menace pour la branche économique.</description>
+      <pubDate>Wed, 18 Nov 2026 14:00:00 +0000</pubDate>
+      <category>opinions</category>
+      <category>Votations</category>
+      <category>Loisirs</category>
+    </item>
+    <item>
+      <title>Katharina Hauke nommée directrice de Too Good To Go</title>
+      <link>https://agefi.com/actualites/trajectoires/katharina-hauke-nommee-directrice-de-too-good-to-go</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545432</guid>
+      <description>La nouvelle nommée prend la responsabilité de l’Autriche et de la Suisse. Elle remplace Georg Strasser-Müller qui quitte l’entreprise luttant contre le gaspillage alimentaire.</description>
+      <pubDate>Wed, 18 Nov 2026 13:55:21 +0000</pubDate>
+      <category>trajectoires</category>
+      <category>Agroalimentaire</category>
+    </item>
+    <item>
+      <title>La France pourrait renforcer ses économies pour tenir son objectif de déficit</title>
+      <link>https://agefi.com/actualites/macroeconomie/la-france-pourrait-renforcer-ses-economies-pour-tenir-son-objectif-de-deficit</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545431</guid>
+      <description>Le ministre de l’Economie juge «à risque» la prévision de croissance de 1% retenue pour le budget, alors que la Commission européenne n’attend plus que 0,6%.</description>
+      <pubDate>Wed, 18 Nov 2026 13:52:49 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>France</category>
+      <category>Croissance</category>
+      <category>Dette</category>
+      <category>PIB</category>
+    </item>
+    <item>
+      <title>La fuite chez Deutsche Bank éclaire le rôle de MKB dans un réseau russe soupçonné de blanchiment</title>
+      <link>https://agefi.com/actualites/entreprises/la-fuite-chez-deutsche-bank-eclaire-le-role-de-mkb-dans-un-reseau-russe-soupconne-de-blanchiment</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545430</guid>
+      <description>La banque hongroise aurait joué un rôle central dans des transferts représentant au moins 1,7 milliard d’euros entre 2017 et 2020. Plusieurs sociétés impliquées seraient liées à l’oligarque russe Oleg Deripaska.</description>
+      <pubDate>Wed, 18 Nov 2026 13:18:04 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Deutsche Bank</category>
+      <category>Banques</category>
+      <category>Blanchiment</category>
+      <category>Russie</category>
+      <category>Allemagne</category>
+    </item>
+    <item>
+      <title>Le Conseil fédéral entend soutenir le transport ferroviaire transalpin</title>
+      <link>https://agefi.com/actualites/politique/le-conseil-federal-entend-soutenir-le-transport-ferroviaire-transalpin</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545429</guid>
+      <description>Le gouvernement a transmis mercredi au Parlement un projet visant à prolonger les subventions au transport combiné jusqu'en 2035.</description>
+      <pubDate>Wed, 18 Nov 2026 13:13:09 +0000</pubDate>
+      <category>politique</category>
+      <category>Transports</category>
+      <category>Rail</category>
+      <category>Conseil fédéral</category>
+    </item>
+    <item>
+      <title>La BCE appelle à davantage de coopération face aux cyberattaques renforcées par l’IA</title>
+      <link>https://agefi.com/actualites/entreprises/la-bce-appelle-a-davantage-de-cooperation-face-aux-cyberattaques-renforcees-par-lia</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545428</guid>
+      <description>L’institution plaide pour un partage accru des informations entre banques, autorités et entreprises technologiques afin d’améliorer les capacités de défense du secteur financier.</description>
+      <pubDate>Wed, 18 Nov 2026 12:12:09 +0000</pubDate>
+      <category>entreprises</category>
+      <category>BCE</category>
+      <category>Cybersécurité</category>
+      <category>Intelligence artificielle</category>
+    </item>
+    <item>
+      <title>La Finma veut accélérer ses procédures et alléger la charge administrative</title>
+      <link>https://agefi.com/actualites/entreprises/la-finma-veut-accelerer-ses-procedures-et-alleger-la-charge-administrative</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545427</guid>
+      <description>Le régulateur introduit notamment une procédure «Fintech Fast Track» visant à traiter les étapes avec les requérants en 15 jours ouvrables pour certaines demandes à faible risque bien préparées.</description>
+      <pubDate>Wed, 18 Nov 2026 12:00:11 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Finma</category>
+      <category>Banques</category>
+      <category>Organismes de surveillance</category>
+      <category>Fintech</category>
+    </item>
+    <item>
+      <title>Michael Vonmoos nommé directeur de Hamilton Lane Suisse</title>
+      <link>https://agefi.com/actualites/trajectoires/michael-vonmoos-nomme-directeur-de-hamilton-lane-suisse</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545426</guid>
+      <description>Le nouveau responsable rejoint le gestionnaire d’actifs fort de près de 20 ans d’expérience auprès d’investisseurs institutionnels suisses.</description>
+      <pubDate>Wed, 18 Nov 2026 11:59:06 +0000</pubDate>
+      <category>trajectoires</category>
+      <category>Gestion d'actifs</category>
+    </item>
+    <item>
+      <title>La Bourse suisse en hausse avant l’IPO d’Anthropic</title>
+      <link>https://agefi.com/actualites/marches/la-bourse-suisse-en-hausse-avant-lipo-danthropic</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545425</guid>
+      <description>Vers 10h40, le SMI progressait de 0,17% à 15.000,30 points. Le SLI gagnait 0,32% à 2407,04 points et le SPI montait de 0,27% à 21.104,11 points.</description>
+      <pubDate>Wed, 18 Nov 2026 10:48:23 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourse Zurich</category>
+      <category>SMI</category>
+    </item>
+    <item>
+      <title>Le Conseil fédéral veut étendre la taxe de prévention aux cigarettes électroniques</title>
+      <link>https://agefi.com/actualites/politique/le-conseil-federal-veut-etendre-la-taxe-de-prevention-aux-cigarettes-electroniques</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545424</guid>
+      <description>Déjà soumises à l’impôt sur le tabac depuis 2024, elles ne contribuent pas au Fonds de prévention du tabagisme. Le changement est proposé pour la prochaine révision de la loi, sans date fixée.</description>
+      <pubDate>Wed, 18 Nov 2026 10:27:55 +0000</pubDate>
+      <category>politique</category>
+      <category>Conseil fédéral</category>
+      <category>Taxes</category>
+      <category>Tabac</category>
+    </item>
+    <item>
+      <title>Le Black Friday revient dans un climat de consommation sous pression</title>
+      <link>https://agefi.com/actualites/macroeconomie/le-black-friday-revient-dans-un-climat-de-consommation-sous-pression</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545422</guid>
+      <description>La hausse des loyers, des primes maladie et le retour de l’inflation pèsent sur le pouvoir d’achat, poussant les consommateurs vers des achats plus fonctionnels et davantage comparés.</description>
+      <pubDate>Wed, 18 Nov 2026 09:42:22 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Black Friday</category>
+      <category>Commerce</category>
+      <category>Prix</category>
+      <category>Suisse</category>
+      <category>Ménages suisses</category>
+      <category>Inflation</category>
+      <category>Consommation</category>
+    </item>
+    <item>
+      <title>Le prix de l’or à son plus bas niveau depuis plus d'un an</title>
+      <link>https://agefi.com/actualites/marches/le-prix-de-lor-a-son-plus-bas-niveau-depuis-plus-dun-an</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545421</guid>
+      <description>Le métal précieux perd de sa valeur face à l’inquiétude concernant les taux américains, l'once reculant vers 17h30 de 3,17% à 3741,70 dollars.</description>
+      <pubDate>Wed, 18 Nov 2026 09:32:09 +0000</pubDate>
+      <category>marches</category>
+      <category>Métaux précieux</category>
+      <category>Taux</category>
+    </item>
+    <item>
+      <title>Anthropic devrait fixer mercredi le montant de sa levée avant son entrée en Bourse jeudi</title>
+      <link>https://agefi.com/actualites/entreprises/anthropic-devrait-fixer-mercredi-le-montant-de-sa-levee-avant-son-entree-en-bourse-jeudi</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545420</guid>
+      <description>Le produit direct pour l’entreprise américaine pourrait approcher 100 milliards de dollars. Selon Bloomberg, la demande atteint près de sept fois le nombre de titres proposés.</description>
+      <pubDate>Wed, 18 Nov 2026 09:23:36 +0000</pubDate>
+      <category>entreprises</category>
+      <category>IPO</category>
+      <category>Intelligence artificielle</category>
+      <category>Technologies</category>
+      <category>Wall Street</category>
+    </item>
+    <item>
+      <title>Dormakaba vise une marge opérationnelle d’environ 14% à l’horizon 2028/29</title>
+      <link>https://agefi.com/actualites/entreprises/dormakaba-vise-une-marge-operationnelle-denviron-14-a-lhorizon-202829</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545413</guid>
+      <description>Le spécialiste zurichois des accès sécurisés fixe son objectif de croissance organique du chiffre d’affaires net entre 3% et 5% par an et vise un rendement du capital investi supérieur à 35%.</description>
+      <pubDate>Wed, 18 Nov 2026 08:59:00 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Dormakaba</category>
+      <category>Sécurité</category>
+    </item>
+    <item>
+      <title>La Bourse suisse prudente après les résultats de Nvidia</title>
+      <link>https://agefi.com/actualites/marches/la-bourse-suisse-prudente-apres-les-resultats-de-nvidia</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545419</guid>
+      <description>Vers 09h05, l’indice SMI progressait de 0,11% à 14.990,80 points. Le SLI gagnait 0,18% à 2403,70 points et le SPI montait de 0,14% à 21.077,92 points.</description>
+      <pubDate>Wed, 18 Nov 2026 08:38:15 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourse Zurich</category>
+      <category>SMI</category>
+    </item>
+    <item>
+      <title>Les loyers proposés atteignent un nouveau record en Suisse</title>
+      <link>https://agefi.com/actualites/macroeconomie/les-loyers-proposes-atteignent-un-nouveau-record-en-suisse</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545418</guid>
+      <description>L’indice Homegate a progressé de 0,4% en octobre et de 2,1% sur un an. Schaffhouse et Genève enregistrent les plus fortes hausses mensuelles parmi les cantons.</description>
+      <pubDate>Wed, 18 Nov 2026 08:29:49 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Loyers</category>
+      <category>Immobilier</category>
+      <category>Homegate</category>
+    </item>
+    <item>
+      <title>Au Royaume-Uni, l’inflation accélère à 3,6% en octobre, portée par les carburants</title>
+      <link>https://agefi.com/actualites/macroeconomie/au-royaume-uni-linflation-accelere-a-36-en-octobre-portee-par-les-carburants</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545417</guid>
+      <description>Après 3,5% en septembre, la hausse des prix sur un an est conforme aux attentes du marché. Les carburants automobiles ont renchéri de 33,2% sur un an, selon l’Office national des statistiques.</description>
+      <pubDate>Wed, 18 Nov 2026 07:59:19 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Royaume-Uni</category>
+      <category>Inflation</category>
+      <category>Prix</category>
+      <category>Énergies</category>
+      <category>Moyen-Orient</category>
+    </item>
+    <item>
+      <title>Klingelnberg réduit sa perte opérationnelle au premier semestre</title>
+      <link>https://agefi.com/actualites/entreprises/klingelnberg-reduit-sa-perte-operationnelle-au-premier-semestre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545416</guid>
+      <description>Le chiffre d’affaires a progressé de 11% à 114,7 millions d’euros et la perte Ebit est revenue à 4,6 millions. Le carnet de commandes a toutefois reculé à 194,7 millions d’euros.</description>
+      <pubDate>Wed, 18 Nov 2026 07:49:14 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Klingelnberg</category>
+      <category>Industrie</category>
+    </item>
     <item>
       <title>Patrick Steiner rejoint la direction de Raiffeisen Suisse</title>
       <link>https://agefi.com/actualites/trajectoires/patrick-steiner-rejoint-la-direction-de-raiffeisen-suisse</link>
@@ -26,16 +344,6 @@
       <category>Galenica</category>
       <category>Pharmacie</category>
       <category>Pharma</category>
-    </item>
-    <item>
-      <title>Dormakaba vise une marge opérationnelle d’environ 14% à l’horizon 2028/29</title>
-      <link>https://agefi.com/actualites/entreprises/dormakaba-vise-une-marge-operationnelle-denviron-14-a-lhorizon-202829</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545413</guid>
-      <description>Le spécialiste zurichois des accès sécurisés fixe son objectif de croissance organique du chiffre d’affaires net entre 3% et 5% par an et vise un rendement du capital investi supérieur à 35%.</description>
-      <pubDate>Wed, 18 Nov 2026 06:55:42 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Dormakaba</category>
-      <category>Sécurité</category>
     </item>
     <item>
       <title>Votations: les sondages donnent le non en tête sur la hausse de la TVA pour l’AVS</title>
@@ -368,298 +676,6 @@
       <category>Allemagne</category>
       <category>Investissements</category>
       <category>Baromètres</category>
-    </item>
-    <item>
-      <title>Les opposants à l’e-ID lancent une nouvelle initiative</title>
-      <link>https://agefi.com/actualites/politique/les-opposants-a-le-id-lancent-une-nouvelle-initiative</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545386</guid>
-      <description>Après le oui de septembre 2025 à 50,4% des voix, le texte veut inscrire dans la Constitution l’accès aux prestations numériques sans e-ID et limiter l’usage des données.</description>
-      <pubDate>Tue, 17 Nov 2026 12:21:31 +0000</pubDate>
-      <category>politique</category>
-      <category>Identité numérique</category>
-      <category>Initiatives</category>
-    </item>
-    <item>
-      <title>Zone euro: Bruxelles relève ses prévisions de croissance et d’inflation pour 2026</title>
-      <link>https://agefi.com/actualites/macroeconomie/zone-euro-bruxelles-releve-ses-previsions-de-croissance-et-dinflation-pour-2026</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545384</guid>
-      <description>La Commission européenne table sur une hausse du PIB de 1,2% et des prix de 3,2% cette année. Elle abaisse en revanche ses prévisions de croissance pour la France à 0,4% en 2026 et à 0,6% en 2027.</description>
-      <pubDate>Tue, 17 Nov 2026 10:56:29 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Zone euro</category>
-      <category>Inflation</category>
-      <category>Croissance</category>
-      <category>Prévisions</category>
-      <category>Commission européenne</category>
-      <category>PIB</category>
-    </item>
-    <item>
-      <title>La Bourse suisse en retrait avant les résultats de Nvidia</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-en-retrait-avant-les-resultats-de-nvidia</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545383</guid>
-      <description>Peu avant 11 heures, le SMI se délestait de 0,67% à 15.090,34 points, le SLI de 0,64% à 2416,16 points et le Swiss Performance Index de 0,65% à 21.207,05 points.</description>
-      <pubDate>Tue, 17 Nov 2026 10:48:08 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-    </item>
-    <item>
-      <title>Le revenu de l’agriculture suisse devrait reculer de 17 % en 2026</title>
-      <link>https://agefi.com/actualites/macroeconomie/la-secheresse-fait-chuter-le-revenu-de-lagriculture-suisse-en-2026</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545382</guid>
-      <description>Selon l’OFS, le revenu sectoriel devrait s’établir à 2,8 milliards de francs. La sécheresse et la chute des prix du porc ont pesé sur l’agriculture, après une année 2025 exceptionnelle.</description>
-      <pubDate>Tue, 17 Nov 2026 10:26:15 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Agriculture</category>
-      <category>Suisse</category>
-      <category>Climat</category>
-    </item>
-    <item>
-      <title>Deloitte Suisse voit ses recettes reculer de 3,9%</title>
-      <link>https://agefi.com/actualites/entreprises/deloitte-suisse-voit-ses-recettes-reculer-de-39</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545381</guid>
-      <description>Le cabinet a réalisé un chiffre d’affaires net de 562,5 millions de francs sur l’exercice 2025-2026, pénalisé notamment par le repli de 7% de ses activités de conseil.</description>
-      <pubDate>Tue, 17 Nov 2026 10:13:32 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Deloitte</category>
-      <category>Suisse</category>
-    </item>
-    <item>
-      <title>Banque Richelieu nomme Klaus D. Burger responsable du marché suisse</title>
-      <link>https://agefi.com/actualites/trajectoires/richelieu-nomme-klaus-d-burger-responsable-du-marche-suisse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545380</guid>
-      <description>L’institution bancaire renforce sa présence à Zurich. Le cadre contribuera au développement des marchés suisse, allemand et britannique.</description>
-      <pubDate>Tue, 17 Nov 2026 10:03:29 +0000</pubDate>
-      <category>trajectoires</category>
-      <category>Banques</category>
-    </item>
-    <item>
-      <title>Roche obtient une homologation américaine pour un traitement contre le cancer du sein</title>
-      <link>https://agefi.com/actualites/entreprises/roche-obtient-une-homologation-americaine-pour-giredestrant-contre-le-cancer-du-sein</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545364</guid>
-      <description>La FDA a approuvé le girédestrant en association avec évérolimus pour certaines patientes présentant une mutation ESR1. Le groupe bâlois table sur 500 à 600 millions de dollars de ventes en 2027.</description>
-      <pubDate>Tue, 17 Nov 2026 10:00:00 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Roche</category>
-      <category>Pharma</category>
-      <category>FDA</category>
-      <category>Etats-Unis</category>
-    </item>
-    <item>
-      <title>La justice zougoise autorise des tracts visant Glencore sur une mine au Pérou</title>
-      <link>https://agefi.com/actualites/entreprises/la-justice-zougoise-autorise-des-tracts-visant-glencore-sur-une-mine-au-perou</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545379</guid>
-      <description>La Coalition pour des multinationales responsables peut distribuer ses tracts, mais certaines publications sur les réseaux sociaux restent interdites, car jugées trompeuses sur la responsabilité de l’entreprise.</description>
-      <pubDate>Tue, 17 Nov 2026 09:24:59 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Glencore</category>
-      <category>Zoug</category>
-      <category>Justice</category>
-    </item>
-    <item>
-      <title>Swiss Re anticipe une faible croissance des primes dans l’assurance dommages en 2027</title>
-      <link>https://agefi.com/actualites/macroeconomie/swiss-re-anticipe-une-faible-croissance-des-primes-dans-lassurance-dommages-en-2027</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545378</guid>
-      <description>Le réassureur prévoit une hausse de 1% au niveau mondiale contre 2,3%, il y a un an. La concurrence devrait peser sur les tarifs dans certains marchés, tandis que les coûts des sinistres continuent d’augmenter.</description>
-      <pubDate>Tue, 17 Nov 2026 09:12:41 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Swiss Re</category>
-      <category>Assurances</category>
-      <category>Prévisions</category>
-    </item>
-    <item>
-      <title>Au Royaume-Uni, le chômage recule à 4,6%, mais reste élevé chez les jeunes</title>
-      <link>https://agefi.com/actualites/macroeconomie/au-royaume-uni-le-chomage-recule-a-46-mais-reste-eleve-chez-les-jeunes</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545376</guid>
-      <description>Le taux atteint 15,1% chez les 16-24 ans sur les trois mois achevés en septembre. Un rapport d’Alan Milburn préconise une refonte des aides pour favoriser leur accès à l’emploi ou à la formation.</description>
-      <pubDate>Tue, 17 Nov 2026 08:55:39 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Chômage</category>
-      <category>Royaume-Uni</category>
-      <category>Emplois</category>
-    </item>
-    <item>
-      <title>La Bourse suisse en retrait avant les résultats de Nvidia et l’IPO d’Anthropic</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-en-retrait-avant-les-resultats-de-nvidia-et-lipo-danthropic</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545375</guid>
-      <description>A 09h10, le SMI se délestait de 0,32% à 15.145,54 points, le SLI de 0,30% à 2424,44 points et le SPI de 0,32% à 21.277,71 points.</description>
-      <pubDate>Tue, 17 Nov 2026 08:50:47 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-    </item>
-    <item>
-      <title>Temenos gagne un nouveau client en Grande-Bretagne</title>
-      <link>https://agefi.com/actualites/entreprises/temenos-gagne-un-nouveau-client-en-grande-bretagne</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545374</guid>
-      <description>Le groupe genevois renforce ainsi sa présence auprès des banques spécialisées au Royaume-Uni avec Charity Bank.</description>
-      <pubDate>Tue, 17 Nov 2026 08:45:58 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Temenos</category>
-      <category>Logiciels bancaires</category>
-      <category>Banques</category>
-      <category>Royaume-Uni</category>
-    </item>
-    <item>
-      <title>Le français OVHcloud dévoile son modèle d’intelligence artificielle</title>
-      <link>https://agefi.com/actualites/entreprises/le-francais-ovhcloud-devoile-son-modele-dintelligence-artificielle</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545372</guid>
-      <description>Accessible dès jeudi sur Hugging Face, ce modèle ouvert doit servir de base à une suite de logiciels d’assistance à la programmation pour les entreprises.</description>
-      <pubDate>Tue, 17 Nov 2026 08:12:39 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Cloud</category>
-      <category>Intelligence artificielle</category>
-      <category>France</category>
-      <category>Technologies</category>
-    </item>
-    <item>
-      <title>Anna Bozzi rejoint la direction de Scienceindustries</title>
-      <link>https://agefi.com/actualites/trajectoires/anna-bozzi-rejoint-la-direction-de-scienceindustries</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545371</guid>
-      <description>Après le départ à la retraite de Michael Matthes, la nouvelle responsable dirigera les divisions Environnement, sécurité, technologie et Biotechnologie, alimentation, agriculture.</description>
-      <pubDate>Tue, 17 Nov 2026 07:54:49 +0000</pubDate>
-      <category>trajectoires</category>
-    </item>
-    <item>
-      <title>Mindmaze obtient jusqu’à 4 millions pour soutenir son développement commercial</title>
-      <link>https://agefi.com/actualites/entreprises/mindmaze-obtient-jusqua-4-millions-pour-soutenir-son-developpement-commercial</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545370</guid>
-      <description>Le spécialiste lausannois de la rééducation neurologique doit recevoir 3 millions de francs d’ici décembre, avec une option pour un million supplémentaire jusqu’à fin février 2027.</description>
-      <pubDate>Tue, 17 Nov 2026 07:05:41 +0000</pubDate>
-      <category>entreprises</category>
-      <category>levée de fonds</category>
-      <category>Santé</category>
-    </item>
-    <item>
-      <title>Un fournisseur de café brésilien de Nestlé devant la justice du travail</title>
-      <link>https://agefi.com/actualites/entreprises/un-fournisseur-de-cafe-bresilien-de-nestle-devant-la-justice-du-travail</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545369</guid>
-      <description>La coopérative Cooabriel est mise en cause pour des conditions de travail présumées proches de l’esclavage chez des producteurs. Nestlé affirme que ceux-ci ne font pas partie de sa chaîne d’approvisionnement.</description>
-      <pubDate>Tue, 17 Nov 2026 06:47:59 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Nestlé</category>
-      <category>Café</category>
-      <category>Brésil</category>
-      <category>Justice</category>
-    </item>
-    <item>
-      <title>Nvidia présente ses comptes mardi dans l’incertitude sur la succession de Jensen Huang</title>
-      <link>https://agefi.com/actualites/entreprises/nvidia-presente-ses-comptes-mardi-dans-lincertitude-sur-la-succession-de-jensen-huang</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545368</guid>
-      <description>Colette Kress, directrice générale par intérim, fera face aux analystes, qui devraient aussi interroger le groupe sur ses ventes en Asie et ses engagements dans l’IA.</description>
-      <pubDate>Tue, 17 Nov 2026 06:42:38 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Nvidia</category>
-      <category>Intelligence artificielle</category>
-      <category>Technologies</category>
-      <category>Etats-Unis</category>
-    </item>
-    <item>
-      <title>Zurich Insurance relève les synergies attendues du rachat de Beazley</title>
-      <link>https://agefi.com/actualites/entreprises/zurich-insurance-releve-les-synergies-attendues-du-rachat-de-beazley</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545367</guid>
-      <description>L’assureur zurichois vise désormais 1,8 milliard de dollars de synergies en fonds propres et 1,5 milliard de revenus supplémentaires à moyen terme grâce à Beazley.</description>
-      <pubDate>Tue, 17 Nov 2026 06:34:48 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Zurich Insurance</category>
-      <category>Assurances</category>
-    </item>
-    <item>
-      <title>Novartis obtient une nouvelle indication pour Cosentyx aux Etats-Unis</title>
-      <link>https://agefi.com/actualites/entreprises/novartis-obtient-une-nouvelle-indication-pour-cosentyx-aux-etats-unis</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545366</guid>
-      <description>L’extension concerne la polymyalgie rhumatismale chez l’adulte intolérant ou présentant une réponse inappropriée aux corticostéroïdes. C’est la onzième indication américaine du médicament.</description>
-      <pubDate>Tue, 17 Nov 2026 06:29:40 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Novartis</category>
-      <category>Pharma</category>
-      <category>Etats-Unis</category>
-    </item>
-    <item>
-      <title>VAT Group finalise le rachat d’Atonarp</title>
-      <link>https://agefi.com/actualites/entreprises/vat-group-finalise-le-rachat-datonarp</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545365</guid>
-      <description>Le groupe saint-gallois détient désormais 100% de la société japonaise. La transaction a été financée par une facilité de crédit bilatérale de 110 millions de francs.</description>
-      <pubDate>Tue, 17 Nov 2026 06:20:35 +0000</pubDate>
-      <category>entreprises</category>
-      <category>VAT</category>
-      <category>Industrie</category>
-    </item>
-    <item>
-      <title>Steven Bourg, entre immobilier et entrepreneuriat</title>
-      <link>https://agefi.com/actualites/immo/steven-bourg</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545179</guid>
-      <description>Passionné d’immobilier depuis quinze ans, le résident genevois apprécie la diversité du métier et le contact client. Il s’intéresse aussi aux investissements et aux start-up et aime voyager.</description>
-      <pubDate>Mon, 16 Nov 2026 23:00:00 +0000</pubDate>
-      <category>immo</category>
-    </item>
-    <item>
-      <title>Jérôme Félicité lance Félicité&amp;Cie en partenariat avec l’Agence Kretz</title>
-      <link>https://agefi.com/actualites/immo/linstinct-familial</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545178</guid>
-      <description>La société immobilière ouvrira sa première agence à Crans-Montana début décembre et ambitionne de se développer en Suisse et à l’international.</description>
-      <pubDate>Mon, 16 Nov 2026 23:00:00 +0000</pubDate>
-      <category>immo</category>
-    </item>
-    <item>
-      <title>Élégance sur le lac</title>
-      <link>https://agefi.com/actualites/immo/elegance-sur-le-lac</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545173</guid>
-      <description>A Lutry, Mourat 84 réunit 14 appartements de prestige dans trois petits immeubles, offrant une vue à 180° sur le Léman et les vignobles du Lavaux.</description>
-      <pubDate>Mon, 16 Nov 2026 23:00:00 +0000</pubDate>
-      <category>immo</category>
-    </item>
-    <item>
-      <title>A chacun son toit</title>
-      <link>https://agefi.com/actualites/immo/a-chacun-son-toit</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545172</guid>
-      <description>Mettre un logement en valeur, comprendre les attentes d’un propriétaire et trouver le bon locataire, la location résidentielle est avant tout un métier d’écoute et de conseil.</description>
-      <pubDate>Mon, 16 Nov 2026 23:00:00 +0000</pubDate>
-      <category>immo</category>
-    </item>
-    <item>
-      <title>Les Bourses mondiales plombées par les ventes dans la tech</title>
-      <link>https://agefi.com/actualites/marches/les-bourses-mondiales-plombees-par-les-ventes-dans-la-tech</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545363</guid>
-      <description>A la clôture, Paris a cédé 0,20%, Francfort 0,57%, Londres a fini stable (-0,09%) et Milan a pedu 0,65%. A Wall Street, vers 17h50, le Nasdaq reculait de 1,54%, le S&amp;P 500 de 1,13% et le DJ lâchait 0,70%.</description>
-      <pubDate>Mon, 16 Nov 2026 17:58:14 +0000</pubDate>
-      <category>marches</category>
-      <category>Wall Street</category>
-      <category>Bourses</category>
-      <category>Europe</category>
-    </item>
-    <item>
-      <title>Washington veut bloquer l’accès de la Chine aux puces américaines</title>
-      <link>https://agefi.com/actualites/politique/washington-veut-bloquer-lacces-de-la-chine-aux-puces-americaines</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545362</guid>
-      <description>Le gouvernement a notamment instauré une nouvelle autorisation nécessaire à l’exportation de semi-conducteurs en Indonésie, Malaisie, Thaïlande, au Brésil et à Singapour.</description>
-      <pubDate>Mon, 16 Nov 2026 17:41:29 +0000</pubDate>
-      <category>politique</category>
-      <category>Intelligence artificielle</category>
-      <category>Exportations</category>
-      <category>semi-conducteurs</category>
-    </item>
-    <item>
-      <title>Le SMI clôture dans le vert après un plus haut en séance</title>
-      <link>https://agefi.com/actualites/marches/le-smi-cloture-dans-le-vert-apres-un-plus-haut-en-seance</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545361</guid>
-      <description>L'indice vedette a progressé de 0,57% à 15.192,5 points. Le SLI s'est enrobé de 0,32% à 2431,78 points et le SPI de 0,42% à 21.6346 points</description>
-      <pubDate>Mon, 16 Nov 2026 17:21:18 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-      <category>SPI</category>
-      <category>SLI</category>
-    </item>
-    <item>
-      <title>Lonza conclut un accord de licence pour NeuroPortal</title>
-      <link>https://agefi.com/actualites/entreprises/lonza-conclut-un-accord-de-licence-pour-neuroportal</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545360</guid>
-      <description>La société pharmaceutique chinoise China Medical System Holdings (CMS) obtient les droits exclusifs mondiaux de la technologie de barrière hémato-encéphalique NeuroPortal de l’entreprise suisse.</description>
-      <pubDate>Mon, 16 Nov 2026 16:59:01 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Lonza</category>
-      <category>Suisse</category>
     </item>
   </channel>
 </rss>
