@@ -5,7 +5,74 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Tue, 17 Nov 2026 20:53:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 07:20:39 +0000</lastBuildDate>
+    <item>
+      <title>Patrick Steiner rejoint la direction de Raiffeisen Suisse</title>
+      <link>https://agefi.com/actualites/trajectoires/patrick-steiner-rejoint-la-direction-de-raiffeisen-suisse</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545415</guid>
+      <description>Il dirigera le département Products &amp; Solutions de la banque à partir du 1er mars 2027.</description>
+      <pubDate>Wed, 18 Nov 2026 07:17:52 +0000</pubDate>
+      <category>trajectoires</category>
+      <category>Raiffeisen</category>
+      <category>Banques</category>
+    </item>
+    <item>
+      <title>Galenica: Verfora acquiert 51% d’un distributeur pharmaceutique polonais</title>
+      <link>https://agefi.com/actualites/entreprises/galenica-verfora-acquiert-51-dun-distributeur-pharmaceutique-polonais</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545414</guid>
+      <description>Le montant de l’opération n’a pas été communiqué. Qpharma distribue des médicaments et des compléments alimentaires en Pologne, en République tchèque et en Slovaquie.</description>
+      <pubDate>Wed, 18 Nov 2026 07:02:43 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Galenica</category>
+      <category>Pharmacie</category>
+      <category>Pharma</category>
+    </item>
+    <item>
+      <title>Dormakaba vise une marge opérationnelle d’environ 14% à l’horizon 2028/29</title>
+      <link>https://agefi.com/actualites/entreprises/dormakaba-vise-une-marge-operationnelle-denviron-14-a-lhorizon-202829</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545413</guid>
+      <description>Le spécialiste zurichois des accès sécurisés fixe son objectif de croissance organique du chiffre d’affaires net entre 3% et 5% par an et vise un rendement du capital investi supérieur à 35%.</description>
+      <pubDate>Wed, 18 Nov 2026 06:55:42 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Dormakaba</category>
+      <category>Sécurité</category>
+    </item>
+    <item>
+      <title>Votations: les sondages donnent le non en tête sur la hausse de la TVA pour l’AVS</title>
+      <link>https://agefi.com/actualites/politique/votations-les-sondages-donnent-le-non-en-tete-sur-la-hausse-de-la-tva-pour-lavs</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545412</guid>
+      <description>L’initiative sur les feux d’artifice reste majoritairement soutenue, celle sur le mariage perd du terrain. L’issue du vote sur la réforme de la loi sur le matériel de guerre demeure incertaine.</description>
+      <pubDate>Wed, 18 Nov 2026 06:41:55 +0000</pubDate>
+      <category>politique</category>
+      <category>Votations</category>
+      <category>AVS</category>
+      <category>Armement</category>
+      <category>Fiscalité</category>
+      <category>TVA</category>
+      <category>Taux d'imposition</category>
+    </item>
+    <item>
+      <title>SGS vise une marge opérationnelle ajustée d’au moins 17% d’ici 2030</title>
+      <link>https://agefi.com/actualites/entreprises/sgs-vise-une-marge-operationnelle-ajustee-dau-moins-17-dici-2030</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545411</guid>
+      <description>Le groupe d’inspection et de certification prévoit une croissance organique de 5 à 7% par an et entend développer ses activités dans la confiance numérique et le développement durable.</description>
+      <pubDate>Wed, 18 Nov 2026 06:33:42 +0000</pubDate>
+      <category>entreprises</category>
+      <category>SGS</category>
+      <category>Sécurité</category>
+    </item>
+    <item>
+      <title>Nvidia écarte un retour de Jensen Huang et relève ses prévisions</title>
+      <link>https://agefi.com/actualites/entreprises/nvidia-ecarte-un-retour-de-jensen-huang-et-releve-ses-previsions</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545410</guid>
+      <description>Le chiffre d’affaires a doublé sur un an au troisième trimestre, à 115,8 milliards de dollars. Le groupe prévoit désormais une croissance de 75% pour le prochain exercice.</description>
+      <pubDate>Wed, 18 Nov 2026 06:29:48 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Nvidia</category>
+      <category>Technologies</category>
+      <category>Intelligence artificielle</category>
+      <category>semi-conducteurs</category>
+    </item>
     <item>
       <title>Chez les assureurs, les obligations d’Etat ne sont pas sans risque</title>
       <link>https://agefi.com/actualites/marches/chez-les-assureurs-les-obligations-detat-ne-sont-pas-sans-risques</link>
@@ -133,7 +200,7 @@
       <category>Consommation</category>
     </item>
     <item>
-      <title>Bilatérales III: le Centre fait pencher une commission vers la double majorité</title>
+      <title>Bilatérales III: Le Centre fait pencher une commission vers la double majorité</title>
       <link>https://agefi.com/actualites/politique/bilaterales-iii-le-centre-fait-pencher-la-commission-vers-la-double-majorite</link>
       <guid isPermaLink="false">https://api.agefi.com/v1/articles/545403</guid>
       <description>L’ex-PDC a joué un rôle décisif dans le choix du référendum obligatoire en commission. Une décision qui révèle certaines divisions sur la politique européenne.</description>
@@ -593,68 +660,6 @@
       <category>entreprises</category>
       <category>Lonza</category>
       <category>Suisse</category>
-    </item>
-    <item>
-      <title>Plus de 150.000 signataires pour le retour du CEO de Nvidia</title>
-      <link>https://agefi.com/actualites/entreprises/plus-de-150000-signataires-pour-le-retour-du-ceo-de-nvidia</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545359</guid>
-      <description>Une lettre ouverte réclame la réintégration de Jensen Huang à la tête de Nvidia, au moins le temps de se défendre face aux allégations qui ont provoqué sa chute. Elon Musk soutient la démarche.</description>
-      <pubDate>Mon, 16 Nov 2026 16:08:28 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Intelligence artificielle</category>
-      <category>Nvidia</category>
-    </item>
-    <item>
-      <title>Le Seco examine des transferts de munitions suisses vers la Russie</title>
-      <link>https://agefi.com/actualites/entreprises/le-seco-examine-des-transferts-de-munitions-suisses-vers-la-russie</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545358</guid>
-      <description>Selon des informations de presse, des livraisons auraient été détournées via la Slovénie et le Paraguay. Le Secrétariat d’Etat à l’économie n’est pas encore en mesure de se prononcer.</description>
-      <pubDate>Mon, 16 Nov 2026 16:02:08 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Ruag</category>
-      <category>Armement</category>
-      <category>Votations</category>
-    </item>
-    <item>
-      <title>Les Bourses mondiales en plein doute, Nvidia dans le rouge</title>
-      <link>https://agefi.com/actualites/marches/les-bourses-mondiales-en-plein-doute-nvidia-dans-le-rouge</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545357</guid>
-      <description>Vers 16h00, Paris prenait 0,10% et Londres 0,23%. Francfort cédait 0,34% et Milan perdait 0,49%. A Wall Street, le Nasdaq cédait 1,96%, le S&amp;P 500 perdait 1,27% et le DJ était stable (-0,061%).</description>
-      <pubDate>Mon, 16 Nov 2026 15:48:59 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourses</category>
-      <category>Wall Street</category>
-      <category>Europe</category>
-    </item>
-    <item>
-      <title>Stadler Rail nomme Radoslaw Banach à la tête de sa division Europe centrale</title>
-      <link>https://agefi.com/actualites/trajectoires/stadler-rail-nomme-radoslaw-banach-a-la-tete-de-sa-division-europe-centrale</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545356</guid>
-      <description>L’actuel directeur général de Stadler Pologne rejoindra la direction du groupe le 1er janvier 2027. Il succédera à Philipp Brunner, qui prendra la direction générale de Stadler.</description>
-      <pubDate>Mon, 16 Nov 2026 15:31:16 +0000</pubDate>
-      <category>trajectoires</category>
-      <category>Stadler Rail</category>
-    </item>
-    <item>
-      <title>Le bitcoin tombe à son plus bas niveau depuis juillet</title>
-      <link>https://agefi.com/actualites/marches/le-bitcoin-tombe-a-son-plus-bas-niveau-depuis-juillet</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545355</guid>
-      <description>La cryptomonnaie est brièvement passé sous la barre des 62.000 dollars durant le week-end. En cause notamment, l'engouement pour l'intelligence artificielle (IA) qui détourne les investisseurs des cryptomonnaies.</description>
-      <pubDate>Mon, 16 Nov 2026 15:29:47 +0000</pubDate>
-      <category>marches</category>
-      <category>Cryptomonnaies</category>
-      <category>Bitcoin</category>
-    </item>
-    <item>
-      <title>Des menaces pèsent sur l'IPO d'Anthropic</title>
-      <link>https://agefi.com/actualites/entreprises/des-menaces-pesent-sur-lipo-danthropic</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545354</guid>
-      <description>Anthropic, devenue en cinq ans un géant de l'IA, vise la deuxième plus grosse entrée en Bourse de l'histoire. Mais «l'écart entre les modèles d'IA les plus avancés pourrait se réduire» averti l'entreprise.</description>
-      <pubDate>Mon, 16 Nov 2026 15:13:25 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Intelligence artificielle</category>
-      <category>Etats-Unis</category>
-      <category>IPO</category>
     </item>
   </channel>
 </rss>
