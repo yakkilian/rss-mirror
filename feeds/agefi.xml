@@ -5,7 +5,63 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Wed, 18 Nov 2026 20:28:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 07:18:23 +0000</lastBuildDate>
+    <item>
+      <title>Carlo Gavazzi renoue avec les bénéfices au premier semestre</title>
+      <link>https://agefi.com/actualites/entreprises/carlo-gavazzi-renoue-avec-les-benefices-au-premier-semestre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545450</guid>
+      <description>Le profit net a atteint 2,9 millions de francs, contre une perte de 0,4 million un an plus tôt. Le groupe reste prudent pour la suite face aux incertitudes économiques et géopolitiques.</description>
+      <pubDate>Thu, 19 Nov 2026 07:05:40 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Electronique</category>
+    </item>
+    <item>
+      <title>Georg Fischer propose l’élection de Jean-Christophe Deslarzes à son conseil d’administration</title>
+      <link>https://agefi.com/actualites/trajectoires/georg-fischer-propose-lelection-de-jean-christophe-deslarzes-a-son-conseil-dadministration</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545449</guid>
+      <description>La candidature de l’actuel président des conseils d’administration d’Adecco Group et de Constellium sera soumise aux actionnaires lors de l’assemblée générale d’avril 2027.</description>
+      <pubDate>Thu, 19 Nov 2026 06:57:34 +0000</pubDate>
+      <category>trajectoires</category>
+      <category>Georg Fischer</category>
+    </item>
+    <item>
+      <title>Novartis confirme sa croissance et relève le potentiel de plusieurs médicaments</title>
+      <link>https://agefi.com/actualites/entreprises/novartis-confirme-sa-croissance-et-releve-le-potentiel-de-plusieurs-medicaments</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545448</guid>
+      <description>Le laboratoire bâlois vise toujours une croissance annuelle de 5% entre 2026 et 2031. Il relève à 8 milliards de dollars le potentiel de ventes du Kesimpta.</description>
+      <pubDate>Thu, 19 Nov 2026 06:30:28 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Novartis</category>
+      <category>Pharma</category>
+      <category>Croissance</category>
+    </item>
+    <item>
+      <title>La Fed se prépare à de nouvelles hausses de taux face à l’inflation</title>
+      <link>https://agefi.com/actualites/marches/la-fed-se-prepare-a-de-nouvelles-hausses-de-taux-face-a-linflation</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545447</guid>
+      <description>Presque tous les responsables de la Réserve fédérale estimaient fin octobre qu’un nouveau resserrement monétaire serait probablement nécessaire. L’inflation PCE reste nettement au-dessus de l’objectif de 2%.</description>
+      <pubDate>Thu, 19 Nov 2026 06:23:44 +0000</pubDate>
+      <category>marches</category>
+      <category>Fed</category>
+      <category>Taux directeurs</category>
+      <category>Politique monétaire</category>
+      <category>Etats-Unis</category>
+      <category>Inflation</category>
+    </item>
+    <item>
+      <title>Anthropic s’apprête à dépasser SpaceX avec une IPO record</title>
+      <link>https://agefi.com/actualites/entreprises/anthropic-sapprete-a-depasser-spacex-avec-ipo-record</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545446</guid>
+      <description>Le créateur de Claude doit lever au moins 79,4 milliards de dollars jeudi à New York. Fixé à 83 dollars, le prix de l’action valorise l’entreprise à près de 1500 milliards.</description>
+      <pubDate>Thu, 19 Nov 2026 06:12:30 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Intelligence artificielle</category>
+      <category>IPO</category>
+      <category>Wall Street</category>
+      <category>Technologies</category>
+      <category>Actions</category>
+      <category>Etats-Unis</category>
+    </item>
     <item>
       <title>Les Bourses dans le rouge, Nvidia en fort recul</title>
       <link>https://agefi.com/actualites/marches/les-bourses-dans-le-rouge-nvidia-en-fort-recul</link>
@@ -621,61 +677,6 @@
       <category>Automobile</category>
       <category>Etats-Unis</category>
       <category>Suisse</category>
-    </item>
-    <item>
-      <title>Le directeur financier de Skan condamné pour délit d’initié</title>
-      <link>https://agefi.com/actualites/entreprises/le-directeur-financier-de-skan-condamne-pour-delit-dinitie</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545393</guid>
-      <description>Le Tribunal pénal fédéral lui a infligé dix mois de prison avec sursis et une créance compensatoire d’environ 230.000 francs. Un autre dirigeant a été acquitté. Le jugement n’est pas définitif.</description>
-      <pubDate>Tue, 17 Nov 2026 13:29:28 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Skan</category>
-      <category>Justice</category>
-    </item>
-    <item>
-      <title>Une pétition défend le remboursement des psychothérapies par la LAMal</title>
-      <link>https://agefi.com/actualites/politique/une-petition-defend-le-remboursement-des-psychotherapies-par-la-lamal</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545392</guid>
-      <description>Déposée mardi à Berne avec plus de 100 000 signatures, elle s’oppose au projet d’une commission du National d’exiger la confirmation du diagnostic par un psychiatre.</description>
-      <pubDate>Tue, 17 Nov 2026 13:20:04 +0000</pubDate>
-      <category>politique</category>
-      <category>Santé</category>
-      <category>Assurance maladie</category>
-    </item>
-    <item>
-      <title>La Suisse accordera l’entraide judiciaire à la France dans une affaire de paris illégaux</title>
-      <link>https://agefi.com/actualites/politique/la-suisse-accordera-lentraide-judiciaire-a-la-france-dans-une-affaire-de-paris-illegaux</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545391</guid>
-      <description>Le Tribunal pénal fédéral a validé la transmission à Paris de documents bancaires liés à quatre comptes suisses. L’enquête porte sur des paris illégaux liés à l’élection présidentielle américaine de 2024.</description>
-      <pubDate>Tue, 17 Nov 2026 13:11:39 +0000</pubDate>
-      <category>politique</category>
-      <category>Tribunal fédéral</category>
-      <category>Banques</category>
-      <category>France</category>
-      <category>Etats-Unis</category>
-      <category>Suisse</category>
-    </item>
-    <item>
-      <title>Les grands événements sportifs ont généré 57 millions à Genève en 2025</title>
-      <link>https://agefi.com/actualites/macroeconomie/les-grands-evenements-sportifs-ont-genere-57-millions-a-geneve-en-2025</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545390</guid>
-      <description>Selon une étude de la CCIG mandatée par la Ville de Genève, l’Euro féminin représente 38,5 millions de francs de retombées économiques dans le canton.</description>
-      <pubDate>Tue, 17 Nov 2026 12:57:14 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Genève</category>
-      <category>Sports</category>
-      <category>CCIG</category>
-    </item>
-    <item>
-      <title>Allemagne: le moral des investisseurs au plus haut depuis février</title>
-      <link>https://agefi.com/actualites/macroeconomie/allemagne-le-moral-des-investisseurs-au-plus-haut-depuis-fevrier</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545388</guid>
-      <description>Le baromètre ZEW des attentes économiques gagne 7,5 points en novembre, à 35,6 points, bien au-delà des prévisions des analystes, sur fond de reprise encore modérée.</description>
-      <pubDate>Tue, 17 Nov 2026 12:35:39 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Allemagne</category>
-      <category>Investissements</category>
-      <category>Baromètres</category>
     </item>
   </channel>
 </rss>
