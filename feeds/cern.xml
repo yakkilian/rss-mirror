@@ -5,14 +5,7 @@
     <link>https://home.cern/tag/news/</link>
     <description>Latest CERN news mirrored for FreshRSS and ICTjournal monitoring.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Nov 2026 07:18:25 +0000</lastBuildDate>
-    <item>
-      <title>LGBTQ+ in STEM Day celebrated at CERN</title>
-      <link>https://home.cern/lgbtq-in-stem-day-celebrated-at-cern/</link>
-      <guid isPermaLink="true">https://home.cern/lgbtq-in-stem-day-celebrated-at-cern/</guid>
-      <description>Today, 18 November, CERN joins scientific organisations around the world to celebrate LGBTQ+ STEM Day – an annual celebration established in 2019 to highlight the work of and barriers facing LGBTQ+ people in science, technology, engineering and maths, and recognise the contributions of the LGBTQ+ community to scientific discoveries throughout history. Alongside raising the Progress</description>
-      <pubDate>Wed, 18 Nov 2026 09:24:57 +0100</pubDate>
-    </item>
+    <lastBuildDate>Thu, 19 Nov 2026 20:31:58 +0000</lastBuildDate>
     <item>
       <title>SND@LHC experiment set to push the neutrino frontier</title>
       <link>https://home.cern/sndlhc-experiment-set-to-push-the-neutrino-frontier/</link>
@@ -215,6 +208,13 @@
       <guid isPermaLink="true">https://home.cern/the-duke-of-edinburgh-visits-cern/</guid>
       <description>On Tuesday, 8 September, CERN welcomed His Royal Highness, Prince Edward the Duke of Edinburgh, to visit the site and meet members of the CERN community. Upon arrival at LHC Point 5, he was greeted by the sub-prefect of Gex, Joël Bourgeot, and a CERN delegation that included Director-General Mark Thomson; Director for Accelerators and Technology, Oliver Brüning; Director for Research</description>
       <pubDate>Tue, 15 Sep 2026 18:07:13 +0200</pubDate>
+    </item>
+    <item>
+      <title>Computer Security: Hot Review Summer, Cool Deployment Autumn</title>
+      <link>https://home.cern/computer-security-hot-review-summer-cool-deployment-autumn/</link>
+      <guid isPermaLink="true">https://home.cern/computer-security-hot-review-summer-cool-deployment-autumn/</guid>
+      <description>This summer has seen a plethora of different assessments of the Organization’s security posture and stance. While an external vulnerability scan of CERN’s Internet presence and a red-teaming penetration test are still ongoing, the Computer Security Office, in collaboration with the IT Department, is continuing to mitigate the findings of the 2023 cybersecurity audit, the</description>
+      <pubDate>Tue, 01 Sep 2026 14:31:31 +0200</pubDate>
     </item>
   </channel>
 </rss>
