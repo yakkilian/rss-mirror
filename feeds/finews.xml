@@ -5,10 +5,22 @@
 		<title>finews.ch: Treffpunkt der Finanzwelt</title>
 		<description><![CDATA[finews.ch ist das Schweizer News-Portal für die Berufstätigen in der Finanzbranche und liefert laufend aktualisierte Nachrichten über den Schweizer Finanzplatz.]]></description>
 		<link>https://www.finews.ch/</link>
-		<lastBuildDate>Thu, 19 Nov 2026 21:31:54 +0100</lastBuildDate>
+		<lastBuildDate>Fri, 20 Nov 2026 08:07:19 +0100</lastBuildDate>
 		<generator>Joomla! - Open Source Content Management</generator>
 		<atom:link rel="self" type="application/rss+xml" href="https://www.finews.ch/?format=feed&amp;type=rss"/>
 		<language>de-de</language>
+		<item>
+			<title>Pictet setzt ein Zeichen für Genf</title>
+			<link>https://www.finews.ch/news/banken/74577-eroeffnung-pictet-campus-hauptverwaltung-genf</link>
+			<guid isPermaLink="true">https://www.finews.ch/news/banken/74577-eroeffnung-pictet-campus-hauptverwaltung-genf</guid>
+			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/11/Campus-Pictet-seite.jpg" alt="(Bild: Pictet)"></p><p><strong>Der «Campus Pictet de Rochemont» ist nicht nur ein modernes und ambitioniertes Immobilienprojekt, sondern ein Statement der Bank für den Standort Genf.</strong></p>
+</div>]]></description>
+			<category>Haupteintrag</category>
+			<category>Banken</category>
+			<category>News</category>
+			<category>ROOT</category>
+			<pubDate>Fri, 20 Nov 2026 06:00:34 +0100</pubDate>
+		</item>
 		<item>
 			<title>UBS-Fonds kaufen Üetlihof für 850 Millionen Franken</title>
 			<link>https://www.finews.ch/news/banken/74589-ubs-fonds-kaufen-uetlihof-zuerich-norwegischer-staatsfonds-norges-850-millionen</link>
@@ -212,18 +224,6 @@
 			<category>News</category>
 			<category>ROOT</category>
 			<pubDate>Wed, 18 Nov 2026 10:14:11 +0100</pubDate>
-		</item>
-		<item>
-			<title>Die Finma hat ein Einsehen und will die Beaufsichtigten entlasten</title>
-			<link>https://www.finews.ch/news/finanzplatz/74547-finma-entlastung-beaufsichtigte-bewilligungsverfahren-datenerhebungen-konsulation-aufsichtsmitteilungen</link>
-			<guid isPermaLink="true">https://www.finews.ch/news/finanzplatz/74547-finma-entlastung-beaufsichtigte-bewilligungsverfahren-datenerhebungen-konsulation-aufsichtsmitteilungen</guid>
-			<description><![CDATA[<div class="feed-description"><p><img src="https://www.finews.ch/images/news/2026/11/Stefan-Walter-Finma.jpg" alt="Ist  Finma-Direktor Stefan Walter doch flexibler, als sein Ruf als Hardliner verheisst? (Bild: zVg)"></p><p><strong>Endlich ist es soweit: Die Finma legt ein Massnahmenpaket auf, um die administrative Belastung der Finanzmarktteilnehmer zu reduzieren. Im Zentrum stehen Bewilligungsverfahren und Datenerhebungen. Vor wichtigen Aufsichtsmitteilungen soll neu die Branche konsultiert werden. Der Schritt ist zu begrüssen, egal ob er aus innerer Einsicht oder auf äusseren Druck erfolgt, findet finews.&nbsp;</strong></p>
-</div>]]></description>
-			<category>Haupteintrag</category>
-			<category>Finanzplatz</category>
-			<category>News</category>
-			<category>ROOT</category>
-			<pubDate>Wed, 18 Nov 2026 15:13:40 +0100</pubDate>
 		</item>
 	</channel>
 </rss>

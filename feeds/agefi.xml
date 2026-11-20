@@ -5,7 +5,42 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Thu, 19 Nov 2026 20:31:56 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 07:07:21 +0000</lastBuildDate>
+    <item>
+      <title>L’inflation accélère au Japon et renforce la perspective d’une hausse des taux</title>
+      <link>https://agefi.com/actualites/macroeconomie/linflation-accelere-au-japon-et-renforce-la-perspective-dune-hausse-des-taux</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545494</guid>
+      <description>Les prix à la consommation ont progressé de 2,2% en octobre, portés par l’énergie et l’alimentation. La Banque du Japon pourrait relever ses taux dès décembre.</description>
+      <pubDate>Fri, 20 Nov 2026 07:01:38 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Japon</category>
+      <category>Banque centrale</category>
+      <category>Inflation</category>
+    </item>
+    <item>
+      <title>Barry Callebaut renforce sa présence industrielle en Inde</title>
+      <link>https://agefi.com/actualites/entreprises/barry-callebaut-renforce-sa-presence-industrielle-en-inde</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545493</guid>
+      <description>Le chocolatier zurichois a inauguré une nouvelle usine à Baramati, dédiée aux spécialités de chocolat. Ce site de 6000 m² vient compléter une première implantation dans la région.</description>
+      <pubDate>Fri, 20 Nov 2026 06:45:19 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Barry Callebaut</category>
+      <category>Chocolat</category>
+      <category>Suisse</category>
+      <category>Inde</category>
+    </item>
+    <item>
+      <title>Anthropic réussit une entrée en Bourse historique malgré les doutes sur l’IA</title>
+      <link>https://agefi.com/actualites/entreprises/anthropic-reussit-une-entree-en-bourse-historique-malgre-les-doutes-sur-lia</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545492</guid>
+      <description>Le géant américain de l’IA a levé 81,3 milliards de dollars. Son action a gagné 17,07% pour ses débuts à Wall Street, malgré les inquiétudes qui pèsent sur le secteur.</description>
+      <pubDate>Fri, 20 Nov 2026 06:26:23 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Intelligence artificielle</category>
+      <category>Bourses</category>
+      <category>IPO</category>
+      <category>Nasdaq</category>
+    </item>
     <item>
       <title>La gauche se trompe de cible pour réduire le poids des primes</title>
       <link>https://agefi.com/actualites/editorial/la-gauche-se-trompe-de-cible-pour-reduire-le-poids-des-primes</link>
@@ -630,37 +665,6 @@
       <description>Prevision Medicine, une jeune entreprise innovante spécialisée dans l’oncologie de précision, a récemment levé 5,4 millions de dollars lors d’un tour de financement d’amorçage.</description>
       <pubDate>Wed, 18 Nov 2026 14:30:00 +0000</pubDate>
       <category>communiques-dentreprises</category>
-    </item>
-    <item>
-      <title>Feux d’artifice: l’obsession d’éteindre les fêtes</title>
-      <link>https://agefi.com/actualites/opinions/feux-dartifice-lobsession-deteindre-les-fetes</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545423</guid>
-      <description>L’initiative soumise au vote le 29 novembre vise à protéger les animaux. Une interdiction est une nouvelle atteinte aux libertés individuelles et une menace pour la branche économique.</description>
-      <pubDate>Wed, 18 Nov 2026 14:00:00 +0000</pubDate>
-      <category>opinions</category>
-      <category>Votations</category>
-      <category>Loisirs</category>
-    </item>
-    <item>
-      <title>Katharina Hauke nommée directrice de Too Good To Go</title>
-      <link>https://agefi.com/actualites/trajectoires/katharina-hauke-nommee-directrice-de-too-good-to-go</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545432</guid>
-      <description>La nouvelle nommée prend la responsabilité de l’Autriche et de la Suisse. Elle remplace Georg Strasser-Müller qui quitte l’entreprise luttant contre le gaspillage alimentaire.</description>
-      <pubDate>Wed, 18 Nov 2026 13:55:21 +0000</pubDate>
-      <category>trajectoires</category>
-      <category>Agroalimentaire</category>
-    </item>
-    <item>
-      <title>La France pourrait renforcer ses économies pour tenir son objectif de déficit</title>
-      <link>https://agefi.com/actualites/macroeconomie/la-france-pourrait-renforcer-ses-economies-pour-tenir-son-objectif-de-deficit</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545431</guid>
-      <description>Le ministre de l’Economie juge «à risque» la prévision de croissance de 1% retenue pour le budget, alors que la Commission européenne n’attend plus que 0,6%.</description>
-      <pubDate>Wed, 18 Nov 2026 13:52:49 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>France</category>
-      <category>Croissance</category>
-      <category>Dette</category>
-      <category>PIB</category>
     </item>
   </channel>
 </rss>
