@@ -5,7 +5,21 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sat, 21 Nov 2026 07:01:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 19:10:47 +0000</lastBuildDate>
+    <item>
+      <title>Le Centre, Anthropic, COP: les trois mots-clés de la semaine</title>
+      <link>https://agefi.com/actualites/entreprises/le-centre-anthropic-cop-les-trois-mots-cles-de-la-semaine</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545501</guid>
+      <description>Vous n’avez pas eu le temps de suivre toute l’actualité économique et financière ces derniers jours? Voici les trois informations qui ont marqué cette semaine.</description>
+      <pubDate>Sat, 21 Nov 2026 07:30:00 +0000</pubDate>
+      <category>entreprises</category>
+      <category>COP31</category>
+      <category>Climat</category>
+      <category>IPO</category>
+      <category>Intelligence artificielle</category>
+      <category>Bilatérales lll</category>
+      <category>Parlement</category>
+    </item>
     <item>
       <title>L’UDC propose Thomas Aeschi et Michael Graber pour succéder à Guy Parmelin</title>
       <link>https://agefi.com/actualites/politique/ludc-propose-thomas-aeschi-et-michael-graber-pour-succeder-a-guy-parmelin</link>
@@ -650,15 +664,6 @@
       <category>PIB</category>
       <category>Seco</category>
       <category>OFS</category>
-    </item>
-    <item>
-      <title>Une alliance réclame des réformes pour assurer la pérennité de l’AI</title>
-      <link>https://agefi.com/actualites/politique/une-alliance-reclame-des-reformes-pour-assurer-la-perennite-de-lai</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545459</guid>
-      <description>Selon l’alliance, la fortune de l’assurance invalidité sera épuisée d’ici 2031 sans mesures supplémentaires. Elle refuse que la stabilité financière passe par des réductions de prestations.</description>
-      <pubDate>Thu, 19 Nov 2026 09:27:07 +0000</pubDate>
-      <category>politique</category>
-      <category>Assurances</category>
     </item>
   </channel>
 </rss>
