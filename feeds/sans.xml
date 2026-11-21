@@ -5,6 +5,11 @@
     <link>https://www.sans.org/blog</link>
     <description>Derniers articles du blog SANS</description>
     <item>
+      <title>Everything Is a Web Application, Including Your Firewall Blog Cyber Defense 23 Nov 2026 Dr. Johannes Ullrich</title>
+      <link>https://www.sans.org/blog/everything-web-application-including-your-firewall</link>
+      <guid isPermaLink="true">https://www.sans.org/blog/everything-web-application-including-your-firewall</guid>
+    </item>
+    <item>
       <title>Designing a Malware Analysis Lab With REMnux Blog Digital Forensics and Incident Response 17 Nov 2026 Lenny Zeltser</title>
       <link>https://www.sans.org/blog/designing-a-malware-analysis-lab-with-remnux</link>
       <guid isPermaLink="true">https://www.sans.org/blog/designing-a-malware-analysis-lab-with-remnux</guid>
@@ -58,11 +63,6 @@
       <title>Why AI Confidence Is Not Validation Blog Artificial Intelligence 20 Oct 2026 Heather Barnhart</title>
       <link>https://www.sans.org/blog/why-ai-confidence-is-not-validation</link>
       <guid isPermaLink="true">https://www.sans.org/blog/why-ai-confidence-is-not-validation</guid>
-    </item>
-    <item>
-      <title>A Visual Summary of SANS DFIR Summit 2026 Blog Digital Forensics and Incident Response 16 Oct 2026 SANS Institute</title>
-      <link>https://www.sans.org/blog/visual-summary-of-sans-dfir-summit-2026</link>
-      <guid isPermaLink="true">https://www.sans.org/blog/visual-summary-of-sans-dfir-summit-2026</guid>
     </item>
   </channel>
 </rss>
