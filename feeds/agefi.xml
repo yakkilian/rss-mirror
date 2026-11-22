@@ -5,7 +5,30 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sun, 22 Nov 2026 06:41:05 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 19:33:37 +0000</lastBuildDate>
+    <item>
+      <title>La COP31 peine toujours à s’accorder sur les énergies fossiles</title>
+      <link>https://agefi.com/actualites/politique/la-cop31-peine-toujours-a-saccorder-sur-les-energies-fossiles</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545518</guid>
+      <description>Le nouveau projet d'accord présenté à Antalya évite toute mention explicite des énergies fossiles, mais propose de porter à 35% la part de l'électricité dans la consommation mondiale d'énergie d'ici 2035.</description>
+      <pubDate>Sun, 22 Nov 2026 09:15:59 +0000</pubDate>
+      <category>politique</category>
+      <category>COP31</category>
+      <category>Pétrole</category>
+      <category>Énergies</category>
+    </item>
+    <item>
+      <title>UDC, Destinus et aide au développement au menu de la presse dominicale</title>
+      <link>https://agefi.com/actualites/politique/udc-destinus-et-aide-au-developpement-au-menu-de-la-presse-dominicale</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545517</guid>
+      <description>Le ticket entièrement alémanique de l’UDC suscite la colère des Romands, tandis que Roger Köppel critique le fabricant d’armes Destinus et qu’Esther Duflo plaide pour davantage d’aide au développement.</description>
+      <pubDate>Sun, 22 Nov 2026 08:34:12 +0000</pubDate>
+      <category>politique</category>
+      <category>UDC</category>
+      <category>Partis politiques</category>
+      <category>Armée</category>
+      <category>Diplomatie</category>
+    </item>
     <item>
       <title>Le Centre, Anthropic, COP: les trois mots-clés de la semaine</title>
       <link>https://agefi.com/actualites/entreprises/le-centre-anthropic-cop-les-trois-mots-cles-de-la-semaine</link>
@@ -642,28 +665,6 @@
       <category>politique</category>
       <category>Arabie saoudite</category>
       <category>Moyen-Orient</category>
-    </item>
-    <item>
-      <title>PostFinance accroît son résultat d’exploitation de 25,9% sur neuf mois</title>
-      <link>https://agefi.com/actualites/entreprises/postfinance-accroit-son-resultat-dexploitation-de-259-sur-neuf-mois</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545461</guid>
-      <description>L’Ebit a atteint 282 millions de francs, soutenu notamment par les activités indépendantes des taux d’intérêt. Les charges d’exploitation ont reculé.</description>
-      <pubDate>Thu, 19 Nov 2026 09:48:33 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Postfinance</category>
-      <category>Banques</category>
-    </item>
-    <item>
-      <title>Le négoce de matières premières voit sa valeur ajoutée reculer de 10,8% en Suisse</title>
-      <link>https://agefi.com/actualites/macroeconomie/le-negoce-de-matieres-premieres-voit-sa-valeur-ajoutee-reculer-de-108-en-suisse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545460</guid>
-      <description>Le secteur a généré 17,1 milliards de francs de valeur ajoutée en 2025, soit 2% du total national. Genève reste de loin le principal pôle, concentrant 60,6% de la valeur ajoutée du négoce de matières premières.</description>
-      <pubDate>Thu, 19 Nov 2026 09:37:12 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Matières premières</category>
-      <category>PIB</category>
-      <category>Seco</category>
-      <category>OFS</category>
     </item>
   </channel>
 </rss>
