@@ -5,7 +5,71 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Sun, 22 Nov 2026 19:33:37 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 07:29:39 +0000</lastBuildDate>
+    <item>
+      <title>SIX lance l’indice SIX European Growth Index</title>
+      <link>https://agefi.com/actualites/marches/six-lance-lindice-six-european-growth-index</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545524</guid>
+      <description>Le nouveau programme de l’opérateur de la Bourse suisse à Zurich comprend des sociétés «à forte croissance», dont la capitalisation se situe entre 100 millions et 1 milliard d’euros.</description>
+      <pubDate>Mon, 23 Nov 2026 07:14:10 +0000</pubDate>
+      <category>marches</category>
+      <category>SIX</category>
+      <category>Indices</category>
+    </item>
+    <item>
+      <title>Climat: la COP31 échoue devant la division des pays sur les énergies fossiles</title>
+      <link>https://agefi.com/actualites/politique/climat-la-cop31-echoue-devant-la-division-des-pays-sur-les-energies-fossiles</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545523</guid>
+      <description>L’Union européenne et plusieurs autres pays, dont la Suisse, ont rejeté un projet de décision finale omettant les énergies fossiles.</description>
+      <pubDate>Mon, 23 Nov 2026 06:59:21 +0000</pubDate>
+      <category>politique</category>
+      <category>COP31</category>
+      <category>Turquie</category>
+      <category>Électricité</category>
+      <category>Énergies</category>
+      <category>Pétrole</category>
+    </item>
+    <item>
+      <title>ABB s’offre le spécialiste allemand du refroidissement Ziehl-Abegg</title>
+      <link>https://agefi.com/actualites/entreprises/abb-soffre-le-specialiste-allemand-du-refroidissement-ziehl-abegg</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545522</guid>
+      <description>L’opération valorise l’entreprise à 2,65 milliards de dollars. Sa finalisation est prévue au second semestre 2027.</description>
+      <pubDate>Mon, 23 Nov 2026 06:48:41 +0000</pubDate>
+      <category>entreprises</category>
+      <category>ABB</category>
+      <category>Electrotechnique</category>
+    </item>
+    <item>
+      <title>Julius Baer accroît son bénéfice avant impôts sur dix mois</title>
+      <link>https://agefi.com/actualites/entreprises/julius-baer-accroit-son-benefice-avant-impots-sur-dix-mois</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545521</guid>
+      <description>Le gestionnaire de fortune zurichois annonce 1,3 milliard de francs, soit une hausse de 17% sur un an. Les avoirs sous gestion ont atteint 553 milliards fin octobre, en progression de 6% depuis le début de l’année.</description>
+      <pubDate>Mon, 23 Nov 2026 06:41:28 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Banques</category>
+      <category>Julius Baer</category>
+    </item>
+    <item>
+      <title>Epic Suisse: valeur du portefeuille à 1,7 milliard de francs</title>
+      <link>https://agefi.com/actualites/entreprises/epic-suisse-valeur-du-portefeuille-a-17-milliard-de-francs</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545520</guid>
+      <description>Pour les neuf premiers mois, Les revenus locatifs de la société immobilière zurichoise sont en hausse de 4,5% sur un an.</description>
+      <pubDate>Mon, 23 Nov 2026 06:33:59 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Immobilier</category>
+      <category>Epic</category>
+    </item>
+    <item>
+      <title>Turquie: les avoirs de 108 personnes dans différents pays, dont la Suisse, gelés</title>
+      <link>https://agefi.com/actualites/marches/turquie-les-avoirs-de-108-personnes-dans-differents-pays-dont-la-suisse-geles</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545519</guid>
+      <description>La justice enquête sur un scandale boursier lié à un fonds d’investissement. Les suspects auraient bénéficié de manipulations présumées des marchés.</description>
+      <pubDate>Mon, 23 Nov 2026 06:24:32 +0000</pubDate>
+      <category>marches</category>
+      <category>Turquie</category>
+      <category>Suisse</category>
+      <category>Bourses</category>
+    </item>
     <item>
       <title>La COP31 peine toujours à s’accorder sur les énergies fossiles</title>
       <link>https://agefi.com/actualites/politique/la-cop31-peine-toujours-a-saccorder-sur-les-energies-fossiles</link>
@@ -599,72 +663,6 @@
       <category>entreprises</category>
       <category>Schindler</category>
       <category>Industrie</category>
-    </item>
-    <item>
-      <title>UBS envisagerait de délocaliser des centaines de postes d’Europe vers l’Inde</title>
-      <link>https://agefi.com/actualites/entreprises/ubs-envisagerait-de-delocaliser-des-centaines-de-postes-deurope-vers-linde</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545469</guid>
-      <description>Selon Bloomberg, le transfert des fonctions centrales s’étalerait sur les deux prochaines années et concernerait surtout des postes en Pologne. La banque cherche à réduire ses coûts.</description>
-      <pubDate>Thu, 19 Nov 2026 13:01:58 +0000</pubDate>
-      <category>entreprises</category>
-      <category>UBS</category>
-      <category>Banques</category>
-      <category>Europe</category>
-      <category>Inde</category>
-    </item>
-    <item>
-      <title>Berlin et UniCredit trouvent un accord de principe sur la prise de contrôle de Commerzbank</title>
-      <link>https://agefi.com/actualites/entreprises/berlin-et-unicredit-trouvent-un-accord-de-principe-sur-la-prise-de-controle-de-commerzbank</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545467</guid>
-      <description>Le siège à Francfort et le statut de société cotée seraient maintenus. L’accord ne précise pas le sort des quelque 7000 suppressions de postes évoquées en avril.</description>
-      <pubDate>Thu, 19 Nov 2026 12:15:10 +0000</pubDate>
-      <category>entreprises</category>
-      <category>UniCredit</category>
-      <category>Banques</category>
-      <category>Allemagne</category>
-    </item>
-    <item>
-      <title>La Bourse suisse dans le rouge en fin de matinée</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-dans-le-rouge-en-fin-de-matinee-5</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545466</guid>
-      <description>En fin de matinée, l’indice SMI baissait de 0,41% à 14.826,60 points, le SLI de 0,08% à 2386,94 points et le SPI de 0,24% à 20.885,42 points.</description>
-      <pubDate>Thu, 19 Nov 2026 10:38:49 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-    </item>
-    <item>
-      <title>Publica ouvre une enquête externe après la cyberattaque</title>
-      <link>https://agefi.com/actualites/entreprises/publica-ouvre-une-enquete-externe-apres-la-cyberattaque</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545465</guid>
-      <description>Des données d’anciens et d’actuels assurés pourraient avoir fuité. Les avoirs de prévoyance et les rentes ne sont pas menacés. Les premiers résultats de l’enquête sont attendus fin mars 2027.</description>
-      <pubDate>Thu, 19 Nov 2026 10:30:51 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Publica</category>
-      <category>Caisses de pension</category>
-      <category>Cybersécurité</category>
-    </item>
-    <item>
-      <title>L’extension des pouvoirs de sanction de la Finma divise</title>
-      <link>https://agefi.com/actualites/politique/lextension-des-pouvoirs-de-sanction-de-la-finma-divise</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545464</guid>
-      <description>Les partis bourgeois et les milieux économiques rejettent ce volet de la réforme bancaire proposée après la crise de Credit Suisse. Le PS est le seul parti gouvernemental à le soutenir.</description>
-      <pubDate>Thu, 19 Nov 2026 10:24:43 +0000</pubDate>
-      <category>politique</category>
-      <category>Finma</category>
-      <category>Conseil fédéral</category>
-      <category>Banques</category>
-      <category>Credit Suisse</category>
-    </item>
-    <item>
-      <title>Le quartier financier de Riyad de nouveau attaqué</title>
-      <link>https://agefi.com/actualites/politique/le-quartier-financier-de-riyad-de-nouveau-attaque</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545462</guid>
-      <description>La tour abritant le fonds souverain saoudien a été endommagée quelques heures après que la coalition dirigée par l’Arabie saoudite a annoncé avoir intercepté un missile tiré par les Houthis du Yémen.</description>
-      <pubDate>Thu, 19 Nov 2026 10:03:12 +0000</pubDate>
-      <category>politique</category>
-      <category>Arabie saoudite</category>
-      <category>Moyen-Orient</category>
     </item>
   </channel>
 </rss>
