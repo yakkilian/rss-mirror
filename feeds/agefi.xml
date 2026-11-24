@@ -5,7 +5,139 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Mon, 23 Nov 2026 23:51:47 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 09:49:22 +0000</lastBuildDate>
+    <item>
+      <title>Sanofi rachète l’américain Insmed pour 37,6 milliards d’euros</title>
+      <link>https://agefi.com/actualites/entreprises/sanofi-rachete-lamericain-insmed-pour-376-milliards-deuros</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545563</guid>
+      <description>L’opération vise à renforcer la présence du groupe français dans les maladies respiratoires et devrait être finalisée au premier semestre 2027.</description>
+      <pubDate>Tue, 24 Nov 2026 09:37:30 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Sanofi</category>
+      <category>Pharma</category>
+      <category>Santé</category>
+    </item>
+    <item>
+      <title>La parahôtellerie a enregistré 7,6 millions de nuitées au troisième trimestre</title>
+      <link>https://agefi.com/actualites/macroeconomie/la-parahotellerie-a-enregistre-76-millions-de-nuitees-au-troisieme-trimestre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545562</guid>
+      <description>Selon les chiffres provisoires de l’OFS, la clientèle suisse a représenté 60% de la demande. En incluant l’hôtellerie, le total des nuitées touristiques a atteint 21,8 millions.</description>
+      <pubDate>Tue, 24 Nov 2026 09:09:17 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Parahôtellerie</category>
+      <category>Tourisme</category>
+      <category>Suisse</category>
+    </item>
+    <item>
+      <title>La Bourse suisse ouvre dans le vert</title>
+      <link>https://agefi.com/actualites/marches/la-bourse-suisse-ouvre-dans-le-vert-17</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545561</guid>
+      <description>A 09h18, le SMI s’appréciait de 0,13% à 14.725,88 points, le SLI de 0,20% à 2374,01 points et le SLI de 0,17% à 20.751,38 points.</description>
+      <pubDate>Tue, 24 Nov 2026 08:59:55 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourse Zurich</category>
+      <category>SMI</category>
+    </item>
+    <item>
+      <title>Les Bourses asiatiques propulsées par le retour du patron de Nvidia</title>
+      <link>https://agefi.com/actualites/marches/les-bourses-asiatiques-propulsees-par-le-retour-du-patron-de-nvidia</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545560</guid>
+      <description>Les places de Taipei, Séoul et Tokyo ont gagné respectivement 8,99%, 6,32% et 3,91% mardi, tirées par les valeurs technologiques. Les marchés chinois sont restés à l’écart de cette hausse.</description>
+      <pubDate>Tue, 24 Nov 2026 07:58:22 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourses</category>
+      <category>Asie</category>
+      <category>Nvidia</category>
+    </item>
+    <item>
+      <title>La Confédération prévoit d’émettre 3 milliards de francs d’emprunts en 2027</title>
+      <link>https://agefi.com/actualites/politique/la-confederation-prevoit-demettre-3-milliards-de-francs-demprunts-en-2027</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545559</guid>
+      <description>Les besoins de financement sont estimés à 4,9 milliards de francs. Les débats sur le financement de l’armée pourraient conduire à une modification du programme d’émission.</description>
+      <pubDate>Tue, 24 Nov 2026 07:43:44 +0000</pubDate>
+      <category>politique</category>
+      <category>Confédération</category>
+      <category>Dette</category>
+      <category>Taux d'emprunts</category>
+    </item>
+    <item>
+      <title>Roche obtient une nouvelle homologation de la FDA pour Wilserdly</title>
+      <link>https://agefi.com/actualites/entreprises/roche-obtient-une-nouvelle-homologation-de-la-fda-pour-wilserdly</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545558</guid>
+      <description>Le traitement oral est autorisé seul chez les adultes atteints d’un cancer du sein ER positif, HER2 négatif, aux stades I, II et III, avec un risque moyen à élevé de rechute.</description>
+      <pubDate>Tue, 24 Nov 2026 07:32:47 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Roche</category>
+      <category>Pharma</category>
+      <category>FDA</category>
+      <category>Etats-Unis</category>
+    </item>
+    <item>
+      <title>EFG International dégage un bénéfice net en hausse de 10% sur dix mois</title>
+      <link>https://agefi.com/actualites/entreprises/efg-international-degage-un-benefice-net-en-hausse-de-10-sur-dix-mois</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545557</guid>
+      <description>Les afflux nets de capitaux ont atteint 9,2 milliards de francs. Les actifs sous gestion s’établissent à 206,1 milliards fin octobre, en hausse de 12% sur un an.</description>
+      <pubDate>Tue, 24 Nov 2026 07:15:44 +0000</pubDate>
+      <category>entreprises</category>
+      <category>EFG</category>
+      <category>Banques</category>
+      <category>Gestion de fortune</category>
+    </item>
+    <item>
+      <title>Holcim porte sa participation dans Cementos Pacasmayo à 93,65%</title>
+      <link>https://agefi.com/actualites/entreprises/holcim-porte-sa-participation-dans-cementos-pacasmayo-a-9365</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545556</guid>
+      <description>Le groupe zougois a finalisé l’acquisition du cimentier péruvien. Au total, 184,96 millions d’actions ont été apportées à l’offre pour 401,6 millions de francs.</description>
+      <pubDate>Tue, 24 Nov 2026 06:59:27 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Holcim</category>
+      <category>Ciment</category>
+      <category>Matières premières</category>
+    </item>
+    <item>
+      <title>Jungfraubahn veut racheter Schilthornbahn à 1800 francs par titre</title>
+      <link>https://agefi.com/actualites/entreprises/jungfraubahn-veut-racheter-schilthornbahn-a-1800-francs-par-titre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545555</guid>
+      <description>L’offre vise la totalité des actions. Des actionnaires représentant 52,3% du capital et des droits de vote ont déjà approuvé l’opération.</description>
+      <pubDate>Tue, 24 Nov 2026 06:37:46 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Jungfraubahn</category>
+      <category>Transports</category>
+    </item>
+    <item>
+      <title>Barry Callebaut construit une nouvelle usine en Indonésie</title>
+      <link>https://agefi.com/actualites/entreprises/barry-callebaut-construit-une-nouvelle-usine-en-indonesie</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545554</guid>
+      <description>La mise en service du site à Karawang est prévue en mars 2029. Le groupe zurichois n’a pas précisé le montant de l’investissement.</description>
+      <pubDate>Tue, 24 Nov 2026 06:32:30 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Barry Callebaut</category>
+      <category>Chocolat</category>
+      <category>Indonésie</category>
+    </item>
+    <item>
+      <title>Le retour de Jensen Huang à la tête de Nvidia porte les bourses mondiales</title>
+      <link>https://agefi.com/actualites/marches/le-retour-de-jensen-huang-a-la-tete-de-nvidia-porte-les-bourses-mondiales</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545553</guid>
+      <description>Le titre du fabricant de puces a bondi de 31,48% lundi à Wall Street, gagnant plus de 900 milliards de dollars de capitalisation. Le Nasdaq a progressé de 6,51%, sa meilleure séance depuis avril 2025.</description>
+      <pubDate>Tue, 24 Nov 2026 06:24:48 +0000</pubDate>
+      <category>marches</category>
+      <category>Bourses</category>
+      <category>Nvidia</category>
+      <category>Wall Street</category>
+      <category>Technologies</category>
+      <category>Nasdaq</category>
+    </item>
+    <item>
+      <title>Nestlé ferme une usine en Colombie après le séisme</title>
+      <link>https://agefi.com/actualites/entreprises/nestle-ferme-une-usine-en-colombie-apres-le-seisme</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545552</guid>
+      <description>Environ 70% de la capacité de production du site de Dosquebradas a été endommagée, selon le groupe. L’usine employait quelque 320 personnes. Le site de distribution reste opérationnel.</description>
+      <pubDate>Tue, 24 Nov 2026 06:15:45 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Nestlé</category>
+      <category>Agroalimentaire</category>
+    </item>
     <item>
       <title>GPF regroupe ses activités de courtage dans une nouvelle arcade à Genève</title>
       <link>https://agefi.com/actualites/immo/un-ancrage-genevois</link>
@@ -528,129 +660,6 @@
       <description>Certains constructeurs automobiles s’emparent de l’Art pour donner à leur propre créativité un supplément d’âme. Valorisant!</description>
       <pubDate>Fri, 20 Nov 2026 14:00:00 +0000</pubDate>
       <category>life</category>
-    </item>
-    <item>
-      <title>Les négociations s'enlisent sur les énergies fossiles à la COP31</title>
-      <link>https://agefi.com/actualites/politique/les-negociations-senlisent-sur-les-energies-fossiles-a-la-cop31</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545507</guid>
-      <description>Près de 200 pays tentent d'arracher un accord à Antalya, mais l'absence de référence explicite à la sortie des énergies fossiles suscite de vives oppositions.</description>
-      <pubDate>Fri, 20 Nov 2026 13:50:56 +0000</pubDate>
-      <category>politique</category>
-      <category>COP31</category>
-      <category>Climat</category>
-    </item>
-    <item>
-      <title>Les produits structurés poursuivent leur croissance en Suisse</title>
-      <link>https://agefi.com/actualites/marches/les-produits-structures-poursuivent-leur-croissance-en-suisse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545506</guid>
-      <description>Le chiffre d’affaires du secteur a progressé de 16% au troisième trimestre, à 62 milliards de francs, selon la Sspa, malgré un ralentissement par rapport au premier semestre.</description>
-      <pubDate>Fri, 20 Nov 2026 13:03:54 +0000</pubDate>
-      <category>marches</category>
-      <category>Produits structurés</category>
-    </item>
-    <item>
-      <title>Tout se joue au sommet de Genève sur l’IA</title>
-      <link>https://agefi.com/actualites/opinions/tout-se-joue-au-sommet-de-geneve-sur-lia</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545474</guid>
-      <description>La Suisse doit saisir le rendez-vous de juin 2027 pour s’imposer comme un acteur clé de la gouvernance mondiale de l’intelligence artificielle, grâce à son expertise, sa neutralité et ses capacités de test.</description>
-      <pubDate>Fri, 20 Nov 2026 13:00:00 +0000</pubDate>
-      <category>opinions</category>
-      <category>Intelligence artificielle</category>
-      <category>Genève</category>
-    </item>
-    <item>
-      <title>Lombard Odier investit dans un constructeur européen de motos électriques</title>
-      <link>https://agefi.com/actualites/entreprises/lombard-odier-investit-dans-un-constructeur-europeen-de-motos-electriques</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545484</guid>
-      <description>La banque privée genevoise participera au tour de financement de plus de 150 millions d’euros destiné à soutenir le développement de la société Stark Future.</description>
-      <pubDate>Fri, 20 Nov 2026 12:00:00 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Mobilité</category>
-      <category>Développement durable</category>
-      <category>Électricité</category>
-      <category>Lombard Odier</category>
-      <category>Investissement durable</category>
-    </item>
-    <item>
-      <title>Lufthansa supprime 1000 emplois face à des pertes persistantes</title>
-      <link>https://agefi.com/actualites/entreprises/lufthansa-supprime-1000-emplois-face-a-des-pertes-persistantes</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545505</guid>
-      <description>Confrontée à la flambée du kérosène et à des coûts structurels élevés, la compagnie allemande juge son plan de redressement insuffisant et prévoit de réduire ses capacités sur les vols court et moyen-courriers.</description>
-      <pubDate>Fri, 20 Nov 2026 11:01:31 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Aviation</category>
-    </item>
-    <item>
-      <title>Le SMI creuse ses pertes, plombé par les valeurs industrielles et bancaires</title>
-      <link>https://agefi.com/actualites/marches/le-smi-creuse-ses-pertes-plombe-par-les-valeurs-industrielles-et-bancaires</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545504</guid>
-      <description>Vers 10h55 à la Bourse suisse, l’indice vedette SMI creusait ses pertes et lâchait 0,85% à 14.596,79 points, le SLI reculait de 0,96% à 2345,29 points et le SPI de 0,9% à 20.542,71 points.</description>
-      <pubDate>Fri, 20 Nov 2026 10:52:09 +0000</pubDate>
-      <category>marches</category>
-      <category>SMI</category>
-      <category>Bourse Zurich</category>
-    </item>
-    <item>
-      <title>Nestlé mise sur les technologies de pointe à Orbe</title>
-      <link>https://agefi.com/actualites/entreprises/nestle-mise-sur-les-technologies-de-pointe-a-orbe</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545503</guid>
-      <description>Baptisé «Deep Tech Center», le nouveau site emploie une soixantaine de personnes et explore les applications de l’intelligence artificielle et de la robotique. Ses effectifs devraient augmenter à moyen terme.</description>
-      <pubDate>Fri, 20 Nov 2026 10:31:59 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Nestlé</category>
-      <category>Suisse</category>
-    </item>
-    <item>
-      <title>Les primes maladie grignotent le pouvoir d’achat des Suisses</title>
-      <link>https://agefi.com/actualites/macroeconomie/les-primes-maladie-grignotent-le-pouvoir-dachat-des-suisses</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545502</guid>
-      <description>La facture mensuelle moyenne atteint désormais 403 francs par personne, tandis que les primes de l’assurance complémentaire restent stables.</description>
-      <pubDate>Fri, 20 Nov 2026 10:22:37 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Assurance maladie</category>
-      <category>Primes maladie</category>
-      <category>Suisse</category>
-    </item>
-    <item>
-      <title>Nvidia visé par une nouvelle enquête en Californie</title>
-      <link>https://agefi.com/actualites/entreprises/nvidia-vise-par-une-nouvelle-enquete-en-californie</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545500</guid>
-      <description>Le procureur général de Californie cherche à déterminer si le géant des puces a trompé ses investisseurs sur les risques de transfert de technologies sensibles vers la Chine.</description>
-      <pubDate>Fri, 20 Nov 2026 10:01:59 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Nvidia</category>
-      <category>Intelligence artificielle</category>
-      <category>Bourses</category>
-      <category>Etats-Unis</category>
-    </item>
-    <item>
-      <title>ADC Therapeutics veut quitter la Suisse pour les Etats-Unis</title>
-      <link>https://agefi.com/actualites/entreprises/adc-therapeutics-veut-quitter-la-suisse-pour-les-etats-unis</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545499</guid>
-      <description>La biotech vaudoise envisage de transférer son siège d’Epalinges au Delaware afin de réduire ses coûts, d’alléger ses contraintes réglementaires et de séduire davantage les investisseurs américains.</description>
-      <pubDate>Fri, 20 Nov 2026 09:52:53 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Biotech</category>
-      <category>Suisse</category>
-      <category>Etats-Unis</category>
-    </item>
-    <item>
-      <title>La Bourse suisse recule dans le sillage des marchés mondiaux</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-recule-dans-le-sillage-des-marches-mondiaux</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545498</guid>
-      <description>Vers 09h06 à la Bourse suisse, l’indice vedette SMI reculait de 0,28% à 14.681,04 points, le SLI reculait de 0,4% à 2358,65 points et le SPI de 0,33% à 20.660,9 points.</description>
-      <pubDate>Fri, 20 Nov 2026 09:30:42 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-    </item>
-    <item>
-      <title>Luc Oesch prendra la direction générale du Centre Patronal en juillet 2027</title>
-      <link>https://agefi.com/actualites/trajectoires/luc-oesch-prendra-la-direction-generale-du-centre-patronal-en-juillet-2027</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545497</guid>
-      <description>Actuel directeur des finances, des technologies et des services généraux, Luc Oesch succédera à Christophe Reymond, qui quittera l’organisation après 35 ans de service.</description>
-      <pubDate>Fri, 20 Nov 2026 09:20:41 +0000</pubDate>
-      <category>trajectoires</category>
     </item>
   </channel>
 </rss>
