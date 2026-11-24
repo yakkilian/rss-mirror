@@ -5,6 +5,11 @@
     <link>https://www.fortinet.com/blog/threat-research</link>
     <description>FortiGuard Labs Threat Research</description>
     <item>
+      <title>Fake Delivery Notices, Stolen Logins, and Malicious Domains Threaten Holiday Shoppers</title>
+      <link>https://www.fortinet.com/blog/threat-research/fake-delivery-notices-stolen-logins-and-malicious-domains-threaten-holiday-shoppers</link>
+      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/fake-delivery-notices-stolen-logins-and-malicious-domains-threaten-holiday-shoppers</guid>
+    </item>
+    <item>
       <title>T-SQL Being Abused to Deliver Malware on Compromised MS SQL Servers</title>
       <link>https://www.fortinet.com/blog/threat-research/t-sql-being-abused-to-deliver-malware-on-compromised-ms-sql-servers</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/t-sql-being-abused-to-deliver-malware-on-compromised-ms-sql-servers</guid>
@@ -48,11 +53,6 @@
       <title>QuickFox Supply Chain Attack Used to Deploy FDMTP Implant</title>
       <link>https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant</link>
       <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant</guid>
-    </item>
-    <item>
-      <title>Inside a TrickBot Variant Using DNS Tunneling for C2</title>
-      <link>https://www.fortinet.com/blog/threat-research/inside-a-trickbot-variant-using-dns-tunneling-for-c2</link>
-      <guid isPermaLink="true">https://www.fortinet.com/blog/threat-research/inside-a-trickbot-variant-using-dns-tunneling-for-c2</guid>
     </item>
     <item>
       <title>RolandSkimmer: Silent Credit Card Thief Uncovered</title>
