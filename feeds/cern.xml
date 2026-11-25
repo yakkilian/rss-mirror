@@ -5,7 +5,21 @@
     <link>https://home.cern/tag/news/</link>
     <description>Latest CERN news mirrored for FreshRSS and ICTjournal monitoring.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 08:24:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 21:40:27 +0000</lastBuildDate>
+    <item>
+      <title>How AI-powered solutions could make research infrastructures more sustainable</title>
+      <link>https://home.cern/how-ai-powered-solutions-could-make-research-infrastructures-more-sustainable/</link>
+      <guid isPermaLink="true">https://home.cern/how-ai-powered-solutions-could-make-research-infrastructures-more-sustainable/</guid>
+      <description>Large-scale research infrastructures enable discoveries that would be impossible for institutes, laboratories or countries to achieve alone. Their scale and complexity make them powerful engines of collaboration and innovation, while also posing environmental challenges. The new intelligent Research Infrastructure Sustainability (iRIS) project, whose EU-funded phase started earlier this month at CERN, will explore how technologies</description>
+      <pubDate>Wed, 25 Nov 2026 14:29:24 +0100</pubDate>
+    </item>
+    <item>
+      <title>Computer Security: Killing mutual trust</title>
+      <link>https://home.cern/computer-security-killing-mutual-trust/</link>
+      <guid isPermaLink="true">https://home.cern/computer-security-killing-mutual-trust/</guid>
+      <description>Welcome to the decade of security revolutions. For one, the ongoing AI revolution. While the benefits of AI are unquestionable, AI tools are now threatening current security models as vulnerabilities are found at machine speed and no longer at human slowness. Meanwhile, patching still needs humans in the loop, making the imbalance between offence and</description>
+      <pubDate>Wed, 25 Nov 2026 10:21:03 +0100</pubDate>
+    </item>
     <item>
       <title>LGBTQ+ in STEM Day celebrated at CERN</title>
       <link>https://home.cern/lgbtq-in-stem-day-celebrated-at-cern/</link>
@@ -201,20 +215,6 @@
       <guid isPermaLink="true">https://home.cern/computer-security-kids-at-the-keyboard/</guid>
       <description>Last weekend, while the sun was shining brightly, nature was flourishing in all its colours, flavours and scents and hundreds of birds were chirping their favourite tunes, I decided to go for a stroll with my dog. A nice two-hour walk in the vineyards around CERN, hiking up the Jura, enjoying the view and returning</description>
       <pubDate>Thu, 17 Sep 2026 11:29:52 +0200</pubDate>
-    </item>
-    <item>
-      <title>Strong evidence for quantum entanglement between Z bosons found by ATLAS and CMS</title>
-      <link>https://home.cern/strong-evidence-for-quantum-entanglement-between-z-bosons-found-by-atlas-and-cms/</link>
-      <guid isPermaLink="true">https://home.cern/strong-evidence-for-quantum-entanglement-between-z-bosons-found-by-atlas-and-cms/</guid>
-      <description>Quantum entanglement is certainly one of the stranger concepts to have emerged from the melting pot of 20th-century physics. Many great physicists, including Einstein, struggled to accept that the phenomenon could be real but, for decades now, the number of examples demonstrating it has been increasing. And, recently, the ATLAS and CMS Collaborations have added to these results by</description>
-      <pubDate>Thu, 17 Sep 2026 10:15:26 +0200</pubDate>
-    </item>
-    <item>
-      <title>The Duke of Edinburgh visits CERN</title>
-      <link>https://home.cern/the-duke-of-edinburgh-visits-cern/</link>
-      <guid isPermaLink="true">https://home.cern/the-duke-of-edinburgh-visits-cern/</guid>
-      <description>On Tuesday, 8 September, CERN welcomed His Royal Highness, Prince Edward the Duke of Edinburgh, to visit the site and meet members of the CERN community. Upon arrival at LHC Point 5, he was greeted by the sub-prefect of Gex, Joël Bourgeot, and a CERN delegation that included Director-General Mark Thomson; Director for Accelerators and Technology, Oliver Brüning; Director for Research</description>
-      <pubDate>Tue, 15 Sep 2026 18:07:13 +0200</pubDate>
     </item>
   </channel>
 </rss>
