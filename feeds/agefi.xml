@@ -5,7 +5,86 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Tue, 24 Nov 2026 22:23:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 08:24:21 +0000</lastBuildDate>
+    <item>
+      <title>Le climat des affaires continue de s’améliorer dans les PME du secteur MEM</title>
+      <link>https://agefi.com/actualites/macroeconomie/le-climat-des-affaires-continue-de-sameliorer-dans-les-pme-du-secteur-mem</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545599</guid>
+      <description>L’indice Swissmechanic est remonté à environ -5 points au troisième trimestre, son meilleur niveau depuis trois ans. Plus de la moitié des entreprises jugent toutefois leur situation économique défavorable.</description>
+      <pubDate>Wed, 25 Nov 2026 07:59:34 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Industrie</category>
+      <category>BAK Economics</category>
+      <category>MEM</category>
+      <category>PME</category>
+    </item>
+    <item>
+      <title>Petra Weigert dirigera les ressources humaines de Denner</title>
+      <link>https://agefi.com/actualites/trajectoires/petra-weigert-dirigera-les-ressources-humaines-de-denner</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545598</guid>
+      <description>En charge des RH de Migrolino depuis 2024, elle rejoindra la direction générale du discounter le 1er février 2027.</description>
+      <pubDate>Wed, 25 Nov 2026 07:47:03 +0000</pubDate>
+      <category>trajectoires</category>
+      <category>Denner</category>
+    </item>
+    <item>
+      <title>Samsung Display prend 9,1% d’AMS Osram pour développer les Microled</title>
+      <link>https://agefi.com/actualites/entreprises/samsung-display-prend-91-dams-osram-pour-developper-les-microled</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545597</guid>
+      <description>Le groupe sud-coréen investira 210 millions d’euros dans le groupe coté à la Bourse suisse dans le cadre d’un partenariat stratégique.</description>
+      <pubDate>Wed, 25 Nov 2026 07:23:59 +0000</pubDate>
+      <category>entreprises</category>
+      <category>AMS</category>
+      <category>Samsung</category>
+      <category>Technologies</category>
+    </item>
+    <item>
+      <title>Addex Therapeutics creuse sa perte nette au troisième trimestre</title>
+      <link>https://agefi.com/actualites/entreprises/addex-therapeutics-creuse-sa-perte-nette-au-troisieme-trimestre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545596</guid>
+      <description>Le déficit du laboratoire genevois a atteint 1,89 million de francs, contre 1,58 million un an plus tôt. Les recettes sont passées de 50.000 à 10.000 francs.</description>
+      <pubDate>Wed, 25 Nov 2026 06:52:58 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Addex Therapeutics</category>
+      <category>Laboratoires</category>
+      <category>Pharma</category>
+      <category>Genève</category>
+    </item>
+    <item>
+      <title>La Corée du Nord expulse le chef du bureau diplomatique suisse</title>
+      <link>https://agefi.com/actualites/politique/la-coree-du-nord-expulse-le-chef-du-bureau-diplomatique-suisse</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545595</guid>
+      <description>Selon l’agence officielle KCNA, Pyongyang donne 48 heures à Sylvain Astier pour partir et demande la fermeture du bureau, en réponse aux sanctions suisses contre le camp de Songdowon.</description>
+      <pubDate>Wed, 25 Nov 2026 06:48:05 +0000</pubDate>
+      <category>politique</category>
+      <category>Asie</category>
+      <category>Suisse</category>
+      <category>Diplomatie</category>
+    </item>
+    <item>
+      <title>Nvidia recule de plus de 5% à Wall Street après le retour de Jensen Huang</title>
+      <link>https://agefi.com/actualites/marches/nvidia-recule-de-plus-de-5-a-wall-street-apres-le-retour-de-jensen-huang</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545594</guid>
+      <description>Après un rebond de 31% lundi, l’action a de nouveau baissé mardi sur fond d’interrogations sur la gouvernance. Jensen Huang a présenté ses excuses aux équipes et dit avoir entamé une thérapie.</description>
+      <pubDate>Wed, 25 Nov 2026 06:39:24 +0000</pubDate>
+      <category>marches</category>
+      <category>Nvidia</category>
+      <category>Technologies</category>
+      <category>Wall Street</category>
+      <category>semi-conducteurs</category>
+      <category>Bourses</category>
+    </item>
+    <item>
+      <title>Les avoirs russes gelés en Suisse atteignent 8,5 milliards de francs</title>
+      <link>https://agefi.com/actualites/politique/les-avoirs-russes-geles-en-suisse-atteignent-85-milliards-de-francs</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545593</guid>
+      <description>Selon le Seco, ce montant au 1er juillet était en hausse par rapport aux 7,45 milliards de francs recensés à fin mars 2025. Il comprend 1,65 milliard de francs gelés à titre superprovisoire.</description>
+      <pubDate>Wed, 25 Nov 2026 06:24:55 +0000</pubDate>
+      <category>politique</category>
+      <category>Suisse</category>
+      <category>Russie</category>
+      <category>Seco</category>
+    </item>
     <item>
       <title>Trois surprises de la commission du National</title>
       <link>https://agefi.com/actualites/editorial/trois-surprises-de-la-commission-du-national</link>
@@ -586,85 +665,6 @@
       <category>macroeconomie</category>
       <category>Hôtellerie</category>
       <category>Suisse</category>
-    </item>
-    <item>
-      <title>Les banques face à l’ontologie</title>
-      <link>https://agefi.com/actualites/opinions/les-banques-face-a-lontologie</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545540</guid>
-      <description>Modèles de langage, harnais, agents et ontologie: les banques qui manqueront de surfer sur l’une de ces quatre vagues d’intelligence artificielle risquent de perdre la maîtrise de leur propre métier.</description>
-      <pubDate>Mon, 23 Nov 2026 14:00:00 +0000</pubDate>
-      <category>opinions</category>
-      <category>Intelligence artificielle</category>
-      <category>Banques</category>
-    </item>
-    <item>
-      <title>Delphine Klopfenstein Broggini candidate au Conseil fédéral</title>
-      <link>https://agefi.com/actualites/politique/delphine-klopfenstein-broggini-candidate-au-conseil-federal</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545541</guid>
-      <description>En réaction au ticket présenté par l’UDC, les Verts proposent leur conseillère nationale à la succession du ministre UDC démissionnaire Guy Parmelin.</description>
-      <pubDate>Mon, 23 Nov 2026 13:30:03 +0000</pubDate>
-      <category>politique</category>
-      <category>Conseil fédéral</category>
-      <category>UDC</category>
-      <category>Les Verts</category>
-    </item>
-    <item>
-      <title>Berne retient trois entreprises pour la recharge rapide des camions électriques</title>
-      <link>https://agefi.com/actualites/entreprises/berne-retient-trois-entreprises-pour-la-recharge-rapide-des-camions-electriques</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545539</guid>
-      <description>Une trentaine de sites autoroutiers doivent être équipés d’ici 2030. Fastned Switzerland, Obornes et Milence B.V. assureront le financement, la construction et l’exploitation des installations.</description>
-      <pubDate>Mon, 23 Nov 2026 13:19:53 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Mobilité</category>
-      <category>Électricité</category>
-      <category>Développement durable</category>
-      <category>Fret</category>
-      <category>Suisse</category>
-    </item>
-    <item>
-      <title>Les Bourses mondiales en rebond après la correction de l'IA</title>
-      <link>https://agefi.com/actualites/marches/les-bourses-mondiales-en-rebond-apres-la-correction-de-lia</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545538</guid>
-      <description>Les places européennes progressaient lundi à la mi-séance et les contrats à terme sur le Nasdaq gagnaient 3,59 %, sans dissiper les doutes sur la rentabilité des investissements dans l’intelligence artificielle.</description>
-      <pubDate>Mon, 23 Nov 2026 13:00:48 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourses</category>
-      <category>Allemagne</category>
-      <category>France</category>
-      <category>Etats-Unis</category>
-      <category>Pétrole</category>
-      <category>Intelligence artificielle</category>
-    </item>
-    <item>
-      <title>BKW intègre un deuxième cabinet d’architecture allemand</title>
-      <link>https://agefi.com/actualites/entreprises/bkw-integre-un-deuxieme-cabinet-darchitecture-allemand</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545537</guid>
-      <description>Le bureau Schmidt Plöcker Architekten, basé à Francfort, est la nouvelle acquisition de l’énergéticien bernois. Cette opération, d’un montant non dévoilé, renforce sa présence dans la région Rhin-Main.</description>
-      <pubDate>Mon, 23 Nov 2026 12:52:43 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Allemagne</category>
-      <category>BKW</category>
-      <category>Ingénierie</category>
-    </item>
-    <item>
-      <title>L’Allemagne voit les financements dans la tech s’envoler</title>
-      <link>https://agefi.com/actualites/entreprises/lallemagne-voit-les-financements-dans-la-tech-senvoler</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545536</guid>
-      <description>Les start-up actives dans les technologies de pointe devraient récolter un niveau record de 8,1 milliards d’euros en 2026, selon une étude.</description>
-      <pubDate>Mon, 23 Nov 2026 12:01:25 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Start-up</category>
-      <category>Allemagne</category>
-      <category>Industrie</category>
-    </item>
-    <item>
-      <title>Les indices de la Bourse suisse un peu plus fermes à l'approche de la mi-journée</title>
-      <link>https://agefi.com/actualites/marches/les-indices-de-la-bourse-suisse-un-peu-plus-fermes-a-lapproche-de-la-mi-journee</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545535</guid>
-      <description>Vers 10h40, le SMI progressait de 0,35% à 14.623,11 points. Le SLI se montrait légèrement plus ferme, prenant 0,44% à 2350,99 points, alors que l'indicateur élargi SPI s'étoffait de 0,38% à 20.572,06 points.</description>
-      <pubDate>Mon, 23 Nov 2026 10:49:35 +0000</pubDate>
-      <category>marches</category>
-      <category>SMI</category>
     </item>
   </channel>
 </rss>
