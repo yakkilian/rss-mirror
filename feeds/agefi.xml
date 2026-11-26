@@ -5,7 +5,93 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Wed, 25 Nov 2026 21:40:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 08:09:39 +0000</lastBuildDate>
+    <item>
+      <title>Succession de Guy Parmelin: Marcel Dettling réunira les UDC romands mardi à Berne</title>
+      <link>https://agefi.com/actualites/politique/succession-de-guy-parmelin-marcel-dettling-reunira-les-udc-romands-mardi-a-berne</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545632</guid>
+      <description>Le président du parti assure prendre au sérieux les critiques suscitées par l’absence de candidat romand à la succession de Guy Parmelin. Il défend toutefois une procédure «vraiment démocratique».</description>
+      <pubDate>Thu, 26 Nov 2026 07:56:53 +0000</pubDate>
+      <category>politique</category>
+      <category>UDC</category>
+    </item>
+    <item>
+      <title>Une cyberattaque contre Planzer entraîne un vol de données</title>
+      <link>https://agefi.com/actualites/entreprises/une-cyberattaque-contre-planzer-entraine-un-vol-de-donnees</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545631</guid>
+      <description>L’entreprise schwytzoise indique que des informations liées aux colis et des données d’accès à son portail clients ont été volées. Des clients de Digitec-Galaxus sont également concernés.</description>
+      <pubDate>Thu, 26 Nov 2026 07:33:54 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Livraisons</category>
+      <category>Cybersécurité</category>
+    </item>
+    <item>
+      <title>Montana Aerospace propose son ancien CEO Kai Arndt au conseil d’administration</title>
+      <link>https://agefi.com/actualites/trajectoires/montana-aerospace-propose-son-ancien-ceo-kai-arndt-au-conseil-dadministration</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545630</guid>
+      <description>Les actionnaires se prononceront le 17 décembre. S’il est élu, le dirigeant siégera jusqu’à la prochaine assemblée générale ordinaire.</description>
+      <pubDate>Thu, 26 Nov 2026 07:16:33 +0000</pubDate>
+      <category>trajectoires</category>
+      <category>Montana Tech</category>
+    </item>
+    <item>
+      <title>Elma espère renouer avec la rentabilité opérationnelle avant la fin de l’année</title>
+      <link>https://agefi.com/actualites/entreprises/elma-espere-renouer-avec-la-rentabilite-operationnelle-avant-la-fin-de-lannee</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545629</guid>
+      <description>Le groupe zurichois, qui prévoyait encore au printemps un résultat d’exploitation annuel «légèrement négatif», constate un effet positif des mesures d’optimisation au second semestre.</description>
+      <pubDate>Thu, 26 Nov 2026 07:03:46 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Elma Electronics</category>
+      <category>Electronique</category>
+    </item>
+    <item>
+      <title>Orior abaisse pour la deuxième fois ses objectifs pour 2026</title>
+      <link>https://agefi.com/actualites/entreprises/orior-abaisse-pour-la-deuxieme-fois-ses-objectifs-pour-2026</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545628</guid>
+      <description>Face à la faible demande de produits carnés et à la hausse des prix du porc, le groupe prévoit un recul organique des ventes de 8 à 9% et une marge Ebitda de 5 à 5,3%.</description>
+      <pubDate>Thu, 26 Nov 2026 06:45:26 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Orior</category>
+    </item>
+    <item>
+      <title>L’immobilier suisse ne résiste pas à toutes les crises économiques</title>
+      <link>https://agefi.com/actualites/entreprises/limmobilier-suisse-ne-resiste-pas-a-toutes-les-crises-economiques</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545627</guid>
+      <description>Une nouvelle étude de Wüest Partner évalue les réactions du marché immobilier face à quatre scénarios, dont deux adverses. Une stagflation serait particulièrement néfaste pour les prix du résidentiel.</description>
+      <pubDate>Thu, 26 Nov 2026 06:33:00 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Immobilier</category>
+      <category>Wüest Partner</category>
+      <category>Logements</category>
+      <category>Conjoncture</category>
+      <category>Croissance</category>
+      <category>PIB</category>
+    </item>
+    <item>
+      <title>La pénurie de main-d’œuvre qualifiée recule pour la troisième année consécutive</title>
+      <link>https://agefi.com/actualites/macroeconomie/la-penurie-de-main-doeuvre-qualifiee-recule-pour-la-troisieme-annee-consecutive</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545626</guid>
+      <description>L’indice d’Adecco a baissé de 7% sur un an, à 115 points, et retrouve son niveau de 2018. Les professionnels de la santé et de la construction restent très recherchés.</description>
+      <pubDate>Thu, 26 Nov 2026 06:27:56 +0000</pubDate>
+      <category>macroeconomie</category>
+      <category>Emplois</category>
+      <category>Suisse</category>
+      <category>Adecco</category>
+      <category>Santé</category>
+      <category>Construction</category>
+      <category>Intelligence artificielle</category>
+    </item>
+    <item>
+      <title>Bachem anticipe une croissance annuelle de 15 à 18% jusqu’en 2031</title>
+      <link>https://agefi.com/actualites/entreprises/bachem-anticipe-une-croissance-annuelle-de-15-a-18-jusquen-2031</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545625</guid>
+      <description>Le fabricant bâlois de peptides vise une marge Ebitda de 33 à 35% et prévoit d’investir l’équivalent de 25 à 30% de ses recettes au cours des cinq prochaines années.</description>
+      <pubDate>Thu, 26 Nov 2026 06:19:02 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Bachem</category>
+      <category>Pharma</category>
+      <category>Laboratoires</category>
+    </item>
     <item>
       <title>Givaudan prend des mesures après la sanction européenne</title>
       <link>https://agefi.com/actualites/entreprises/givaudan-prend-des-mesures-apres-la-sanction-europeenne</link>
@@ -583,95 +669,6 @@
       <pubDate>Tue, 24 Nov 2026 12:49:07 +0000</pubDate>
       <category>trajectoires</category>
       <category>Autoneum</category>
-    </item>
-    <item>
-      <title>Le pétrole se stabilise sur fond d’espoirs de négociations entre Washington et Téhéran</title>
-      <link>https://agefi.com/actualites/marches/le-petrole-se-stabilise-sur-fond-despoirs-de-negociations-entre-washington-et-teheran</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545572</guid>
-      <description>Les cours ont touché mardi en début de séance leur plus bas niveau depuis août. Les exportations de brut du Golfe résistent malgré les perturbations autour du détroit d’Ormuz, selon ING.</description>
-      <pubDate>Tue, 24 Nov 2026 12:18:59 +0000</pubDate>
-      <category>marches</category>
-      <category>Pétrole</category>
-      <category>Moyen-Orient</category>
-      <category>Guerre en Iran</category>
-      <category>Etats-Unis</category>
-    </item>
-    <item>
-      <title>Allemagne: le climat des affaires atteint son plus haut niveau depuis mai 2023</title>
-      <link>https://agefi.com/actualites/macroeconomie/allemagne-le-climat-des-affaires-atteint-son-plus-haut-niveau-depuis-mai-2023</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545571</guid>
-      <description>L’indice Ifo est passé de 90,1 à 90,6 points en novembre, une septième hausse mensuelle consécutive et plus marquée que prévu par les analystes.</description>
-      <pubDate>Tue, 24 Nov 2026 12:08:01 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Allemagne</category>
-      <category>Conjoncture</category>
-      <category>PIB</category>
-      <category>Industrie</category>
-    </item>
-    <item>
-      <title>Les Services industriels de Genève relèvent leurs tarifs du gaz de 9,5%</title>
-      <link>https://agefi.com/actualites/entreprises/les-services-industriels-de-geneve-relevent-leurs-tarifs-du-gaz-de-95</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545569</guid>
-      <description>Face à la hausse des prix sur les marchés, la régie augmente ses tarifs de 0,9 centime par kilowattheure. Ils resteront toutefois inférieurs à ceux de l’hiver 2025-2026.</description>
-      <pubDate>Tue, 24 Nov 2026 11:59:34 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Gaz</category>
-      <category>Genève</category>
-    </item>
-    <item>
-      <title>Le Grand Conseil vaudois veut étudier une reprise du site Cremo du Mont-sur-Lausanne</title>
-      <link>https://agefi.com/actualites/politique/le-grand-conseil-vaudois-veut-etudier-une-reprise-du-site-cremo-du-mont-sur-lausanne</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545567</guid>
-      <description>Les députés ont soutenu un postulat demandant au Conseil d’Etat d’examiner la création d’un consortium de producteurs et d’investisseurs privés. L’objectif est de préserver un maximum d’emplois.</description>
-      <pubDate>Tue, 24 Nov 2026 11:48:49 +0000</pubDate>
-      <category>politique</category>
-      <category>Vaud</category>
-      <category>Cremo</category>
-      <category>Parlement</category>
-    </item>
-    <item>
-      <title>Jungfraubahn veut racheter Schilthornbahn à 1800 francs par titre</title>
-      <link>https://agefi.com/actualites/entreprises/jungfraubahn-veut-racheter-schilthornbahn-a-1800-francs-par-titre</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545555</guid>
-      <description>L’offre vise la totalité des actions. Des actionnaires représentant 52,3% du capital et des droits de vote ont déjà approuvé l’opération.</description>
-      <pubDate>Tue, 24 Nov 2026 11:30:00 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Jungfraubahn</category>
-      <category>Transports</category>
-    </item>
-    <item>
-      <title>La Bourse suisse tombe dans le rouge en fin de matinée</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-tombe-dans-le-rouge-en-fin-de-matinee</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545566</guid>
-      <description>A l’approche de 11 heures, le SMI s’affaissait de 0,13% à 14.735,88 points, le SLI de 0,20% à 2374,01 points et le SLI de 0,17% à 20.751,38 points.</description>
-      <pubDate>Tue, 24 Nov 2026 10:49:02 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-    </item>
-    <item>
-      <title>Les prix du porc plombent l’agriculture suisse</title>
-      <link>https://agefi.com/actualites/entreprises/les-prix-du-porc-plombent-lagriculture-suisse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545565</guid>
-      <description>Selon les données provisoires de l’OFS, la valeur ajoutée brute du secteur devrait reculer de 11,7% en 2026. La saturation du marché porcin explique près de la moitié de cette baisse.</description>
-      <pubDate>Tue, 24 Nov 2026 10:30:54 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Agriculture</category>
-      <category>Prix</category>
-      <category>EPFZ</category>
-      <category>Avenir Suisse</category>
-      <category>OFS</category>
-    </item>
-    <item>
-      <title>Le sommet mondial du lait revient en Suisse en 2029 après 72 ans</title>
-      <link>https://agefi.com/actualites/macroeconomie/le-sommet-mondial-du-lait-revient-en-suisse-en-2029-apres-72-ans</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545564</guid>
-      <description>La Festhalle de BernExpo, à Berne, accueillera en octobre la quatrième édition organisée en Suisse.</description>
-      <pubDate>Tue, 24 Nov 2026 10:03:33 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Suisse</category>
-      <category>Matières premières</category>
-      <category>Agriculture</category>
     </item>
   </channel>
 </rss>
