@@ -5,7 +5,14 @@
     <link>https://home.cern/tag/news/</link>
     <description>Latest CERN news mirrored for FreshRSS and ICTjournal monitoring.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 08:09:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 21:29:23 +0000</lastBuildDate>
+    <item>
+      <title>2026 gift guide for the CERN community</title>
+      <link>https://home.cern/2026-gift-guide-for-the-cern-community/</link>
+      <guid isPermaLink="true">https://home.cern/2026-gift-guide-for-the-cern-community/</guid>
+      <description>1. CERN shopThe CERN shop has physics-inspired gifts suitable for every budget. This year there are plenty of new arrivals: a LEGO® Science Gateway set that lets you recreate the iconic CERN building, a LED-lit Quantum umbrella and Universe poncho that help you keep dry in style, and a Printed Circuit notebook. Remember that your</description>
+      <pubDate>Thu, 26 Nov 2026 14:42:29 +0100</pubDate>
+    </item>
     <item>
       <title>How AI-powered solutions could make research infrastructures more sustainable</title>
       <link>https://home.cern/how-ai-powered-solutions-could-make-research-infrastructures-more-sustainable/</link>
@@ -208,13 +215,6 @@
       <guid isPermaLink="true">https://home.cern/the-disconnection-of-the-lhc-has-begun/</guid>
       <description>The 27 km circumference of the Large Hadron Collider (LHC) contains thousands of magnets of different types – dipoles, quadrupoles, sextupoles, octupoles, decapoles, etc. – which each play a very specific role. Among them are the inner triplets: sets of three quadrupoles (hence the name) located on either side of the four main LHC experiments</description>
       <pubDate>Thu, 17 Sep 2026 15:25:25 +0200</pubDate>
-    </item>
-    <item>
-      <title>Computer Security: Kids at the keyboard</title>
-      <link>https://home.cern/computer-security-kids-at-the-keyboard/</link>
-      <guid isPermaLink="true">https://home.cern/computer-security-kids-at-the-keyboard/</guid>
-      <description>Last weekend, while the sun was shining brightly, nature was flourishing in all its colours, flavours and scents and hundreds of birds were chirping their favourite tunes, I decided to go for a stroll with my dog. A nice two-hour walk in the vineyards around CERN, hiking up the Jura, enjoying the view and returning</description>
-      <pubDate>Thu, 17 Sep 2026 11:29:52 +0200</pubDate>
     </item>
   </channel>
 </rss>
