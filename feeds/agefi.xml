@@ -5,7 +5,70 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Thu, 26 Nov 2026 21:29:21 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 08:19:44 +0000</lastBuildDate>
+    <item>
+      <title>Le bénéfice net de Dottikon ES progresse de près de 17% au premier semestre</title>
+      <link>https://agefi.com/actualites/entreprises/le-benefice-net-de-dottikon-es-progresse-de-pres-de-17-au-premier-semestre</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545671</guid>
+      <description>Le chiffre d’affaires du chimiste argovien augmente de 6,9% à 209,6 millions de francs. Malgré les nouveaux droits de douane américains, le groupe entend maintenir sa production sur son seul site argovien.</description>
+      <pubDate>Fri, 27 Nov 2026 07:59:38 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Dottikon</category>
+    </item>
+    <item>
+      <title>Raiffeisen vise 100 milliards de francs d’avoirs sous gestion d’ici à 2030</title>
+      <link>https://agefi.com/actualites/entreprises/raiffeisen-vise-100-milliards-de-francs-davoirs-sous-gestion-dici-a-2030</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545670</guid>
+      <description>Pour diversifier ses revenus, le groupe coopératif, qui gérait 67 milliards de francs à fin juin 2026, entend développer ses mandats de gestion de fortune et renforcer son offre de prévoyance.</description>
+      <pubDate>Fri, 27 Nov 2026 07:55:52 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Raiffeisen</category>
+    </item>
+    <item>
+      <title>Les recettes de Salt progressent de 5,0 % sur neuf mois</title>
+      <link>https://agefi.com/actualites/entreprises/les-recettes-de-salt-progressent-de-50-sur-neuf-mois</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545669</guid>
+      <description>Portées par les clients du mobile et de la fibre ainsi que par les entreprises, les recettes atteignent 908,2 millions de francs. L’Ebitdaal augmente de 6,1 % à 406,1 millions.</description>
+      <pubDate>Fri, 27 Nov 2026 07:22:07 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Salt</category>
+    </item>
+    <item>
+      <title>Newron modifie la troisième tranche du financement de l’événamide</title>
+      <link>https://agefi.com/actualites/entreprises/newron-modifie-la-troisieme-tranche-du-financement-de-levenamide</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545668</guid>
+      <description>Les investisseurs devraient souscrire cette tranche de 5,5 millions d’euros d’ici au 31 décembre 2026, puis investir 12 millions d’euros supplémentaires si les résultats des études sont positifs.</description>
+      <pubDate>Fri, 27 Nov 2026 07:07:58 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Newron</category>
+    </item>
+    <item>
+      <title>Haute Capital Partners veut se retirer de la Bourse BX</title>
+      <link>https://agefi.com/actualites/entreprises/haute-capital-partners-veut-se-retirer-de-la-bourse-bx</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545667</guid>
+      <description>Les actionnaires se prononceront le 18 décembre. En parallèle, un accord de principe non contraignant avec EEII prévoit le transfert de l’essentiel du portefeuille de participations contre des actions nouvelles.</description>
+      <pubDate>Fri, 27 Nov 2026 07:01:16 +0000</pubDate>
+      <category>entreprises</category>
+    </item>
+    <item>
+      <title>Pour Donald Trump, Jensen Huang ne représente pas une menace</title>
+      <link>https://agefi.com/actualites/entreprises/pour-donald-trump-jensen-huang-ne-represente-pas-une-menace</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545666</guid>
+      <description>Le président américain dit avoir œuvré en coulisses avec d’autres responsables américains pour que Jensen Huang soit réintégré à la tête de Nvidia après sa démission.</description>
+      <pubDate>Fri, 27 Nov 2026 06:43:44 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Nvidia</category>
+      <category>Donald Trump</category>
+    </item>
+    <item>
+      <title>Aponte, Hoffmann, Blocher sur le podium des plus riches de Suisse</title>
+      <link>https://agefi.com/actualites/entreprises/aponte-hoffmann-blocher-le-podium-des-plus-riches-de-suisse</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545665</guid>
+      <description>La famille à la tête de l’armateur genevois MSC, est créditée d’une fortune de 39 à 40 milliards de francs. Les Wertheimer, propriétaires de Chanel et premiers l’an dernier, reculent au quatrième rang.</description>
+      <pubDate>Fri, 27 Nov 2026 06:33:30 +0000</pubDate>
+      <category>entreprises</category>
+      <category>Suisse</category>
+    </item>
     <item>
       <title>Thomas Aeschi et Michael Graber au prisme de l’économie</title>
       <link>https://agefi.com/actualites/politique/thomas-aeschi-et-michael-graber-au-prisme-de-leconomie</link>
@@ -589,81 +652,6 @@
       <category>Parlement</category>
       <category>Emplois</category>
       <category>Santé</category>
-    </item>
-    <item>
-      <title>La canicule estivale a soutenu les ventes de bières</title>
-      <link>https://agefi.com/actualites/entreprises/la-canicule-estivale-a-soutenu-les-ventes-de-bieres</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545611</guid>
-      <description>Les recettes en Suisse ont progressé de 0,8% à 476 millions de litres sur l'exercice 2025-2026. Les variétés sans alcool ont enregistré une croissance de 15%.</description>
-      <pubDate>Wed, 25 Nov 2026 13:59:33 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Agroalimentaire</category>
-    </item>
-    <item>
-      <title>L'Europarlement approuve les accords avec la Suisse</title>
-      <link>https://agefi.com/actualites/politique/leuroparlement-approuve-les-accords-avec-la-suisse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545610</guid>
-      <description>L'assemblée de Strasbourg a largement entrériné le paquet d’accords qui couvre notamment l’électricité, la santé et la sécurité alimentaire.</description>
-      <pubDate>Wed, 25 Nov 2026 13:38:19 +0000</pubDate>
-      <category>politique</category>
-      <category>Suisse - UE</category>
-      <category>Bilatérales lll</category>
-    </item>
-    <item>
-      <title>Le Conseil fédéral aligne son contre-projet aux entreprises responsables sur l’UE</title>
-      <link>https://agefi.com/actualites/politique/le-conseil-federal-aligne-son-contre-projet-aux-entreprises-responsables-sur-lue</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545608</guid>
-      <description>Le gouvernement ne veut pas aller au-delà des exigences européennes. En matière de responsabilité, il propose de faire porter le fardeau de la preuve à la partie lésée.</description>
-      <pubDate>Wed, 25 Nov 2026 13:00:24 +0000</pubDate>
-      <category>politique</category>
-      <category>Conseil fédéral</category>
-      <category>Union européenne</category>
-      <category>Multinationales responsables</category>
-      <category>Initiatives</category>
-    </item>
-    <item>
-      <title>L’UE veut créer un fonds souverain de 50 milliards d’euros pour le quantique et l’IA</title>
-      <link>https://agefi.com/actualites/politique/lue-veut-creer-un-fonds-souverain-de-50-milliards-deuros-pour-le-quantique-et-lia</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545607</guid>
-      <description>Le fonds réunirait des capitaux publics et privés. Il s’inscrit dans la proposition de loi de la Commission européenne visant à faire de l’Europe l’un des leaders mondiaux du quantique en 2030.</description>
-      <pubDate>Wed, 25 Nov 2026 12:39:04 +0000</pubDate>
-      <category>politique</category>
-      <category>Union européenne</category>
-      <category>Informatique</category>
-      <category>Technologies</category>
-      <category>Intelligence artificielle</category>
-    </item>
-    <item>
-      <title>La Bourse suisse reste dans le vert avant l’inflation américaine</title>
-      <link>https://agefi.com/actualites/marches/la-bourse-suisse-reste-dans-le-vert-avant-linflation-americaine</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545606</guid>
-      <description>Vers 10h50, l’indice SMI progressait encore de 0,71% à 14.838,80 points. Le SLI accélérait de 0,60% à 2375,62 points et le SPI montait de 0,62% à 20.820,43 points.</description>
-      <pubDate>Wed, 25 Nov 2026 11:00:27 +0000</pubDate>
-      <category>marches</category>
-      <category>Bourse Zurich</category>
-      <category>SMI</category>
-    </item>
-    <item>
-      <title>Les perspectives économiques reprennent des couleurs en novembre</title>
-      <link>https://agefi.com/actualites/macroeconomie/les-perspectives-economiques-reprennent-des-couleurs-en-novembre</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545605</guid>
-      <description>L’indicateur UBS CFA a progressé de 17,6 points à 2,3 points en comparaison mensuelle, retrouvant son niveau de septembre.</description>
-      <pubDate>Wed, 25 Nov 2026 10:44:06 +0000</pubDate>
-      <category>macroeconomie</category>
-      <category>Indices</category>
-      <category>Conjoncture</category>
-      <category>Inflation</category>
-    </item>
-    <item>
-      <title>Nestlé dresse un bilan positif d’AgroImpact pour sa filière agricole suisse</title>
-      <link>https://agefi.com/actualites/entreprises/nestle-dresse-un-bilan-positif-dagroimpact-pour-sa-filiere-agricole-suisse</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545604</guid>
-      <description>Selon le groupe, 176 fermes de sa chaîne d’approvisionnement devraient réduire leur empreinte carbone de quelque 150.000 tonnes d’équivalent CO2 en six ans.</description>
-      <pubDate>Wed, 25 Nov 2026 10:43:16 +0000</pubDate>
-      <category>entreprises</category>
-      <category>Nestlé</category>
-      <category>Agroalimentaire</category>
-      <category>Suisse</category>
     </item>
   </channel>
 </rss>
