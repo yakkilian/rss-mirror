@@ -5,7 +5,15 @@
     <link>https://agefi.com/actualites</link>
     <description>Actualités de L'Agefi, générées depuis l'API publique du site pour la veille ICTjournal.</description>
     <language>fr-CH</language>
-    <lastBuildDate>Fri, 27 Nov 2026 21:12:32 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 07:41:48 +0000</lastBuildDate>
+    <item>
+      <title>UBS, stablecoins, UDC: les trois mots-clés de la semaine</title>
+      <link>https://agefi.com/actualites/politique/ubs-stablecoins-udc-generiques-les-trois-mots-cles-de-la-semaine</link>
+      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545676</guid>
+      <description>Vous n’avez pas eu le temps de suivre toute l’actualité économique et financière ces derniers jours? Voici les trois informations qui ont marqué cette semaine.</description>
+      <pubDate>Sat, 28 Nov 2026 07:30:00 +0000</pubDate>
+      <category>politique</category>
+    </item>
     <item>
       <title>Les Bourses profitent d’un rebond de la tech</title>
       <link>https://agefi.com/actualites/marches/les-bourses-profitent-dun-rebond-de-la-tech</link>
@@ -618,17 +626,6 @@
       <category>Bachem</category>
       <category>Pharma</category>
       <category>Laboratoires</category>
-    </item>
-    <item>
-      <title>Givaudan et DSM-Firmenich progressent en Bourse après les sanctions pour entente</title>
-      <link>https://agefi.com/actualites/marches/givaudan-et-dsm-firmenich-progressent-en-bourse-apres-les-sanctions-pour-entente</link>
-      <guid isPermaLink="false">https://api.agefi.com/v1/articles/545635</guid>
-      <description>Jeudi matin, les actions gagnaient respectivement 1,1% et 1,6%. La veille, l’Union européenne et le Royaume-Uni avaient infligé près de 600 millions d’euros d’amendes à trois groupes de la parfumerie.</description>
-      <pubDate>Thu, 26 Nov 2026 09:05:01 +0000</pubDate>
-      <category>marches</category>
-      <category>Givaudan</category>
-      <category>DSM-Firmenich</category>
-      <category>Bourse Zurich</category>
     </item>
   </channel>
 </rss>
